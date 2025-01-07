@@ -1,13 +1,12 @@
-
-
 "use client"
 
 import styles from "./events.module.css";
-
+import Link from 'next/link';
 import rect from "./_components/rectangle.png";
 import event2 from "./_components/event2.png";
 import pshows from "./_components/pshows1.png";
 import evbtn from "./_components/evbtn.png";
+
 import compbtn from "./_components/compbtn.png";
 import dashline from "./_components/dashline.svg";
 import arrow from "./_components/arrow.png";
@@ -71,15 +70,15 @@ const EventSec = () => {
       <div className={styles.evcard}>
         <div
           className={styles.eventcard}
-          onMouseMove={(e) => handleMM(e, e.currentTarget)}
-          onMouseLeave={(e) => handleML(e.currentTarget)}
+          // onMouseMove={(e) => handleMM(e, e.currentTarget)}
+          // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
           <Image src={pshows} alt="Pronites" />
         </div>
         <div
           className={styles.eventcard}
-          onMouseMove={(e) => handleMM(e, e.currentTarget)}
-          onMouseLeave={(e) => handleML(e.currentTarget)}
+          // onMouseMove={(e) => handleMM(e, e.currentTarget)}
+          // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
           <Image src={event2} alt="Proshows" />
         </div>
@@ -111,9 +110,10 @@ const EventSec = () => {
               Proin ultricies viverra mollis. Nullam vel quam tortor. Duis
               egestas libero velit,
             </p>
+            <Link href="/events" passHref>
             <button className={styles.eventsbutton}>
               <Image src={evbtn} alt="ff" className={styles.evebtn}/>
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
@@ -131,11 +131,7 @@ const EventSec = () => {
           </h2>
 
           <h2 className={styles.resp}>
-             <span>Exciting Events -Performances, Talks and Concerts...</span> 
-              
-            
-              
-              
+             <span>Exciting Events -Performances, Talks and Concerts...</span>  
             </h2>
           <Image src={dashline} className={styles.lines}/>
           <p>
@@ -144,22 +140,25 @@ const EventSec = () => {
             Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas
             libero velit,
           </p>
+          <Link href="/competitions" passHref>
+           
           <button className={styles.eventsbutton}>
             <Image src={compbtn} alt=""  className={styles.evebtn}/>
           </button>
+          </Link>
         </div>
         <div className={styles.evcard}>
         <div
           className={styles.eventcard}
-          onMouseMove={(e) => handleMM(e, e.currentTarget)}
-          onMouseLeave={(e) => handleML(e.currentTarget)}
+          // onMouseMove={(e) => handleMM(e, e.currentTarget)}
+          // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
           <Image src={pshows} alt="Pronites" />
         </div>
         <div
           className={styles.eventcard}
-          onMouseMove={(e) => handleMM(e, e.currentTarget)}
-          onMouseLeave={(e) => handleML(e.currentTarget)}
+          // onMouseMove={(e) => handleMM(e, e.currentTarget)}
+          // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
           <Image src={event2} alt="Proshows" />
         </div>
