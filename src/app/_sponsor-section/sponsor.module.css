@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: 'Brick_Pixel';
-  src: url('./_components/Brick_Pixel.ttf') format('truetype');
-  font-weight: bold;
+  src: url('/Brick_Pixel.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -12,7 +12,7 @@
     background-color: rgb(0 0 20);
     text-align: center;
     color: #fff;
-    font-family: "Arial", sans-serif;
+   
     overflow-x: hidden;
   }
   .sponsorlogos .lines{
@@ -27,6 +27,7 @@
     margin-bottom: 20px;
     font-weight:400;
     font-family: 'Brick_Pixel', sans-serif;
+    filter:drop-shadow(0 0 6px #FE3989);
   }
   .dash{
 

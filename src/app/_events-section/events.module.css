@@ -1,19 +1,19 @@
 @font-face {
   font-family: 'Brick_Pixel';
-  src: url('./_components/Brick_Pixel.ttf') format('truetype');
+  src: url('/Brick_Pixel.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Game_Type';
-  src: url('./_components/Game_Tape.ttf') format('truetype');
+  src: url('/Game_Tape.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Stone_Slab';
-  src: url('./_components/Stone_Slab.ttf') format('truetype');
+  src: url('/Stone_Slab.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -181,7 +181,6 @@
   }
   
   .eventsbutton {
-    /* background-color: rgb(254 57 137); */
     color: #f4f4f4;
     border: none;
     padding: 10px 20px;
@@ -192,9 +191,13 @@
     border-radius: 5px;
   }
   
-  /* .events-button:hover {
-    background-color: rgb(254 57 137);
-  } */
+  .evebtn {
+    transition: filter 0.3s ease; 
+  }
+  
+  .eventsbutton:hover .evebtn {
+    filter:drop-shadow(0 0 4px #FE3989);
+  }
    .inst2 {
     padding-left: 50%;
   }
@@ -212,6 +215,7 @@
   }
   .highlight{
     color:rgb(254 57 137);
+    filter:drop-shadow(0 0 10px #FE3989);
   }
   .underline{
     width: 57%;
@@ -223,6 +227,7 @@
   .inst2 span{
 
     color:rgb(254 57 137);
+    filter:drop-shadow(0 0 10px #FE3989);
   }
   .underline2{
     width: 80%;
