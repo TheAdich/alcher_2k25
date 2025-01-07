@@ -7,7 +7,12 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+@font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -19,7 +24,7 @@
 body {
   color: white;
   background:#000014;
-  background-image: url('../../public/texture.svg');
+  
 
 }
 
