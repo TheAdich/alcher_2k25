@@ -19,6 +19,7 @@
 body {
   color: white;
   background:#000014;
+  background-image: url('../../public/texture.svg');
 
 }
 
