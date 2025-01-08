@@ -55,11 +55,10 @@ export default function Page() {
     <main>
       <div className={styles.mainPage}>
         <div className={`${styles.left} ${isExpanded ? styles.visible : ""}`}>
-          <h1 className={styles.heading}>PRONITES</h1>
+          <h1 className={styles.heading}>{images[currentIndex].name}</h1>
           <div className={styles.description}>
             <p className={styles.descriptionTxt}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              expedita esse autem in consequuntur? Repudiandae earum dignissimos voluptate tempora!
+              {images[currentIndex].description}
             </p>
           </div>
 
