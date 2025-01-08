@@ -28,7 +28,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div>
+    <div className="bgsett">
       <div className="search-bar">
         <div className="dropdown-wrapper">
           <select

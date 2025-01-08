@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+.upperSponsers {
+  background-color: rgb(17, 24, 39);
+  height: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.eachSponser {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.headformain {
+  font-family: stoneSlab;
+  font-size: 72px;
+  color: #ffebd3;
+}
+.imgMainSponser {
+  width: 20vw;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.imgMainSponser:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  scale: 1.04;
+  border-radius: 20px;
+}
+
+.imgMainSponser img {
+  width: 100%;
+}
+.eachSponser p {
+  font-family: gameTape;
+  font-size: 24px;
+}
+
+.lowerSponsers {
+  background-color: rgb(17, 24, 39);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.lowEachSpons {
+  font-family: gameTape;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+}
+.descc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.imgLowSpons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  transition: all 0.3s ease-in-out;
+}
+
+.imgLowSpons:hover {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  scale: 1.04;
+  border-radius: 20px;
+}
+
+.imgLowSpons img {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .headformain {
+    font-size: 50px;
+  }
+  .imgMainSponser {
+    width: 200px;
+  }
+}
+
+@media (max-width: 510px) {
+  .headformain {
+    font-size: 30px;
+  }
+  .imgMainSponser {
+    width: 150px;
+  }
+  .eachSponser p {
+    font-size: 15px;
+  }
+  .eachSponser {
+    gap: 5px;
+  }
+}
