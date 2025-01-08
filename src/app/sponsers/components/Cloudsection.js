@@ -64,19 +64,7 @@ const CloudSection = () => {
         </div>
       </section>
       <div className={styles.header}>
-        <p className={styles.title}>Competitions</p>
-        <p className={styles.oneline}>
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab?
-          Fuga, libero reprehenderit quidem nobis"
-        </p>
-      </div>
-      <div className={styles.content}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin
-          ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero
-          velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor
-        </p>
+        <p className={styles.title}>Our Partners</p>
       </div>
     </section>
   );

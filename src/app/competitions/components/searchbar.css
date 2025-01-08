@@ -1,3 +1,6 @@
+.bgsett {
+  background-color: rgb(17, 24, 39);
+}
 .search-bar {
   margin: 0px 100px 0px 100px;
   display: flex;
