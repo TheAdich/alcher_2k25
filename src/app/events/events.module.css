@@ -184,7 +184,11 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  
+}
+
+.link:hover p{
+  opacity: 80%;
+  transition: background-image 0.3s ease;
 }
 .link.selected{
   background-image: url('./_Components/FrameForLinks.png');
