@@ -45,6 +45,10 @@
   cursor: pointer;
 } */
 
+.enterImage:hover{
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+  transition: filter 0.3s ease;
+}
 .center {
   display: flex;
   flex-direction: column;
@@ -79,7 +83,7 @@
   background-image: url('./_Components/Frame973.png');
   background-size: 45vw 35vw;
   background-repeat: no-repeat;
-  filter: drop-shadow(0 10px 120px #fe398858);
+  filter: drop-shadow(0 10px 120px #fe39886f);
   
 }
 

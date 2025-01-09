@@ -9,7 +9,7 @@ import image3 from "./_Components/next.png";
 import image4 from "./_Components/Group38.png";
 import image5 from "./_Components/image2.png";
 
-import enter from "./_Components/Group38.png";
+import enter from "./_Components/Group39.svg";
 import next from "./_Components/next.png";
 
 const images = [
