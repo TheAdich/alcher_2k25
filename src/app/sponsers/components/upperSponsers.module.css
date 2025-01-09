@@ -30,6 +30,7 @@
   justify-content: center;
 }
 .headformain {
+  z-index: 100;
   font-family: stoneSlab;
   font-size: 72px;
   color: #ffebd3;
@@ -43,11 +44,10 @@
   transition: all 0.3s ease-in-out;
 }
 .imgMainSponser:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  scale: 1.04;
-  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(254, 57, 137, 0.4),
+    0 0 100px rgba(254, 57, 137, 0.4), 0 0 400px rgba(254, 57, 137, 0.4),
+    0 0 800px rgba(254, 57, 137, 0.4), 0 0 1600px rgba(254, 57, 137, 0.4),
+    0 0 3200px rgba(254, 57, 137, 0.4), 0 0 6400px rgba(254, 57, 137, 0.4);
 }
 
 .imgMainSponser img {
@@ -99,11 +99,10 @@
 }
 
 .imgLowSpons:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  scale: 1.04;
-  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(254, 57, 137, 0.4),
+    0 0 100px rgba(254, 57, 137, 0.4), 0 0 400px rgba(254, 57, 137, 0.4),
+    0 0 800px rgba(254, 57, 137, 0.4), 0 0 1600px rgba(254, 57, 137, 0.4),
+    0 0 3200px rgba(254, 57, 137, 0.4), 0 0 6400px rgba(254, 57, 137, 0.4);
 }
 
 .imgLowSpons img {
