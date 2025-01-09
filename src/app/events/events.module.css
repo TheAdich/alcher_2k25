@@ -17,11 +17,12 @@
   width: 30vw;
   z-index: 5;
   overflow: visible;
-  height: 20.5vw;
+  min-height: 20.5vw;
   justify-content: space-between;
   opacity: 0;
   transition: opacity 1s ease;
   align-self: center;
+  gap: 1vw;
 }
 .left.visible{
   opacity: 1;
@@ -31,6 +32,7 @@
   font-size: 5.5vw;
   font-family: "brickPixel";
   padding: 0;
+  line-height: 5vw;
 }
 
 /* .enter {
@@ -51,8 +53,9 @@
   /* align-self: center; */
 }
 .description{
-  margin-top: -5vh;
+  /* margin-top: -1vw; */
   width: 17vw;
+  
 }
 .descriptionTxt{
   font-size: 1vw;
@@ -60,6 +63,7 @@
   font-family: "gameTape";
   font-weight: 400;
   color: #FFEBD3B2;
+  
 }
 .enterImage{
   width: 15vw;
@@ -75,7 +79,7 @@
   background-image: url('./_Components/Frame973.png');
   background-size: 45vw 35vw;
   background-repeat: no-repeat;
-  filter: drop-shadow(0 0 60px #fe398871);
+  filter: drop-shadow(0 10px 120px #fe398858);
   
 }
 
@@ -129,6 +133,7 @@
 .nextImage{
   width: 5vw;
   height: 4vw;
+  cursor: pointer;
 }
 .eventName{
   font-family: "gameTape";
