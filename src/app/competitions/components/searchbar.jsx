@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./searchbar.css";
@@ -59,8 +59,51 @@ const SearchBar = () => {
       </div>
       <div className="results">
         {filteredData.map((item) => (
-          <div key={item.id} className="result-item">
-            <p>{item.comp_name}</p>
+          <div className="compCard">
+            <div className="cardImg">
+              <img src="./compCard.png" alt="" />
+            </div>
+
+            <div className="compTitle">{item.comp_name}</div>
+
+            <div className="compDetails">
+              <p>{item.type}</p>
+              <p>{item.one_liner}</p>
+            </div>
+
+            {/* uncomment if needed venue, date, time */}
+
+            {/* <div className="compVanueTime">
+              <div className="compVanue">
+                <div className="locIconComp">
+                  <img src="./Location.png" alt="" />
+                </div>
+                <p> Main Auditorium</p>
+              </div>
+              <div className="compTime">
+                <div className="timeIconComp">
+                  <img src="./Time_light@2x.png" alt="" />
+                </div>
+                <p>14 Sept,</p>
+                <p>4:30 pm</p>
+              </div>
+            </div> */}
+            <div className="cardBtns">
+              <div className="registerBtnComp">
+                <Link href={item.url}>
+                  <p>Register</p>
+                </Link>
+                <div className="mapCompIcon">
+                  <img src="./External.png" alt="" />
+                </div>
+              </div>
+              <div className="registerBtnComp">
+                <p>Google Maps</p>
+                <div className="mapCompIcon">
+                  <img src="./Maps.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         ))}
       </div>

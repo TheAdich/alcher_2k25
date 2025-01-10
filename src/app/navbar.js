@@ -13,7 +13,7 @@ const Navbar = () => {
     { label: "MUN", path: "/mun" },
     { label: "Kartavya", path: "/kartavya" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Sponsers", path: "/sponsers" },
+    { label: "Sponsors", path: "/sponsers" },
     { label: "Merch", path: "/merch" },
     { label: "Team", path: "/team" },
   ];

@@ -17,7 +17,7 @@ const footer = () => {
           <ul>MUN</ul>
           <ul>Kartavya</ul>
           <ul>Gallery</ul>
-          <ul>Sponsers</ul>
+          <ul>Sponsors</ul>
           <ul>Merch</ul>
           <ul>Team</ul>
         </div>
