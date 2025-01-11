@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./searchbar.css";
 import info from "./data";
@@ -33,11 +33,18 @@ const SearchBar = () => {
     setFilteredData(info);
   }, []);
 
+  // const selectRef = useRef(null);
+
+  // const handleImageClick = () => {
+  //   selectRef.current?.focus();
+  // };
+
   return (
     <div className="bgsett">
       <div className="search-bar">
         <div className="dropdown-wrapper">
           <select
+            // ref={selectRef}
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
           >
