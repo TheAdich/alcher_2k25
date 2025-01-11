@@ -95,7 +95,7 @@
     height: 2rem;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 736px) {
   .options {
     display: none;
   }
