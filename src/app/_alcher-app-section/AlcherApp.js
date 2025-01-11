@@ -55,6 +55,7 @@ const AlcherApp = () => {
 
         <Image
           src="./mobile-text.svg"
+          alt="mobile-text"
           width={500}
           height={500}
           className="mobile-text"

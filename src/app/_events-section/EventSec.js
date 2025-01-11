@@ -48,7 +48,7 @@ const EventSec = () => {
               <h1 className={styles.inst3}>
                 at the <span className={styles.highlight}>Highlights</span>
               </h1>
-              <Image src={arrow} className={styles.arrow}/>
+              <Image src={arrow} alt="arrow" className={styles.arrow}/>
             </div>
             <Image src={rect} alt="line" className={styles.underline3} />
           </div>
@@ -120,7 +120,7 @@ const EventSec = () => {
 
       <div  className={`${styles.cardssection} ${styles.evText}`} >
       <div className={styles.eventstext} >
-          <Image src={dashline} className={styles.lines} />
+          <Image src={dashline} className={styles.lines}  alt="dashline"/>
           <h2 className={styles.usual}>
             <span>Exciting Events - </span>
             <br />
@@ -133,7 +133,7 @@ const EventSec = () => {
           <h2 className={styles.resp}>
              <span>Exciting Events -Performances, Talks and Concerts...</span>  
             </h2>
-          <Image src={dashline} className={styles.lines}/>
+          <Image src={dashline} className={styles.lines} alt="dashline"/>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
             tristique purus eu libero egestas, sed bibendum felis tincidunt.

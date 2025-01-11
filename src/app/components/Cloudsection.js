@@ -1,6 +1,6 @@
 'use client'
-
 import Image from "next/image";
+import './brick-pixel.css'
 import SlotCounter from 'react-slot-counter';
 import { useEffect, useState } from "react";
 
