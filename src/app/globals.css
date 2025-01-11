@@ -41,7 +41,11 @@ body {
 }
 
 .redlines{
-  width:100vw;
+  width:100%;
+  /* display: none; */
+  /* scale: 1.2; */
+  /* overflow-x: hidden; */
+  /* overflow: hidden; */
   height:127px;
 }
 .clouds {
@@ -54,7 +58,7 @@ body {
   /* background-color: #FFEBD3; */
 }
 
-.logo{
+.logo_cloud{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,8 +80,8 @@ body {
 }
 
 .fu {
-  width: 300px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   top: 50px;
   animation-delay: 0s;
 }
@@ -125,7 +129,19 @@ body {
   animation-delay: 30s;
 }
 
+.homeclouds {
+  margin: 0;
+  z-index: -10;
+  position: relative;
+}
 
+.homeclouds1 {
+  height: 10rem;
+}
+
+.homeclouds2 {
+  height: 10rem;
+}
 
 
 /* .clouds {
@@ -161,10 +177,11 @@ body {
   position: absolute;
   height: 250px;
   width:700px;
-  /* top: 150px;
-  left:28vw; */
+  /* top: 150px;*/
+  left:28vw;
   display: flex;
-  top:150px;
+  top:100px;
+  z-index: 1000;
   filter: drop-shadow(0 0 60px #FE3989);
 }
 .content{
@@ -202,14 +219,18 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
+  padding-left: 10%;
 }
 
 .stat-item {
-  text-align: center;
+  width: 100%;
+  
 }
 
 .stat-title {
-  font-size: 1.875rem; 
+  text-align: left;
+  font-family: "brickpixel";
+  font-size: 4rem; 
   font-weight: bold;
 }
 
@@ -217,6 +238,9 @@ body {
 
 .stat-description {
   color: #9ca3af; 
+  text-align: left;
+  font-size: 2rem; 
+  font-family: "brickpixel";
 }
 @media screen and (max-width: 1408px) {
   /* .clouds{
@@ -234,18 +258,30 @@ body {
    .content{
     padding: 10px 100px;
   }
+  
 }
 
 @media(max-width:991px) {
-   /* .clouds{
-    background-color: #FFEBD3;
-   } */
+  .stat-title {
+    font-size: 2.5rem; 
+  }
+  
+  
+  
+  .stat-description {
+    font-size: 1.2rem; 
+  }
+  .stats-flex {
+    gap: 1rem;
+  }
+
 }
 
 @media(max-width:768px) {
   .content{
     padding: 10px 50px;
   }
+
 }
 
 @media(max-width:450px) {
@@ -254,6 +290,15 @@ body {
   }
   .redlines{
     height:80px;
+  }
+  .stat-title {
+    font-size: 30px; 
+  }
+  .stat-description {
+    font-size: 20px; 
+  }
+  .stats-flex {
+    gap: 10px;
   }
 }
 

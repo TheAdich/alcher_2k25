@@ -90,7 +90,7 @@ const Kartavya = () => {
       }`}>
     <Image src={udaanImage} alt="Udaan" className={styles.udaanImage} />
   </div>
-  <Image src={frame1} className={styles.frame1} />
+  <Image src={frame1} className={styles.frame1} alt="frame1" />
 
 </div>
 {/* <div className={styles.mainImage}>
@@ -103,10 +103,10 @@ const Kartavya = () => {
 
 
           <div className={styles.intro}>
-          <Image src={dashline} className={styles.lines}/>
+          <Image src={dashline} className={styles.lines} alt="dashline"/>
           <div  className={styles.subhead}>
             <h2 className={styles.subHeading}>{subheading}</h2></div>
-            <Image src={dashline} className={styles.lines}/>
+            <Image src={dashline} className={styles.lines} alt="dashline"/>
             <p className={styles.description}>
           {description}
             </p>
@@ -148,9 +148,9 @@ const Kartavya = () => {
 </div>
 
               <div className={styles.contents}>
-              <Image src={dashline} className={styles.lines}/>
+              <Image src={dashline} className={styles.lines} alt="dashline"/>
               <h3 className={styles.cardTitle}>{initiative.title}</h3>
-              <Image src={dashline} className={styles.lines}/>
+              <Image src={dashline} className={styles.lines} alt="dashline"/>
               <p className={styles.cardDescription}>{initiative.description}</p>
               
               </div>

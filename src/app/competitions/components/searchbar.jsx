@@ -1,6 +1,6 @@
 "use client";
-
-import React, { useState } from "react";
+import Link from "next/link";
+import React, { useEffect, useState, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./searchbar.css";
 import info from "./data";
@@ -14,8 +14,10 @@ const SearchBar = () => {
   const handleSearch = (value) => {
     setInput(value);
     setSelectedCategory("");
-    const filtered = info.filter((item) =>
-      item.tags.toLowerCase().includes(value.toLowerCase())
+    const filtered = info.filter(
+      (item) =>
+        item.tags.toLowerCase().includes(value.toLowerCase()) ||
+        item.comp_name.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredData(filtered);
   };
@@ -27,6 +29,18 @@ const SearchBar = () => {
     setFilteredData(filtered);
   };
 
+  useEffect(() => {
+    setFilteredData(info);
+  }, []);
+
+  // const selectRef = useRef(null);
+
+  // const handleImageClick = () => {
+  //   if (selectRef.current) {
+  //     selectRef.current.click();
+  //   }
+  // };
+
   return (
     <div className="bgsett">
       <div className="search-bar">
@@ -34,15 +48,20 @@ const SearchBar = () => {
           <select
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
-            //   disabled={input !== ""}
           >
-            <option value="">Modules</option>
+            <option value="" className="optionsss">
+              <p>All Modules</p>
+            </option>
             {titledata.map((title) => (
               <option key={title.id} value={title.category}>
                 {title.category}
               </option>
             ))}
           </select>
+          <div className="imgArrowBG">
+            <img src="./bgarrow.png" alt="" />
+            <img className="arrow" src="./Union.png" alt="" />
+          </div>
         </div>
 
         <div className="input-wrapper">
@@ -50,7 +69,6 @@ const SearchBar = () => {
             placeholder="Type here to search"
             value={input}
             onChange={(e) => handleSearch(e.target.value)}
-            //   disabled={selectedCategory !== ""}
           />
           <div className="searchdiv">
             <img src="./searchIcon.png" alt="" />
@@ -59,8 +77,51 @@ const SearchBar = () => {
       </div>
       <div className="results">
         {filteredData.map((item) => (
-          <div key={item.id} className="result-item">
-            <p>{item.comp_name}</p>
+          <div className="compCard">
+            <div className="cardImg">
+              <img src="./compCard.png" alt="" />
+            </div>
+
+            <div className="compTitle">{item.comp_name}</div>
+
+            <div className="compDetails">
+              <p>{item.type}</p>
+              <p>{item.one_liner}</p>
+            </div>
+
+            {/* uncomment if needed venue, date, time */}
+
+            {/* <div className="compVanueTime">
+              <div className="compVanue">
+                <div className="locIconComp">
+                  <img src="./Location.png" alt="" />
+                </div>
+                <p> Main Auditorium</p>
+              </div>
+              <div className="compTime">
+                <div className="timeIconComp">
+                  <img src="./Time_light@2x.png" alt="" />
+                </div>
+                <p>14 Sept,</p>
+                <p>4:30 pm</p>
+              </div>
+            </div> */}
+            <div className="cardBtns">
+              <div className="registerBtnComp">
+                <Link href={item.url}>
+                  <p>Register</p>
+                </Link>
+                <div className="mapCompIcon">
+                  <img src="./External.png" alt="" />
+                </div>
+              </div>
+              <div className="registerBtnComp">
+                <p>Google Maps</p>
+                <div className="mapCompIcon">
+                  <img src="./Maps.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         ))}
       </div>

@@ -12,6 +12,13 @@
   font-style: normal; /* Adjust if needed */
 }
 
+@font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
 .upperSponsers {
   background-color: rgb(17, 24, 39);
   height: auto;
@@ -30,6 +37,7 @@
   justify-content: center;
 }
 .headformain {
+  z-index: 100;
   font-family: stoneSlab;
   font-size: 72px;
   color: #ffebd3;
@@ -43,11 +51,7 @@
   transition: all 0.3s ease-in-out;
 }
 .imgMainSponser:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  scale: 1.04;
-  border-radius: 20px;
+  filter: drop-shadow(0 0px 35px #fe3988b4);
 }
 
 .imgMainSponser img {
@@ -98,12 +102,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.imgLowSpons:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
-    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
-    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-  scale: 1.04;
-  border-radius: 20px;
+.imggg:hover {
+  filter: drop-shadow(0 0px 35px #fe3988b4);
 }
 
 .imgLowSpons img {
@@ -119,17 +119,65 @@
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 610px) {
   .headformain {
     font-size: 30px;
   }
+  .lowerSponsers {
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .imgMainSponser {
+    width: 200px;
+  }
+}
+@media (max-width: 620px) {
+  .imgLowSpons {
     width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 530px) {
+  .imgLowSpons {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 510px) {
+  .headformain {
+    font-size: 30px;
   }
   .eachSponser p {
     font-size: 15px;
   }
   .eachSponser {
     gap: 5px;
+  }
+}
+
+@media (max-width: 470px) {
+  .imgLowSpons {
+    width: 100px;
+    height: 100px;
+    gap: 0px;
+  }
+  .descc {
+    font-size: 12px;
+  }
+  .lowerSponsers {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lowEachSpons {
+    width: 130px;
+  }
+}
+
+@media (max-width: 380px) {
+  .headformain {
+    font-size: 20px;
   }
 }
