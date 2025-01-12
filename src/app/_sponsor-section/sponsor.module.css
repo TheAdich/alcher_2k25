@@ -12,7 +12,7 @@
     background-color: rgb(0 0 20);
     text-align: center;
     color: #fff;
-   
+    overflow-y: hidden;
     overflow-x: hidden;
   }
   .sponsorlogos .lines{
@@ -29,9 +29,42 @@
     font-family: 'Brick_Pixel', sans-serif;
     filter:drop-shadow(0 0 6px #FE3989);
   }
-  .dash{
-
- width:100%;
+  
+  .dashContainer {
+    position: relative;
+    /* display: inline-block; */
+    width:100%;
+    height: fit-content;
+  }
+  .dashContainer > :first-child {
+    position: absolute;
+    top: 0;
+    left: 13px;
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    z-index: 10; /* Send GridSketch to the background */
+  }
+  .dashContainer1 {
+    position: relative;
+    /* display: inline-block; */
+    width:100%;
+    height: fit-content;
+  }
+  .dashContainer1 > :first-child {
+    position: absolute;
+    /* top: 50px; */
+    bottom: -15px;
+    left: 13px;
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    z-index: 0; /* Send GridSketch to the background */
+  }
+  .dash {
+    position: relative;
+    z-index: 1; /* Ensure the image is above the GridSketch */
+    width:100%;
   }
   
   .sponsorlogos {
