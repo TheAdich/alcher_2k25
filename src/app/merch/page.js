@@ -74,7 +74,8 @@ export default function Page() {
 
             </div>
        
-       <Image src="./AlcherMerchandise.svg" className='logo' width="200" height="200" />
+       {/* <Image src="./AlcherMerchandise.svg" className='logo' width="200" height="200" /> */}
+       <h1 className='logo' style={{ fontFamily: 'BrickPixel' }}>Alcher Merchandise</h1>
 
             <div className='box'>
 
@@ -114,16 +115,38 @@ export default function Page() {
             </div>
             
 
-            <Image src="./mobile-merch.svg" className='mobile-merch' width="50" height="50"  />
+            {/* <Image src="./mobile-merch.svg" className='mobile-merch' width="50" height="50"  /> */}
 
-            <Image src="./leftText.svg" className='arrowLeft' width="50" height="50" onClick={handleLeft} />
+            <div className="arrowLeft">
+                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin'</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
+                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+            </div>
+            <div className="mobile-merch">
+                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin'</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
+                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+            </div>
+{/* 
+            <Image src="./leftText.svg" className='arrowLeft' width="50" height="50" onClick={handleLeft} /> */}
             <a href="">
 
             <Image src="./btnMerch.svg" className='btnMerch' width="50" height="50"  />
             </a>
-            <Image src="./textRight.svg" className='arrowRight' width="50" height="50" onClick={handleLeft} />
 
-            <Image src="./mobile-bottom.svg" className='mobile-bottom' width="50" height="50"/>
+            <div className="arrowRight">
+                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
+                <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
+            <Image src="./dash.svg" className='dash' width="30" height="30"/>
+            </div>
+            <div className="mobile-bottom">
+                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
+                <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
+            <Image src="./dash.svg" className='dash' width="30" height="30"/>
+            </div>
+            {/* <Image src="./textRight.svg" className='arrowRight' width="50" height="50" onClick={handleLeft} /> */}
+
+            {/* <Image src="./mobile-bottom.svg" className='mobile-bottom' width="50" height="50"/> */}
             <a href="">
 
             <Image src="./mobile-btn.svg" className='mobile-btn' width="50" height="50"/>

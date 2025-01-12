@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'BrickPixel';
+    src: url('/fonts/BrickPixel.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'StoneSlab';
+    src: url('/fonts/StoneSlab.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GameTape';
+    src: url('/fonts/Game_Tape.ttf') format('truetype');
+}
+
 /* .model1{
     display: none;
 }
@@ -66,9 +80,10 @@
     position: absolute;
     top:18%;
     z-index: 999;
-    scale: 5;
-    /* Add glow effect */
-    /* box-shadow: 0 0 10px #FE3989, 0 0 20px #FE3989, 0 0 30px #FE3989; */
+    scale: 6.5;
+    font-family: 'BrickPixel';
+    color: #FE3989;
+    text-shadow: 0 0 0px #FE3989, 0 0 20px #FE3989, 0 0 30px #FE3989;
 }
 
 
@@ -128,7 +143,7 @@
 }
 .arrowLeft{
     position: absolute;
-    left: 17%;
+    left: 20%;
     top: 50%;
     scale: 5;
     z-index: 999;
@@ -139,6 +154,47 @@
     top: 50%;
     scale: 5;
     z-index: 999;
+}
+.arrowLeft h3{
+    color: #FFEBD3;
+    font-size: 7px;
+    
+
+}
+.arrowLeft p{
+    /* scale: 0.2; */
+    font-size: 3px;
+    font-weight: 10;
+    color: #FFEBD3;
+    opacity: 50%;
+    padding-top: 2px;
+}
+
+
+.arrowRight h3{
+    color: #FFEBD3;
+    font-size: 10px;
+    
+
+}
+.arrowRight p{
+    /* scale: 0.2; */
+    font-size: 3px;
+    font-weight: 10;
+    color: #FFEBD3;
+    opacity: 50%;
+    /* padding-top: 2px; */
+}
+.dash{
+    scale: 2;
+}
+/* .pleft{
+    margin-right: 20px;
+    fontFamily: 'GameTape';
+    padding-right:20px;
+} */
+.arrowLeft h3, .arrowLeft p {
+    font-family: 'StoneSlab';
 }
 .btnMerch{
     position: absolute;
@@ -268,7 +324,7 @@
         display: none;
     }
     .logo{
-        scale: 2;
+        scale: 3;
     }
     .btnMerch{
         display: none;
@@ -294,8 +350,24 @@
         display: block;
         scale: 5.5;
         position: absolute;
+        text-align: center;
         top: 40%;
     }
+    .mobile-merch h3{
+        color: #FFEBD3;
+        font-size: 7px;
+        
+    
+    }
+    .mobile-merch p{
+        /* scale: 0.2; */
+        font-size: 2px;
+        font-weight: 10;
+        color: #FFEBD3;
+        opacity: 50%;
+        padding-top: 2px;
+    }
+    
     .box{
         top: 27%;
     }
@@ -303,8 +375,30 @@
         display: block;
         position: absolute;
         /* bottom: 10%; */
-        bottom: 10%;
+        bottom: 9%;
+        text-align: center;
         scale: 5;
+    }
+    .mobile-bottom h3{
+        color: #FFEBD3;
+        font-size: 5px;
+        
+    
+    }
+    .dash{
+        /* scale: 1; */
+        position: absolute;
+
+        bottom: 10%;
+        /* padding-bottom: 2px; */
+    }
+    .mobile-bottom p{
+        /* scale: 0.2; */
+        font-size: 3px;
+        font-weight: 10;
+        color: #FFEBD3;
+        opacity: 50%;
+        /* padding-top: 2px; */
     }
     .mobile-btn{
         display: block;
