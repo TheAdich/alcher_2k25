@@ -190,14 +190,18 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
+  padding-left: 10%;
 }
 
 .stat-item {
-  text-align: center;
+  width: 100%;
+  
 }
 
 .stat-title {
-  font-size: 1.875rem; 
+  text-align: left;
+  font-family: "brickpixel";
+  font-size: 4rem; 
   font-weight: bold;
 }
 
@@ -205,6 +209,9 @@ body {
 
 .stat-description {
   color: #9ca3af; 
+  text-align: left;
+  font-size: 2rem; 
+  font-family: "brickpixel";
 }
 @media screen and (max-width: 1408px) {
   /* .clouds{
