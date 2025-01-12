@@ -46,6 +46,7 @@ input:focus {
 }
 
 .dropdown-wrapper {
+  z-index: 20;
   font-family: gameTape;
   position: relative;
   width: 25%;
@@ -103,8 +104,7 @@ input:focus {
 
 .imgArrowBG {
   cursor: pointer;
-  /* background-image: url("/bgarrow.png"); */
-  left: 85%;
+  right: 5%;
   bottom: 20%;
   position: absolute;
   width: 30px;
@@ -175,7 +175,6 @@ input:focus {
   display: flex;
   align-items: center;
   gap: 0.5vw;
-
   color: #ffebd3;
   font-size: 1.2vw;
 }
@@ -246,7 +245,6 @@ input:focus {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-
   .compCard {
     margin-left: 1vw;
     margin-top: 1vw;
@@ -365,12 +363,17 @@ input:focus {
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 560px) {
   .dropdown-wrapper {
     font-size: 10px;
   }
   .input-wrapper input {
     font-size: 10px;
+  }
+  .imgArrowBG {
+    width: 25px;
+    height: 25px;
+    bottom: 15px;
   }
 }
 

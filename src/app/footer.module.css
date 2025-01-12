@@ -190,16 +190,12 @@
 }
 
 /* animation for showing names */
-.alcherCreatives {
-  cursor: pointer;
-  transition: all 0.5s ease-in;
-}
-
-.alcherCreatives:hover .creativesName {
-  opacity: 1;
+.alcherCreatives:hover + .creativesName,
+.alcherCreatives:focus + .creativesName {
   visibility: visible;
+  opacity: 1; /* Fully opaque */
+  transform: translateY(0); /* Reset position for the animation */
 }
-
 .alcherWebOps {
   cursor: pointer;
 }
@@ -216,7 +212,9 @@
   width: 200px;
   left: 500px;
   height: auto;
-  /* transition: opacity 0.5s ease-in, visibility 0.5s ease-in; */
+  transform: translateY(10px);
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in,
+    visibility 0.3s ease-in;
 }
 
 /* animation ends */

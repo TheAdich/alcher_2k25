@@ -100,23 +100,8 @@ const footer = () => {
           </div>
         </div>
         <div className={styles.retroleft}>
-          {/* <Marquee
-          behavior="scroll"
-          direction="up"
-          loop={0}
-          play={true}
-          // className={styles.retroleft}
-          style={{
-            width: "15px",
-            height: "90vh",
-            position: "absolute",
-            left: 0,
-          }}
-        > */}
           <img src="/txtretroleft.png" alt="" />
           <img src="/txtretroleft.png" alt="" />
-
-          {/* </Marquee> */}
         </div>
         <div className={styles.retroright}>
           <img src="/txtretroright.png" alt="" />
