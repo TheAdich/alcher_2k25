@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import styles from "./footer.module.css";
 import "./components/stone-slab.css";
 import "./components/game-tape.css";
 import Link from "next/link";
-import Marquee from "react-fast-marquee";
+import { useState } from "react";
 const footer = () => {
   const navOptions = [
     { label: "Home", path: "/" },
@@ -15,6 +17,23 @@ const footer = () => {
     { label: "Sponsors", path: "/sponsers" },
     { label: "Merch", path: "/merch" },
     { label: "Team", path: "/team" },
+  ];
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+
+  const creativesPeeps = [
+    { name: "name1" },
+    { name: "name2" },
+    { name: "name3" },
+    { name: "name4" },
+  ];
+
+  const webOpsPeeps = [
+    { name: "Himank" },
+    { name: "Shivam" },
+    { name: "Dadhich" },
+    { name: "name4" },
   ];
 
   return (
@@ -58,15 +77,44 @@ const footer = () => {
         <div className={styles.oneline}>
           <div className={styles.lftline}>
             Designed and Developed by <br />
-            <p className={styles.alcherCreatives}>Alcher Creatives,</p>
-            <p className={styles.alcherWebOps}>Alcher Web Operations</p>{" "}
-          </div>
-          <div className={styles.creativesName}>
-            <ul>
-              <li>Name1</li>
-              <li>Name2</li>
-              <li>Name3</li>
-            </ul>
+            <div className={styles.alcherCreatives}>
+              <p
+                onMouseEnter={() => setIsVisible(true)}
+                onMouseLeave={() => setIsVisible(false)}
+              >
+                Alcher Creatives,
+              </p>
+              <div
+                className={`${styles.creativesName} ${
+                  isVisible ? styles.visible : ""
+                }`}
+              >
+                <ul>
+                  {creativesPeeps.map((option, idx) => (
+                    <li key={idx}>{option.name}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className={styles.alcherWebOps}>
+              <p
+                onMouseEnter={() => setIsVisible2(true)}
+                onMouseLeave={() => setIsVisible2(false)}
+              >
+                Alcher Web Operations
+              </p>
+              <div
+                className={`${styles.webOpsName} ${
+                  isVisible2 ? styles.visible2 : ""
+                }`}
+              >
+                <ul>
+                  {webOpsPeeps.map((option, idx) => (
+                    <li key={idx}>{option.name}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
           <div className={styles.rgtline}>
             For Business Enquiries{" "}
@@ -101,10 +149,12 @@ const footer = () => {
         </div>
         <div className={styles.retroleft}>
           <img src="/txtretroleft.png" alt="" />
+          <br />
           <img src="/txtretroleft.png" alt="" />
         </div>
         <div className={styles.retroright}>
           <img src="/txtretroright.png" alt="" />
+          <br />
           <img src="/txtretroright.png" alt="" />
         </div>
 

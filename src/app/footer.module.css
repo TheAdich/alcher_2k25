@@ -189,19 +189,15 @@
   height: 100%;
 }
 
-/* animation for showing names */
-.alcherCreatives:hover + .creativesName,
-.alcherCreatives:focus + .creativesName {
-  visibility: visible;
-  opacity: 1; /* Fully opaque */
-  transform: translateY(0); /* Reset position for the animation */
+/* showing names */
+.alcherCreatives {
+  position: relative;
 }
-.alcherWebOps {
+.alcherCreatives p {
   cursor: pointer;
 }
-
 .creativesName {
-  z-index: 10000;
+  z-index: 10;
   display: flex;
   visibility: hidden;
   opacity: 0;
@@ -210,11 +206,39 @@
   border-radius: 10px;
   position: absolute;
   width: 200px;
-  left: 500px;
+  bottom: 20px;
   height: auto;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease-in, transform 0.3s ease-in,
-    visibility 0.3s ease-in;
+  transition: all 0.3s ease;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.visible2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alcherWebOps {
+  position: relative;
+}
+.alcherWebOps p {
+  cursor: pointer;
+}
+.webOpsName {
+  z-index: 10;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  background-color: rgb(17, 24, 39);
+  border-radius: 10px;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
 }
 
 /* animation ends */
