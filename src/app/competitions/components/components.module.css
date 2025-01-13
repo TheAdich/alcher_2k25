@@ -72,10 +72,13 @@
   }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 580px) {
   .title {
     font-size: 3rem;
   }
+}
+
+@media (max-width: 510px) {
   .oneline {
     font-size: 10px;
     padding-left: 20%;
@@ -90,5 +93,17 @@
   .content {
     padding-left: 10vw;
     padding-right: 10vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    font-size: 2rem;
+  }
+  .oneline {
+    font-size: 8px;
+  }
+  .content {
+    font-size: 8px;
   }
 }

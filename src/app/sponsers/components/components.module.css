@@ -49,6 +49,18 @@
   }
 }
 
+@media (max-width: 620px) {
+  .title {
+    font-size: 4rem;
+  }
+  .oneline {
+    font-size: 15px;
+  }
+  .content {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 510px) {
   .title {
     font-size: 3rem;
@@ -63,7 +75,10 @@
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 370px) {
+  .title {
+    font-size: 2rem;
+  }
   .content {
     padding-left: 10vw;
     padding-right: 10vw;

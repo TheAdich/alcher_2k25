@@ -36,7 +36,9 @@ const SearchBar = () => {
   // const selectRef = useRef(null);
 
   // const handleImageClick = () => {
-  //   selectRef.current?.focus();
+  //   if (selectRef.current) {
+  //     selectRef.current.click();
+  //   }
   // };
 
   return (
@@ -44,7 +46,6 @@ const SearchBar = () => {
       <div className="search-bar">
         <div className="dropdown-wrapper">
           <select
-            // ref={selectRef}
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
           >

@@ -33,6 +33,7 @@
   color: rgba(254, 57, 137, 1);
 }
 .getcards {
+  margin-right: 10px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -66,24 +67,26 @@
 @media (max-width: 1250px) {
   .options ul {
     font-size: 1vw;
+    gap: 20px;
   }
 }
 
 @media (max-width: 1080px) {
+  .logo {
+    height: 2.5rem;
+  }
+  .getcards {
+    height: 2.5rem;
+    width: 120px;
+  }
   .options ul {
-    font-size: 0.8vw;
+    font-size: 10px;
   }
   .nav:hover {
     border-top: 5px solid rgba(254, 57, 137, 1);
   }
   .navActive {
     border-top: 5px solid rgba(254, 57, 137, 1);
-  }
-}
-
-@media (max-width: 1250px) {
-  .options ul {
-    gap: 10px;
   }
 }
 
@@ -95,11 +98,21 @@
     height: 2rem;
   }
 }
-@media (max-width: 736px) {
+@media (max-width: 890px) {
   .options {
     display: none;
   }
+  .getcards {
+    gap: 10px;
+  }
   .desc {
     display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .desc {
+    width: 30px;
+    height: 30px;
   }
 }
