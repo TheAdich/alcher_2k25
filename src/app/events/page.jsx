@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./events.module.css";
-
 import image1 from "./_Components/Group38.png";
 import image2 from "./_Components/image2.png";
 import image3 from "./_Components/next.png";
@@ -13,23 +12,46 @@ import enter from "./_Components/Group39.svg";
 import next from "./_Components/next.png";
 
 const images = [
-  { src: image1, name: "Pronites", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image2, name: "Proshows", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image3, name: "Creator's Camp", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image4, name: "Critical Damage", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image5, name: "Flickeringa", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  {
+    src: image1,
+    name: "Pronites",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi.",
+  },
+  {
+    src: image2,
+    name: "Proshows",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi.",
+  },
+  {
+    src: image3,
+    name: "Creator's Camp",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi.",
+  },
+  {
+    src: image4,
+    name: "Critical Damage",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi.",
+  },
+  {
+    src: image5,
+    name: "Flickeringa",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi.",
+  },
 ];
-
 
 export default function Page() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(true);
 
-
   const assignImage = (index) => {
     setIsExpanded(false);
     setTimeout(() => {
-      setCurrentIndex(index); 
+      setCurrentIndex(index);
       handleExpand();
     }, 1000);
   };
@@ -53,6 +75,7 @@ export default function Page() {
 
   return (
     <main>
+      <cloudCompo />
       <div className={styles.mainPage}>
         <div className={`${styles.left} ${isExpanded ? styles.visible : ""}`}>
           <h1 className={styles.heading}>{images[currentIndex].name}</h1>
@@ -87,7 +110,9 @@ export default function Page() {
             />
           </div>
         </div>
-        <div className={`${styles.box1} ${isExpanded ? styles.box1Visible : ""}`}>
+        <div
+          className={`${styles.box1} ${isExpanded ? styles.box1Visible : ""}`}
+        >
           <div className={styles.nextButton} onClick={handleNext}>
             <Image src={next} className={styles.nextImage} alt="next button" />
             <p className={styles.eventName}>{images[currentIndex].name}</p>
@@ -119,49 +144,48 @@ export default function Page() {
           ))}
         </div>
       </footer>
-        <div className={styles.mobileview}>
-          <div className={styles.list}>
-            {images.map((image, index) => (
-              <div key={index} className={styles.event}>
-                <div className={styles.upper}>
-                  <div className={styles.upperLeft}>
-                    <h1 className={styles.heading}>{image.name}</h1>
-                  </div>
-                  <div className={styles.center}>
-                    <div
-                      className={`${styles.mainImage} ${
-                        isExpanded ? styles.mainImageExpanded : ""
-                      }`}
-                    >
-                      <Image
-                        src={image.src}
-                        className={styles.image1}
-                        alt={`${image.name} image`}
-                        quality={100}
-                        width={500}
-                        height={500}
-                      />
-                    </div>
-                  </div>
+      <div className={styles.mobileview}>
+        <div className={styles.list}>
+          {images.map((image, index) => (
+            <div key={index} className={styles.event}>
+              <div className={styles.upper}>
+                <div className={styles.upperLeft}>
+                  <h1 className={styles.heading}>{image.name}</h1>
                 </div>
-                <div className={styles.description}>
-                  <p className={styles.descriptionTxt}>{image.description}</p>
-                </div>
-                <div className={styles.lower}>
-                  <button className={styles.enter}>
+                <div className={styles.center}>
+                  <div
+                    className={`${styles.mainImage} ${
+                      isExpanded ? styles.mainImageExpanded : ""
+                    }`}
+                  >
                     <Image
-                      src={enter}
-                      className={styles.enterImage}
+                      src={image.src}
+                      className={styles.image1}
+                      alt={`${image.name} image`}
                       quality={100}
-                      alt="enter button"
+                      width={500}
+                      height={500}
                     />
-                  </button>
+                  </div>
                 </div>
               </div>
-            ))}
-          </div>
+              <div className={styles.description}>
+                <p className={styles.descriptionTxt}>{image.description}</p>
+              </div>
+              <div className={styles.lower}>
+                <button className={styles.enter}>
+                  <Image
+                    src={enter}
+                    className={styles.enterImage}
+                    quality={100}
+                    alt="enter button"
+                  />
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
-
+      </div>
     </main>
   );
 }

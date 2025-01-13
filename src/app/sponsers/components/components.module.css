@@ -6,6 +6,13 @@
 }
 
 @font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
   font-family: "stoneSlab";
   src: url("/Stone_Slab.ttf") format("truetype");
   font-weight: normal; /* Adjust if needed */
@@ -16,7 +23,7 @@
   background-color: rgb(17, 24, 39);
 }
 .header {
-  font-family: gameTape;
+  font-family: brickPixel;
   width: 100%;
   position: absolute;
   display: flex;
@@ -25,9 +32,8 @@
 }
 .title {
   text-align: center;
-  text-shadow: 0 0 5px rgba(254, 57, 137, 1), 0 10px 30px rgba(254, 57, 137, 1),
-    0 10px 50px rgba(254, 57, 137, 1);
-  font-size: 8rem;
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+  font-size: 7rem;
   color: rgba(254, 57, 137, 1);
 }
 
