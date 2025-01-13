@@ -165,13 +165,13 @@ export default function Page() {
             <Image src={tshirts[left]}  className='leftTshirt'width="130" height="130" />
         </div>
         <div className="merch-btn">
-        <button className={current == 0? 'activeBtn merch' : ' merch'}>
+        <button className={current == 0? 'activeBtn merch3d' : ' merch3d'}>
                 <Image src="./button1.svg" width="150" height="150" />
             </button>
-            <button className={current == 1? 'activeBtn merch' : ' merch'}> 
+            <button className={current == 1? 'activeBtn merch3d' : ' merch3d'}> 
                 <Image src="./button2.svg" width="150" height="150" />
             </button>
-            <button className={current == 2? 'activeBtn merch' : ' merch'}> 
+            <button className={current == 2? 'activeBtn merch3d' : ' merch3d'}> 
                 <Image src="./button3.svg" width="150" height="150" />
             </button>
         </div>
