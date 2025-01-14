@@ -7,7 +7,7 @@ const CloudSection = () => {
       <section className="clouds">
         <div>
           <Image
-            src="/cloud1u.png"
+            src="/cloud1u.svg"
             alt="cloud"
             width={100}
             height={100}
