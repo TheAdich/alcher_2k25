@@ -33,14 +33,14 @@ const CloudSection = () => {
             <section className="clouds">
                 <div>
                     <Image
-                        src="/cloud1u.png"
+                        src="/cloud1u.svg"
                         alt="cloud"
                         width={100}
                         height={100}
                         className="fu cloud"
                     />
                     <Image
-                        src="/cloud1b.png"
+                        src="/cloud1b.svg"
                         alt="cloud"
                         width={100}
                         height={100}
@@ -74,7 +74,7 @@ const CloudSection = () => {
                 </div>
                 <div>
                     <Image
-                        src="/cloudlu.png"
+                        src="/cloudlu.svg.svg"
                         alt="cloud"
                         width={100}
                         height={100}
@@ -119,7 +119,7 @@ const CloudSection = () => {
                     <div className="stats-section">
                         <div className="stats-flex">
                             <div className="stat-item">
-                                <h2 className="stat-title">   <SlotCounter
+                                <h2 className="stat-title"> <SlotCounter
                                     startValue={event_stat}
                                     value={100}
                                     duration={1} 
