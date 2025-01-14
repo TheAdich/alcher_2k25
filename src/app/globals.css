@@ -68,8 +68,8 @@ body {
 }
 
 .fu {
-  width: 300px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   top: 50px;
   animation-delay: 0s;
 }
@@ -233,18 +233,30 @@ body {
    .content{
     padding: 10px 100px;
   }
+  
 }
 
 @media(max-width:991px) {
-   /* .clouds{
-    background-color: #FFEBD3;
-   } */
+  .stat-title {
+    font-size: 2.5rem; 
+  }
+  
+  
+  
+  .stat-description {
+    font-size: 1.2rem; 
+  }
+  .stats-flex {
+    gap: 1rem;
+  }
+
 }
 
 @media(max-width:768px) {
   .content{
     padding: 10px 50px;
   }
+
 }
 
 @media(max-width:450px) {
@@ -253,6 +265,15 @@ body {
   }
   .redlines{
     height:80px;
+  }
+  .stat-title {
+    font-size: 30px; 
+  }
+  .stat-description {
+    font-size: 20px; 
+  }
+  .stats-flex {
+    gap: 10px;
   }
 }
 
