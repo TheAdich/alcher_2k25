@@ -1,6 +1,6 @@
 
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import styles from "./gallery.module.css";
@@ -8,11 +8,27 @@ import card1 from "./card1.svg";
 import card2 from "./card2.svg";
 import card3 from "./card3.svg";
 import Image from "next/image";
+import GalleryPopup from "./galleryPopup";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Gallery() {
-  useEffect(() => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [popupImageSrc, setPopupImageSrc] = useState(null);
+
+  const openPopup = (imageSrc) => {
+    setPopupImageSrc(imageSrc); 
+    setIsPopupOpen(true); 
+    console.log('clicked')
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false); 
+    setPopupImageSrc(null); 
+  };
+
+
+useEffect(() => {
     const rows = document.querySelectorAll(`.${styles.row}`);
     const mediaQuery = window.matchMedia("(max-width: 580px)");
   
@@ -34,6 +50,8 @@ export default function Gallery() {
             opacity: 0,
             duration: 1.5,
             stagger: 0.2,
+            ease:"power2.in"
+            
           });
   
           pos.to(row.querySelectorAll(`.${styles.block2}`), {
@@ -41,6 +59,8 @@ export default function Gallery() {
             opacity: 0,
             duration: 1.8,
             stagger: 0.2,
+            ease:"power2.in"
+             
           });
   
           pos.to(row.querySelectorAll(`.${styles.block3}`), {
@@ -48,12 +68,14 @@ export default function Gallery() {
             opacity: 0,
             duration: 2.1,
             stagger: 0.3,
+            ease:"power2.in"
           });
           pos.to(row.querySelectorAll(`.${styles.block4}`), {
             y: 300,
             opacity: 0,
             duration: 1.8,
             stagger: 0.2,
+            ease:"power2.in"
           });
         }
       } else {
@@ -61,8 +83,10 @@ export default function Gallery() {
         pos.to(row.querySelectorAll(`.${styles.block1}, .${styles.block3}`), {
           y: 400,
           opacity: 0,
-          duration: 3.4,
-          stagger: 0.1,
+          duration: 6,
+          stagger: 0.01,
+          ease:"power2.in"
+          
         });
   
         pos.to(
@@ -72,8 +96,9 @@ export default function Gallery() {
           {
             y: 600,
             opacity: 0,
-            duration: 3.8,
-            stagger: 0.1,
+            duration: 8,
+            stagger: 0.01,
+            ease:"power2.in"
           }
         );
       }
@@ -83,6 +108,8 @@ export default function Gallery() {
   return (
     <div className={styles.gallery}>
       <div className={styles.container}>
+        
+        
         {[...Array(2)].map((_, i) => (
           <div key={i} className={styles.row}>
             <div className={styles.leftContainer}>
@@ -91,6 +118,7 @@ export default function Gallery() {
                   <Image
                     src={card3}
                     alt="Image 1"
+                    onClick={()=>{openPopup(card3)}}
                     layout="responsive"
                     className={styles.cardcss3}
                     width={30}
@@ -100,6 +128,7 @@ export default function Gallery() {
                 <div className={styles.card2}>
                   <Image
                     src={card2}
+                    onClick={()=>{openPopup(card2)}}
                     alt="Image 2"
                     layout="responsive"
                     className={styles.cardcss2}
@@ -112,6 +141,7 @@ export default function Gallery() {
                 <div className={styles.card2}>
                   <Image
                     src={card2}
+                    onClick={()=>{openPopup(card2)}}
                     alt="Image 4"
                     layout="responsive"
                     className={styles.cardcss2}
@@ -122,6 +152,7 @@ export default function Gallery() {
                 <div className={styles.card3}>
                   <Image
                     src={card3}
+                    onClick={()=>{openPopup(card3)}}
                     alt="Image 3"
                     layout="responsive"
                     className={styles.cardcss3}
@@ -137,6 +168,7 @@ export default function Gallery() {
               <div className={styles.largeImage}>
                 <Image
                   src={card3}
+                  onClick={()=>{openPopup(card3)}}
                   alt="Large Image"
                   layout="responsive"
                   className={styles.LargeCardcss3}
@@ -147,6 +179,7 @@ export default function Gallery() {
               <div className={styles.smallImage}>
                 <Image
                   src={card1}
+                  onClick={()=>{openPopup(card1)}}
                   alt="Small Image"
                   layout="responsive"
                   className={styles.SmallCardcss3}
@@ -162,6 +195,7 @@ export default function Gallery() {
                 <div className={styles.card3}>
                   <Image
                     src={card3}
+                    onClick={()=>{openPopup(card3)}}
                     alt="Image 1"
                     layout="responsive"
                     className={styles.cardcss3}
@@ -172,6 +206,7 @@ export default function Gallery() {
                 <div className={styles.card2}>
                   <Image
                     src={card2}
+                    onClick={()=>{openPopup(card2)}}
                     alt="Image 2"
                     layout="responsive"
                     className={styles.cardcss2}
@@ -184,6 +219,7 @@ export default function Gallery() {
                 <div className={styles.card2}>
                   <Image
                     src={card2}
+                    onClick={()=>{openPopup(card2)}}
                     alt="Image 4"
                     layout="responsive"
                     className={styles.cardcss2}
@@ -194,6 +230,7 @@ export default function Gallery() {
                 <div className={styles.card3}>
                   <Image
                     src={card3}
+                    onClick={()=>{openPopup(card3)}}
                     alt="Image 3"
                     layout="responsive"
                     className={styles.cardcss3}
@@ -210,6 +247,7 @@ export default function Gallery() {
                 <div className={styles.card2}>
                   <Image
                     src={card2}
+                    onClick={()=>{openPopup(card2)}}
                     alt="Image 2"
                     layout="responsive"
                     className={styles.cardcss2}
@@ -220,6 +258,7 @@ export default function Gallery() {
                 <div className={styles.card3}>
                   <Image
                     src={card3}
+                    onClick={()=>{openPopup(card3)}}
                     alt="Image 1"
                     layout="responsive"
                     className={styles.cardcss3}
@@ -232,6 +271,7 @@ export default function Gallery() {
                 <div className={styles.card3}>
                   <Image
                     src={card3}
+                    onClick={()=>{openPopup(card3)}}
                     alt="Image 3"
                     layout="responsive"
                     className={styles.cardcss3}
@@ -243,6 +283,7 @@ export default function Gallery() {
                 <div className={styles.card2}>
                   <Image
                     src={card2}
+                    onClick={()=>{openPopup(card2)}}
                     alt="Image 4"
                     layout="responsive"
                     className={styles.cardcss2}
@@ -254,7 +295,13 @@ export default function Gallery() {
             </div>
           </div>
         ))}
+    
       </div>
+      {isPopupOpen && (
+  <GalleryPopup imageSrc={popupImageSrc} closePopup={closePopup} />
+)}
+
     </div>
   );
 }
+
