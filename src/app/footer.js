@@ -1,8 +1,41 @@
+"use client";
+
 import React from "react";
 import styles from "./footer.module.css";
 import "./components/stone-slab.css";
 import "./components/game-tape.css";
+import Link from "next/link";
+import { useState } from "react";
 const footer = () => {
+  const navOptions = [
+    { label: "Home", path: "/" },
+    { label: "Events", path: "/events" },
+    { label: "Competitions", path: "/competitions" },
+    { label: "MUN", path: "/mun" },
+    { label: "Kartavya", path: "/kartavya" },
+    { label: "Gallery", path: "/gallery" },
+    { label: "Sponsors", path: "/sponsers" },
+    { label: "Merch", path: "/merch" },
+    { label: "Team", path: "/team" },
+  ];
+
+  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible2, setIsVisible2] = useState(false);
+
+  const creativesPeeps = [
+    { name: "name1" },
+    { name: "name2" },
+    { name: "name3" },
+    { name: "name4" },
+  ];
+
+  const webOpsPeeps = [
+    { name: "Himank" },
+    { name: "Shivam" },
+    { name: "Dadhich" },
+    { name: "name4" },
+  ];
+
   return (
     <div>
       <img className="w-full h-20 bg-gray-900 " src="/footUpBG.png" alt="" />
@@ -11,29 +44,25 @@ const footer = () => {
           className={styles.eventsSec}
           style={{ fontFamily: "stoneSlab", color: "rgba(255, 235, 211, 1)" }}
         >
-          <ul>Home</ul>
-          <ul>Events</ul>
-          <ul>Competitions</ul>
-          <ul>MUN</ul>
-          <ul>Kartavya</ul>
-          <ul>Gallery</ul>
-          <ul>Sponsors</ul>
-          <ul>Merch</ul>
-          <ul>Team</ul>
+          {navOptions.map((option) => (
+            <ul>
+              <Link href={option.path}>{option.label}</Link>
+            </ul>
+          ))}
         </div>
         <div className={styles.logoDiv}>
           <img className={styles.footerLogo} src="/footLogo.png" alt="" />
         </div>
         <div className={styles.prbheads}>
           <div className={styles.prbname1}>
-            <p id={styles.name}>Raju Rastogi</p>
-            <p>+91 4567812345</p>
-            <p>rajuras@alcheringa.in</p>
+            <p id={styles.name}>Siddharth Shukla</p>
+            <p>+91 7354647811</p>
+            <a href="mailto:siddharth@alcheringa.in">siddharth@alcheringa.in</a>
           </div>
           <div className={styles.prbname2}>
-            <p id={styles.name}>Farhan Quereshi</p>
-            <p>+91 4567812345</p>
-            <p>farhan@alcheringa.in</p>
+            <p id={styles.name}>Sudhanshu Raj</p>
+            <p>+91 8292967325</p>
+            <a href="mailto:sudhanshu@alcheringa.in">sudhanshu@alcheringa.in</a>
           </div>
         </div>
         <div className={styles.design}>
@@ -47,10 +76,49 @@ const footer = () => {
 
         <div className={styles.oneline}>
           <div className={styles.lftline}>
-            Designed and Developed by Alcher Creatives and Alcher Web Operations{" "}
+            Designed and Developed by <br />
+            <div className={styles.alcherCreatives}>
+              <p
+                onMouseEnter={() => setIsVisible(true)}
+                onMouseLeave={() => setIsVisible(false)}
+              >
+                Alcher Creatives,
+              </p>
+              <div
+                className={`${styles.creativesName} ${
+                  isVisible ? styles.visible : ""
+                }`}
+              >
+                <ul>
+                  {creativesPeeps.map((option, idx) => (
+                    <li key={idx}>{option.name}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div className={styles.alcherWebOps}>
+              <p
+                onMouseEnter={() => setIsVisible2(true)}
+                onMouseLeave={() => setIsVisible2(false)}
+              >
+                Alcher Web Operations
+              </p>
+              <div
+                className={`${styles.webOpsName} ${
+                  isVisible2 ? styles.visible2 : ""
+                }`}
+              >
+                <ul>
+                  {webOpsPeeps.map((option, idx) => (
+                    <li key={idx}>{option.name}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
           <div className={styles.rgtline}>
-            For Business Enquiries alcheringa@iitg.ac.in
+            For Business Enquiries{" "}
+            <a href="mailto:alcheringa@iitg.ac.in">alcheringa@iitg.ac.in</a>
           </div>
         </div>
 
@@ -81,8 +149,12 @@ const footer = () => {
         </div>
         <div className={styles.retroleft}>
           <img src="/txtretroleft.png" alt="" />
+          <br />
+          <img src="/txtretroleft.png" alt="" />
         </div>
         <div className={styles.retroright}>
+          <img src="/txtretroright.png" alt="" />
+          <br />
           <img src="/txtretroright.png" alt="" />
         </div>
 

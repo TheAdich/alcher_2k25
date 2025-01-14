@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FaSearch } from "react-icons/fa";
 import "./searchbar.css";
 import info from "./data";
@@ -14,8 +14,10 @@ const SearchBar = () => {
   const handleSearch = (value) => {
     setInput(value);
     setSelectedCategory("");
-    const filtered = info.filter((item) =>
-      item.tags.toLowerCase().includes(value.toLowerCase())
+    const filtered = info.filter(
+      (item) =>
+        item.tags.toLowerCase().includes(value.toLowerCase()) ||
+        item.comp_name.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredData(filtered);
   };
@@ -27,22 +29,38 @@ const SearchBar = () => {
     setFilteredData(filtered);
   };
 
+  useEffect(() => {
+    setFilteredData(info);
+  }, []);
+
+  // const selectRef = useRef(null);
+
+  // const handleImageClick = () => {
+  //   selectRef.current?.focus();
+  // };
+
   return (
     <div className="bgsett">
       <div className="search-bar">
         <div className="dropdown-wrapper">
           <select
+            // ref={selectRef}
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
-            //   disabled={input !== ""}
           >
-            <option value="">Modules</option>
+            <option value="" className="optionsss">
+              <p>All Modules</p>
+            </option>
             {titledata.map((title) => (
               <option key={title.id} value={title.category}>
                 {title.category}
               </option>
             ))}
           </select>
+          <div className="imgArrowBG">
+            <img src="./bgarrow.png" alt="" />
+            <img className="arrow" src="./Union.png" alt="" />
+          </div>
         </div>
 
         <div className="input-wrapper">
@@ -50,7 +68,6 @@ const SearchBar = () => {
             placeholder="Type here to search"
             value={input}
             onChange={(e) => handleSearch(e.target.value)}
-            //   disabled={selectedCategory !== ""}
           />
           <div className="searchdiv">
             <img src="./searchIcon.png" alt="" />

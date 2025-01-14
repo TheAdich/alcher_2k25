@@ -7,24 +7,27 @@ const Merch = () => {
 
   const [gridDimensions, setGridDimensions] = useState({ width: 300, height: 50,gridsize:16.5 });
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updateDimensions = () => {
-      if (window.innerWidth > 1024) {
-        setGridDimensions({ width: 3000, height: 530,gridsize:15 }); // Large screens
-      }else if (window.innerWidth > 991) {
-        setGridDimensions({ width: 2000, height: 95,gridsize:14 }); // Medium screens
-      }
-       else if (window.innerWidth > 768) {
-        setGridDimensions({ width: 2000, height: 85,gridsize:11 }); // Medium screens
-      } else {
-        setGridDimensions({ width: 0, height: 0,gridsize:0 }); // Small screens
+      if (typeof window !== "undefined") {
+        if (window.innerWidth > 1024) {
+          setGridDimensions({ width: 3000, height: 530, gridsize: 15 }); // Large screens
+        } else if (window.innerWidth > 991) {
+          setGridDimensions({ width: 2000, height: 95, gridsize: 14 }); // Medium screens
+        } else if (window.innerWidth > 768) {
+          setGridDimensions({ width: 2000, height: 85, gridsize: 11 }); // Small screens
+        } else {
+          setGridDimensions({ width: 0, height: 0, gridsize: 0 }); // Extra small screens
+        }
       }
     };
 
-    updateDimensions(); // Call initially
-    window.addEventListener("resize", updateDimensions);
+    updateDimensions(); // Initial call
+    window.addEventListener("resize", updateDimensions); // Add listener
 
-    return () => window.removeEventListener("resize", updateDimensions); // Cleanup
+    return () => {
+      window.removeEventListener("resize", updateDimensions); // Cleanup
+    };
   }, []);
 
 

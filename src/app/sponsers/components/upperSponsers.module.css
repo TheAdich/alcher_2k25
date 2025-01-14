@@ -12,6 +12,13 @@
   font-style: normal; /* Adjust if needed */
 }
 
+@font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
 .upperSponsers {
   background-color: rgb(17, 24, 39);
   height: auto;
@@ -44,10 +51,7 @@
   transition: all 0.3s ease-in-out;
 }
 .imgMainSponser:hover {
-  box-shadow: 0 0 50px rgba(254, 57, 137, 0.4),
-    0 0 100px rgba(254, 57, 137, 0.4), 0 0 400px rgba(254, 57, 137, 0.4),
-    0 0 800px rgba(254, 57, 137, 0.4), 0 0 1600px rgba(254, 57, 137, 0.4),
-    0 0 3200px rgba(254, 57, 137, 0.4), 0 0 6400px rgba(254, 57, 137, 0.4);
+  filter: drop-shadow(0 0px 35px #fe3988b4);
 }
 
 .imgMainSponser img {
@@ -98,11 +102,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.imgLowSpons:hover {
-  box-shadow: 0 0 50px rgba(254, 57, 137, 0.4),
-    0 0 100px rgba(254, 57, 137, 0.4), 0 0 400px rgba(254, 57, 137, 0.4),
-    0 0 800px rgba(254, 57, 137, 0.4), 0 0 1600px rgba(254, 57, 137, 0.4),
-    0 0 3200px rgba(254, 57, 137, 0.4), 0 0 6400px rgba(254, 57, 137, 0.4);
+.imggg:hover {
+  filter: drop-shadow(0 0px 35px #fe3988b4);
 }
 
 .imgLowSpons img {

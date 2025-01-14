@@ -1,12 +1,14 @@
 .mainFooter {
+  overflow: hidden;
   position: relative;
   z-index: 1;
   display: flex;
-  gap: 40px;
+  gap: 2vh;
   align-items: center;
   justify-content: center;
   background-color: rgba(254, 57, 137, 1);
   flex-direction: column;
+  height: 100vh;
 }
 .eventsSec {
   display: flex;
@@ -29,7 +31,7 @@
 }
 
 .logoDiv {
-  width: 50%;
+  width: 500px;
   height: auto;
 }
 .prbheads {
@@ -103,7 +105,6 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 5rem;
 }
 .followtxt {
   font-family: stoneSlab;
@@ -123,10 +124,12 @@
 }
 
 .retroleft {
-  width: 26px;
-  height: 800px;
+  white-space: nowrap;
+  width: 15px;
+  height: 90vh;
   position: absolute;
   left: 150px;
+  animation: movedown 5s linear infinite;
 }
 
 .retroleft img {
@@ -135,16 +138,26 @@
 }
 
 .retroright {
-  width: 26px;
-  height: 800px;
+  white-space: nowrap;
+  width: 15px;
+  height: 90vh;
   position: absolute;
   right: 150px;
-  z-index: 100;
+  animation: movedown 5s linear infinite;
 }
 
 .retroright img {
   width: 100%;
   height: 100%;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(0%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateY(-100%); /* Move off-screen to the left */
+  }
 }
 
 .globecir {
@@ -175,6 +188,60 @@
   width: 100%;
   height: 100%;
 }
+
+/* showing names */
+.alcherCreatives {
+  position: relative;
+}
+.alcherCreatives p {
+  cursor: pointer;
+}
+.creativesName {
+  z-index: 10;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  background-color: rgb(17, 24, 39);
+  border-radius: 10px;
+  position: absolute;
+  width: 200px;
+  bottom: 20px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.visible2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alcherWebOps {
+  position: relative;
+}
+.alcherWebOps p {
+  cursor: pointer;
+}
+.webOpsName {
+  z-index: 10;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  background-color: rgb(17, 24, 39);
+  border-radius: 10px;
+  position: absolute;
+  width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* animation ends */
 
 @media (max-width: 1144px) {
   .retroleft {
@@ -233,19 +300,21 @@
   }
 }
 
+@media (max-width: 850px) {
+  .retroleft {
+    display: none;
+  }
+  .retroright {
+    display: none;
+  }
+}
+
 @media (max-width: 550px) {
   .eventsSec ul {
     font-size: 13px;
   }
   .eventsSec {
     width: 400px;
-  }
-
-  .retroleft {
-    display: none;
-  }
-  .retroright {
-    display: none;
   }
 
   .prbheads {
@@ -257,6 +326,9 @@
   .design {
     width: 80%;
   }
+  .logoDiv {
+    width: 80vw;
+  }
 }
 
 @media (max-width: 410px) {
@@ -267,6 +339,7 @@
     width: 350px;
   }
   .prbheads {
+    font-size: 12px;
     width: 80%;
   }
   .oneline {
