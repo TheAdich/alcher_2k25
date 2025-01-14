@@ -29,7 +29,11 @@ body {
 }
 
 .redlines{
-  width:100vw;
+  width:100%;
+  /* display: none; */
+  /* scale: 1.2; */
+  /* overflow-x: hidden; */
+  /* overflow: hidden; */
   height:127px;
 }
 .clouds {
@@ -42,7 +46,7 @@ body {
   /* background-color: #FFEBD3; */
 }
 
-.logo{
+.logo_cloud{
   display: flex;
   align-items: center;
   justify-content: center;
