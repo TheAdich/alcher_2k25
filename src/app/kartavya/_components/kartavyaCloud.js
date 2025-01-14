@@ -1,8 +1,29 @@
 import Image from "next/image";
 import SlotCounter from "react-slot-counter";
 import styles from "./kartavyaCloud.module.css";
+import Marquee from "react-fast-marquee";
+
 const KartavyaCloud = () => {
   return (
+    // <div className={styles.marquee_kartavya}>
+
+    //         <div className={styles.marquee2_kartavya}>
+    //             <Marquee speed={10} >
+    //                 <Image src="./cloudLeft.svg" className={`${styles.cloudLeft_kartavya} ${styles.cloud_kartavya}`} width="1000" height="1000" />
+    //                 <Image src="./cloudLeft.svg" className={`${styles.cloudLeft_kartavya} ${styles.cloud_kartavya}`} width="1000" height="1000" />
+    //                 <Image src="./cloudLeft.svg" className={`${styles.cloudLeft_kartavya} ${styles.cloud_kartavya}`} width="1000" height="1000" />
+    //             </Marquee>
+    //         </div>
+    //         <div className='marquee1_kartavya'>
+    //             <Marquee direction="right" speed={30} >
+    //                 <Image src="./cloudRight.svg" className={`${styles.cloudRight_kartavya} ${styles.cloud_kartavya}`} width="1000" height="1000" />
+    //                 <Image src="./cloudRight.svg" className={`${styles.cloudRight_kartavya} ${styles.cloud_kartavya}`} width="1000" height="1000" />
+    //                 <Image src="./cloudRight.svg" className={`${styles.cloudRight_kartavya} ${styles.cloud_kartavya}`} width="1000" height="1000" />
+    //             </Marquee>
+    //         </div>
+
+    //         </div>
+
     <section>
       <section className="clouds">
         <div>
