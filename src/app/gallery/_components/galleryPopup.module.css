@@ -1,0 +1,384 @@
+/* 
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9); 
+    z-index: 10; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+
+
+  .popupContent {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 36vw;
+    height: 40%;
+    overflow: auto; 
+   
+
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+   */
+
+
+
+
+   .popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .popupContent {
+    position: relative;
+    width: 45%;
+    height: 45%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .backgroundImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .arrowButtonLeft,
+  .arrowButtonRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 30px;
+    border: none;
+    z-index: 1;
+    border-radius: 50%;
+    
+  }
+  
+  .arrowButtonLeft {
+    left: 10px;
+  }
+  
+  .arrowButtonRight {
+    right: 10px;
+  }
+  
+  .scrollIndicator {
+    display: flex;
+    overflow-x: auto;
+    /* padding: 10px 0; */
+    justify-content: center;
+    /* gap: 10px; */
+    /* margin-top: 10px; */
+  }
+  
+  .scrollItem {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+/* 
+  .scrollIndicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .scrollItem {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: lightgray;
+    cursor: pointer;
+    
+  }
+  
+  .scrollItem.active {
+    background-color: red; 
+  }
+   */
+
+
+   .scrollIndicator {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 260px;
+    gap: 10px;
+  }
+  
+  .scrollItem {
+    width: 200px; 
+    height: 10px;
+    background-color:#FFEBD3;
+    cursor: pointer;
+   
+    
+  }
+  
+  .scrollItem.active {
+    background-color: #FE3989; 
+  }
+  
+
+
+  @media (max-width:1200px) and (min-width:1100px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 230px;
+      gap: 10px;
+    }
+  }
+
+
+  @media (max-width:1100px) and (min-width:1000px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 230px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 65%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  
+  @media (max-width:1100px) and (min-width:1000px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 320px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 65%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  
+  @media (max-width:1000px) and (min-width:900px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 270px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 50%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  
+  @media (max-width:900px) and (min-width:800px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 250px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 48%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  
+  @media (max-width:800px) and (min-width:700px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 230px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 45%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:700px) and (min-width:600px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 240px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 45%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width:600px) and (min-width:500px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 230px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 45%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width:500px) and (min-width:450px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 200px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 40%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:450px) and (min-width:390px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 180px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 35%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:390px) and (min-width:320px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 150px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 30%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:320px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 120px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 75%;
+      height: 25%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
