@@ -81,7 +81,7 @@
   background-color: white;
   transition: width 1s ease, height 1s ease;
   /* object-fit: contain; */
-  background-image: url('./_Components/Frame973.png');
+  background-image: url('./Frame973.png');
   background-size: 45vw 35vw;
   background-repeat: no-repeat;
   filter: drop-shadow(0 10px 120px #fe39886f);
@@ -173,7 +173,7 @@
   opacity: 40%;
 }
 .link{
-  background-image: url('./_Components/Frame131.png');
+  background-image: url('./Frame131.png');
   height: 5vh;
   width: 12vw;
   background-size: 12vw 5vh;
@@ -192,7 +192,7 @@
   transition: background-image 0.3s ease;
 }
 .link.selected{
-  background-image: url('./_Components/FrameForLinks.png');
+  background-image: url('./FrameForLinks.png');
 }
 .link.selected p{
   opacity: 100%;
