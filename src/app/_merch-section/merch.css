@@ -5,7 +5,7 @@
     /* overflow: hidden; */
 }
 
-.merch {
+.merch_home {
     background-color: #000014;
     width: 100%;
     height: fit-content;
@@ -13,7 +13,7 @@
     /* position: absolute; */
 }
 
-.merch_text {
+.merch_text_home {
     width: 100%;
     height: auto;
 }
@@ -49,7 +49,7 @@
     z-index: 10;
     /* Send GridSketch to the background */
 }
-.dash {
+.dash_home {
     position: relative;
     z-index: 100; /* Ensure the image is above the GridSketch */
     width:100%;
@@ -61,7 +61,7 @@
     /* gap:-10px; */
 }
 
-.merch_btn {
+.merch_btn_home {
     height: 6vh;
     justify-self: center;
     /* margin-top: 6rem; */
@@ -72,7 +72,7 @@
     /* margin-bottom: 100px; */
 }
 
-.mobile_text {
+.mobile_text_home {
     display: none;
 }
 
@@ -82,13 +82,13 @@
 }
 
 @media screen and (max-width:675px) {
-    .mobile_text {
+    .mobile_text_home {
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .merch_text {
+    .merch_text_home {
         display: none;
     }
 }

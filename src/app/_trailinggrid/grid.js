@@ -219,7 +219,7 @@ const GridSketch = ({ width, height, gridsize }) => {
       const COLOR_G = 57;
       const COLOR_B = 137;
       const STARTING_ALPHA = 255;
-      const AMT_FADE_PER_FRAME = 1;
+      const AMT_FADE_PER_FRAME = 2;
 
       let numRows, numCols;
       let currentRow = -1;

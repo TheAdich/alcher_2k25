@@ -353,13 +353,12 @@ input:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* gap: 15px; */
   }
   .dropdown-wrapper {
-    width: 60%;
+    width: 300px;
   }
   .input-wrapper {
-    width: 60%;
+    width: 300px;
   }
 }
 
