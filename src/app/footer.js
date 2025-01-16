@@ -30,10 +30,10 @@ const footer = () => {
   ];
 
   const webOpsPeeps = [
-    { name: "Himank" },
-    { name: "Shivam" },
-    { name: "Dadhich" },
-    { name: "name4" },
+    { name: "WebOps1" },
+    { name: "WebOps2" },
+    { name: "WebOps3" },
+    { name: "WebOps4" },
   ];
 
   return (
