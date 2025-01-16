@@ -2,16 +2,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./events.module.css";
-import Loading from "../loading";
+// import Loading from "../loading";
 
-import image1 from "./_Components/Group38.png";
-import image2 from "./_Components/image2.png";
-import image3 from "./_Components/next.png";
-import image4 from "./_Components/Group38.png";
-import image5 from "./_Components/image2.png";
+import image1 from "./Group38.png";
+import image2 from "./image2.png";
+import image3 from "./next.png";
+import image4 from "./Group38.png";
+import image5 from "./image2.png";
 
-import enter from "./_Components/Group39.svg";
-import next from "./_Components/next.png";
+import enter from "./Group39.svg";
+import next from "./next.png";
 
 const images = [
   { src: image1, name: "Pronites", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
@@ -25,7 +25,7 @@ const images = [
 export default function Page() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(true);
-  const [loading, setLoading] = useState(true);
+//   const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
   //   // Set a 3-second timeout to disable loading

@@ -4,12 +4,13 @@ import styles from "./loading.module.css";
 
 export default function Loading() {
   const [dots, setDots] = useState("");
-  const [loadTime, setLoadTime] = useState(3000); // Default load time for fallback
+  const [loadTime, setLoadTime] = useState(500); // Default load time for fallback
   const [progress, setProgress] = useState(0); // Dynamic progress for the bar
 
   useEffect(() => {
     // Calculate load time on page load
     const calculateLoadTime = () => {
+      console.log("loading")
       if (window.performance) {
         const navigationEntry = window.performance.getEntriesByType("navigation")[0];
         const totalLoadTime = (navigationEntry?.loadEventEnd - navigationEntry?.startTime ); // Ensure at least 1s
@@ -23,7 +24,7 @@ export default function Loading() {
     return () => {
       window.removeEventListener("load", calculateLoadTime);
     };
-  }, []);
+  });
 
   useEffect(() => {
     // Simulate progress bar filling based on loadTime
@@ -46,12 +47,13 @@ export default function Loading() {
 
   useEffect(() => {
     // Update dots every 0.3 seconds
+    console.log("...");
     const interval = setInterval(() => {
       setDots((prev) => (prev.length < 3 ? prev + "." : ""));
     }, 300);
     return () => clearInterval(interval);
   }, []);
-
+  console.log(".i.");
   return (
     <div className={styles.loadingOverlay}>
       <div className="flex flex-col justify-center items-center h-screen bg-#00001F font-stone text-[#FFEBD3]">

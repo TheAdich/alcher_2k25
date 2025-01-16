@@ -41,7 +41,13 @@ const Navbar = () => {
         <img src="/bgGetcards1.jpg" alt="" />
         <img className={styles.desc} src="/3_arrows.png" alt="" />
       </div>
+      {/* <div className={styles.ham}>
+        <div className={styles.sidebar}>
+
+        </div>
+      </div> */}
     </div>
+    
   );
 };
 
