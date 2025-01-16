@@ -1,30 +1,49 @@
 "use client"
 import { OrbitControls } from '@react-three/drei';
-import { Canvas, useLoader, useFrame } from '@react-three/fiber';
+import { Canvas, useLoader, useFrame, useThree } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { useRef, useState } from 'react';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
+import { useRef, useState, useEffect } from 'react';
+import * as THREE from 'three';
 import './merch_route.css';
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
 import Navbar from '../navbar';
 
-function Model({ url }) {
-    const gltf = useLoader(GLTFLoader, url);
+function Model({ url, setTarget, scale }) {
+    const gltf = useLoader(GLTFLoader, url, loader => {
+        const dracoLoader = new DRACOLoader();
+        dracoLoader.setDecoderPath('/draco/'); // Ensure the path is correct
+        loader.setDRACOLoader(dracoLoader);
+    });
     const meshRef = useRef(null);
 
-    useFrame(() => {
+    useEffect(() => {
         if (meshRef.current) {
-            meshRef.current.rotation.y += 0.002;
+            const box = new THREE.Box3().setFromObject(meshRef.current);
+            const center = box.getCenter(new THREE.Vector3());
+            setTarget(center);
         }
-    });
+    }, [gltf, setTarget]);
 
-    return <primitive ref={meshRef} object={gltf.scene} scale={0.05} />;
+    // useFrame(() => {
+    //     if (meshRef.current) {
+    //         meshRef.current.rotation.y += 0.002;
+    //     }
+    // });
+
+    return <primitive ref={meshRef} object={gltf.scene} scale={scale} />;
 }
 
 export default function Page() {
     const [current, setCurrent] = useState(1);
+    const [target, setTarget] = useState(new THREE.Vector3(0, 0, 0));
     const tshirts = ["./tshirt1.svg", "./tshirt2.svg", "./tshirt3.svg"];
-    const model = ["./model1.glb", "./model2.glb", "./model3.glb"];
+    const model = [
+        { url: "./Hoodie.glb", scale: [19.6, 19.6, 19.6] },
+        { url: "./Regular.glb", scale: [9.3, 9.3, 9.3] },
+        { url: "./Oversized.glb", scale: [2.9,2.9,2.9] }
+    ];
     const [left, setLeft] = useState(0);
     const [right, setRight] = useState(2);
 
@@ -68,9 +87,10 @@ export default function Page() {
                         enablePan={false}
                         maxPolarAngle={Math.PI / 2}
                         minPolarAngle={Math.PI / 2}
+                        target={target} // Set the target to the center of the model
                     />
                     <ambientLight />
-                    <Model url={model[current]} />
+                    <Model url={model[current].url} setTarget={setTarget} scale={model[current].scale} />
                 </Canvas>
             </div>
             <div className="arrowLeft">
