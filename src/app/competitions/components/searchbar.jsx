@@ -33,35 +33,30 @@ const SearchBar = () => {
     setFilteredData(info);
   }, []);
 
-  // const selectRef = useRef(null);
-
-  // const handleImageClick = () => {
-  //   if (selectRef.current) {
-  //     selectRef.current.click();
-  //   }
-  // };
+  const selectRef = useRef(null);
 
   return (
     <div className="bgsett">
       <div className="search-bar">
         <div className="dropdown-wrapper">
           <select
+            ref={selectRef}
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
           >
-            <option value="" className="optionsss">
+            <option value="">
               <p>All Modules</p>
             </option>
             {titledata.map((title) => (
-              <option key={title.id} value={title.category}>
+              <option
+                key={title.id}
+                value={title.category}
+                className="optionsss"
+              >
                 {title.category}
               </option>
             ))}
           </select>
-          <div className="imgArrowBG">
-            <img src="./bgarrow.png" alt="" />
-            <img className="arrow" src="./Union.png" alt="" />
-          </div>
         </div>
 
         <div className="input-wrapper">

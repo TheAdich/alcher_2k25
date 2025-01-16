@@ -97,17 +97,8 @@ const footer = () => {
               </div>
             </div>
             <div className={styles.alcherWebOps}>
-              <p
-                onMouseEnter={() => setIsVisible2(true)}
-                onMouseLeave={() => setIsVisible2(false)}
-              >
-                Alcher Web Operations
-              </p>
-              <div
-                className={`${styles.webOpsName} ${
-                  isVisible2 ? styles.visible2 : ""
-                }`}
-              >
+              <p>Alcher Web Operations</p>
+              <div className={styles.webOpsName}>
                 <ul>
                   {webOpsPeeps.map((option, idx) => (
                     <li key={idx}>{option.name}</li>

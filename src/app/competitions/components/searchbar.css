@@ -52,16 +52,19 @@ input:focus {
   width: 25%;
   height: 3rem;
 }
-
 .dropdown-wrapper select {
   color: #ffebd3;
+  appearance: none;
   width: 100%;
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid #ddd;
   transition: all 0.3s ease;
-  appearance: none;
   background-color: rgba(254, 57, 137, 1);
+  background-image: url("/bgArrow2.png");
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  background-position: calc(100% - 10px) center;
   cursor: pointer;
 }
 
@@ -89,8 +92,6 @@ input:focus {
 .results {
   display: flex;
   gap: 1vw;
-  /* padding-left: 5vw;
-  padding-right: 5vw; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
