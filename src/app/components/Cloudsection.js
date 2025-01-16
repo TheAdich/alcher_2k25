@@ -1,6 +1,7 @@
 'use client'
 import Image from "next/image";
 import './brick-pixel.css'
+import Marquee from "react-fast-marquee";
 import SlotCounter from 'react-slot-counter';
 import { useEffect, useState } from "react";
 
@@ -30,7 +31,7 @@ const CloudSection = () => {
                 />
             </div>
 
-            <section className="clouds">
+            {/* <section className="clouds">
                 <div>
                     <Image
                         src="/cloud1u.svg"
@@ -88,8 +89,23 @@ const CloudSection = () => {
                         className="lb cloud"
                     />
                 </div>
-            </section>
-            <div className="logo_cloud">
+            </section> */}
+              <div className="homeclouds">
+                <div className="homecloud1">
+                    <Marquee speed={10} >
+                        <Image src="./cloudLeft.svg" width="1000" height="1000" />
+                        <Image src="./cloudLeft.svg" width="1000" height="1000" />
+                        <Image src="./cloudLeft.svg" width="1000" height="1000" />
+                    </Marquee>
+                </div>
+                <div className="homecloud2">
+                    <Marquee direction="right" speed={30} >
+                        <Image src="./cloudRight.svg" width="1000" height="1000" />
+                        <Image src="./cloudRight.svg" width="1000" height="1000" />
+                        <Image src="./cloudRight.svg" width="1000" height="1000" />
+                    </Marquee>
+                </div>
+                <div className="logo">
                 <Image
                     src="/alcherlogo 1.svg"
                     alt="alcher"
@@ -98,6 +114,8 @@ const CloudSection = () => {
                     className="alcherlogo"
                 />
             </div>
+                </div>
+      
             <div className="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
 

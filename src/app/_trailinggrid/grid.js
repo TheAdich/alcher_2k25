@@ -266,8 +266,8 @@ const GridSketch = ({ width, height, gridsize }) => {
         // Trailing effect: right, down, and diagonally right-down
         const directions = [
           { dRow: 0, dCol: 1 }, // Right
-          { dRow: 1, dCol: 0 }, // Down
-          { dRow: 1, dCol: 1 }, // Diagonal (Right-Down)
+          // Down
+          // Diagonal (Right-Down)
         ];
 
         directions.forEach(({ dRow, dCol }) => {
