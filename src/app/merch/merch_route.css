@@ -266,6 +266,9 @@
     bottom: 7%;
   }
 }
+.bot{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 700px) {
   .arrowLeft {
