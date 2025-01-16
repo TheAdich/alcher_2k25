@@ -32,15 +32,15 @@ const Merch = () => {
 
 
     return (
-        <div className="merch">
+        <div className="merch_home">
             <div className='dashContainer'>
             <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
-            <Image src="./tetris.svg" alt="merch" width={500} height={500} className='merch_text dash' />
+            <Image src="./tetris.svg" alt="merch" width={500} height={500} className='merch_text_home dash_home' />
             </div>
-            <Image src="./tetris-mobile.svg" alt="merch" width={500} height={500} className='mobile_text' />
+            <Image src="./tetris-mobile.svg" alt="merch" width={500} height={500} className='mobile_text_home' />
            <Image src="./tshirts.svg" alt="merch" width={500} height={500} className='tshirts' />
             <a href="/merch">
-                <Image src="./merch-btn.svg" alt="merch" width={500} height={500} className='merch_btn' />
+                <Image src="./merch-btn.svg" alt="merch" width={500} height={500} className='merch_btn_home' />
             </a>
         </div>
     )
