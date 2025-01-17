@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./component/style.module.css";
 import loc from "./component/Location.svg";
+import CloudSection from "./component/Cloudsection";
 // import Loading from "../loading";
 
 // import image1 from "./component/image1.png";
@@ -18,6 +19,7 @@ const images = [
 export default function Page() {
   return (
     <div className={styles.main}>
+      <CloudSection></CloudSection>
         <div className={styles.container}>
             {images.map((image, index) => (
               <div key={index} className={styles.event}>

@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./events.module.css";
+import Link from "next/link";
+
 // import Loading from "../loading";
 
 import image1 from "./Group38.png";
@@ -14,11 +16,11 @@ import enter from "./Group39.svg";
 import next from "./next.png";
 
 const images = [
-  { src: image1, name: "Pronites", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image2, name: "Proshows", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image3, name: "Creator's Camp", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image4, name: "Critical Damage", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: image5, name: "Flickeringa", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: image1, name: "Pronites",link: "/events/pronites", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: image2, name: "Proshows",link: "/events/proshows", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: image3, name: "Creator's Camp",link: "/events/creators_camp", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: image4, name: "Critical Damage",link: "/events/critical_damage", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: image5, name: "Flickeringa",link: "/events/flickeringa", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
 ];
 
 
@@ -74,14 +76,14 @@ export default function Page() {
             </p>
           </div>
 
-          <button className={styles.enter}>
+          <Link className={styles.enter} href={images[currentIndex].link}>
             <Image
               src={enter}
               className={styles.enterImage}
               quality={100}
               alt="enter button"
             />
-          </button>
+          </Link>
         </div>
         <div className={styles.center}>
           <div
