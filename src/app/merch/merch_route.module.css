@@ -12,20 +12,15 @@
   src: url("/fonts/Game_Tape.ttf") format("truetype");
 }
 
-/* .model1{
-    display: none;
-}
-.model3{
-    display: none;
-} */
 .marquee {
   position: absolute;
   height: 40vh;
-  top: -5%;
+  top: -3%;
   width: 100%;
-  z-index: 4;
+  z-index: 0;
   margin-top: 100px;
 }
+
 
 .cloudLeft {
   padding-left: 20px;
@@ -35,20 +30,18 @@
 }
 .marquee1 {
   position: absolute;
-  /* height: fit-content; */
   width: 100%;
   z-index: 40;
-  margin-top: 80px;
+  margin-top: 130px;
 }
 .marquee2 {
   position: absolute;
   z-index: 9;
   height: 20vh;
-
   height: fit-content;
   width: 100%;
   left: 0;
-  margin-top: 0px;
+  margin-top: 50px;
 }
 .left {
   border: 2px solid #ffffff;
@@ -87,11 +80,9 @@
 }
 
 .model2 {
-  /* border: 2px solid green; */
   width: 100%;
   margin-top: 8%;
   position: absolute;
-  /* z-index: 99; */
 }
 
 .foot {
@@ -121,7 +112,6 @@
   font-size: 7px;
 }
 .arrowLeft p {
-  /* scale: 0.2; */
   font-size: 3px;
   font-weight: 10;
   color: #ffebd3;
@@ -134,21 +124,14 @@
   font-size: 10px;
 }
 .arrowRight p {
-  /* scale: 0.2; */
   font-size: 3px;
   font-weight: 10;
   color: #ffebd3;
   opacity: 50%;
-  /* padding-top: 2px; */
 }
 .dash {
   scale: 2;
 }
-/* .pleft{
-    margin-right: 20px;
-    fontFamily: 'GameTape';
-    padding-right:20px;
-} */
 .arrowLeft h3,
 .arrowLeft p {
   font-family: "StoneSlab";
@@ -158,10 +141,6 @@
   scale: 5;
   right: 17%;
   top: 65%;
-
-  /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
   z-index: 999;
 }
 
@@ -207,7 +186,7 @@
 .rightTshirt {
   padding-right: 20px;
 }
-.mobile-merch {
+/* .mobile-merch {
   display: none;
 }
 .mobile-bottom {
@@ -215,9 +194,38 @@
 }
 .mobile-btn {
   display: none;
+} */
+.merchBtn{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
 }
+.mobileMerch {
+    display: none;
+  }
+  .mobileBottom {
+    display: none;
+  }
+  .mobileBtn {
+    display: none;
+  }
 
 @media screen and (max-width: 1024px) {
+    .marquee1 {
+        position: absolute;
+        width: 100%;
+        z-index: 40;
+        margin-top: 80px;
+      }
+      .marquee2 {
+        position: absolute;
+        z-index: 9;
+        height: 20vh;
+        height: fit-content;
+        width: 100%;
+        left: 0;
+        margin-top: 35px;
+      }
   .box {
     scale: 0.75;
     position: absolute;
@@ -225,12 +233,12 @@
     align-items: center;
     left: 50%;
     transform: translateX(-50%);
-    /* top: 40%; */
-    /* padding-top: 300px; */
-    /* width: 50%;   */
   }
   .logo {
     scale: 3.4;
+    position: absolute;
+    top: 20%;
+    /* padding-top: 100px; */
   }
   .arrowLeft {
     scale: 4;
@@ -242,8 +250,7 @@
   .marquee {
     position: absolute;
     height: 20vh;
-    top: -10%;
-    /* scale: 0.9; */
+    top: -3%;
     width: 100%;
     z-index: 4;
     margin-top: 100px;
@@ -252,22 +259,30 @@
   .rightTshirt {
     display: none;
   }
-  .mobile-merch {
+  .mobilemerch {
     position: absolute;
     top: 0%;
   }
   .btnMerch {
-    /* display: none; */
     scale: 3.5;
     padding-left: 10px;
   }
-  .merch-btn {
+  .merchBtn {
+    /* display: none; */
+    /* position: absolute; */
     scale: 0.8;
     bottom: 7%;
   }
 }
-.bot{
-    cursor: pointer;
+.bot {
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.bot:hover {
+    /* border: 2px solid #fe3989; */
+    opacity: 90%;
+    filter: drop-shadow(0 10 10px #91023b);
+  /* color: #ffebd3; */
 }
 
 @media screen and (max-width: 700px) {
@@ -283,7 +298,7 @@
   .btnMerch {
     display: none;
   }
-  .merch-btn {
+  .merchBtn {
     display: none;
   }
   .leftBtns {
@@ -300,19 +315,18 @@
     bottom: 0%;
     z-index: -1;
   }
-  .mobile-merch {
+  .mobileMerch {
     display: block;
     scale: 5.5;
     position: absolute;
     text-align: center;
     top: 40%;
   }
-  .mobile-merch h3 {
+  .mobileMerch h3 {
     color: #ffebd3;
     font-size: 7px;
   }
-  .mobile-merch p {
-    /* scale: 0.2; */
+  .mobileMerch p {
     font-size: 2px;
     font-weight: 10;
     color: #ffebd3;
@@ -323,34 +337,28 @@
   .box {
     top: 27%;
   }
-  .mobile-bottom {
+  .mobileBottom {
     display: block;
     position: absolute;
-    /* bottom: 10%; */
     bottom: 9%;
     text-align: center;
     scale: 5;
   }
-  .mobile-bottom h3 {
+  .mobileBottom h3 {
     color: #ffebd3;
     font-size: 5px;
   }
   .dash {
-    /* scale: 1; */
     position: absolute;
-
     bottom: 10%;
-    /* padding-bottom: 2px; */
   }
-  .mobile-bottom p {
-    /* scale: 0.2; */
+  .mobileBottom p {
     font-size: 3px;
     font-weight: 10;
     color: #ffebd3;
     opacity: 50%;
-    /* padding-top: 2px; */
   }
-  .mobile-btn {
+  .mobileBtn {
     display: block;
     scale: 4;
     padding-right: 10px;
@@ -361,12 +369,54 @@
 
 @media screen and (max-width: 540px) {
   .logo {
-    scale: 2;
+    top: 20%;
+    transform: translateY(10%);
+    scale: 2.4;
   }
+  .cloud {
+    scale: 0.6;
+    /* Add any common styles for cloud here */
+  }
+
+  
+  .marquee {
+    position: absolute;
+    height: 40vw;
+    top: -3%;
+    transform: translateY(10%);
+    width: 100%;
+    z-index: 0;
+    margin-top: 100px;
+  }
+  
+  
+  .cloudLeft {
+    padding-left: 0px;
+  }
+  .cloudRight {
+    padding-left: -6px;
+  }
+  .marquee1 {
+    position: absolute;
+    width: 100%;
+    z-index: 40;
+    margin-top: 20px;
+  }
+  .marquee2 {
+    position: absolute;
+    z-index: 9;
+    height: 20vw;
+    height: fit-content;
+    width: 100%;
+    left: 0;
+    margin-top: 0px;
+  }
+  
+
 }
 
 @media screen and (max-width: 540px) {
   .logo {
     scale: 1.8;
-  }
+  } 
 }

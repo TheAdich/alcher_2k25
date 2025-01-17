@@ -35,7 +35,7 @@ export function Hoodie(props) {
   
   return (
     <group {...props} dispose={null}  ref={groupRef}>
-      <mesh geometry={nodes.hoodie_low001.geometry} material={materials['Material.001']} position={[0,0,0]} rotation={[Math.PI / 2, 0, 0]} scale={0.017} />
+      <mesh geometry={nodes.hoodie_low001.geometry} material={materials['Material.001']} position={[0,0,0]} rotation={[Math.PI / 2, 0, 0]} scale={0.013} />
     </group>
   )
 }
@@ -44,5 +44,3 @@ useGLTF.preload('./Hoodie.glb')
 
 
 // [-4.379, 2.577, -6.375]
-
-// 0.013
