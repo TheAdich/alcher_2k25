@@ -13,19 +13,13 @@ const Navbar = () => {
     { label: "MUN", path: "/mun" },
     { label: "Kartavya", path: "/kartavya" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Sponsors", path: "/sponsers" },
+    { label: "Sponsers", path: "/sponsers" },
     { label: "Merch", path: "/merch" },
-    { label: "Team", path: "/teams" },
+    { label: "Team", path: "/team" },
   ];
 
   const pathh = usePathname();
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+
   return (
     <div className={styles.mainnav}>
       <img className={styles.logo} src="/alcherlogo1.png" alt="" />
@@ -44,47 +38,17 @@ const Navbar = () => {
         </ul>
       </div>
       <div className={styles.getcards}>
-        <img src="/bgGetcards1.jpg" alt="" className={styles.bggetcards} />
-        <img className={styles.desc} src="/3_arrows.png" alt="" onClick={toggleMenu} />
+        <img src="/bgGetcards1.jpg" alt="" />
+        <img className={styles.desc} src="/3_arrows.png" alt="" />
       </div>
-      {menuOpen && <div className={styles.backdrop} onClick={closeMenu}></div>}
-      <div className={`${styles.sidebar} ${menuOpen ? styles.open : ""}`}>
-        <div className={styles.sidebarHeader}>
-          <span className={styles.menuTitle}>Menu</span>
-          <div className={styles.closeIcon}
-            onClick={toggleMenu}>
-            <img
-              src="/closevector.svg"
-              alt="close"
-
-            />
-             <img
-              src="/closevector.svg"
-              alt="close"
-
-            />
-          </div>
+      {/* <div className={styles.ham}>
+        <div className={styles.sidebar}>
 
         </div>
-        <ul className={styles.sidebarNav}>
-          {navOptions.map((option, idx) => (
-            <li
-              key={idx}
-              className={
-                pathh === option.path ? styles.activeNavItem : styles.navItem
-              }
-            >
-              <Link href={option.path}>{option.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-
+      </div> */}
     </div>
+    
   );
 };
 
 export default Navbar;
-
-
-

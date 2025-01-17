@@ -13,6 +13,18 @@
   font-weight: normal; /* Adjust if needed */
   font-style: normal; /* Adjust if needed */
 }
+@font-face {
+  font-family: 'Game_Type';
+  src: url('/Game_Tape.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stone_Slab';
+  src: url('/Stone_Slab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
