@@ -80,6 +80,11 @@ const upperSponsers = () => {
   return (
     <main>
       <div className={styles.upperSponsers}>
+        <img className={styles.cloudlft} src="./cloudl.png" alt="" />
+        <img className={styles.cloudrgt} src="./cloudr.png" alt="" />
+        <img className={styles.smallCloud} src="./smallcloud.png" alt="" />
+        <img className={styles.cloudlft2} src="./cloudl.png" alt="" />
+        <img className={styles.cloudrgt2} src="./cloudrgt2.png" alt="" />
         {mainSponsers.map((option, idx) => (
           <div className={styles.eachSponser}>
             <h2 className={styles.headformain}>{option.headline}</h2>

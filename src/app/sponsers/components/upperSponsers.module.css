@@ -19,7 +19,46 @@
   font-style: normal; /* Adjust if needed */
 }
 
+.cloudlft {
+  top: 200px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+.cloudlft2 {
+  top: 800px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+.cloudrgt {
+  top: 500px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  right: 0px;
+}
+
+.cloudrgt2 {
+  top: 900px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 40px;
+}
+
+.smallCloud {
+  position: absolute;
+  top: 100px;
+  left: 25vw;
+  width: 200px;
+  height: 100px;
+}
+
 .upperSponsers {
+  position: relative;
   background-color: rgb(17, 24, 39);
   height: auto;
   display: flex;
@@ -43,6 +82,7 @@
   color: #ffebd3;
 }
 .imgMainSponser {
+  z-index: 100;
   width: 20vw;
   height: 140px;
   display: flex;
@@ -109,7 +149,64 @@
 .imgLowSpons img {
   width: 100%;
 }
+@media (max-width: 1150px) {
+  .cloudlft {
+    width: 300px;
+    height: 100px;
+  }
 
+  .cloudlft2 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .cloudrgt {
+    width: 200px;
+    height: 100px;
+    right: 0px;
+  }
+
+  .cloudrgt2 {
+    width: 200px;
+    height: 200px;
+    right: 0px;
+  }
+
+  .smallCloud {
+    left: 20vw;
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (max-width: 720px) {
+  .cloudlft {
+    width: 180px;
+    height: 80px;
+  }
+
+  .cloudlft2 {
+    width: 150px;
+    height: 80px;
+  }
+
+  .cloudrgt {
+    width: 150px;
+    height: 80px;
+    right: 0px;
+  }
+
+  .cloudrgt2 {
+    width: 150px;
+    height: 80px;
+    right: 0px;
+  }
+
+  .smallCloud {
+    left: 15vw;
+    width: 80px;
+    height: 60px;
+  }
+}
 @media (max-width: 1000px) {
   .headformain {
     font-size: 50px;

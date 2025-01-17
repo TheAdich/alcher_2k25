@@ -191,6 +191,7 @@
 
 /* showing names */
 .alcherCreatives {
+  width: fit-content;
   position: relative;
 }
 .alcherCreatives p {
@@ -217,22 +218,19 @@
   opacity: 1;
 }
 
-.visible2 {
-  visibility: visible;
-  opacity: 1;
-}
-
 .alcherWebOps {
+  width: fit-content;
   position: relative;
+}
+.alcherWebOps:hover .webOpsName {
+  display: flex;
 }
 .alcherWebOps p {
   cursor: pointer;
 }
 .webOpsName {
   z-index: 10;
-  display: flex;
-  visibility: hidden;
-  opacity: 0;
+  display: none;
   justify-content: center;
   background-color: rgb(17, 24, 39);
   border-left: 4px solid rgba(255, 235, 211, 1);

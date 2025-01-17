@@ -19,10 +19,38 @@
   font-style: normal; /* Adjust if needed */
 }
 
+.marquee {
+  position: absolute;
+  height: 40vh;
+  top: -5%;
+  width: 100%;
+  z-index: 4;
+  margin-top: 100px;
+}
+
+.cloudLeft {
+  padding-left: 20px;
+}
+.cloudRight {
+  padding-left: 100px;
+}
+.marquee1 {
+  position: absolute;
+  /* height: fit-content; */
+  width: 100%;
+  z-index: 40;
+  margin-top: 80px;
+}
+.marquee2 {
+  position: absolute;
+  z-index: 9;
+  height: 20vh;
+}
 .bgset {
   background-color: rgb(17, 24, 39);
 }
 .header {
+  z-index: 100;
   font-family: brickPixel;
   width: 100%;
   position: absolute;
