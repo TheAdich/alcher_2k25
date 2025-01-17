@@ -10,16 +10,36 @@
   border-top: 3px solid #ffebd3;
   border-left: 2px solid #ffebd3;
   border-bottom: 1px solid #ffebd3;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   height: 3rem;
   width: 30%;
   display: flex;
+  position: relative;
   background-color: rgb(17, 24, 39);
 }
+.input-wrapper::before {
+  top: -3px;
+  right: 0;
+  position: absolute;
+  content: "";
+  background: rgb(17, 24, 39);
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+.input-wrapper::after {
+  bottom: -2px;
+  right: 0;
+  position: absolute;
+  content: "";
+  background: rgb(17, 24, 39);
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
 .searchdiv {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,9 +48,10 @@
   background-color: #ffebd3;
 }
 .searchdiv img {
-  width: 75%;
+  width: 70%;
 }
 input {
+  padding-left: 1rem;
   height: 100%;
   font-size: 15px;
   font-family: gameTape;
@@ -348,7 +369,7 @@ input:focus {
 
 /* cards css ends */
 
-@media (max-width: 780px) {
+@media (max-width: 1030px) {
   .search-bar {
     gap: 20px;
     flex-direction: column;
@@ -364,16 +385,32 @@ input:focus {
 }
 
 @media (max-width: 560px) {
+  .search-bar {
+    gap: 10px;
+  }
   .dropdown-wrapper {
     font-size: 10px;
   }
   .input-wrapper input {
     font-size: 10px;
   }
+  .input-wrapper {
+    height: 2rem;
+  }
   .imgArrowBG {
     width: 25px;
     height: 25px;
     bottom: 15px;
+  }
+
+  .input-wrapper::before {
+    width: 7px;
+    height: 7px;
+  }
+
+  .input-wrapper::after {
+    width: 7px;
+    height: 7px;
   }
 }
 
