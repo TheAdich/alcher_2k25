@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+.bgset {
+  background-color: rgb(17, 24, 39);
+}
+
+.header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+}
+.title {
+  font-family: brickPixel;
+  text-align: center;
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+  /* text-shadow: 0 0 5px rgba(254, 57, 137, 1), 0 10px 30px rgba(254, 57, 137, 1),
+    0 10px 50px rgba(254, 57, 137, 1); */
+  font-size: 7rem;
+  color: rgba(254, 57, 137, 1);
+  z-index: 100;
+}
+
+.content {
+  color: #ffebd3;
+  opacity: 60%;
+  font-family: stoneSlab;
+  padding: 0px 5% 0px 5%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: auto;
+  z-index: 1000;
+}
+
+.oneline {
+  font-family: stoneSlab;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  font-size: 20px;
+  color: #ffebd3;
+  z-index: 100;
+}
+
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 5rem;
+  }
+  .oneline {
+    font-size: 15px;
+  }
+  .content {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 580px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .oneline {
+    font-size: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .content {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    font-size: 2rem;
+  }
+  .oneline {
+    font-size: 8px;
+  }
+  .content {
+    font-size: 8px;
+  }
+}

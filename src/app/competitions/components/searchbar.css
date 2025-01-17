@@ -1,0 +1,387 @@
+.bgsett {
+  background-color: rgb(17, 24, 39);
+}
+.search-bar {
+  margin: 0px 100px 0px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-wrapper {
+  border-top: 3px solid #ffebd3;
+  border-left: 2px solid #ffebd3;
+  border-bottom: 1px solid #ffebd3;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 3rem;
+  width: 30%;
+  display: flex;
+  background-color: rgb(17, 24, 39);
+}
+.searchdiv {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 50%;
+  background-color: #ffebd3;
+}
+.searchdiv img {
+  width: 75%;
+}
+input {
+  height: 100%;
+  font-size: 15px;
+  font-family: gameTape;
+  margin-left: 5px;
+  color: #ffebd3;
+  width: 100%;
+  background-color: rgb(17, 24, 39);
+}
+
+input:focus {
+  border-color: #ffebd3;
+  outline: none;
+}
+
+.dropdown-wrapper {
+  z-index: 20;
+  font-family: gameTape;
+  position: relative;
+  width: 25%;
+  height: 3rem;
+}
+.dropdown-wrapper select {
+  color: #ffebd3;
+  appearance: none;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  background-color: rgba(254, 57, 137, 1);
+  background-image: url("/bgArrow2.png");
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  background-position: calc(100% - 10px) center;
+  cursor: pointer;
+}
+
+.dropdown-wrapper select:focus {
+  outline: none;
+  border-color: royalblue;
+}
+
+.dropdown-wrapper::after {
+  color: #ffebd3;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+.dropdown-wrapper::after img {
+  width: 100%;
+}
+.dropdown-wrapper select:focus + .dropdown-wrapper::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.results {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.result-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.imgArrowBG {
+  cursor: pointer;
+  right: 5%;
+  bottom: 20%;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+  width: 12px;
+  height: 12px;
+}
+/* cards css */
+
+@font-face {
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+.compCard {
+  margin-left: 1vw;
+  margin-top: 1vw;
+  font-family: gameTape;
+  width: 28vw;
+  padding-bottom: 6vw;
+}
+
+.cardImg {
+  height: 20vw;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.compTitle {
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  color: #ffebd3;
+}
+
+.compDetails {
+  display: flex;
+  gap: 2vw;
+  font-size: 1.2vw;
+  color: #de4784;
+}
+
+.compVanueTime {
+  display: flex;
+  gap: 4vw;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0.4vw;
+  border-top: 0.001rem solid darkgray;
+}
+
+.compVanue {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: #ffebd3;
+  font-size: 1.2vw;
+}
+.compVanue p {
+  opacity: 0.5;
+}
+.locIconComp {
+  background-size: cover;
+  opacity: 1;
+}
+
+.locIconComp img {
+  width: 1.2vw;
+}
+
+.timeIconComp img {
+  width: 2vw;
+  margin-top: 0.5vw;
+}
+.compTime {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: #ffebd3;
+  font-size: 1.2vw;
+}
+
+.compTime p {
+  opacity: 0.5;
+}
+
+.cardBtns {
+  color: #ffebd3;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 1vw;
+  font-family: stoneSlab;
+}
+
+.cardBtns p {
+  cursor: pointer;
+}
+
+.registerBtnComp {
+  padding-bottom: 0.1vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  width: fit-content;
+  border-bottom: 0.05rem solid white;
+}
+.mapCompIcon img {
+  width: 1.7vw;
+}
+
+.compet {
+  display: grid;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 480px) {
+  .compet {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .compCard {
+    margin-left: 1vw;
+    margin-top: 1vw;
+    font-family: gameTape;
+    width: 90vw;
+    height: fit-content;
+    padding-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cardImg {
+    height: 70%;
+    background-size: cover;
+  }
+
+  .compTitle {
+    font-size: 5vw;
+    margin-top: 3vw;
+    color: #ffebd3;
+  }
+
+  .compDetails {
+    display: flex;
+    gap: 2vw;
+    font-size: 3.5vw;
+    color: #de4784;
+  }
+
+  .compVanueTime {
+    font-size: 3.5vw;
+    display: flex;
+    gap: 4vw;
+    width: 100%;
+    justify-content: start;
+    gap: 7vw;
+    padding-top: 2vw;
+    margin-top: 2vw;
+    padding-bottom: 5vw;
+    border-top: 0.01rem solid darkgray;
+  }
+
+  .compVanue {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    color: #ffebd3;
+    font-size: 4vw;
+  }
+  .compVanue p {
+    opacity: 0.5;
+  }
+  .locIconComp {
+    background-size: cover;
+    opacity: 1;
+  }
+
+  .locIconComp img {
+    width: 4.5vw;
+  }
+
+  .timeIconComp img {
+    width: 5.3vw;
+    margin-top: 1vw;
+  }
+  .compTime {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    color: #ffebd3;
+    font-size: 4vw;
+  }
+
+  .compTime p {
+    opacity: 0.5;
+  }
+
+  .cardBtns {
+    color: #ffebd3;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+
+  .registerBtnComp {
+    padding-bottom: 0.1vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    width: fit-content;
+    border-bottom: 0.1rem solid white;
+  }
+  .mapCompIcon img {
+    width: 6vw;
+    margin-top: 1vw;
+  }
+}
+
+/* cards css ends */
+
+@media (max-width: 780px) {
+  .search-bar {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown-wrapper {
+    width: 300px;
+  }
+  .input-wrapper {
+    width: 300px;
+  }
+}
+
+@media (max-width: 560px) {
+  .dropdown-wrapper {
+    font-size: 10px;
+  }
+  .input-wrapper input {
+    font-size: 10px;
+  }
+  .imgArrowBG {
+    width: 25px;
+    height: 25px;
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 440px) {
+  .dropdown-wrapper {
+    width: 200px;
+  }
+  .input-wrapper {
+    width: 200px;
+  }
+}

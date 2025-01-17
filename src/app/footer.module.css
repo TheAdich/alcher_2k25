@@ -1,0 +1,393 @@
+.mainFooter {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(254, 57, 137, 1);
+  flex-direction: column;
+  height: 100vh;
+}
+.eventsSec {
+  display: flex;
+  gap: 6px;
+  height: auto;
+  background-color: rgba(254, 57, 137, 1);
+}
+
+.eventsSec ul {
+  cursor: pointer;
+  padding: 10px;
+  border-left: 1px solid rgba(255, 235, 211, 1);
+  border-right: 2px solid rgba(255, 235, 211, 1);
+  border-top: 2px solid rgba(255, 235, 211, 1);
+  border-bottom: 1px solid rgba(255, 235, 211, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logoDiv {
+  width: 500px;
+  height: auto;
+}
+.prbheads {
+  font-family: gameTape;
+  color: rgba(255, 235, 211, 1);
+  height: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.prbname1 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.prbname2 {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: auto;
+}
+
+#name {
+  font-family: stoneSlab;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 41.91px;
+}
+
+.design {
+  height: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.designleft {
+  width: 30%;
+}
+.designright {
+  width: 30%;
+}
+
+.oneline {
+  color: rgba(255, 235, 211, 1);
+  font-family: gameTape;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.lftline {
+  width: 30%;
+}
+.followSec {
+  width: 40%;
+}
+.rgtline {
+  text-align: right;
+  width: 30%;
+}
+
+.followUs {
+  color: rgba(255, 235, 211, 1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.followtxt {
+  font-family: stoneSlab;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25.15px;
+}
+.followicons {
+  display: flex;
+  gap: 20px;
+}
+
+.followicons ul {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.retroleft {
+  white-space: nowrap;
+  width: 15px;
+  height: 90vh;
+  position: absolute;
+  left: 150px;
+  animation: movedown 5s linear infinite;
+}
+
+.retroleft img {
+  width: 100%;
+  height: 100%;
+}
+
+.retroright {
+  white-space: nowrap;
+  width: 15px;
+  height: 90vh;
+  position: absolute;
+  right: 150px;
+  animation: movedown 5s linear infinite;
+}
+
+.retroright img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes movedown {
+  0% {
+    transform: translateY(0%); /* Start off-screen to the right */
+  }
+  100% {
+    transform: translateY(-100%); /* Move off-screen to the left */
+  }
+}
+
+.globecir {
+  bottom: 120px;
+  position: absolute;
+  width: 270px;
+  height: 270px;
+  left: 30px;
+  background-blend-mode: lighten;
+}
+
+.globecir img {
+  mix-blend-mode: lighten;
+  width: 100%;
+  height: 100%;
+}
+
+.globecir2 {
+  top: 20px;
+  right: 80px;
+  position: absolute;
+  width: 270px;
+  height: 270px;
+}
+
+.globecir2 img {
+  mix-blend-mode: lighten;
+  width: 100%;
+  height: 100%;
+}
+
+/* showing names */
+.alcherCreatives {
+  width: fit-content;
+  position: relative;
+}
+.alcherCreatives p {
+  cursor: pointer;
+}
+.creativesName {
+  z-index: 10;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  background-color: rgb(17, 24, 39);
+  position: absolute;
+  border-left: 4px solid rgba(255, 235, 211, 1);
+  border-top: 2px solid rgba(255, 235, 211, 1);
+  width: 200px;
+  bottom: 20px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alcherWebOps {
+  width: fit-content;
+  position: relative;
+}
+.alcherWebOps:hover .webOpsName {
+  display: flex;
+}
+.alcherWebOps p {
+  cursor: pointer;
+}
+.webOpsName {
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  background-color: rgb(17, 24, 39);
+  border-left: 4px solid rgba(255, 235, 211, 1);
+  border-top: 2px solid rgba(255, 235, 211, 1);
+  position: absolute;
+  width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* animation ends */
+
+@media (max-width: 1144px) {
+  .retroleft {
+    width: 1%;
+    height: 90%;
+  }
+  .retroright {
+    width: 1%;
+    height: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .eventsSec {
+    justify-content: center;
+    width: 46%;
+  }
+  .retroleft {
+    left: 80px;
+  }
+  .retroright {
+    right: 80px;
+  }
+  .globecir {
+    width: 150px;
+    height: 150px;
+  }
+
+  .globecir2 {
+    right: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  #name {
+    font-size: 20px;
+  }
+
+  .prbname1 p {
+    font-size: 10px;
+  }
+  .prbname2 p {
+    font-size: 10px;
+  }
+  .lftline {
+    font-size: 10px;
+  }
+  .rgtline {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 910px) {
+  .eventsSec {
+    width: 500px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 850px) {
+  .retroleft {
+    display: none;
+  }
+  .retroright {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .eventsSec ul {
+    font-size: 13px;
+  }
+  .eventsSec {
+    width: 400px;
+  }
+
+  .prbheads {
+    width: 80%;
+  }
+  .oneline {
+    width: 80%;
+  }
+  .design {
+    width: 80%;
+  }
+  .logoDiv {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 410px) {
+  .eventsSec ul {
+    font-size: 10px;
+  }
+  .eventsSec {
+    width: 350px;
+  }
+  .prbheads {
+    font-size: 12px;
+    width: 80%;
+  }
+  .oneline {
+    width: 80%;
+  }
+  .design {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .retroleft {
+    left: 40px;
+    width: 10px;
+  }
+  .retroright {
+    right: 40px;
+    width: 10px;
+  }
+  .globecir {
+    left: 5px;
+  }
+  .globecir2 {
+    right: 5px;
+  }
+  #name {
+    line-height: 20px;
+  }
+  .lftline {
+    width: 40%;
+  }
+  .rgtline {
+    width: 40%;
+  }
+  .followtxt {
+    font-size: 13px;
+  }
+  .followicons ul {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .eventsSec ul {
+    font-size: 8px;
+  }
+  .eventsSec {
+    width: 300px;
+  }
+}

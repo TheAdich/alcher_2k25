@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+.cloudlft {
+  top: 200px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+.cloudlft2 {
+  top: 800px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+}
+
+.cloudrgt {
+  top: 500px;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  right: 0px;
+}
+
+.cloudrgt2 {
+  top: 900px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 40px;
+}
+
+.smallCloud {
+  position: absolute;
+  top: 100px;
+  left: 25vw;
+  width: 200px;
+  height: 100px;
+}
+
+.upperSponsers {
+  position: relative;
+  background-color: rgb(17, 24, 39);
+  height: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.eachSponser {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.headformain {
+  z-index: 100;
+  font-family: stoneSlab;
+  font-size: 72px;
+  color: #ffebd3;
+}
+.imgMainSponser {
+  z-index: 100;
+  width: 20vw;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.imgMainSponser:hover {
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+}
+
+.imgMainSponser img {
+  width: 100%;
+}
+.eachSponser p {
+  font-family: gameTape;
+  font-size: 24px;
+}
+
+.lowerSponsers {
+  background-color: rgb(17, 24, 39);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.lowEachSpons {
+  font-family: gameTape;
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+}
+.descc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.imgLowSpons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 180px;
+  transition: all 0.3s ease-in-out;
+}
+
+.imggg:hover {
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+}
+
+.imgLowSpons img {
+  width: 100%;
+}
+@media (max-width: 1150px) {
+  .cloudlft {
+    width: 300px;
+    height: 100px;
+  }
+
+  .cloudlft2 {
+    width: 200px;
+    height: 100px;
+  }
+
+  .cloudrgt {
+    width: 200px;
+    height: 100px;
+    right: 0px;
+  }
+
+  .cloudrgt2 {
+    width: 200px;
+    height: 200px;
+    right: 0px;
+  }
+
+  .smallCloud {
+    left: 20vw;
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (max-width: 720px) {
+  .cloudlft {
+    width: 180px;
+    height: 80px;
+  }
+
+  .cloudlft2 {
+    width: 150px;
+    height: 80px;
+  }
+
+  .cloudrgt {
+    width: 150px;
+    height: 80px;
+    right: 0px;
+  }
+
+  .cloudrgt2 {
+    width: 150px;
+    height: 80px;
+    right: 0px;
+  }
+
+  .smallCloud {
+    left: 15vw;
+    width: 80px;
+    height: 60px;
+  }
+}
+@media (max-width: 1000px) {
+  .headformain {
+    font-size: 50px;
+  }
+  .imgMainSponser {
+    width: 200px;
+  }
+}
+
+@media (max-width: 610px) {
+  .headformain {
+    font-size: 30px;
+  }
+  .lowerSponsers {
+    gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .imgMainSponser {
+    width: 200px;
+  }
+}
+@media (max-width: 620px) {
+  .imgLowSpons {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 530px) {
+  .imgLowSpons {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 510px) {
+  .headformain {
+    font-size: 30px;
+  }
+  .eachSponser p {
+    font-size: 15px;
+  }
+  .eachSponser {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 470px) {
+  .imgLowSpons {
+    width: 100px;
+    height: 100px;
+    gap: 0px;
+  }
+  .descc {
+    font-size: 12px;
+  }
+  .lowerSponsers {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .lowEachSpons {
+    width: 130px;
+  }
+}
+
+@media (max-width: 380px) {
+  .headformain {
+    font-size: 20px;
+  }
+}

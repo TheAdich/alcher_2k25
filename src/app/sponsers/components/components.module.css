@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "brickPixel";
+  src: url("/Brick_Pixel.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
+}
+
+.marquee {
+  position: absolute;
+  height: 40vh;
+  top: -5%;
+  width: 100%;
+  z-index: 4;
+  margin-top: 100px;
+}
+
+.cloudLeft {
+  padding-left: 20px;
+}
+.cloudRight {
+  padding-left: 100px;
+}
+.marquee1 {
+  position: absolute;
+  /* height: fit-content; */
+  width: 100%;
+  z-index: 40;
+  margin-top: 80px;
+}
+.marquee2 {
+  position: absolute;
+  z-index: 9;
+  height: 20vh;
+}
+.bgset {
+  background-color: rgb(17, 24, 39);
+}
+.header {
+  z-index: 100;
+  font-family: brickPixel;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 150px;
+}
+.title {
+  text-align: center;
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+  font-size: 7rem;
+  color: rgba(254, 57, 137, 1);
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 5rem;
+  }
+  .oneline {
+    font-size: 15px;
+  }
+  .content {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 620px) {
+  .title {
+    font-size: 4rem;
+  }
+  .oneline {
+    font-size: 15px;
+  }
+  .content {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 510px) {
+  .title {
+    font-size: 3rem;
+  }
+  .oneline {
+    font-size: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .content {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 370px) {
+  .title {
+    font-size: 2rem;
+  }
+  .content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
