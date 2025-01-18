@@ -13,6 +13,18 @@
   font-weight: normal; /* Adjust if needed */
   font-style: normal; /* Adjust if needed */
 }
+@font-face {
+  font-family: 'Game_Type';
+  src: url('/Game_Tape.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Stone_Slab';
+  src: url('/Stone_Slab.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -117,7 +129,20 @@ body {
   animation-delay: 30s;
 }
 
+.homeclouds {
+  margin: 0;
+  z-index: -10;
+  position: relative;
 
+}
+
+.homeclouds1 {
+  height: 10rem;
+}
+
+.homeclouds2 {
+  height: 10rem;
+}
 
 
 /* .clouds {
@@ -153,11 +178,15 @@ body {
   position: absolute;
   height: 250px;
   width:700px;
-  /* top: 150px;
-  left:28vw; */
+  transform: translateY(-90%);
+  padding: 10px;
+  /* top: 150px; */
+  left:50%;
+  transform: translateX(-50%);
   display: flex;
-  top:150px;
-  filter: drop-shadow(0 0 60px #FE3989);
+  top:100px;
+  z-index: 1000;
+  filter: drop-shadow(0 0 30px #FE3989);
 }
 .content{
   text-align: center;
@@ -207,6 +236,7 @@ body {
   font-family: "brickpixel";
   font-size: 4rem; 
   font-weight: bold;
+  color: #FFEBD3;
 }
 
 
@@ -216,6 +246,7 @@ body {
   text-align: left;
   font-size: 2rem; 
   font-family: "brickpixel";
+  color: #FFEBD3;
 }
 @media screen and (max-width: 1408px) {
   /* .clouds{
