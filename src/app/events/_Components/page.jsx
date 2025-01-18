@@ -162,14 +162,14 @@ export default function Page() {
                   <p className={styles.descriptionTxt}>{image.description}</p>
                 </div>
                 <div className={styles.lower}>
-                  <button className={styles.enter}>
+                  <Link className={styles.enter} href={image.link}>
                     <Image
                       src={enter}
                       className={styles.enterImage}
                       quality={100}
                       alt="enter button"
                     />
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
