@@ -103,7 +103,7 @@
   justify-content: start;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  z-index: 6000;
+  z-index: 100000;
 }
 
 .sidebar.open {
