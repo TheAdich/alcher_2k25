@@ -16,7 +16,7 @@ const footer = () => {
     { label: "Gallery", path: "/gallery" },
     { label: "Sponsors", path: "/sponsors" },
     { label: "Merch", path: "/merch" },
-    { label: "Team", path: "/team" },
+    { label: "Team", path: "/teams" },
   ];
 
   const [isVisible, setIsVisible] = useState(false);

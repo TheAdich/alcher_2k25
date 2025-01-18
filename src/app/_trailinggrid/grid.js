@@ -219,7 +219,8 @@ const GridSketch = ({ width, height, gridsize }) => {
       const COLOR_G = 57;
       const COLOR_B = 137;
       const STARTING_ALPHA = 255;
-      const AMT_FADE_PER_FRAME = 2;
+      const AMT_FADE_PER_FRAME_OUTLINE = 2;
+      const AMT_FADE_PER_FRAME_FILL = 3; // Faster fade for fill
 
       let numRows, numCols;
       let currentRow = -1;
@@ -229,8 +230,7 @@ const GridSketch = ({ width, height, gridsize }) => {
       p.setup = () => {
         const canvas = p.createCanvas(width, height); // Use passed dimensions
         canvas.parent(sketchRef.current);
-        p.noFill();
-        p.strokeWeight(1);
+        p.noStroke();
         numRows = Math.ceil(height / CELL_SIZE);
         numCols = Math.ceil(width / CELL_SIZE);
       };
@@ -248,13 +248,23 @@ const GridSketch = ({ width, height, gridsize }) => {
         }
 
         // Fade and draw the active neighbors
-        allNeighbors = allNeighbors.filter((neighbor) => neighbor.opacity > 0);
+        allNeighbors = allNeighbors.filter((neighbor) => neighbor.opacityFill > 0);
 
         allNeighbors.forEach((neighbor) => {
-          neighbor.opacity = Math.max(0, neighbor.opacity - AMT_FADE_PER_FRAME);
           const neighborX = neighbor.col * CELL_SIZE;
           const neighborY = neighbor.row * CELL_SIZE;
-          p.stroke(COLOR_R, COLOR_G, COLOR_B, neighbor.opacity);
+
+          // Fade fill and outline independently
+          neighbor.opacityFill = Math.max(0, neighbor.opacityFill - AMT_FADE_PER_FRAME_FILL);
+          neighbor.opacityOutline = Math.max(0, neighbor.opacityOutline - AMT_FADE_PER_FRAME_OUTLINE);
+
+          // Fill the cell
+          p.fill(COLOR_R, COLOR_G, COLOR_B, neighbor.opacityFill);
+          p.rect(neighborX, neighborY, CELL_SIZE, CELL_SIZE);
+
+          // Draw the outline
+          p.noFill();
+          p.stroke(COLOR_R, COLOR_G, COLOR_B, neighbor.opacityOutline);
           p.rect(neighborX, neighborY, CELL_SIZE, CELL_SIZE);
         });
       };
@@ -266,8 +276,6 @@ const GridSketch = ({ width, height, gridsize }) => {
         // Trailing effect: right, down, and diagonally right-down
         const directions = [
           { dRow: 0, dCol: 1 }, // Right
-          { dRow: 1, dCol: 0 }, // Down
-          { dRow: 1, dCol: 1 }, // Diagonal (Right-Down)
         ];
 
         directions.forEach(({ dRow, dCol }) => {
@@ -281,7 +289,8 @@ const GridSketch = ({ width, height, gridsize }) => {
             neighbors.push({
               row: neighborRow,
               col: neighborCol,
-              opacity: STARTING_ALPHA,
+              opacityFill: STARTING_ALPHA, // Initial opacity for fill
+              opacityOutline: STARTING_ALPHA, // Initial opacity for outline
             });
           }
         });

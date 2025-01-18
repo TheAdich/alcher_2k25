@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "brickpixel";
+    src: url("/Brick_Pixel/.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "stoneSlab";
+    src: url("/Stone_Slab.ttf") format("truetype");
+    font-weight: normal;
+    /* Adjust if needed */
+    font-style: normal;
+    /* Adjust if needed */
+}
+
+@font-face {
+    font-family: "gameTape";
+    src: url("/Game_Tape.ttf") format("truetype");
+    font-weight: normal;
+    /* Adjust if needed */
+    font-style: normal;
+    /* Adjust if needed */
+}
+
+.teams {
+    overflow: hidden;
+}
+
+.teamclouds {
+    margin: 0;
+    z-index: -10;
+    position: relative;
+}
+
+.teamclouds1 {
+    height: 10rem;
+}
+
+.teamclouds2 {
+    height: 10rem;
+}
+
+.heading {
+    z-index: 10000;
+    font-family: "brickpixel";
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fe3989;
+    text-shadow: 0 0 0px #fe3989, 0 0 20px #fe3989, 0 0 30px #fe3989;
+}
+
+.topsubheading {
+    font-family: "stoneslab";
+    text-align: center;
+    width: 500px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10000;
+    color: #FFEBD3;
+    margin-top: 2rem;
+}
+
+.section {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.section h1 {
+    font-family: "brickpixel";
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.para {
+    color: rgba(255, 235, 211, 0.70);
+    font-size: 16px;
+    font-family: "gameTape";
+    font-weight: 400;
+    padding: 0 280px;
+    text-align: center;
+}
+
+.persons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.profilecard {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.profilephoto {
+    position: relative;
+    width: 300px;
+    height: 250px;
+}
+
+.profileframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.profileface {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    width: 80%;
+    height: auto;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.profileface:hover {
+    transform: scale(1.1) translateY(-5%);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.buttons h2 {
+    color: #FFEBD3;
+    font-size: 24px;
+    font-family: "brickpixel";
+}
+
+.buttons p {
+    font-family: "gameTape";
+    font-size: 20px;
+}
+
+.button {
+    width: 200px;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.buttonimage {
+    width: 200px;
+    height: auto;
+}
+
+.buttonimage:hover {
+    opacity: 0.5;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFEBD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "gameTape";
+    font-size: 16px;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 2;
+}
+
+.button:hover .overlay {
+    bottom: 0;
+    opacity: 1;
+
+}
+
+
+@media screen and (max-width: 1408px) {
+    .persons {
+        gap: 100px;
+    }
+
+    .profilecard {
+        gap: 50px;
+    }
+
+    .profilephoto {
+        width: 280px;
+        height: 230px;
+    }
+
+    .bio {
+        width: 200px;
+    }
+
+    .button {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .persons {
+        gap: 70px;
+    }
+
+    .para {
+        padding: 0 200px;
+    }
+
+    .profilecard {
+        gap: 30px;
+    }
+
+    .profilephoto {
+        width: 250px;
+        height: 205px;
+    }
+
+    .bio {
+        width: 150px;
+    }
+
+    .button {
+        width: 180px;
+    }
+}
+
+@media(max-width:991px) {
+
+    .profileface {
+        left: 20px;
+    }
+
+    .para {
+        padding: 0 150px;
+    }
+
+    .persons {
+        gap: 30px;
+    }
+
+    .profilecard {
+        gap: 10px;
+    }
+
+    .profilephoto {
+        width: 220px;
+        height: 183px;
+    }
+
+    .bio {
+        width: 130px;
+    }
+
+    .button {
+        width: 150px;
+    }
+    .overlay{
+        font-size:15px ;
+    }
+}
+
+@media(max-width:768px) {
+
+    .persons {
+        gap: 25px;
+    }
+
+    .para {
+        padding: 0 40px;
+    }
+
+    .profilecard {
+        gap: 8px;
+
+    }
+
+    .topsubheading {
+        width: 400px;
+    }
+
+    .profilephoto {
+        width: 180px;
+        height: 150px;
+    }
+
+    .bio {
+        width: 130px;
+    }
+
+    .button {
+        width: 120px;
+    }
+}
+
+@media(max-width:675px) {
+    .para {
+        display: none;
+    }
+}
+
+@media(max-width:450px) {
+
+    .profileface {
+        left: 15px;
+    }
+
+    .profilecard {
+        align-items: center;
+        justify-content: center;
+    }
+}
