@@ -17,7 +17,7 @@ const CloudSection = () => {
         setCompetitionStat(45);
     }, []);
 
-    
+
 
     return (
         <section>
@@ -90,7 +90,7 @@ const CloudSection = () => {
                     />
                 </div>
             </section> */}
-              <div className="homeclouds">
+            <div className="homeclouds">
                 <div className="homecloud1">
                     <Marquee speed={10} >
                         <Image src="./cloudLeft.svg" width="1000" height="1000" />
@@ -105,17 +105,17 @@ const CloudSection = () => {
                         <Image src="./cloudRight.svg" width="1000" height="1000" />
                     </Marquee>
                 </div>
-                <div className="logo">
-                <Image
-                    src="/alcherlogo 1.svg"
-                    alt="alcher"
-                    width={100}
-                    height={100}
-                    className="alcherlogo"
-                />
+            
+                    <Image
+                        src="/alcherlogo 1.svg"
+                        alt="alcher"
+                        width={100}
+                        height={100}
+                        className="alcherlogo"
+                    />
+              
             </div>
-                </div>
-      
+
             <div className="content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
 
@@ -140,7 +140,7 @@ const CloudSection = () => {
                                 <h2 className="stat-title"> <SlotCounter
                                     startValue={event_stat}
                                     value={100}
-                                    duration={1} 
+                                    duration={1}
                                     speed={1.4}
                                     sequentialAnimationMode
                                     animateOnVisible={{ triggerOnce: false, rootMargin: '0px 0px -50px 0px' }}

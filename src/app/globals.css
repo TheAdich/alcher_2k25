@@ -59,10 +59,6 @@ body {
 }
 
 .logo_cloud{
-  /* position: relative; */
-  /* top: 0px; */
-  /* top: -10%; */
-  /* top: 0; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,6 +133,7 @@ body {
   margin: 0;
   z-index: -10;
   position: relative;
+
 }
 
 .homeclouds1 {
@@ -178,16 +175,18 @@ body {
 } */
 
 .alcherlogo{
-  position: relative;
+  position: absolute;
   height: 250px;
   width:700px;
   transform: translateY(-90%);
-  
-  /* top: 150px;*/
-  left:28vw;
+  padding: 10px;
+  /* top: 150px; */
+  left:50%;
+  transform: translateX(-50%);
   display: flex;
-  top:-10px;
-  filter: drop-shadow(0 0 60px #FE3989);
+  top:100px;
+  z-index: 1000;
+  filter: drop-shadow(0 0 30px #FE3989);
 }
 .content{
   text-align: center;
@@ -237,6 +236,7 @@ body {
   font-family: "brickpixel";
   font-size: 4rem; 
   font-weight: bold;
+  color: #FFEBD3;
 }
 
 
@@ -246,6 +246,7 @@ body {
   text-align: left;
   font-size: 2rem; 
   font-family: "brickpixel";
+  color: #FFEBD3;
 }
 @media screen and (max-width: 1408px) {
   /* .clouds{

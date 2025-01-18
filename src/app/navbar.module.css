@@ -1,11 +1,8 @@
 .mainnav {
-  position: fixed;
   height: 100px;
   padding: 0px 8% 0px 8%;
   background-color: rgb(17, 24, 39);
   display: flex;
-  width: 100%;
-  z-index: 9999;
   justify-content: space-between;
 }
 .options ul {

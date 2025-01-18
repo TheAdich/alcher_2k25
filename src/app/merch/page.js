@@ -1,5 +1,5 @@
 "use client"
-import { OrbitControls, SpotLight } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 import { Canvas, useLoader, useFrame, useThree } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
@@ -8,9 +8,6 @@ import * as THREE from 'three';
 import './merch_route.css';
 import Image from 'next/image';
 import Marquee from "react-fast-marquee";
-import { Regular } from './models3d/Regular';
-import { Hoodie } from './models3d/Hoodie';
-import { Oversized } from './models3d/Oversized';
 import Navbar from '../navbar';
 
 function Model({ url, setTarget, scale }) {
@@ -19,23 +16,23 @@ function Model({ url, setTarget, scale }) {
         dracoLoader.setDecoderPath('/draco/'); // Ensure the path is correct
         loader.setDRACOLoader(dracoLoader);
     });
-    const modelRef = useRef(null);
+    const meshRef = useRef(null);
 
     useEffect(() => {
-        if (modelRef.current) {
-            const box = new THREE.Box3().setFromObject(modelRef.current);
+        if (meshRef.current) {
+            const box = new THREE.Box3().setFromObject(meshRef.current);
             const center = box.getCenter(new THREE.Vector3());
             setTarget(center);
         }
     }, [gltf, setTarget]);
 
-    useFrame(() => {
-        if (modelRef.current) {
-            modelRef.current.rotation.y += 0.002;
-        }
-    });
+    // useFrame(() => {
+    //     if (meshRef.current) {
+    //         meshRef.current.rotation.y += 0.002;
+    //     }
+    // });
 
-    return <primitive ref={modelRef} object={gltf.scene} scale={scale} />;
+    return <primitive ref={meshRef} object={gltf.scene} scale={scale} />;
 }
 
 export default function Page() {
@@ -44,8 +41,8 @@ export default function Page() {
     const tshirts = ["./tshirt1.svg", "./tshirt2.svg", "./tshirt3.svg"];
     const model = [
         { url: "./Hoodie.glb", scale: [19.6, 19.6, 19.6] },
-        { url: "./Regular.glb", scale: [9, 9, 9] },
-        { url: "./Oversized.glb", scale: [2.9, 2.9, 2.9] }
+        { url: "./Regular.glb", scale: [9.3, 9.3, 9.3] },
+        { url: "./Oversized.glb", scale: [2.9,2.9,2.9] }
     ];
     const [left, setLeft] = useState(0);
     const [right, setRight] = useState(2);
@@ -92,18 +89,8 @@ export default function Page() {
                         minPolarAngle={Math.PI / 2}
                         target={target} // Set the target to the center of the model
                     />
-
-                    {/* {current == 0 && <SpotLight color={'#FE3989'} position={[0, 2.5, 0]} angle={0.7} penumbra={0.5} intensity={2} />}
-                    {current != 0 && <ambientLight intensity={0.5} />} */}
                     <ambientLight />
-
-
-                    {current == 0 && <Hoodie />}
-                    {current == 1 && <Regular />}
-                    {current == 2 && <Oversized />}
-
-                    {/* 
-                    <Model url={model[current].url} setTarget={setTarget} scale={model[current].scale} /> */}
+                    <Model url={model[current].url} setTarget={setTarget} scale={model[current].scale} />
                 </Canvas>
             </div>
             <div className="arrowLeft">
@@ -140,13 +127,13 @@ export default function Page() {
                 <Image src={tshirts[left]} className='leftTshirt' width="130" height="130" />
             </div>
             <div className="merch-btn">
-                <div className={current == 0 ? 'activeBtn merch3d bot' : ' merch3d bot'} onClick={() => setCurrent(0)}>
+                <div className={current == 0 ? 'activeBtn merch3d' : ' merch3d'}>
                     <Image src="./button1.svg" width="150" height="150" />
                 </div>
-                <div className={current == 1 ? 'activeBtn merch3d bot' : ' merch3d bot'} onClick={() => setCurrent(1)}>
+                <div className={current == 1 ? 'activeBtn merch3d' : ' merch3d'}>
                     <Image src="./button2.svg" width="150" height="150" />
                 </div>
-                <div className={current == 2 ? 'activeBtn merch3d bot' : ' merch3d bot'} onClick={() => setCurrent(2)}>
+                <div className={current == 2 ? 'activeBtn merch3d' : ' merch3d'}>
                     <Image src="./button3.svg" width="150" height="150" />
                 </div>
             </div>

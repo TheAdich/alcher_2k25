@@ -180,7 +180,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -191,7 +191,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button >
@@ -202,7 +202,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -239,7 +239,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -250,7 +250,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button >
@@ -261,7 +261,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -298,7 +298,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -309,7 +309,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button >
@@ -320,7 +320,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -961,7 +961,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -972,7 +972,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button >
@@ -983,7 +983,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -1020,7 +1020,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -1031,7 +1031,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button >
@@ -1042,7 +1042,7 @@ const page = () => {
                                     height={100}
                                     className={styles.buttonimage}
                                 />
-                                <div className={styles.overlay} style={{ backgroundColor: '#fe3988b4' }}>
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
                                     <p>VisitLinkedIn</p>
                                 </div>
                             </button>
@@ -1051,13 +1051,13 @@ const page = () => {
                     </div>
 
 
-                
+
                 </div>
             </section>
 
 
             <section className={styles.section}>
-                <h1 style={{ color:'#8F4BFF' }}>WEB AND APP OPERATIONS </h1>
+                <h1 style={{ color: '#8F4BFF' }}>WEB AND APP OPERATIONS </h1>
                 <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
@@ -1078,7 +1078,7 @@ const page = () => {
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
                                 <h2>Sam Jose</h2>
-                                <p style={{ color:'#8F4BFF' }}> web</p>
+                                <p style={{ color: '#8F4BFF' }}> web</p>
 
                             </button>
                             <button className={styles.button}>
@@ -1178,7 +1178,7 @@ const page = () => {
                     </div>
 
 
-                
+
                 </div>
             </section>
         </div>
