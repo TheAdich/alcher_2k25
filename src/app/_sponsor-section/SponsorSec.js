@@ -42,13 +42,13 @@ const SponsorSection = () => {
       const updateDimensions = () => {
         if (typeof window !== "undefined") {
           if (window.innerWidth > 1024) {
-            setGridDimensions({ width: 3000, height: 530, gridsize: 15 }); // Large screens
+            setGridDimensions({ width: 3000, height: 530, gridsize: 15 }); 
           } else if (window.innerWidth > 991) {
-            setGridDimensions({ width: 2000, height: 95, gridsize: 14 }); // Medium screens
+            setGridDimensions({ width: 2000, height: 95, gridsize: 14 }); 
           } else if (window.innerWidth > 768) {
-            setGridDimensions({ width: 2000, height: 85, gridsize: 11 }); // Small screens
+            setGridDimensions({ width: 2000, height: 85, gridsize: 11 }); 
           } else {
-            setGridDimensions({ width: 0, height: 0, gridsize: 0 }); // Extra small screens
+            setGridDimensions({ width: 0, height: 0, gridsize: 0 });
           }
         }
       };
@@ -65,7 +65,7 @@ const SponsorSection = () => {
 
   return (
     <div className={styles.sponsorsection}>
-      <div className={styles.dashContainer}>
+      <div className={styles.dashContainerup}>
       <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
         <Image src={dash1} alt="Top dash" className={styles.dash} />
       </div>

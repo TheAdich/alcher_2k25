@@ -1,0 +1,132 @@
+.main{
+    font-size: 1vw;
+}
+.container{
+    width: 84vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8vw;
+    color: #FFEBD3;
+    font-family: "gameTape";
+    padding-bottom: 20px;
+}
+.event{
+    display: flex;
+    flex-direction: row;
+    height: 28vw;
+    justify-content: space-between;
+    /* padding: 2px; */
+    margin: 1vw;
+    padding-top: 2vw;
+}
+.left{
+    width: 34vw;
+    height: 27vw;
+    /* background-image: url('./Frame51-o.svg'); */
+    background-size: 33vw 28vw;
+    background-repeat: no-repeat;
+}
+
+.eventimage{
+    width: 35vw;
+    height: 28vw;
+    /* z-index: -1; */
+    margin-top: -1.5vw;
+    margin-left: -0.25vw;
+}
+.right{
+    margin-top: -1vw;
+    width: 40vw;
+    height: 22vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #FFEBD3B2;
+    margin-top: 0.5vw;
+    align-items: center;
+    font-size: 1.1vw;
+}
+.name{
+    font-family: 'Stone_Slab';
+    font-size: 3.3vw;
+    margin-bottom: -0.3vw;
+    font-weight: 400;
+}
+.day{
+    font-family: 'Stone_Slab';
+    color: #FFEBD3;
+    font-size: 1.3vw;
+}
+.loc{
+    width: 1.3vw;
+    opacity: 0.8;
+}
+.description{
+    margin-top: -2vw;
+    color: #FFEBD3B2;
+    font-size: 1.1vw;
+}
+
+.rightlower{
+    width: 13vw;
+}
+@media(max-width:500px) {
+    .loc{
+        width: 3vw;
+        opacity: 0.8;
+    }
+    .event{
+        flex-direction: column;
+        justify-content: start;
+        width: 92vw;
+        height: 140vw;
+    }
+    .container{
+        width: 92vw;
+        margin-left: 4vw;
+    }
+    .left{
+        width: 92vw;
+        height: 75vw;
+        /* background-image: url('./Frame51-o.svg'); */
+        background-size: 91vw 74vw;
+        background-repeat: no-repeat;
+    }
+    .name{
+        font-size: 7.7vw;
+    }
+    .time{
+        font-size: 2.8vw;
+    }
+    .day{
+        font-size: 3.3vw;
+    }
+    .description{
+        color: #FFEBD3B2;
+        font-size: 2.6vw;
+    }
+    .eventimage{
+        width: 92vw;
+        height: 75vw;
+        /* z-index: -1; */
+        margin-top: -4vw;
+        margin-left: -1vw;
+    }
+    .right{
+        margin-top: -1vw;
+        width: 92vw;
+        height: 51vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .rightlower{
+        width: 33vw;
+    }
+}

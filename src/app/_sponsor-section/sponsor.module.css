@@ -30,20 +30,22 @@
     filter:drop-shadow(0 0 6px #FE3989);
   }
   
-  .dashContainer {
+  .dashContainerup {
     position: relative;
     /* display: inline-block; */
     width:100%;
+    /* background-color: aliceblue; */
     height: fit-content;
+    overflow: hidden;
   }
-  .dashContainer > :first-child {
+  .dashContainerup > :first-child {
     position: absolute;
     top: 0;
     left: 13px;
     width: 100%;
     height: 100%;
     /* background-color: aliceblue; */
-    z-index: 10; /* Send GridSketch to the background */
+    z-index: 10; 
   }
   .dashContainer1 {
     position: relative;
@@ -59,11 +61,11 @@
     width: 100%;
     height: 100%;
     /* background-color: blue; */
-    z-index: 0; /* Send GridSketch to the background */
+    z-index: 0; 
   }
   .dash {
     position: relative;
-    z-index: 1; /* Ensure the image is above the GridSketch */
+    z-index: 1; 
     width:100%;
   }
   
