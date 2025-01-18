@@ -45,14 +45,14 @@
 .prbname1 {
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 50%;
 }
 
 .prbname2 {
   display: flex;
   flex-direction: column;
   text-align: right;
-  width: auto;
+  width: 50%;
 }
 
 #name {
@@ -330,8 +330,10 @@
     width: 80vw;
   }
 }
-
 @media (max-width: 410px) {
+  #name {
+    font-size: 15px;
+  }
   .eventsSec ul {
     font-size: 10px;
   }
