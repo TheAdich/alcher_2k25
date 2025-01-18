@@ -13,7 +13,7 @@ const Navbar = () => {
     { label: "MUN", path: "/mun" },
     { label: "Kartavya", path: "/kartavya" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Sponsors", path: "/sponsers" },
+    { label: "Sponsors", path: "/sponsors" },
     { label: "Merch", path: "/merch" },
     { label: "Team", path: "/team" },
   ];
@@ -27,24 +27,29 @@ const Navbar = () => {
     setMenuOpen(false);
   };
   return (
-    <main className={styles.nav}>
+    <main className={styles.navm}>
       <div className={styles.bgnav}></div>
       <div className={styles.mainnav}>
         <img className={styles.logo} src="/alcherlogo1.png" alt="" />
         <div className={styles.options}>
           <ul>
-            {navOptions.map((option, idx) => (
-              <li
-                key={idx}
-                className={
-                  pathh === option.path ? styles["navActive"] : styles["nav"]
-                }
-              >
-                <Link href={option.path}>
-                  <p>{option.label}</p>
-                </Link>
-              </li>
-            ))}
+            {navOptions.map((option, idx) => {
+              const isActive =
+                option.path === "/"
+                  ? pathh === option.path
+                  : pathh.startsWith(option.path);
+              const ne = pathh === option.path;
+              return (
+                <li
+                  key={idx}
+                  className={isActive ? styles["navActive"] : styles["nav"]}
+                >
+                  <Link href={option.path}>
+                    <p>{option.label}</p>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className={styles.getcards}>
