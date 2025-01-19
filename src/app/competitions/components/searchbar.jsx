@@ -74,7 +74,7 @@ const SearchBar = () => {
         {filteredData.map((item) => (
           <div className="compCard">
             <div className="cardImg">
-              <img src="./compCard.png" alt="" />
+              <img src={item.img} alt="" />
             </div>
 
             <div className="compTitle">{item.comp_name}</div>
