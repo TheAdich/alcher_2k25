@@ -39,6 +39,8 @@
 }
 
 .searchdiv {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -179,7 +181,7 @@ input:focus {
 
 .compDetails {
   display: flex;
-  gap: 2vw;
+  gap: 1vw;
   font-size: 1.2vw;
   color: #de4784;
 }
