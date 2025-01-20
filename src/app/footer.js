@@ -14,7 +14,7 @@ const footer = () => {
     { label: "MUN", path: "/mun" },
     { label: "Kartavya", path: "/kartavya" },
     { label: "Gallery", path: "/gallery" },
-    { label: "Sponsors", path: "/sponsers" },
+    { label: "Sponsors", path: "/sponsors" },
     { label: "Merch", path: "/merch" },
     { label: "Team", path: "/teams" },
   ];
