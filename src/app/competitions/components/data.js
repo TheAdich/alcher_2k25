@@ -54,7 +54,7 @@ const info = [
     category: "Vogue Nation",
     img: "/competition_img/Haute Couture-min.png",
     comp_name: "Haute Couture",
-    type: "Group ·",
+    type: "Group  ·",
     one_liner: "Fashion Designing Competition",
     url: "https://vogue.alcheringa.in/register/Haute_Couture/",
     tags: "fashion designing, modeling, designing, ramp walk, Apparel Design     ",

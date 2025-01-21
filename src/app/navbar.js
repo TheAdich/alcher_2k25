@@ -7,15 +7,14 @@ import "./components/stone-slab.css";
 import { usePathname } from "next/navigation";
 const Navbar = () => {
   const navOptions = [
-    { label: "Home", path: "/" },
     { label: "Events", path: "/events" },
     { label: "Competitions", path: "/competitions" },
-    { label: "MUN", path: "/mun" },
     { label: "Kartavya", path: "/kartavya" },
-    { label: "Gallery", path: "/gallery" },
-    { label: "Sponsors", path: "/sponsors" },
     { label: "Merch", path: "/merch" },
     { label: "Team", path: "/teams" },
+    { label: "Gallery", path: "/gallery" },
+    { label: "Sponsors", path: "/sponsors" },
+    { label: "MUN", path: "https://iitgmun.alcheringa.in/" },
   ];
 
   const pathh = usePathname();
@@ -30,7 +29,14 @@ const Navbar = () => {
     <main className={styles.navm}>
       <div className={styles.bgnav}></div>
       <div className={styles.mainnav}>
-        <img className={styles.logo} src="/alcherlogo1.png" alt="" />
+        <img
+          onClick={() => {
+            window.location.href = "/";
+          }}
+          className={styles.logo}
+          src="/alcherlogo1.png"
+          alt=""
+        />
         <div className={styles.options}>
           <ul>
             {navOptions.map((option, idx) => {
@@ -53,7 +59,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={styles.getcards}>
-          <img src="/bgGetcards2.png" alt="" className={styles.bggetcards} />
+          <Link href="https://card.alcheringa.in">
+            <img src="/bgGetcards2.png" alt="" className={styles.bggetcards} />
+          </Link>
           <img
             className={styles.desc}
             src="/3_arrows.png"
