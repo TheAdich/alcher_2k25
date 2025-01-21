@@ -40,51 +40,109 @@ function Model({ url, setTarget, scale }) {
 
 export default function Page() {
     const [current, setCurrent] = useState(1);
+    const [currentm, setCurrentm] = useState(1);
     const [target, setTarget] = useState(new THREE.Vector3(0, 0, 0));
-    const tshirts = ["./tshirt1.svg", "./tshirt2.svg", "./tshirt3.svg"];
+    const tshirts = ["/tshirt2.png", "/tshirt1.png", "/tshirt3.png"];
     const model = [
-        { url: "./Hoodie.glb", scale: [19.6, 19.6, 19.6] },
-        { url: "./Regular.glb", scale: [9, 9, 9] },
-        { url: "./Oversized.glb", scale: [2.9, 2.9, 2.9] }
+        { url: "/Hoodie.glb", scale: [19.6, 19.6, 19.6] },
+        { url: "/Regular.glb", scale: [9, 9, 9] },
+        { url: "/Oversized.glb", scale: [2.9, 2.9, 2.9] }
     ];
     const [left, setLeft] = useState(0);
     const [right, setRight] = useState(2);
+    const [isVisible, setIsVisible] = useState(true);
+
+    const handleExpandis = () => {setIsVisible(true);};
 
     const handleRight = () => {
-        setCurrent((current + 1) % 3);
+        setIsVisible(false);
+        setCurrentm((currentm + 1) % 3);
         setLeft((left + 1) % 3);
         setRight((right + 1) % 3);
+        // setLeft((left + 1) % 3);
+        // setRight((right + 1) % 3);
+        // setIsVisible(!isVisible);
         console.log("Current:", current, "Left:", left, "Right:", right);
+        setTimeout(() => {
+            setCurrent((current + 1) % 3);
+            handleExpandis();
+          }, 800); 
     };
 
     const handleLeft = () => {
-        setCurrent((current + 2) % 3);
+        setIsVisible(false);
+        setCurrentm((currentm + 2) % 3);
         setLeft((left + 2) % 3);
         setRight((right + 2) % 3);
+        // setLeft((left + 1) % 3);
+        // setRight((right + 1) % 3);
+        // setIsVisible(!isVisible);
         console.log("Current:", current, "Left:", left, "Right:", right);
+        setTimeout(() => {
+            setCurrent((current + 2) % 3);
+            handleExpandis();
+          }, 800); 
+        // setCurrent((current + 2) % 3);
+        // setLeft((left + 2) % 3);
+        // setRight((right + 2) % 3);
+        // console.log("Current:", current, "Left:", left, "Right:", right);
     };
+
+
+    const handleBtn1 = () => {
+        setCurrentm(0);
+        setLeft(2);
+        setRight(1);
+        setIsVisible(false);
+        setTimeout(() => {
+            setCurrent(0);
+            handleExpandis();
+          }, 800); 
+    }
+
+    const handleBtn2 = () => {
+        setCurrentm(1);
+        setLeft(0);
+        setRight(2);
+        setIsVisible(false);
+        setTimeout(() => {
+            setCurrent(1);
+            handleExpandis();
+          }, 800); 
+    }
+
+    const handleBtn3 = () => {
+        setCurrentm(2);
+        setLeft(1);
+        setRight(0);
+        setIsVisible(false);
+        setTimeout(() => {
+            setCurrent(2);
+            handleExpandis();
+          }, 800); 
+    }
 
     return (
         <div className={styles.maindiv} style={{ width: '100%', height: '120vh', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
             <div className={styles.marquee}>
                 <div className={styles.marquee1}>
                     <Marquee direction="right" speed={30} >
-                        <Image src="./cloudRight.svg" className={`${styles.cloudRight} ${styles.cloud}`} width="1000" height="1000" />
-                        <Image src="./cloudRight.svg" className={`${styles.cloudRight} ${styles.cloud}`} width="1000" height="1000" />
-                        <Image src="./cloudRight.svg" className={`${styles.cloudRight} ${styles.cloud}`} width="1000" height="1000" />
+                        <Image src="/cloudRight.svg" className={`${styles.cloudRight} ${styles.cloud}`} width="1000" height="1000" />
+                        <Image src="/cloudRight.svg" className={`${styles.cloudRight} ${styles.cloud}`} width="1000" height="1000" />
+                        <Image src="/cloudRight.svg" className={`${styles.cloudRight} ${styles.cloud}`} width="1000" height="1000" />
                     </Marquee>
                 </div>
                 <div className={styles.marquee2}>
                     <Marquee speed={10} >
-                        <Image src="./cloudLeft.svg" className={`${styles.cloudLeft} ${styles.cloud}`} width="1000" height="1000" />
-                        <Image src="./cloudLeft.svg" className={`${styles.cloudLeft} ${styles.cloud}`} width="1000" height="1000" />
-                        <Image src="./cloudLeft.svg" className={`${styles.cloudLeft} ${styles.cloud}`} width="1000" height="1000" />
+                        <Image src="/cloudLeft.svg" className={`${styles.cloudLeft} ${styles.cloud}`} width="1000" height="1000" />
+                        <Image src="/cloudLeft.svg" className={`${styles.cloudLeft} ${styles.cloud}`} width="1000" height="1000" />
+                        <Image src="/cloudLeft.svg" className={`${styles.cloudLeft} ${styles.cloud}`} width="1000" height="1000" />
                     </Marquee>
                 </div>
             </div>
             <h1 className={styles.logo} style={{ fontFamily: 'BrickPixel' }}>Alcher Merchandise</h1>
             <div className={styles.box}>
-                <Canvas key={current} className={styles.model2}>
+                <Canvas key={currentm} className={styles.model2} style={{ touchAction: 'none' }}>
                     <OrbitControls
                         enableZoom={false}
                         enablePan={false}
@@ -93,27 +151,27 @@ export default function Page() {
                         target={target} // Set the target to the center of the model
                     />
                     <ambientLight />
-
-                    {current == 0 && <Hoodie />}
-                    {current == 1 && <Regular />}
-                    {current == 2 && <Oversized />}
+                    
+                    {currentm == 0 && <Hoodie />}
+                    {currentm == 1 && <Regular />}
+                    {currentm == 2 && <Oversized />}
 
                     {/* 
                     <Model url={model[current].url} setTarget={setTarget} scale={model[current].scale} /> */}
                 </Canvas>
             </div>
 
-            {current == 0 &&  <div className={styles.arrowLeft}>
+            {current == 0 &&  <div className={`${styles.arrowLeft} ${isVisible ? styles.visibleleft : styles.done}`}>
                 <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 0'</h3>
                 <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
             </div>}
-            {current == 1 &&  <div className={styles.arrowLeft}>
+            {current == 1 &&  <div className={`${styles.arrowLeft} ${isVisible ? styles.visibleleft : styles.done}`}>
                 <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 1'</h3>
                 <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
             </div>}
-            {current == 2 &&  <div className={styles.arrowLeft}>
+            {current == 2 &&  <div className={`${styles.arrowLeft} ${isVisible ? styles.visibleleft : styles.done}`}>
                 <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 2'</h3>
                 <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
@@ -136,82 +194,82 @@ export default function Page() {
             </div> }
 
             {current == 0 &&  <a href="">
-                <Image src="./btnMerch.svg" className={styles.btnMerch} width="50" height="50" />
+                <Image src="/btnMerch.svg" className={styles.btnMerch} width="50" height="50" />
             </a>}
             {current == 1 &&  <a href="">
-                <Image src="./btnMerch.svg" className={styles.btnMerch} width="50" height="50" />
+                <Image src="/btnMerch.svg" className={styles.btnMerch} width="50" height="50" />
             </a>}
             {current == 2 &&  <a href="">
-                <Image src="./btnMerch.svg" className={styles.btnMerch} width="50" height="50" />
+                <Image src="/btnMerch.svg" className={styles.btnMerch} width="50" height="50" />
             </a>}
 
             {current == 0 &&
-            <div className={styles.arrowRight}>
+            <div className={`${styles.arrowRight} ${isVisible ? styles.visibleright : ''}`}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
-                <Image src="./dash.svg" className={styles.dash} width="30" height="30" />
+                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
             {current === 1 &&
-            <div className={styles.arrowRight}>
+            <div className={`${styles.arrowRight} ${isVisible ? styles.visibleright : ''}`}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800 </h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p>
-                <Image src="./dash.svg" className={styles.dash} width="30" height="30" />
+                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
             {current == 2 &&
-            <div className={styles.arrowRight}>
+            <div className={`${styles.arrowRight} ${isVisible ? styles.visibleright : ''}`}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p>
-                <Image src="./dash.svg" className={styles.dash} width="30" height="30" />
+                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
 
             {current == 0 &&     <div className={styles.mobileBottom}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
-                <Image src="./dash.svg" className={styles.dash} width="30" height="30" />
+                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
             {current == 1 &&<div className={styles.mobileBottom}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p>
-                <Image src="./dash.svg" className={styles.dash} width="30" height="30" />
+                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
             {current == 2 &&     <div className={styles.mobileBottom}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p>
-                <Image src="./dash.svg" className={styles.dash} width="30" height="30" />
+                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
 
             {current == 0 &&  <a href="">
-                <Image src="./mobile-btn.svg" className={styles.mobileBtn} width="50" height="50" />
+                <Image src="/mobile-btn.svg" className={styles.mobileBtn} width="50" height="50" />
             </a>}
             {current == 1 &&  <a href="">
-                <Image src="./mobile-btn.svg" className={styles.mobileBtn} width="50" height="50" />
+                <Image src="/mobile-btn.svg" className={styles.mobileBtn} width="50" height="50" />
             </a>}
             {current == 2 &&  <a href="">
-                <Image src="./mobile-btn.svg" className={styles.mobileBtn} width="50" height="50" />
+                <Image src="/mobile-btn.svg" className={styles.mobileBtn} width="50" height="50" />
             </a>}
 
             <div className={styles.foot}></div>
             <div className={styles.leftBtns}>
                 <button>
-                    <Image src="./arrowleft.svg" className={styles.leftMerchbtn} width="70" height="70" onClick={handleLeft} />
+                    <Image src="/arrowleft.svg" className={styles.leftMerchbtn} width="70" height="70" onClick={handleLeft} />
                 </button>
                 <Image src={tshirts[left]} className={styles.leftTshirt} width="130" height="130" />
             </div>
             <div className={styles.merchBtn}>
-                <div className={current == 0 ? `${styles.activeBtn} ${styles.merch3d} ${styles.bot}` : `${styles.merch3d} ${styles.bot}`} onClick={() => setCurrent(0)}>
-                    <Image src="./button1.svg" width="150" height="150" />
+                <div className={currentm == 0 ? `${styles.activeBtn} ${styles.merch3d} ${styles.bot}` : `${styles.merch3d} ${styles.bot}`} onClick={handleBtn1}>
+                    <Image src="/button1.svg" width="150" height="150" />
                 </div>
-                <div className={current == 1 ? `${styles.activeBtn} ${styles.merch3d} ${styles.bot}` : `${styles.merch3d} ${styles.bot}`} onClick={() => setCurrent(1)}>
-                    <Image src="./button2.svg" width="150" height="150" />
+                <div className={currentm == 1 ? `${styles.activeBtn} ${styles.merch3d} ${styles.bot}` : `${styles.merch3d} ${styles.bot}`} onClick={handleBtn2}>
+                    <Image src="/button2.svg" width="150" height="150" />
                 </div>
-                <div className={current == 2 ? `${styles.activeBtn} ${styles.merch3d} ${styles.bot}` : `${styles.merch3d} ${styles.bot}`} onClick={() => setCurrent(2)}>
-                    <Image src="./button3.svg" width="150" height="150" />
+                <div className={currentm == 2 ? `${styles.activeBtn} ${styles.merch3d} ${styles.bot}` : `${styles.merch3d} ${styles.bot}`} onClick={handleBtn3}>
+                    <Image src="/button3.svg" width="150" height="150" />
                 </div>
             </div>
             <div className={styles.rightBtns}>
                 <Image src={tshirts[right]} className={styles.rightTshirt} width="130" height="130" />
                 <button>
-                    <Image src="./rightBtn.svg" className={styles.rightMerchbtn} width="70" height="70" onClick={handleRight} />
+                    <Image src="/rightBtn.svg" className={styles.rightMerchbtn} width="70" height="70" onClick={handleRight} />
                 </button>
             </div>
         </div>

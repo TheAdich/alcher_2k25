@@ -184,10 +184,11 @@ body {
   left:50%;
   transform: translateX(-50%);
   display: flex;
-  top:100px;
-  z-index: 1000;
-  filter: drop-shadow(0 0 30px #FE3989);
+  /* top:0px; */
+  transform: translateY(-100%);
+  filter: drop-shadow(0 0 60px #FE3989);
 }
+
 .content{
   text-align: center;
   padding: 10px 150px;

@@ -1,11 +1,11 @@
 "use client"
-import './merch.css'
+import styles from './merch.module.css'
 import Image from 'next/image'
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import GridSketch from '../_trailinggrid/grid';
-const Merch = () => {
 
-  const [gridDimensions, setGridDimensions] = useState({ width: 300, height: 50,gridsize:16.5 });
+const Merch = () => {
+  const [gridDimensions, setGridDimensions] = useState({ width: 300, height: 50, gridsize: 16.5 });
 
   useEffect(() => {
     const updateDimensions = () => {
@@ -30,20 +30,19 @@ const Merch = () => {
     };
   }, []);
 
-
-    return (
-        <div className="merch_home">
-            <div className='dashContainer'>
-            <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
-            <Image src="./tetris.svg" alt="merch" width={500} height={500} className='merch_text_home dash_home' />
-            </div>
-            <Image src="./tetris-mobile.svg" alt="merch" width={500} height={500} className='mobile_text_home' />
-           <Image src="./tshirts.svg" alt="merch" width={500} height={500} className='tshirts' />
-            <a href="/merch">
-                <Image src="./merch-btn.svg" alt="merch" width={500} height={500} className='merch_btn_home' />
-            </a>
-        </div>
-    )
+  return (
+    <div className={styles.merchHome}>
+      <div className={styles.dashContainer}>
+        <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
+        <Image src="./tetris.svg" alt="merch" width={500} height={500} className={`${styles.merchTextHome} ${styles.dashHome}`} />
+      </div>
+      <Image src="./tetrisMobile.svg" alt="merch" width={500} height={500} className={styles.mobileTextHome} />
+      <Image src="/merch.png" alt="merch" width={500} height={500} className={styles.tshirts} />
+      <a href="/merch">
+        <Image src="./merch-btn.svg" alt="merch" width={500} height={500} className={styles.merchBtnHome} />
+      </a>
+    </div>
+  )
 }
 
 export default Merch;

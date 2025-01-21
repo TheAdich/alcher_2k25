@@ -15,7 +15,7 @@
 .marquee {
   position: absolute;
   height: 40vh;
-  top: -3%;
+  top: -5%;
   width: 100%;
   z-index: 0;
   margin-top: 100px;
@@ -96,16 +96,44 @@
 .arrowLeft {
   position: absolute;
   left: 20%;
+  top: 80%;
+  scale: 5;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+
+  z-index: 999;
+  /* transition: all 1s ease; */
+}
+.arrowLeft.visibleleft{
+  opacity: 1;
+  
+  /* scale: 5; */
+  /* transition: all 0.2s ease-out; */
+
   top: 50%;
+  /* transition: all 1s ease; */
+
+}
+
+
+.arrowRight {
+  /* transition: opacity 0.5s ease; */
+  transition: all 0.5s ease;
+  position: absolute;
+  /* scale: 0; */
+  opacity: 0;
+  right: 17%;
+  top: 80%;
   scale: 5;
   z-index: 999;
 }
-.arrowRight {
-  position: absolute;
-  right: 17%;
+.arrowRight.visibleright{
+  opacity: 1;
+  
+  /* scale: 5; */
   top: 50%;
-  scale: 5;
-  z-index: 999;
+  /* transition: all 1s ease; */
+
 }
 .arrowLeft h3 {
   color: #ffebd3;
@@ -142,7 +170,13 @@
   right: 17%;
   top: 65%;
   z-index: 999;
+  transition: all 0.3s ease;
 }
+
+.btnMerch:hover {
+    filter: drop-shadow(0 0 7px #FE3989);
+}
+
 
 .merch-btn {
   display: flex;
@@ -272,6 +306,12 @@
   .btnMerch {
     scale: 3.5;
     padding-left: 10px;
+  }
+  .btnMerch:hover {
+    /* border: 2px solid #fe3989; */
+    /* opacity: 0%;
+    filter: drop-shadow(0 10 10px #91023b); */
+    /* color: #ffebd3; */
   }
   .merchBtn {
     /* display: none; */
@@ -418,6 +458,9 @@
     width: 100%;
     left: 0;
     margin-top: 0px;
+  }
+  .box{
+    z-index: 2;
   }
   
 
