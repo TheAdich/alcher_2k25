@@ -142,7 +142,7 @@ export default function Page() {
             </div>
             <h1 className={styles.logo} style={{ fontFamily: 'BrickPixel' }}>Alcher Merchandise</h1>
             <div className={styles.box}>
-                <Canvas key={currentm} className={styles.model2} style={{ touchAction: 'none' }}>
+                <Canvas key={currentm} className={`${styles.model2} custom-canvas-class`} style={{ touchAction: 'none' }}>
                     <OrbitControls
                         enableZoom={false}
                         enablePan={false}
@@ -152,9 +152,14 @@ export default function Page() {
                     />
                     <ambientLight />
                     
-                    {currentm == 0 && <Hoodie />}
-                    {currentm == 1 && <Regular />}
-                    {currentm == 2 && <Oversized />}
+                    {currentm == 0 && <Hoodie className="custom-hoodie-class" />}
+                    {currentm == 1 && <Regular className="custom-regular-class" />}
+                    {currentm == 2 && <Oversized className="custom-oversized-class" />}
+
+
+                    {/* {currentm == 0 && <Hoodie className={`${styles.moo} ${isVisible ? styles.del : styles.done}`} />}
+                    {currentm == 1 && <Regular className={`${styles.moo} ${isVisible ? styles.del : styles.done}`} />}
+                    {currentm == 2 && <Oversized className={`${styles.moo} ${isVisible ? styles.del : styles.done}`} />} */}
 
                     {/* 
                     <Model url={model[current].url} setTarget={setTarget} scale={model[current].scale} /> */}
@@ -177,17 +182,17 @@ export default function Page() {
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
             </div>}
 
-            {current == 0 &&  <div className={styles.mobileMerch}>
+            {current == 0 &&  <div className={`${styles.mobileMerch} ${isVisible ? styles.visibleleft : styles.done}`}>
                 <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 0'</h3>
                 <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
             </div> }
-            {current == 1 &&  <div className={styles.mobileMerch}>
+            {current == 1 &&  <div className={`${styles.mobileMerch} ${isVisible ? styles.visibleleft : styles.done}`}>
                 <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 1'</h3>
                 <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
             </div> }
-            {current == 2 &&  <div className={styles.mobileMerch}>
+            {current == 2 &&  <div className={`${styles.mobileMerch} ${isVisible ? styles.visibleleft : styles.done}`}>
                 <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 2'</h3>
                 <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
                 <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
@@ -222,20 +227,20 @@ export default function Page() {
                 <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
 
-            {current == 0 &&     <div className={styles.mobileBottom}>
+            {current == 0 &&     <div className={`${styles.mobileBottom} ${isVisible ? styles.visibleright : styles.done}`}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
-                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
+                {/* <Image src="/dash.svg" className={styles.dash} width="30" height="30" /> */}
             </div>}
-            {current == 1 &&<div className={styles.mobileBottom}>
+            {current == 1 &&<div className={`${styles.mobileBottom} ${isVisible ? styles.visibleright : styles.done}`}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p>
-                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
+                {/* <Image src="/dash.svg" className={styles.dash} width="30" height="30" /> */}
             </div>}
-            {current == 2 &&     <div className={styles.mobileBottom}>
+            {current == 2 &&     <div className={`${styles.mobileBottom} ${isVisible ? styles.visibleright : styles.done}`}>
                 <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
                 <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p>
-                <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
+                {/* <Image src="/dash.svg" className={styles.dash} width="30" height="30" /> */}
             </div>}
 
             {current == 0 &&  <a href="">
