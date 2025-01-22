@@ -1,0 +1,32 @@
+.heroll{
+width: 100%;
+height: fit-content;
+color: red;
+height: 100vh;
+/* background-color: red; */
+}
+
+.herobtn{
+    padding: 10px 20px;
+    position: absolute;
+    background-color: #000000;
+    color: #7F49C4;
+    right: 20%;
+    bottom: 10%;
+    border: 2px solid #7F49C4;
+}
+.heroAnchor {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);   
+    width: 500px;
+    height: 100px;
+    /* background-color: white; */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #7F49C4;
+    text-decoration: none;
+}

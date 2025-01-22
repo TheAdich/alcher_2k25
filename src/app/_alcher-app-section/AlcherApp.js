@@ -1,6 +1,6 @@
 "use client";
 
-import "./alcherapp.css";
+import styles from "./alcherApp.module.css";
 import Image from "next/image";
 // import pic from './_components/image.png';
 
@@ -29,36 +29,36 @@ const AlcherApp = () => {
   }, []);
 
   return (
-    <div className="alcher-app">
-      <div className="mobile">
-        <div className="flex">
-          <div className="phone tiltcard" data-tilt>
+    <div className={styles.alcherApp}>
+      <div className={styles.mobile}>
+        <div className={styles.flex}>
+          <div className={`${styles.phone} ${styles.tiltcard}`} data-tilt>
             <Image
               src="./device.svg"
               alt="Alcher App"
               width={300}
               height={600}
-              className="device"
+              className={styles.device}
             />
           </div>
         </div>
 
         {/* These components for mobile screens  */}
 
-        {/* <Feeling_Lost className="feelinglost" />
-        <Noneedworry className = "noneed"/>
-        <Wegotyou className="wegotyou" />
-        <Covered className="covered" />
-        <Atext className="atext" />
-        <B1text className="b1text" />  */}
-        {/* /* <Btext className="btext" /> */}
+        {/* <Feeling_Lost className={styles.feelinglost} />
+        <Noneedworry className={styles.noneed}/>
+        <Wegotyou className={styles.wegotyou} />
+        <Covered className={styles.covered} />
+        <Atext className={styles.atext} />
+        <B1text className={styles.b1text} />  */}
+        {/* /* <Btext className={styles.btext} /> */}
 
         <Image
           src="./mobile-text.svg"
           alt="mobile-text"
           width={500}
           height={500}
-          className="mobile-text"
+          className={styles.mobileText}
         />
 
         <Image
@@ -66,9 +66,9 @@ const AlcherApp = () => {
           alt="Alcher App"
           width={300}
           height={600}
-          className="text"
+          className={styles.text}
         />
-        {/* <Text className="text" /> */}
+        {/* <Text className={styles.text} /> */}
 
         <a href="">
           <Image
@@ -76,10 +76,10 @@ const AlcherApp = () => {
             alt="Alcher App"
             width={300}
             height={600}
-            className="get-app-btn"
+            className={styles.getAppBtn}
           />
         </a>
-        {/* <GetAppBtn className="get-app-btn" />  */}
+        {/* <GetAppBtn className={styles.getAppBtn} />  */}
       </div>
     </div>
   );
