@@ -5,6 +5,7 @@ import styles from "./component/style.module.css";
 import loc from "./component/Location.svg";
 import CloudSection from "./component/Cloudsection";
 // import Loading from "../loading";
+import ComingSoon from "./component/comingsoon";
 
 // import image1 from "./component/image1.png";
 // import image2 from "./component/image1.png";
@@ -20,7 +21,8 @@ export default function Page() {
   return (
     <div className={styles.main}>
       <CloudSection />
-        <div className={styles.container}>
+        <ComingSoon></ComingSoon>
+        {/* {<div className={styles.container}>
             {images.map((image, index) => (
               <div key={index} className={styles.event}>
                 <div className={styles.left}
@@ -86,7 +88,7 @@ export default function Page() {
                 </div>
               </div>
             ))} 
-        </div>
+        </div>} */}
     </div>
   );
 }
