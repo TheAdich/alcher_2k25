@@ -155,6 +155,50 @@ const footer = () => {
             <a href="mailto:alcheringa@iitg.ac.in">alcheringa@iitg.ac.in</a>
           </div>
         </div>
+        <div className={styles.wrapper}>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+        </div>
       </div>
     </div>
   );
