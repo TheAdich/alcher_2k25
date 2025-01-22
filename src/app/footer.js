@@ -58,14 +58,6 @@ const footer = () => {
                 : pathh.startsWith(option.path);
 
             return (
-              // <li
-              //   key={idx}
-              //   className={isActive ? styles["navActive"] : styles["nav"]}
-              // >
-              //   <Link href={option.path}>
-              //     <p>{option.label}</p>
-              //   </Link>
-              // </li>
               <ul className={isActive ? styles["navActive"] : styles["nav"]}>
                 <Link href={option.path}>{option.label}</Link>
               </ul>
@@ -99,10 +91,10 @@ const footer = () => {
         </div>
         <div className={styles.design}>
           <div className={styles.designleft}>
-            <img src="/name2.png" alt="" />
+            <img src="/name1.png" alt="" />
           </div>
           <div className={styles.designright}>
-            <img src="/name1.png" alt="" />
+            <img src="/name2.png" alt="" />
           </div>
         </div>
 
