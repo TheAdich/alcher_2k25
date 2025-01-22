@@ -87,7 +87,7 @@ height: 100vh;
 
 
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1000px){
     .heroll{
         display: none;
     }
