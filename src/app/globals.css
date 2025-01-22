@@ -133,15 +133,16 @@ body {
   margin: 0;
   z-index: -10;
   position: relative;
+ 
+}
+
+.homecloud1 {
+  opacity: 0.5;
 
 }
 
-.homeclouds1 {
-  height: 10rem;
-}
-
-.homeclouds2 {
-  height: 10rem;
+.homecloud2 {
+  opacity: 0.5;
 }
 
 
@@ -186,6 +187,7 @@ body {
   display: flex;
   top:100px;
   z-index: 1000;
+
   filter: drop-shadow(0 0 30px #FE3989);
 }
 .content{
@@ -202,9 +204,19 @@ body {
 
 .video-container {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin-top: 4rem;
   object-fit: cover;
+  background: linear-gradient(180deg, #000014 0%, rgba(0, 0, 20, 0) 100%)
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #000014 0%, rgba(0, 0, 20, 0) 100%);
+  pointer-events: none;
 }
 
 .stats-section {

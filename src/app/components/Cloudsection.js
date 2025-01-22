@@ -112,6 +112,7 @@ const CloudSection = () => {
                         width={100}
                         height={100}
                         className="alcherlogo"
+                        style={"opacity=1"}
                     />
               
             </div>
@@ -132,7 +133,7 @@ const CloudSection = () => {
                         <source src="/video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-
+                    <div class="overlay"></div>
 
                     <div className="stats-section">
                         <div className="stats-flex">

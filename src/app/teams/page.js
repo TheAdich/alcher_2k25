@@ -29,7 +29,7 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#239E6D' }}>PUBLIC RELATIONS AND BRANDING </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The Public Relations and Branding Team is tasked with managing outreach and communication. They connect with colleges, media outlets, and external organizations to maximize participation and publicity. They also handle press releases, media coverage, and social media campaigns, while running campus ambassador programs to expand the fest’s reach.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -40,7 +40,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/sudhanshu.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -59,7 +59,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p>sudhanshu@alcheringa.in</p>
+                                   <a href='mailto:sudhanshu@alcheringa.in'> <p>sudhanshu@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -70,7 +70,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p>+91 82929 67325</p>
+                                   <a href='tel:+91 82929 67325'> <p>+91 82929 67325</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -81,7 +81,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p><a href="https://www.linkedin.com/in/sudhanshu-raj-727a1a204/?originalSubdomain=in" target='_blank'> VisitLinkedIn</a></p>
+                                    <p><a href="https://www.linkedin.com/in/sudhanshu-raj-727a1a204/?originalSubdomain=in" target='_blank'> Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -98,7 +98,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/sidharth.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -117,7 +117,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p>siddharth@alcheringa.in</p>
+                                   <a href='mailto:siddharth@alcheringa.in'> <p>siddharth@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -128,7 +128,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p>+91 73546 47811</p>
+                                     <a href='tel:+91 73546 47811'><p>+91 73546 47811</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -139,7 +139,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p><a href='https://www.linkedin.com/in/siddharth-shukla-876653276/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/siddharth-shukla-876653276/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -155,7 +155,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/sulabh.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -174,7 +174,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p>sulabh@alcheringa.in</p>
+                                   <a href='mailto:sulabh@alcheringa.in'><p>sulabh@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -185,7 +185,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p>+91 83198 55908</p>
+                                     <a href='tel:+91 83198 55908'><p>+91 83198 55908</p> </a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -196,7 +196,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#239E6D' }}>
-                                    <p><a href='https://www.linkedin.com/in/sulabh-napit-b415a1214/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/sulabh-napit-b415a1214/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -207,7 +207,7 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#FB754C' }}>CORPORATE RELATIONS AND MARKETING </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The Corporate Relations and Marketing Team takes care of acquiring sponsorships and partnerships with companies. They play a crucial role in securing the financial and resource backing needed for the festival. Additionally, they promote Alcheringa through well-planned marketing strategies, ensuring it attracts participants and visitors from across the country.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -218,7 +218,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/prakrati.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -238,7 +238,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>prakrati@alcheringa.in</p>
+                                   <a href='mailto:prakrati@alcheringa.in'><p>prakrati@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -249,7 +249,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>+91 80837 21976</p>
+                                    <a href='tel:+91 80837 21976'><p>+91 80837 21976</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -260,7 +260,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p><a href='https://www.linkedin.com/in/prakrati-sahu-3748b127a/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/prakrati-sahu-3748b127a/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -277,7 +277,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/vivek.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -297,7 +297,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>vivek@alcheringa.in</p>
+                                   <a href='mailto:vivek@alcheringa.in'><p>vivek@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -308,7 +308,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>+91 70169 90353</p>
+                                     <a href='tel:+91 70169 90353'> <p>+91 70169 90353</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -319,7 +319,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p><a href='https://www.linkedin.com/in/vi-pr/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/vi-pr/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -336,7 +336,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/kishor.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -356,7 +356,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>kunal.k@alcheringa.in</p>
+                                   <a href='mailto:kunal.k@alcheringa.in'><p>kunal.k@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -367,7 +367,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>+91 62041 80280</p>
+                                   <a href='tel:+91 62041 80280'>  <p>+91 62041 80280</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -378,7 +378,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p><a href='https://www.linkedin.com/in/kishor-kunal-0478b5260/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/kishor-kunal-0478b5260/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -394,7 +394,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/jayes.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -414,7 +414,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>Jayes@alcheringa.in</p>
+                                   <a href='mailto:Jayes@alcheringa.in'><p>Jayes@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -425,7 +425,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p>+91 80023 57771</p>
+                                    <a href='tel:+91 80023 57771'> <p>+91 80023 57771</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -436,7 +436,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FB754C' }}>
-                                    <p><a href='https://www.linkedin.com/in/jayes-ranjan-43711b259/?trk=public_profile_browsemap&originalSubdomain=in' target='_blank  '>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/jayes-ranjan-43711b259/?trk=public_profile_browsemap&originalSubdomain=in' target='_blank  '>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -448,7 +448,7 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#D73849' }}>   Events </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The Events Team is responsible for planning and managing all the cultural, competitive, and informal events of Alcheringa. They ensure that everything runs smoothly, from scheduling to venue arrangements, while also coordinating with participants, judges, and performers. They handle on-ground logistics such as stage setup, sound systems, and lighting to deliver seamless event execution.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -459,7 +459,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/abhijeet.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -478,7 +478,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p>abhijeet@alcheringa.in</p>
+                                   <a href='mailto:abhijeet@alcheringa.in'><p>abhijeet@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -489,7 +489,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p>+91 93367 29959</p>
+                                   <a href='tel:+91 93367 29959'>  <p>+91 93367 29959</p> </a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -500,7 +500,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p><a href='https://www.linkedin.com/in/abhijeet98/?trk=public_profile_browsemap&originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/abhijeet98/?trk=public_profile_browsemap&originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -517,7 +517,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/krishna.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -536,7 +536,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p>krishna@alcheringa.in</p>
+                                   <a href='mailto:krishna@alcheringa.in'><p>krishna@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -547,7 +547,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p>+91 70496 06444</p>
+                                   <a href='tel:+91 70496 06444'>  <p>+91 70496 06444</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -558,7 +558,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p><a href='https://www.linkedin.com/in/krishna-agrawal-130b05250/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/krishna-agrawal-130b05250/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -574,7 +574,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/pramith.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -593,7 +593,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p>Pramit@alcheringa.in</p>
+                                   <a href='mailto:Pramit@alcheringa.in'><p>Pramit@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -604,7 +604,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p>+91 86977 31037</p>
+                                     <a href='tel:+91 86977 31037'> <p>+91 86977 31037</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -615,7 +615,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#D73849' }}>
-                                    <p><a href='https://www.linkedin.com/in/pramit-some-b336482ab/?originalSubdomain=in' >VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/pramit-some-b336482ab/?originalSubdomain=in' >Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -629,7 +629,7 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#FE3989' }}>Creatives </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The Creatives Team is in charge of designing all the visual elements of the fest, including posters, banners, stage backdrops, and merchandise. They work to create a cohesive and visually appealing theme for the festival, ensuring the branding stands out. Collaborating closely with other teams, they also create promotional materials to grab attention and reflect the identity of Alcheringa.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -640,7 +640,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/Anmole.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -660,7 +660,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>creatives@alcheringa.in</p>
+                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -671,7 +671,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>+91 70210 59025</p>
+                                    <a href='tel:+91 70210 59025'> <p>+91 70210 59025</p></a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -682,7 +682,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p><a href='https://www.linkedin.com/in/anmolsable/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/anmolsable/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -699,7 +699,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/nikitha.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -719,7 +719,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>creatives@alcheringa.in</p>
+                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -730,7 +730,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>+91 88850 59696</p>
+                                     <a href='tel:+91 88850 59696'> <p>+91 88850 59696</p></a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -741,7 +741,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p><a href='https://www.linkedin.com/in/nikitasharma710/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/nikitasharma710/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -758,7 +758,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/sankeerth.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -778,7 +778,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>creatives@alcheringa.in</p>
+                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -789,7 +789,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>+91 70210 59025</p>
+                                  <a href='tel:+91 70210 59025'>   <p>+91 70210 59025</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -800,7 +800,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p><a href='https://www.linkedin.com/in/sai-sankeerth-veggalam/?trk=people_directory&originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/sai-sankeerth-veggalam/?trk=people_directory&originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -811,7 +811,7 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#FE3989' }}>IITG MUN </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The IIT MUN (Model United Nations) team at Alcheringa organizes debates and discussions simulating the United Nations. Delegates represent different countries, tackling global issues like climate change, international security, and human rights. The event promotes diplomacy, public speaking, and problem-solving among participants.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -822,7 +822,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/yoshita.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -842,7 +842,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>iitgmun@alcheringa.in</p>
+                                   <a href='mailto:iitgmun@alcheringa.in'><p>iitgmun@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -853,7 +853,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>+91 80174 71933</p>
+                                      <a href='tel:+91 80174 71933'> <p>+91 80174 71933</p>  </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -864,7 +864,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p><a href='https://www.linkedin.com/in/yoshita-banerjee-baaa6724b/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                    <p><a href='https://www.linkedin.com/in/yoshita-banerjee-baaa6724b/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -881,7 +881,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/divya.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -901,7 +901,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>iitgmun@alcheringa.in</p>
+                                   <a href='mailto:iitgmun@alcheringa.in'><p>iitgmun@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -912,7 +912,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p>+91 95791 45131</p>
+                                    <a href='tel:+91 95791 45131'>  <p>+91 95791 45131</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -923,7 +923,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                <p><a href='https://www.linkedin.com/in/divya-mate-1394152b5/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                <p><a href='https://www.linkedin.com/in/divya-mate-1394152b5/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -938,7 +938,7 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#8F4BFF' }}>WEB AND APP OPERATIONS </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The App and Web Operations Team focuses on developing and maintaining Alcheringa’s digital platforms, including the app and website. They ensure that these platforms are user-friendly and support features like event registration, scheduling, and updates. Their role is critical in delivering a smooth digital experience and addressing any technical issues that arise.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -949,7 +949,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/himank.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -969,7 +969,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                    <p>webops@alcheringa.in</p>
+                                   <a href='mailto:webops@alcheringa.in'><p>webops@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -980,7 +980,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                    <p>+91 89557 74322</p>
+                                    <a href='tel:+91 89557 74322'>   <p>+91 89557 74322</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -991,7 +991,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                <p><a href='https://www.linkedin.com/in/himank-bohara/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                <p><a href='https://www.linkedin.com/in/himank-bohara/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -1007,7 +1007,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/shivam.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -1027,7 +1027,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                    <p>webops@alcheringa.in</p>
+                                   <a href='mailto:webops@alcheringa.in'><p>webops@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -1038,7 +1038,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                    <p>+91 8085774946</p>
+                                   <a href='tel:+91 8085774946'>   <p>+91 8085774946</p></a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -1049,7 +1049,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                <p><a href='https://www.linkedin.com/in/shivam-gupta9370-/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                <p><a href='https://www.linkedin.com/in/shivam-gupta9370-/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -1065,7 +1065,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/jivesh.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -1085,7 +1085,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                    <p>webops@alcheringa.in</p>
+                                   <a href='mailto:webops@alcheringa.in'><p>webops@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -1096,7 +1096,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                    <p>+91 83080 77000</p>
+                                    <a href='tel:+91 83080 77000'>     <p>+91 83080 77000</p></a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -1107,7 +1107,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#8F4BFF' }}>
-                                <p><a href='https://www.linkedin.com/in/jiveshfirke/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                <p><a href='https://www.linkedin.com/in/jiveshfirke/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -1120,7 +1120,7 @@ const page = () => {
             </section>
             <section className={styles.section}>
                 <h1 style={{ color: '#1F76FA' }}>Convenor and Finance HEAD </h1>
-                <p className={styles.para}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p className={styles.para}>The Finance Head and Convenor are essential to Alcheringa’s success. The Finance Head oversees budgeting, resource allocation, and transparency in financial transactions, ensuring a balance between income and expenses. The Convenor leads all teams, aligns efforts with the fest’s goals, and serves as the link between the organizing committee and the institute administration, ensuring smooth coordination and execution. Together, they ensure the festival runs seamlessly.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
@@ -1131,7 +1131,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/pradiptha.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -1150,7 +1150,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#1F76FA' }}>
-                                    <p>pradipta@alcheringa.in</p>
+                                   <a href='mailto:pradipta@alcheringa.in'><p>pradipta@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -1161,7 +1161,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#1F76FA' }}>
-                                    <p>+91 70862 00153</p>
+                                    <a href='tel:+91 70862 00153'>   <p>+91 70862 00153</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -1172,7 +1172,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#1F76FA' }}>
-                                <p><a href='https://www.linkedin.com/in/pradipta-hazarika-486aba261/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                <p><a href='https://www.linkedin.com/in/pradipta-hazarika-486aba261/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
@@ -1189,7 +1189,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <Image
-                                src="/head.png"
+                                src="/astiva.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -1208,7 +1208,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#1F76FA' }}>
-                                    <p>astitva@alcheringa.in</p>
+                                   <a href='mailto:astitva@alcheringa.in'><p>astitva@alcheringa.in</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -1219,7 +1219,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#1F76FA' }}>
-                                    <p>+91 85272 67283</p>
+                                    <a href='tel:+91 85272 67283'>    <p>+91 85272 67283</p></a>
                                 </div>
                             </button>
                             <button className={styles.button}>
@@ -1230,7 +1230,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#1F76FA' }}>
-                                <p><a href='https://www.linkedin.com/in/astitva-jain-38979024b/?originalSubdomain=in' target='_blank'>VisitLinkedIn</a></p>
+                                <p><a href='https://www.linkedin.com/in/astitva-jain-38979024b/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
                                 </div>
                             </button>
                         </div>
