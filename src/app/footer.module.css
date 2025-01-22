@@ -108,7 +108,7 @@
   width: 40%;
 }
 .followUs {
-  bottom: 120px;
+  bottom: 150px;
   position: absolute;
   color: rgba(255, 235, 211, 1);
   height: auto;
@@ -136,7 +136,7 @@
 }
 
 .oneline {
-  bottom: 30px;
+  bottom: 50px;
   position: absolute;
   color: rgba(255, 235, 211, 1);
   font-family: gameTape;
@@ -283,8 +283,8 @@
 }
 
 .wrapper span:nth-child(6) {
-  left: 20%;
-  top: 50%;
+  right: -20%;
+  top: 20%;
   animation-delay: 2.6s;
 }
 
@@ -307,39 +307,46 @@
 }
 
 .wrapper span:nth-child(9) {
-  /* right: 65%;
-  top: 5%; */
+  left: 65%;
+  top: 15%;
   animation-delay: 0.8s;
 }
 .wrapper span:nth-child(10) {
-  /* right: 1%;
-  top: 1%; */
+  right: 20%;
+  top: 20%;
   animation-delay: 1.2s;
 }
 .wrapper span:nth-child(11) {
-  /* left: 61%;
-  top: 20%; */
+  right: -60%;
+  top: -70%;
   animation-delay: 1.8s;
 }
 .wrapper span:nth-child(12) {
-  /* left: 21%;
-  top: 39%; */
+  left: 21%;
+  top: 39%;
   animation-delay: 2s;
 }
 
 .wrapper span:nth-child(13) {
-  /* left: 21%;
-  top: 30%; */
+  right: -70%;
+  top: -70%;
   animation-delay: 1.2s;
 }
 .wrapper span:nth-child(14) {
-  /* left: 7%;
-  top: 20%; */
+  right: -75%;
+  top: -100%;
   animation-delay: 1s;
 }
+
+.wrapper span:nth-child(14) img {
+  width: 12px;
+  height: 12px;
+  animation-delay: 1s;
+}
+
 .wrapper span:nth-child(15) {
-  /* left: 10%;
-  top: 30%; */
+  right: -80%;
+  top: -90%;
   animation-delay: 1.6s;
 }
 
@@ -438,6 +445,8 @@
     font-size: 13px;
   }
   .eventsSec {
+    top: 10vh;
+    position: absolute;
     width: 400px;
   }
 
@@ -516,5 +525,11 @@
   }
   .rgtline {
     font-size: 8px;
+  }
+  .mainFooter {
+    gap: 30px;
+  }
+  .followUs {
+    bottom: 100px;
   }
 }
