@@ -6,6 +6,7 @@ import "./components/stone-slab.css";
 import "./components/game-tape.css";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 const footer = () => {
   const navOptions = [
     { label: "Events", path: "/events" },
@@ -40,6 +41,8 @@ const footer = () => {
     navigator.clipboard.writeText(text);
   };
 
+  const pathh = usePathname();
+
   return (
     <div>
       <img className="w-full h-20 bg-gray-900 " src="/footUpBG.png" alt="" />
@@ -48,11 +51,26 @@ const footer = () => {
           className={styles.eventsSec}
           style={{ fontFamily: "stoneSlab", color: "rgba(255, 235, 211, 1)" }}
         >
-          {navOptions.map((option) => (
-            <ul>
-              <Link href={option.path}>{option.label}</Link>
-            </ul>
-          ))}
+          {navOptions.map((option) => {
+            const isActive =
+              option.path === "/"
+                ? pathh === option.path
+                : pathh.startsWith(option.path);
+
+            return (
+              // <li
+              //   key={idx}
+              //   className={isActive ? styles["navActive"] : styles["nav"]}
+              // >
+              //   <Link href={option.path}>
+              //     <p>{option.label}</p>
+              //   </Link>
+              // </li>
+              <ul className={isActive ? styles["navActive"] : styles["nav"]}>
+                <Link href={option.path}>{option.label}</Link>
+              </ul>
+            );
+          })}
         </div>
         <div className={styles.logoDiv}>
           <img className={styles.footerLogo} src="/footLogo.png" alt="" />
