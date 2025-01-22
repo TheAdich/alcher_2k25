@@ -81,16 +81,45 @@ const footer = () => {
         </div>
         <div className={styles.design}>
           <div className={styles.designleft}>
-            <img src="/name1.png" alt="" />
-          </div>
-          <div className={styles.designright}>
             <img src="/name2.png" alt="" />
           </div>
+          <div className={styles.designright}>
+            <img src="/name1.png" alt="" />
+          </div>
+        </div>
+
+        <div className={styles.followUs}>
+          <p className={styles.followtxt}>Follow Us</p>
+          <div className={styles.followicons}>
+            <ul>
+              <a href="https://www.instagram.com/alcheringaiitg/?hl=en">
+                <img src="/instaicon.png" alt="" />
+              </a>
+            </ul>
+            <ul>
+              <a href="https://www.facebook.com/alcheringaiitg/">
+                <img src="/fbicon.png" alt="" />
+              </a>
+            </ul>
+            <ul>
+              <a href="https://x.com/alcheringaiitg">
+                <img src="/xicon.png" alt="" />
+              </a>
+            </ul>
+            <ul>
+              <a href="https://www.youtube.com/@alcheringaIITG">
+                <img src="/yticon.png" alt="" />
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.footDownDes}>
+          <img src="/footDownBG.png" alt="" />
         </div>
 
         <div className={styles.oneline}>
           <div className={styles.lftline}>
-            Designed and Developed by <br />
+            Designed and Developed by
             <div className={styles.alcherCreatives}>
               <p
                 onMouseEnter={() => setIsVisible(true)}
@@ -122,53 +151,9 @@ const footer = () => {
             </div>
           </div>
           <div className={styles.rgtline}>
-            For Business Enquiries{" "}
+            For Business Enquiries
             <a href="mailto:alcheringa@iitg.ac.in">alcheringa@iitg.ac.in</a>
           </div>
-        </div>
-
-        <div className={styles.followUs}>
-          <p className={styles.followtxt}>Follow Us</p>
-          <div className={styles.followicons}>
-            <ul>
-              <a href="https://www.instagram.com/alcheringaiitg/?hl=en">
-                <img src="/instaicon.png" alt="" />
-              </a>
-            </ul>
-            <ul>
-              <a href="https://www.facebook.com/alcheringaiitg/">
-                <img src="/fbicon.png" alt="" />
-              </a>
-            </ul>
-            <ul>
-              <a href="https://x.com/alcheringaiitg">
-                <img src="/xicon.png" alt="" />
-              </a>
-            </ul>
-            <ul>
-              <a href="https://www.youtube.com/@alcheringaIITG">
-                <img src="/yticon.png" alt="" />
-              </a>
-            </ul>
-          </div>
-        </div>
-        <div className={styles.retroleft}>
-          <img src="/txtretroleft.png" alt="" />
-          <br />
-          <img src="/txtretroleft.png" alt="" />
-        </div>
-        <div className={styles.retroright}>
-          <img src="/txtretroright.png" alt="" />
-          <br />
-          <img src="/txtretroright.png" alt="" />
-        </div>
-
-        <div className={styles.globecir}>
-          <img src="/globe.png" alt="" />
-        </div>
-
-        <div className={styles.globecir2}>
-          <img src="/globe2.png" alt="" />
         </div>
       </div>
     </div>

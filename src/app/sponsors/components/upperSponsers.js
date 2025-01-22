@@ -19,8 +19,11 @@ const upperSponsers = () => {
     },
     {
       headline: "Trusted By",
-      url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
+      url: "./sponsors_img/MCJ LOGO complete-white.png",
+    },
+    {
+      headline: "Educated By",
+      url: "./sponsors_img/Combine Logo NERIM.png",
     },
   ];
 
@@ -91,7 +94,6 @@ const upperSponsers = () => {
             <div className={styles.imgMainSponser}>
               <img className={styles.imggg} src={option.url} alt="" />
             </div>
-            <p>{option.oneline}</p>
           </div>
         ))}
       </div>
