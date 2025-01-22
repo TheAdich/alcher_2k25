@@ -133,16 +133,15 @@ body {
   margin: 0;
   z-index: -10;
   position: relative;
- 
-}
-
-.homecloud1 {
-  opacity: 0.5;
 
 }
 
-.homecloud2 {
-  opacity: 0.5;
+.homeclouds1 {
+  height: 10rem;
+}
+
+.homeclouds2 {
+  height: 10rem;
 }
 
 
@@ -188,11 +187,10 @@ body {
   z-index: 999;
   /* justify-self: center; */
   transform: translateX(-50%);
-  display: flex;
-  top:100px;
-  z-index: 1000;
-
-  filter: drop-shadow(0 0 30px #FE3989);
+  /* display: flex; */
+  /* top:0px; */
+  transform: translateY(-10%);
+  filter: drop-shadow(0 0 10px #F13683);
 }
 
 .content{
