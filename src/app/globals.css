@@ -177,12 +177,16 @@ body {
 
 .alcherlogo{
   position: absolute;
-  height: 250px;
-  width:700px;
-  transform: translateY(-90%);
-  padding: 10px;
+  /* height: 250px; */
+  /* width:700px; */
+  scale: 7;
+  /* transform: translateY(-70%); */
+  /* padding: 10px; */
   /* top: 150px; */
-  left:50%;
+  left:45%;
+  top: 50%;
+  z-index: 999;
+  /* justify-self: center; */
   transform: translateX(-50%);
   display: flex;
   top:100px;
@@ -190,6 +194,7 @@ body {
 
   filter: drop-shadow(0 0 30px #FE3989);
 }
+
 .content{
   text-align: center;
   padding: 10px 150px;
@@ -251,7 +256,14 @@ body {
   color: #FFEBD3;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: #FE3989;
+  border-radius: 20px;
+}
 
 .stat-description {
   color: #9ca3af; 
@@ -299,6 +311,9 @@ body {
   .content{
     padding: 10px 50px;
   }
+  .alcherlogo{
+    scale: 4;
+  }
 
 }
 
@@ -317,6 +332,10 @@ body {
   }
   .stats-flex {
     gap: 10px;
+  }
+  .alcherlogo{
+    scale: 3;
+    left: 40%;
   }
 }
 

@@ -1,30 +1,30 @@
 @font-face {
-    font-family: "brickpixel";
-    src: url("/Brick_Pixel/.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "brickpixel";
+  src: url("/Brick_Pixel/.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "stoneSlab";
-    src: url("/Stone_Slab.ttf") format("truetype");
-    font-weight: normal;
-    /* Adjust if needed */
-    font-style: normal;
-    /* Adjust if needed */
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal;
+  /* Adjust if needed */
+  font-style: normal;
+  /* Adjust if needed */
 }
 
 @font-face {
-    font-family: "gameTape";
-    src: url("/Game_Tape.ttf") format("truetype");
-    font-weight: normal;
-    /* Adjust if needed */
-    font-style: normal;
-    /* Adjust if needed */
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal;
+  /* Adjust if needed */
+  font-style: normal;
+  /* Adjust if needed */
 }
 
 .teams {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .teamclouds {
@@ -71,36 +71,37 @@
 }
 
 .section {
-    margin-top: 6rem;
-    margin-bottom: 3rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 .section h1 {
-    font-family: "brickpixel";
-    font-size: 3rem;
-    text-align: center;
-    text-transform: capitalize;
+  font-family: "brickpixel";
+  font-size: 3rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .para {
-    color: rgba(255, 235, 211, 0.70);
-    font-size: 16px;
-    font-family: "gameTape";
-    font-weight: 400;
-    padding: 0 280px;
-    text-align: center;
+  color: rgba(255, 235, 211, 0.7);
+  font-size: 16px;
+  font-family: "gameTape";
+  font-weight: 400;
+  padding: 0 280px;
+  text-align: center;
 }
 
 .persons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    gap: 150px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 150px;
+  flex-wrap: wrap;
 }
 
 .profilecard {
+
     display: flex;
     align-items: center;
     position: relative;
@@ -117,12 +118,12 @@
 }
 
 .profileframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 .profileface {
@@ -141,19 +142,19 @@
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .bio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
 }
 
 .buttons h2 {
@@ -165,29 +166,30 @@
 .buttons p {
     font-family: "gameTape";
     font-size: 18px;
+
 }
 
 .button {
-    width: 200px;
-    height: auto;
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: background-color 0.3s ease;
-    overflow: hidden;
-    position: relative;
-
+  width: 200px;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transition: background-color 0.3s ease;
+  overflow: hidden;
+  position: relative;
 }
 
 .buttonimage {
-    width: 200px;
-    height: auto;
+  width: 200px;
+  height: auto;
 }
 
 .buttonimage:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .overlay {
+
     position: absolute;
     bottom: 100%;
     left: 0;
@@ -201,42 +203,42 @@
     transition: bottom 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     z-index: 2;
+
 }
 .overlay p{
     font-size: 15px;
 }
 
 .button:hover .overlay {
-    bottom: 0;
-    opacity: 1;
-
+  bottom: 0;
+  opacity: 1;
 }
 
-
 @media screen and (max-width: 1408px) {
-    .persons {
-        gap: 100px;
-    }
+  .persons {
+    gap: 100px;
+  }
 
-    .profilecard {
-        gap: 50px;
-    }
+  .profilecard {
+    gap: 50px;
+  }
 
-    .profilephoto {
-        width: 280px;
-        height: 230px;
-    }
+  .profilephoto {
+    width: 280px;
+    height: 230px;
+  }
 
-    .bio {
-        width: 200px;
-    }
+  .bio {
+    width: 200px;
+  }
 
-    .button {
-        width: 200px;
-    }
+  .button {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 1216px) {
+
     .buttons h2 {
         font-size: 16.5px;
     }
@@ -248,27 +250,28 @@
         gap: 70px;
     }
 
-    .para {
-        padding: 0 200px;
-    }
+  .para {
+    padding: 0 200px;
+  }
 
-    .profilecard {
-        gap: 30px;
-    }
+  .profilecard {
+    gap: 30px;
+  }
 
-    .profilephoto {
-        width: 250px;
-        height: 205px;
-    }
+  .profilephoto {
+    width: 250px;
+    height: 205px;
+  }
 
-    .bio {
-        width: 150px;
-    }
+  .bio {
+    width: 150px;
+  }
 
-    .button {
-        width: 180px;
-    }
+  .button {
+    width: 180px;
+  }
 }
+
 
 @media(max-width:991px) {
     .buttons h2 {
@@ -284,22 +287,23 @@
         padding: 0 150px;
     }
 
-    .persons {
-        gap: 30px;
-    }
+  .persons {
+    gap: 30px;
+  }
 
-    .profilecard {
-        gap: 10px;
-    }
+  .profilecard {
+    gap: 10px;
+  }
 
-    .profilephoto {
-        width: 220px;
-        height: 183px;
-    }
+  .profilephoto {
+    width: 220px;
+    height: 183px;
+  }
 
-    .bio {
-        width: 130px;
-    }
+  .bio {
+    width: 130px;
+  }
+
 
     .button {
         width: 150px;
@@ -313,31 +317,30 @@
         gap: 45px;
     }
 
-    .para {
-        padding: 0 40px;
-    }
+  .para {
+    padding: 0 40px;
+  }
 
-    .profilecard {
-        gap: 8px;
+  .profilecard {
+    gap: 8px;
+  }
 
-    }
+  .topsubheading {
+    width: 400px;
+  }
 
-    .topsubheading {
-        width: 400px;
-    }
+  .profilephoto {
+    width: 180px;
+    height: 150px;
+  }
 
-    .profilephoto {
-        width: 180px;
-        height: 150px;
-    }
+  .bio {
+    width: 130px;
+  }
 
-    .bio {
-        width: 130px;
-    }
-
-    .button {
-        width: 120px;
-    }
+  .button {
+    width: 120px;
+  }
 }
 
 @media(max-width:675px) {
@@ -356,8 +359,8 @@
 
 
 
-    .profilecard {
-        align-items: center;
-        justify-content: center;
-    }
+  .profilecard {
+    align-items: center;
+    justify-content: center;
+  }
 }

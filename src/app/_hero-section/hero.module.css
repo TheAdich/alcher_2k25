@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "BrickPixel";
+    src: url("/fonts/BrickPixel.ttf") format("truetype");
+}
+
+.heroll{
+width: 100%;
+height: fit-content;
+color: red;
+height: 100vh;
+/* cursor: pointer; */
+/* background-color: red; */
+}
+
+.herobtn{
+    padding: 10px 20px;
+    position: absolute;
+    background-color: #000000;
+    color: #7F49C4;
+    right: 20%;
+    bottom: 10%;
+    border: 2px solid #7F49C4;
+}
+.heroAnchor {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);   
+    width: 500px;
+    height: 100px;
+    /* background-color: white; */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #7F49C4;
+    text-decoration: none;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+.danger{
+    transform: translate(40px,-2px);
+}
+
+.click{
+    display: flex;
+    animation: flicker 1s infinite, shake 0.5s infinite;
+    /* position: absolute; */
+    /* z-index: 99; */
+    /* transform: translateY(-10%); */
+    /* top: 100px; */
+}
+.click h1{
+    padding: 0px 50px;
+    color: #FE3989;
+    font-size: 40px;
+    font-family: "BrickPixel";
+
+}
+
+
+
+.hehe{
+    position: relative;
+    top: -20%;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+
+
+@media screen and (max-width:1000px){
+    .heroll{
+        display: none;
+    }
+    .hehe{
+        display: none;
+    }
+}

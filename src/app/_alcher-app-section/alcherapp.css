@@ -1,85 +1,90 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.alcher-app{
-    background-color: #000014;
-    background-image: url(_components/texture1.png);
-    position: relative;
-    width: 100%;
-    height: fit-content;
-    color: aliceblue;
-    margin-bottom: 10vh;
-
+.alcher-app {
+  background-color: #000014;
+  background-image: url(_components/texture1.png);
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  color: aliceblue;
+  margin-bottom: 10vh;
 }
-.phone{
-    height: fit-content;
+.phone {
+  height: fit-content;
 }
-.feelinglost{
-    position: fixed;
-    z-index: 1;
-    top: 30%;
-    left: 28%;
+.feelinglost {
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  left: 28%;
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
-.phone{
-    /* display: flex;
+.phone {
+  /* display: flex;
     align-items: center;
     justify-content: center; */
-    position: absolute;
-    padding-left: 1%;
-    padding-top: 7%;
-    z-index: 9;
-    scale: 1.2;
-    /* margin-top: 4%;
+  position: absolute;
+  padding-left: 1%;
+  padding-top: 7%;
+  z-index: 9;
+  scale: 1.2;
+  /* margin-top: 4%;
     margin-right: 1.7%; */
 }
 
-.text{
-    width: 93%;
-    /* justify-self: center; */
-    position: absolute; 
-     z-index: 4;   
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+.text {
+  width: 93%;
+  /* justify-self: center; */
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.get-app-btn{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.get-app-btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
 }
 
-.mobile-text{
-    display: none;
+.get-app-btn:hover {
+  scale: 1.1;
+  filter: drop-shadow(0 0px 35px #fe3988b4);
 }
 
-.feelinglost{
-    display: none;
+.mobile-text {
+  display: none;
 }
-.noneed{
-    display: none;
+
+.feelinglost {
+  display: none;
 }
-.wegotyou{
-    display: none;
+.noneed {
+  display: none;
 }
-.covered{
-    display: none;
+.wegotyou {
+  display: none;
 }
-.atext{
-    display: none;
+.covered {
+  display: none;
 }
-.b1text{
-    display: none;
+.atext {
+  display: none;
+}
+.b1text {
+  display: none;
 }
 
 /* 
@@ -90,107 +95,98 @@
 481-320
  */
 
-
-@media screen  and (max-width:1300px){
-  
-    .phone{
-        scale: 0.7;
-        /* left: 37%;
+@media screen and (max-width: 1300px) {
+  .phone {
+    scale: 0.7;
+    /* left: 37%;
         top: 20%; */
-    }
+  }
 }
 
-
-@media screen  and (max-width:1024px){
-   
-    .phone{
-        scale: 0.7;
-        left: 35%;
-        top: 17%;
-    }
+@media screen and (max-width: 1024px) {
+  .phone {
+    scale: 0.7;
+    left: 35%;
+    top: 17%;
+  }
 }
 
-@media screen  and (max-width:900px){
-   
-    .phone {
-        scale: 0.6;
-        left: 32%;
-        /* position: fixed; */
-        top: 19%;
-    }
-    .get-app-btn{
-        scale: 0.8;
-        left: 43%;
-        /* bottom: 0; */
-    }
+@media screen and (max-width: 900px) {
+  .phone {
+    scale: 0.6;
+    left: 32%;
+    /* position: fixed; */
+    top: 19%;
+  }
+  .get-app-btn {
+    scale: 0.8;
+    left: 43%;
+    /* bottom: 0; */
+  }
 }
-@media screen  and (max-width:804px){
-  
-    .phone {
-        scale: 0.55;
-        left: 30%;
-        /* position: fixed; */
-        top: 19%;
-    }
-    .get-app-btn{
-        scale: 0.8;
-        left: 43%;
-        /* bottom: 0; */
-    }
+@media screen and (max-width: 804px) {
+  .phone {
+    scale: 0.55;
+    left: 30%;
+    /* position: fixed; */
+    top: 19%;
+  }
+  .get-app-btn {
+    scale: 0.8;
+    left: 43%;
+    /* bottom: 0; */
+  }
 }
-@media screen  and (max-width:744px){
-   
-    .phone {
-        scale: 0.5;
-        left: 29%;
-        /* position: fixed; */
-        top: 19%;
-    }
-    .get-app-btn{
-        scale: 0.8;
-        left: 43%;
-        /* bottom: 0; */
-    }
+@media screen and (max-width: 744px) {
+  .phone {
+    scale: 0.5;
+    left: 29%;
+    /* position: fixed; */
+    top: 19%;
+  }
+  .get-app-btn {
+    scale: 0.8;
+    left: 43%;
+    /* bottom: 0; */
+  }
 }
 
-@media screen  and (max-width:700px){
-    
-    .phone {
-        scale: 0.5;
-        left: 28%;
-        /* position: fixed; */
-        top: 20%;
-    }
-    .get-app-btn{
-        scale: 0.8;
-        left: 43%;
-        /* bottom: 0; */
-    }
+@media screen and (max-width: 700px) {
+  .phone {
+    scale: 0.5;
+    left: 28%;
+    /* position: fixed; */
+    top: 20%;
+  }
+  .get-app-btn {
+    scale: 0.8;
+    left: 43%;
+    /* bottom: 0; */
+  }
 }
 
-@media screen and (max-width:675px){
-    .text{
-        display: none;
-    }
-    .phone{
-        scale:0.85;
-        top: 40%;
-        
-        justify-self: center;
-    }
-    .flex{
+@media screen and (max-width: 675px) {
+  .text {
+    display: none;
+  }
+  .phone {
+    scale: 0.85;
+    top: 40%;
 
-        height: 120vh;
-    }
-    .mobile-text{
-        scale:0.9;
-        display: block;
-        position: absolute;
-        top: 23%;
-        left: 45%;
-        transform: translate(-50%, -50%);
-    }
-    /* .covered{
+    justify-self: center;
+  }
+  .flex {
+    height: 120vh;
+  }
+  .mobile-text {
+    scale: 0.9;
+    display: block;
+    position: absolute;
+    top: 23%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  /* .covered{
         display: block;
         position: absolute;
     }
@@ -225,9 +221,6 @@
         position: absolute;
     } */
 }
-
-
-
 
 /* @media (min-width:482px) and (max-width: 768px){
     .text{
@@ -307,7 +300,6 @@
   
     
 }  */
-
 
 /* 
  *{

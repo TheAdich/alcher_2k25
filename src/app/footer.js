@@ -8,33 +8,37 @@ import Link from "next/link";
 import { useState } from "react";
 const footer = () => {
   const navOptions = [
-    { label: "Home", path: "/" },
     { label: "Events", path: "/events" },
     { label: "Competitions", path: "/competitions" },
-    { label: "MUN", path: "/mun" },
     { label: "Kartavya", path: "/kartavya" },
-    { label: "Gallery", path: "/gallery" },
-    { label: "Sponsors", path: "/sponsers" },
     { label: "Merch", path: "/merch" },
     { label: "Team", path: "/teams" },
+    { label: "Gallery", path: "/gallery" },
+    { label: "Sponsors", path: "/sponsors" },
+    { label: "MUN", path: "/mun" },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
 
   const creativesPeeps = [
-    { name: "name1" },
-    { name: "name2" },
-    { name: "name3" },
-    { name: "name4" },
+    { name: "Anish Mishra" },
+    { name: "Ayush Bahuguna" },
+    { name: "Dhruva Ingale" },
+    { name: "Sai Sankeerth Veggalam" },
   ];
 
   const webOpsPeeps = [
-    { name: "WebOps1" },
-    { name: "WebOps2" },
-    { name: "WebOps3" },
-    { name: "WebOps4" },
+    { name: "Arshad Hussain" },
+    { name: "Chandan Jyoti Das" },
+    { name: "Deval Singhal" },
+    { name: "Krish Raj" },
+    { name: "Pavan Lokesh" },
+    { name: "Valli Sri Atyam" },
   ];
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text);
+  };
 
   return (
     <div>
@@ -56,12 +60,22 @@ const footer = () => {
         <div className={styles.prbheads}>
           <div className={styles.prbname1}>
             <p id={styles.name}>Siddharth Shukla</p>
-            <p>+91 7354647811</p>
+            <p
+              id={styles.phn}
+              onClick={() => copyToClipboard("+91 7354647811")}
+            >
+              +91 7354647811
+            </p>
             <a href="mailto:siddharth@alcheringa.in">siddharth@alcheringa.in</a>
           </div>
           <div className={styles.prbname2}>
             <p id={styles.name}>Sudhanshu Raj</p>
-            <p>+91 8292967325</p>
+            <p
+              id={styles.phn}
+              onClick={() => copyToClipboard("+91 8292967325")}
+            >
+              +91 8292967325
+            </p>
             <a href="mailto:sudhanshu@alcheringa.in">sudhanshu@alcheringa.in</a>
           </div>
         </div>

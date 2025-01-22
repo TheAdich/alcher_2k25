@@ -1,68 +1,56 @@
 import Image from "next/image";
 import SlotCounter from "react-slot-counter";
 import styles from "./components.module.css";
+import Marquee from "react-fast-marquee";
 const CloudSection = () => {
   return (
     <section className={styles.bgset}>
-      <section className="clouds">
-        <div>
-          <Image
-            src="/cloud1u.svg"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="fu cloud "
-          />
-          <Image
-            src="/cloud1b.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="fb cloud "
-          />
+      <div className="marquee">
+        <div className="marquee1">
+          <Marquee direction="right" speed={30}>
+            <Image
+              src="./cloudRight.svg"
+              className="cloudRight cloud"
+              width="1000"
+              height="1000"
+            />
+            <Image
+              src="./cloudRight.svg"
+              className="cloudRight cloud"
+              width="1000"
+              height="1000"
+            />
+            <Image
+              src="./cloudRight.svg"
+              className="cloudRight cloud"
+              width="1000"
+              height="1000"
+            />
+          </Marquee>
         </div>
-        <div>
-          <Image
-            src="/cloud2u.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="su cloud "
-          />
-          <Image
-            src="/cloud2d.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="sd cloud "
-          />
+        <div className="marquee2">
+          <Marquee speed={10}>
+            <Image
+              src="./cloudLeft.svg"
+              className="cloudLeft cloud"
+              width="1000"
+              height="1000"
+            />
+            <Image
+              src="./cloudLeft.svg"
+              className="cloudLeft cloud"
+              width="1000"
+              height="1000"
+            />
+            <Image
+              src="./cloudLeft.svg"
+              className="cloudLeft cloud"
+              width="1000"
+              height="1000"
+            />
+          </Marquee>
         </div>
-        <div>
-          <Image
-            src="/cloud3.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="tu  cloud "
-          />
-        </div>
-        <div>
-          <Image
-            src="/cloudlu.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="lu cloud "
-          />
-          <Image
-            src="/cloudlb.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="lb cloud "
-          />
-        </div>
-      </section>
+      </div>
       <div className={styles.header}>
         <p className={styles.title}>Competitions</p>
         <p className={styles.oneline}>
