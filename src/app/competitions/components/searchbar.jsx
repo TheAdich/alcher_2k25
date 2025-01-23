@@ -45,7 +45,7 @@ const SearchBar = () => {
             onChange={(e) => handleCategoryChange(e.target.value)}
           >
             <option value="">
-              <p>All Modules</p>
+              All Modules
             </option>
             {titledata.map((title) => (
               <option
