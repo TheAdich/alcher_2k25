@@ -6,7 +6,7 @@ import img2 from "./_components/img2.png";
 import img3 from "./_components/img3.png";
 import img4 from "./_components/img4.png";
 import img5 from "./_components/img5.png";
-import img6 from "./_components/img6.jpg";
+import img6 from "./_components/NERIM.jpg";
 import img7 from "./_components/img7.png";
 import img8 from "./_components/img8.png";
 import img9 from "./_components/img9.png";

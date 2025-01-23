@@ -85,7 +85,7 @@ const Hero = () => {
            
             {showAnchor && (
                 <div className="all">
-                    <a href="#" className={styles.heroAnchor}></a>
+                    <a href="https://8bit.alcheringa.in" className={styles.heroAnchor}></a>
                 </div>
             )}
         </div>
