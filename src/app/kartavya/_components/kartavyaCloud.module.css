@@ -59,7 +59,7 @@
   width: 500px;
   font-size: 1.2rem;
   position: absolute;
-  top:73%;
+  top:65%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10000;
@@ -136,11 +136,14 @@
 }
 @media (max-width: 380px) and (min-width:340px) {
   .contents{
-    font-size:1rem;
+    font-size:0.9rem;
     /* padding-top: 100px; */
+    padding-top: 100px;
    }
    .topsubheading{
-    width:90%;
+    width:96%;
+    padding-bottom: 30px;
+   top:98%;
    }
    .heading{
     font-size: 4.4rem;
@@ -149,12 +152,15 @@
 }
 @media (max-width: 340px) {
   .contents{
-    font-size:1rem;
+    font-size:0.8rem;
     /* padding-top: 50px; */
+    padding-top:70px ;
    }
    .topsubheading{
-    width:95%;
-    top:85%;
+   
+  top:70%;
+    padding-bottom: 30px;
+ 
     
    }
    .heading{

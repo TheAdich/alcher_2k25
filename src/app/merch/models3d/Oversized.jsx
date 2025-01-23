@@ -27,8 +27,8 @@ export function Oversized(props) {
   })
 
   return (
-    <group ref={groupRef} {...props} dispose={null}>
-      <mesh geometry={nodes['oversized-tshirt001'].geometry} material={materials['Woven Fabric [V2].002']} position={[0, 0, 0]} rotation={[Math.PI / 2, 0, Math.PI]} scale={5.655} />
+    <group {...props} dispose={null} ref={groupRef}>
+      <mesh geometry={nodes.Object_0004.geometry} material={materials.WOI} position={[0, 0, 0]} rotation={[Math.PI / 2, 0, 0]} scale={0.066} />
     </group>
   )
 }

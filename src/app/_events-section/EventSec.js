@@ -8,6 +8,7 @@ import Fimg1 from "./_components/Fimg1.png";
 import Fimg2 from "./_components/Fimg2.png";
 import Fimg3 from "./_components/Fimg3.png";
 import Fimg4 from "./_components/Fimg4.png";
+import proImg from "./_components/proImg.png";
 import pshows from "./_components/pshows1.png";
 import evbtn from "./_components/evbtn.png";
 
@@ -86,7 +87,7 @@ const EventSec = () => {
           // onMouseMove={(e) => handleMM(e, e.currentTarget)}
           // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
-          <Image src={Fimg2} alt="Proshows" />
+          <Image src={proImg} alt="Proshows" />
         </div>
         </div>
 

@@ -109,17 +109,17 @@
   top: 80%;
   scale: 5;
   opacity: 0;
-  transition: all 0.5s ease-out;
-
+  transition: all 1s ease-in-out;
+  pointer-events: none;
   z-index: 999;
   /* transition: all 1s ease; */
 }
 .arrowLeft.visibleleft{
   opacity: 1;
-  
+  pointer-events: all;
   /* scale: 5; */
-  /* transition: all 0.2s ease-out; */
-
+  transition: all 1s ease-in-out;
+  pointer-events: all;
   top: 50%;
   /* transition: all 1s ease; */
 
@@ -128,7 +128,6 @@
 
 .arrowRight {
   /* transition: opacity 0.5s ease; */
-  transition: all 0.5s ease;
   position: absolute;
   /* scale: 0; */
   opacity: 0;
@@ -136,10 +135,14 @@
   top: 80%;
   scale: 5;
   z-index: 999;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+
 }
 .arrowRight.visibleright{
   opacity: 1;
-  
+  transition: all 1s ease-in-out;
+  pointer-events: all;
   /* scale: 5; */
   top: 50%;
   /* transition: all 1s ease; */
@@ -212,7 +215,8 @@
   align-items: center;
   position: absolute;
   left: 5%;
-  bottom: 5%;
+  height: 25%;
+  bottom: 0%;
   z-index: 99999999;
 }
 
@@ -225,7 +229,8 @@
   align-items: center;
   position: absolute;
   right: 5%;
-  bottom: 5%;
+  height: 25%;
+  bottom: 0%;
   z-index: 99999999;
 }
 
@@ -379,6 +384,9 @@
     opacity: 1;
     /* top: 20%; */
     /* transition: all 1s ease; */
+  }
+  .model2{
+    pointer-events: none;
   }
   .mobileMerch h3 {
     color: #ffebd3;
