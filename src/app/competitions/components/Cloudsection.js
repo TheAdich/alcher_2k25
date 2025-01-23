@@ -60,16 +60,12 @@ const CloudSection = () => {
       <div className={styles.header}>
         <p className={styles.title}>Competitions</p>
         <p className={styles.oneline}>
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab?
-          Fuga, libero reprehenderit quidem nobis"
+        “Unleash Your Talent, Conquer the Stage – Where Legends Compete!“
         </p>
       </div>
       <div className={styles.content}>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin
-          ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero
-          velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor
+        Step into the spotlight with Alcheringa's thrilling competitions! From captivating performances to mind-bending challenges, this is your chance to showcase your skills, compete with the best, and create unforgettable memories. With a wide array of events across music, dance, arts, and more, the stage is set for you to shine. Are you ready to make your mark?
         </p>
       </div>
     </section>
