@@ -314,7 +314,20 @@ body {
   .alcherlogo{
     scale: 4;
   }
-
+  .homeclouds {
+    margin: 0;
+    z-index: -10;
+    position: relative;
+  
+  }
+  
+  .homeclouds1 {
+    height: 10rem;
+  }
+  
+  .homeclouds2 {
+    height: 10rem;
+  }
 }
 
 @media(max-width:450px) {
