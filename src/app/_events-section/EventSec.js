@@ -4,10 +4,16 @@ import styles from "./events.module.css";
 import Link from 'next/link';
 import rect from "./_components/rectangle.png";
 import event2 from "./_components/event2.png";
+import Fimg1 from "./_components/Fimg1.png";
+import Fimg2 from "./_components/Fimg2.png";
+import Fimg3 from "./_components/Fimg3.png";
+import Fimg4 from "./_components/Fimg4.png";
 import pshows from "./_components/pshows1.png";
 import evbtn from "./_components/evbtn.png";
 
 import compbtn from "./_components/compbtn.png";
+import competitionbutton from "./_components/competitionbutton.svg";
+import eventbtn from "./_components/eventbtn.svg";
 import dashline from "./_components/dashline.svg";
 import arrow from "./_components/arrow.png";
 
@@ -60,7 +66,7 @@ const EventSec = () => {
               [a] Gotta grab that
             </span>
             <span className={`${styles.randomtext} ${styles.rndtext3}`}>
-              [a] Game is on
+              [0] Game is on
             </span>
           </div>
         </div>
@@ -73,14 +79,14 @@ const EventSec = () => {
           // onMouseMove={(e) => handleMM(e, e.currentTarget)}
           // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
-          <Image src={pshows} alt="Pronites" />
+          <Image src={Fimg1} alt="Pronites" />
         </div>
         <div
           className={styles.eventcard}
           // onMouseMove={(e) => handleMM(e, e.currentTarget)}
           // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
-          <Image src={event2} alt="Proshows" />
+          <Image src={Fimg2} alt="Proshows" />
         </div>
         </div>
 
@@ -89,15 +95,15 @@ const EventSec = () => {
           <div className={styles.eventcontainer}>
             <Image src={dashline} alt="ff" className={styles.lines} />
             <h2 className={styles.usual}>
-              <span>Exciting Events - </span>
+              <span>This year, we’ll be </span>
               <br />
-              <span>Performances, Talks and</span>
+              <span>celebrating the magic of</span>
               <br />
-              <span id="concerts">Concerts...</span>
+              <span id="concerts">music, art, and more!</span>
               <br />
             </h2>
             <h2 className={styles.resp}>
-             <span>Exciting Events -Performances, Talks and Concerts...</span> 
+             <span>This year, we’ll be celebrating the magic of music, art, and more!</span> 
               
             
               
@@ -105,14 +111,11 @@ const EventSec = () => {
             </h2>
             <Image src={dashline} alt="ff" className={styles.lines} />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              tristique purus eu libero egestas, sed bibendum felis tincidunt.
-              Proin ultricies viverra mollis. Nullam vel quam tortor. Duis
-              egestas libero velit,
+            Alcheringa features thrilling live concerts, energetic dance and music competitions, literary events, sports challenges, and hands-on workshops. With flagship events like Pronites, Proshows, and Creators Camp, it promises unforgettable experiences for participants and audiences alike.
             </p>
             <Link href="/events" passHref>
             <button className={styles.eventsbutton}>
-              <Image src={evbtn} alt="ff" className={styles.evebtn}/>
+              <Image src={eventbtn} alt="ff" className={styles.evebtn}/>
             </button></Link>
           </div>
         </div>
@@ -122,28 +125,25 @@ const EventSec = () => {
       <div className={styles.eventstext} >
           <Image src={dashline} className={styles.lines}  alt="dashline"/>
           <h2 className={styles.usual}>
-            <span>Exciting Events - </span>
+            <span>Compete, connect, and </span>
             <br />
-            <span>Performances, Talks and</span>
+            <span>celebrate your talent in </span>
             <br />
-            <span className={styles.concerts}>Concerts...</span>
+            <span className={styles.concerts}>vibrant contests!</span>
             <br />
           </h2>
 
           <h2 className={styles.resp}>
-             <span>Exciting Events -Performances, Talks and Concerts...</span>  
+             <span>Compete, connect, and celebrate your talent in vibrant contests!</span>  
             </h2>
           <Image src={dashline} className={styles.lines} alt="dashline"/>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            tristique purus eu libero egestas, sed bibendum felis tincidunt.
-            Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas
-            libero velit,
+          Alcheringa hosts a diverse range of competitions, offering a platform for talent across music, dance, art, literature, and more. From high-energy group battles to solo showcases, participants get a chance to shine, compete, and win big. Whether you’re a performer or a spectator, the excitement is unmatched!
           </p>
           <Link href="/competitions" passHref>
            
           <button className={styles.eventsbutton}>
-            <Image src={compbtn} alt=""  className={styles.evebtn}/>
+            <Image src={competitionbutton} alt=""  className={styles.evebtn}/>
           </button>
           </Link>
         </div>
@@ -153,14 +153,14 @@ const EventSec = () => {
           // onMouseMove={(e) => handleMM(e, e.currentTarget)}
           // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
-          <Image src={pshows} alt="Pronites" />
+          <Image src={Fimg3} alt="Pronites" />
         </div>
         <div
           className={styles.eventcard}
           // onMouseMove={(e) => handleMM(e, e.currentTarget)}
           // onMouseLeave={(e) => handleML(e.currentTarget)}
         >
-          <Image src={event2} alt="Proshows" />
+          <Image src={Fimg4} alt="Proshows" />
         </div>
        
         </div>

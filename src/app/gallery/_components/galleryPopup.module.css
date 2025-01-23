@@ -57,8 +57,8 @@
   
   .popupContent {
     position: relative;
-    width: 45%;
-    height: 45%;
+    width: 35%;
+    height: 25%;
     padding: 20px;
     background-color: white;
     border-radius: 10px;
@@ -164,7 +164,15 @@
   .scrollItem.active {
     background-color: #FE3989; 
   }
-  
+  @media (max-width:1300px) and (min-width:1200px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 200px;
+      gap: 10px;
+    }
+  }
 
 
   @media (max-width:1200px) and (min-width:1100px){
@@ -172,43 +180,25 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 230px;
+      margin-top: 190px;
       gap: 10px;
     }
   }
 
 
-  @media (max-width:1100px) and (min-width:1000px){
-    .scrollIndicator {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      margin-top: 230px;
-      gap: 10px;
-    }
-    .popupContent {
-      position: relative;
-      width: 65%;
-      height: 65%;
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-  }
   
   @media (max-width:1100px) and (min-width:1000px){
     .scrollIndicator {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 320px;
+      margin-top: 45%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
-      width: 65%;
-      height: 65%;
+      width: 55%;
+      height: 300px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -221,13 +211,13 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 270px;
+      margin-top: 50%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
-      width: 65%;
-      height: 50%;
+      width: 55%;
+      height: 300px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -235,37 +225,54 @@
     }
   }
   
-  @media (max-width:900px) and (min-width:800px){
+  @media (max-width:900px) and (min-width:850px){
     .scrollIndicator {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 250px;
+      margin-top: 55%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
-      width: 65%;
-      height: 48%;
+      width: 55%;
+      height: 300px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
       overflow: hidden;
     }
   }
-  
+  @media (max-width:850px) and (min-width:800px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 55%;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 55%;
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
   @media (max-width:800px) and (min-width:700px){
     .scrollIndicator {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 230px;
+      margin-top: 50%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
-      width: 75%;
-      height: 45%;
+      width: 65%;
+      height: 300px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -277,13 +284,68 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 240px;
+      margin-top: 53%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
       width: 75%;
-      height: 45%;
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+/* 
+  @media (max-width:600px) and (min-width:500px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 210px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 35%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  } */
+  @media (max-width:600px) and (min-width:580px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 66%;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:580px) and (min-width:570px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 200px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 65%;
+      height: 230px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -291,18 +353,18 @@
     }
   }
 
-  @media (max-width:600px) and (min-width:500px){
+  @media (max-width:570px) and (min-width:500px){
     .scrollIndicator {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 230px;
+      margin-top: 50%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
       width: 75%;
-      height: 45%;
+      height:250px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -315,13 +377,13 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 200px;
+      margin-top: 50%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
       width: 75%;
-      height: 40%;
+      height: 230px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -333,31 +395,49 @@
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 180px;
+      margin-top: 60%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
       width: 75%;
-      height: 35%;
+      height: 230px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
       overflow: hidden;
     }
   }
-  @media (max-width:390px) and (min-width:320px){
+  @media (max-width:390px) and (min-width:340px){
     .scrollIndicator {
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      margin-top: 150px;
+      margin-top: 60%;
       gap: 10px;
     }
     .popupContent {
       position: relative;
-      width: 75%;
-      height: 30%;
+      width: 85%;
+      height: 230px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width:340px) and (min-width:320px){
+    .scrollIndicator {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-top: 160px;
+      gap: 10px;
+    }
+    .popupContent {
+      position: relative;
+      width: 85%;
+      height: 230px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
@@ -375,7 +455,7 @@
     .popupContent {
       position: relative;
       width: 75%;
-      height: 25%;
+      height: 200px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
