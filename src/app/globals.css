@@ -345,6 +345,7 @@ body {
   }
   .stats-flex {
     gap: 10px;
+    padding: 0 22px;
   }
   .alcherlogo{
     scale: 3;
@@ -352,7 +353,14 @@ body {
   }
 }
 
-
+@media(max-width:375px) {
+  .stat-description{
+    font-size: 15px;
+  }
+  .stat-title{
+    font-size: 27px;
+  }
+}
 
 
 
