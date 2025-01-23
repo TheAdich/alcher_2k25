@@ -113,6 +113,7 @@
 
 .eventcard img {
   width: 100%;
+  height: 100%;
 }
 
 .eventcard .cardtitle {
@@ -133,7 +134,7 @@
   position: relative;
   width: 25%;
   height: 60%;
-  overflow: visible;
+  overflow: hidden;
   margin-left: 0px;
 }
 .evebtn {
