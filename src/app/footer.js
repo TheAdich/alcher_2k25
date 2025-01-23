@@ -52,7 +52,7 @@ const footer = () => {
           className={styles.eventsSec}
           style={{ fontFamily: "stoneSlab", color: "rgba(255, 235, 211, 1)" }}
         >
-          {navOptions.map((option , index) => {
+          {navOptions.map((option, index) => {
             const isActive =
               option.path === "/"
                 ? pathh === option.path
@@ -147,7 +147,7 @@ const footer = () => {
                 onMouseEnter={() => setIsVisible(true)}
                 onMouseLeave={() => setIsVisible(false)}
               >
-                Alcher Creatives,
+                <u>Alcher Creatives,</u>
               </p>
               <div
                 className={`${styles.creativesName} ${
@@ -162,7 +162,9 @@ const footer = () => {
               </div>
             </div>
             <div className={styles.alcherWebOps}>
-              <p>Alcher Web Operations</p>
+              <p>
+                <u>Alcher Web Operations</u>
+              </p>
               <div className={styles.webOpsName}>
                 <ul>
                   {webOpsPeeps.map((option, idx) => (
