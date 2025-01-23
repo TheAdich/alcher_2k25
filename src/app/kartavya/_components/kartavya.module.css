@@ -742,6 +742,9 @@
   .cardContainer{
     padding-left: 0px;
   }
+  .subHeading{
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 500px) {
@@ -810,6 +813,9 @@
     grid-template-columns: repeat(1, 1fr);
     padding-left: 0px;
   }
+  .subHeading{
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
@@ -875,6 +881,9 @@
   .cardContainer {
     grid-template-columns: repeat(1, 1fr);
     padding-left: 0px;
+  }
+  .subHeading{
+    font-size: 28px;
   }
 }
 

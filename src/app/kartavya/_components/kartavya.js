@@ -64,11 +64,12 @@ const Kartavya = () => {
   const [description, setDescription] = useState(desc);
   const [subheading, setSubheading] = useState(headtitle);
 
-  const handleCardClick = (image, head, des) => {
-    setUdaanImage(image);
-    setSubheading(head);
-    setDescription(des);
-  };
+  // const handleCardClick = (image,head,des) => {
+  //   setUdaanImage(image);
+  //   setSubheading(head);
+  //   setDescription(des)
+
+  // };
 
   return (
     <div className={styles.container}>
@@ -127,14 +128,11 @@ const Kartavya = () => {
             <div
               key={index}
               className={styles.card}
-              onClick={() => {
-                handleCardClick(
-                  initiative.image,
-                  initiative.title,
-                  initiative.description
-                );
-              }}
-              onChange={(e) => e.target.value}
+              // onClick={() => {handleCardClick(initiative.image,initiative.title,initiative.description);
+               
+                
+              // }}
+              // onChange={e=>e.target.value}
             >
               {/* <div className={styles.part}>
                 <Image src={frame2} className={styles.frames2} />
