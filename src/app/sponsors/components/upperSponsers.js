@@ -3,19 +3,16 @@ import styles from "./upperSponsers.module.css";
 const upperSponsers = () => {
   const mainSponsers = [
     {
-      headline: "Connected By",
-      url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
+      headline: "Title Sponsor",
+      url: "https://www.coca-cola.com/content/dam/onexp/us/en/homepage/CocaColalogor.png",
     },
     {
-      headline: "Powered By",
-      url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
+      headline: "Co-Title Sponsor",
+      url: "https://www.techno.co.in/public/images/logo.png",
     },
     {
       headline: "In Associate With",
       url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
     },
     {
       headline: "Trusted By",
