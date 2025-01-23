@@ -8,41 +8,30 @@
 
 import { useEffect, useState } from "react";
 import styles from "./gallery.module.css";
-import card1 from "./card1.svg";
-import card2 from "./card2.svg";
-import card3 from "./card3.svg";
 import Image from "next/image";
-import gal1 from "./gal1.svg";
-import gal2 from "./gal2.svg";
-import gal3 from "./gal3.svg";
-import gal4 from "./gal4.svg";
-import gal5 from "./gal5.svg";
-import gal6 from "./gal6.svg";
-import gal7 from "./gal7.svg";
-import gal8 from "./gal8.svg";
-import gal9 from "./gal9.svg";
-import gal10 from "./gal10.svg";
-
-import gal11 from "./gal11.svg";
-import gal12 from "./gal12.svg";
-import gal13 from "./gal13.svg";
-import gal14 from "./gal14.svg";
-import gal15 from "./gal15.svg";
-import gal16 from "./gal16.svg";
-import gal17 from "./gal17.svg";
-import gal18 from "./gal18.svg";
-import gal19 from "./gal19.svg";
-import gal20 from "./gal20.svg";
-import gal21 from "./gal21.svg";
-import gal22 from "./gal22.svg";
-import gal23 from "./gal23.svg";
-import gal24 from "./gal24.svg";
-
-
-import gal27 from "./gal27.svg";
-import gal28 from "./gal28.svg";
-import gal29 from "./gal29.svg";
-import gal30 from "./gal30.svg";
+import gal1 from "./gal1.png";
+import gal2 from "./gal2.png";
+import gal3 from "./gal3.png";
+import gal4 from "./gal4.png";
+import gal5 from "./gal5.png";
+import gal6 from "./gal6.png";
+import gal7 from "./gal7.png";
+import gal8 from "./gal8.png";
+import gal9 from "./gal9.png";
+import gal10 from "./gal10.png";
+import frame1 from "./frame1.png";
+import frame2 from "./frame2.png";
+import frame3 from "./frame3.png";
+import frame5 from "./frame5.png";
+import frame4 from "./frame4.png";
+import gal17 from "./gal17.png";
+import gal19 from "./gal19.png";
+import gal16 from "./gal16.png";
+import gal20 from "./gal20.png";
+import gal18 from "./gal18.png";
+import card1 from "./card1.png";
+import card2 from "./card2.png";
+import card3 from "./card3.png";
 
 import GalleryPopup from "./galleryPopup";
 
@@ -81,7 +70,8 @@ export default function Gallery() {
   useEffect(() => {
     const flipRandomImage = () => {
       const totalImages = isHideContainerActive ? 18 : 9;
-      const randomIndex = Math.floor(Math.random() * totalImages);
+       const randomIndex = Math.floor(Math.random() * totalImages);
+     
       setFlippingIndex(randomIndex);
      console.log(randomIndex);
       setTimeout(() => {
@@ -105,7 +95,7 @@ export default function Gallery() {
                     <Image
                       src={gal1}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal1)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -116,7 +106,7 @@ export default function Gallery() {
                     <Image
                       src={gal1}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal1)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -125,22 +115,22 @@ export default function Gallery() {
                   </div>
                 </div>
                 <div className={`${styles.card2} ${flippingIndex === 1 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={gal10}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal10)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={gal10}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal10)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -151,22 +141,22 @@ export default function Gallery() {
               </div>
               <div className={styles.block2}>
                 <div className={`${styles.card2} ${flippingIndex === 2 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={gal2}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal2)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={gal2}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal2)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -179,7 +169,7 @@ export default function Gallery() {
                     <Image
                       src={gal3}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal3)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -190,7 +180,7 @@ export default function Gallery() {
                     <Image
                       src={gal3}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal3)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -204,9 +194,9 @@ export default function Gallery() {
               <div className={`${styles.largeImage} ${flippingIndex === 4 ? styles.flip : ""}`}>
                 <div className={styles.cardFront2}>
                   <Image
-                    src={gal11}
+                    src={gal4}
                     alt="Image 1"
-                    onClick={() => openPopup(card3)}
+                    onClick={() => openPopup(gal4)}
                     className={`${styles.LargeCardcss3} ${styles.cardImage}`}
                     layout="responsive"
                     width={30}
@@ -215,9 +205,9 @@ export default function Gallery() {
                 </div>
                 <div className={styles.cardBack2}>
                   <Image
-                    src={gal11}
+                    src={gal4}
                     alt="Image 1"
-                    onClick={() => openPopup(card3)}
+                    onClick={() => openPopup(gal4)}
                     className={`${styles.LargeCardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                     layout="responsive"
                     width={30}
@@ -230,7 +220,7 @@ export default function Gallery() {
                   <Image
                     src={gal5}
                     alt="Image 1"
-                    onClick={() => openPopup(card1)}
+                    onClick={() => openPopup(gal5)}
                     className={`${styles.SmallCardcss3} ${styles.cardImage}`}
                     layout="responsive"
                     width={50}
@@ -241,7 +231,7 @@ export default function Gallery() {
                   <Image
                     src={gal5}
                     alt="Image 1"
-                    onClick={() => openPopup(card1)}
+                    onClick={() => openPopup(gal5)}
                     className={`${styles.SmallCardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                     layout="responsive"
                     width={50}
@@ -255,9 +245,9 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 5 ? styles.flip : ""}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal14}
+                      src={gal6}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal6)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -266,9 +256,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal14}
+                      src={gal6}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal6)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -279,9 +269,9 @@ export default function Gallery() {
                 <div className={`${styles.card2} ${flippingIndex === 6 ? styles.flip : ""}`}>
                   <div className={styles.cardFront1}>
                     <Image
-                      src={gal13}
+                      src={gal8}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal8)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -290,9 +280,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack1}>
                     <Image
-                      src={gal13}
+                      src={gal8}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal8)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -305,9 +295,9 @@ export default function Gallery() {
                 <div className={`${styles.card2} ${flippingIndex === 7 ? styles.flip : ""}`}>
                   <div className={styles.cardFront1}>
                     <Image
-                      src={gal12}
+                      src={frame5}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame5)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -316,9 +306,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack1}>
                     <Image
-                      src={gal12}
+                      src={frame5}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame5)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -329,9 +319,9 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 8 ? styles.flip : ""}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal6}
+                      src={gal4}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal4)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -340,9 +330,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal6}
+                      src={gal4}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal4)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -355,9 +345,9 @@ export default function Gallery() {
             <div className={styles.rightContainer}>
               <div className={styles.block3}>
                 <div className={`${styles.card2} ${flippingIndex === 6 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
-                      src={gal13}
+                      src={gal8}
                       onClick={() => openPopup(card2)}
                       alt="Image 2"
                       layout="responsive"
@@ -366,9 +356,9 @@ export default function Gallery() {
                       height={30}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
-                      src={gal13}
+                      src={gal8}
                       onClick={() => openPopup(card2)}
                       alt="Image 2"
                       layout="responsive"
@@ -381,7 +371,7 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 7 ? styles.flip : ""}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal14}
+                      src={gal7}
                       onClick={() => openPopup(card3)}
                       alt="Image 3"
                       layout="responsive"
@@ -392,7 +382,7 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal14}
+                      src={gal7}
                       onClick={() => openPopup(card3)}
                       alt="Image 3"
                       layout="responsive"
@@ -409,7 +399,7 @@ export default function Gallery() {
                   <div className={styles.cardFront}>
                     <Image
                       src={gal6}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal6)}
                       alt="Image 1"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage}`}
@@ -420,7 +410,7 @@ export default function Gallery() {
                   <div className={styles.cardBack}>
                     <Image
                       src={gal6}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal6)}
                       alt="Image 1"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
@@ -430,22 +420,22 @@ export default function Gallery() {
                   </div>
                 </div>
                 <div className={`${styles.card2} ${flippingIndex === 9 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
-                      src={gal12}
+                      src={gal9}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal9)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
-                      src={gal12}
+                      src={gal9}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal9)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -464,7 +454,7 @@ export default function Gallery() {
                     <Image
                       src={gal17}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal17)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -475,7 +465,7 @@ export default function Gallery() {
                     <Image
                       src={gal17}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal17)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -484,22 +474,22 @@ export default function Gallery() {
                   </div>
                 </div>
                 <div className={`${styles.card2} ${flippingIndex === 4 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
-                      src={gal21}
+                      src={gal18}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal18)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
-                      src={gal21}
+                      src={gal18}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal18)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -510,22 +500,22 @@ export default function Gallery() {
               </div>
               <div className={styles.block2}>
                 <div className={`${styles.card2} ${flippingIndex === 3 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={gal19}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal19)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={gal19}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal19)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -538,7 +528,7 @@ export default function Gallery() {
                     <Image
                       src={gal20}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal20)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -549,7 +539,7 @@ export default function Gallery() {
                     <Image
                       src={gal20}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal20)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -563,9 +553,9 @@ export default function Gallery() {
               <div className={`${styles.largeImage} ${flippingIndex === 7 ? styles.flip : ""}`}>
                 <div className={styles.cardFront2}>
                   <Image
-                    src={gal22}
+                    src={frame1}
                     alt="Image 1"
-                    onClick={() => openPopup(card3)}
+                    onClick={() => openPopup(frame1)}
                     className={`${styles.LargeCardcss3} ${styles.cardImage}`}
                     layout="responsive"
                     width={30}
@@ -574,9 +564,9 @@ export default function Gallery() {
                 </div>
                 <div className={styles.cardBack2}>
                   <Image
-                    src={gal22}
+                    src={frame1}
                     alt="Image 1"
-                    onClick={() => openPopup(card3)}
+                    onClick={() => openPopup(frame1)}
                     className={`${styles.LargeCardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                     layout="responsive"
                     width={30}
@@ -587,9 +577,9 @@ export default function Gallery() {
               <div className={`${styles.smallImage} ${flippingIndex === 8 ? styles.flip : ""}`}>
                 <div className={styles.cardFront}>
                   <Image
-                    src={gal23}
+                    src={frame2}
                     alt="Image 1"
-                    onClick={() => openPopup(card1)}
+                    onClick={() => openPopup(frame2)}
                     className={`${styles.SmallCardcss3} ${styles.cardImage}`}
                     layout="responsive"
                     width={50}
@@ -598,9 +588,9 @@ export default function Gallery() {
                 </div>
                 <div className={styles.cardBack}>
                   <Image
-                    src={gal23}
+                    src={frame2}
                     alt="Image 1"
-                    onClick={() => openPopup(card1)}
+                    onClick={() => openPopup(frame2)}
                     className={`${styles.SmallCardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                     layout="responsive"
                     width={50}
@@ -614,9 +604,9 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 6 ? styles.flip : ""}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal27}
+                      src={frame1}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(frame1)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -625,9 +615,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal27}
+                      src={frame1}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(frame1)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -638,9 +628,9 @@ export default function Gallery() {
                 <div className={`${styles.card2} ${flippingIndex === 7 ? styles.flip : ""}`}>
                   <div className={styles.cardFront1}>
                     <Image
-                      src={gal30}
+                      src={gal9}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal9)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -649,9 +639,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack1}>
                     <Image
-                      src={gal30}
+                      src={gal9}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal9)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -664,9 +654,9 @@ export default function Gallery() {
                 <div className={`${styles.card2} ${flippingIndex === 8 ? styles.flip : ""}`}>
                   <div className={styles.cardFront1}>
                     <Image
-                      src={gal29}
+                      src={frame3}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame3)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -675,9 +665,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack1}>
                     <Image
-                      src={gal29}
+                      src={frame3}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame3)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -688,9 +678,9 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 4 ? styles.flip : ""}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal28}
+                      src={frame4}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(frame4)}
                       className={`${styles.cardcss3} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
@@ -699,9 +689,9 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal28}
+                      src={frame4}
                       alt="Image 1"
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(frame4)}
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
@@ -714,9 +704,9 @@ export default function Gallery() {
             <div className={styles.rightContainer}>
               <div className={styles.block3}>
                 <div className={`${styles.card2} ${flippingIndex === 2 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
-                      src={gal30}
+                      src={frame5}
                       onClick={() => openPopup(card2)}
                       alt="Image 2"
                       layout="responsive"
@@ -725,9 +715,9 @@ export default function Gallery() {
                       height={30}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
-                      src={gal30}
+                      src={frame5}
                       onClick={() => openPopup(card2)}
                       alt="Image 2"
                       layout="responsive"
@@ -740,7 +730,7 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 9 ? styles.flip : ""} ${styles.card3a}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal27}
+                      src={gal16}
                       onClick={() => openPopup(card3)}
                       alt="Image 3"
                       layout="responsive"
@@ -751,7 +741,7 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal27}
+                      src={gal16}
                       onClick={() => openPopup(card3)}
                       alt="Image 3"
                       layout="responsive"
@@ -767,7 +757,7 @@ export default function Gallery() {
                 <div className={`${styles.card3} ${flippingIndex === 8 ? styles.flip : ""}`}>
                   <div className={styles.cardFront}>
                     <Image
-                      src={gal28}
+                      src={frame4}
                       onClick={() => openPopup(card3)}
                       alt="Image 1"
                       layout="responsive"
@@ -778,7 +768,7 @@ export default function Gallery() {
                   </div>
                   <div className={styles.cardBack}>
                     <Image
-                      src={gal28}
+                      src={frame4}
                       onClick={() => openPopup(card3)}
                       alt="Image 1"
                       layout="responsive"
@@ -789,22 +779,22 @@ export default function Gallery() {
                   </div>
                 </div>
                 <div className={`${styles.card2} ${flippingIndex === 6 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
-                      src={gal29}
+                      src={frame3}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame3)}
                       className={`${styles.cardcss2} ${styles.cardImage}`}
                       layout="responsive"
                       width={30}
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
-                      src={gal29}
+                      src={frame3}
                       alt="Image 1"
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame3)}
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
                       layout="responsive"
                       width={30}
