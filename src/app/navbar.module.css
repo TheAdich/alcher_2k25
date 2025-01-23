@@ -231,18 +231,22 @@
     width: auto;
     gap: 10px;
   }
-  .bggetcards {
-    width: 100px;
-    height: 35px;
-  }
-}
-@media (max-width: 480px) {
   .desc {
-    width: 30px;
-    height: 25px;
+    width: auto;
+    height: 100%;
   }
   .bggetcards {
-    width: 80px;
-    height: 25px;
+    width: auto;
+    height: 100%;
   }
 }
+/* @media (max-width: 480px) {
+  .desc {
+    width: auto;
+    height: 100%;
+  }
+  .bggetcards {
+    width: auto;
+    height: 100%;
+  }
+} */

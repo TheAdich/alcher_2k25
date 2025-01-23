@@ -958,7 +958,7 @@ const page = () => {
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
                                 <h2>Himank Bohara</h2>
-                                <p style={{ color: '#8F4BFF' }}> web</p>
+                                <p style={{ color: '#8F4BFF' }}> WebOps</p>
 
                             </button>
                             <button className={styles.button}>
@@ -1016,7 +1016,7 @@ const page = () => {
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
                                 <h2>Shivam Gupta</h2>
-                                <p style={{ color: '#8F4BFF' }}> web</p>
+                                <p style={{ color: '#8F4BFF' }}> WebOps</p>
 
                             </button>
                             <button className={styles.button}>
@@ -1074,7 +1074,7 @@ const page = () => {
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
                                 <h2>Jivesh Firke</h2>
-                                <p style={{ color: '#8F4BFF' }}>app</p>
+                                <p style={{ color: '#8F4BFF' }}>AppOps</p>
 
                             </button>
                             <button className={styles.button}>
@@ -1139,7 +1139,7 @@ const page = () => {
                         </div>
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
-                                <h2>Pradipta JiwanH</h2>
+                                <h2>Pradipta Hazarika</h2>
                                 <p style={{ color: '#1F76FA' }}>Convenor</p>
                             </button>
                             <button className={styles.button}>
