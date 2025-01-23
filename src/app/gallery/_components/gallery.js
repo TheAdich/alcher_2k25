@@ -267,7 +267,7 @@ export default function Gallery() {
                   </div>
                 </div>
                 <div className={`${styles.card2} ${flippingIndex === 6 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={gal8}
                       alt="Image 1"
@@ -278,7 +278,7 @@ export default function Gallery() {
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={gal8}
                       alt="Image 1"
@@ -293,7 +293,7 @@ export default function Gallery() {
               </div>
               <div className={styles.block4}>
                 <div className={`${styles.card2} ${flippingIndex === 7 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={frame5}
                       alt="Image 1"
@@ -304,7 +304,7 @@ export default function Gallery() {
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={frame5}
                       alt="Image 1"
@@ -626,7 +626,7 @@ export default function Gallery() {
                   </div>
                 </div>
                 <div className={`${styles.card2} ${flippingIndex === 7 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={gal9}
                       alt="Image 1"
@@ -637,7 +637,7 @@ export default function Gallery() {
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={gal9}
                       alt="Image 1"
@@ -652,7 +652,7 @@ export default function Gallery() {
               </div>
               <div className={styles.block4}>
                 <div className={`${styles.card2} ${flippingIndex === 8 ? styles.flip : ""}`}>
-                  <div className={styles.cardFront1}>
+                  <div className={styles.cardFront12}>
                     <Image
                       src={frame3}
                       alt="Image 1"
@@ -663,7 +663,7 @@ export default function Gallery() {
                       height={60}
                     />
                   </div>
-                  <div className={styles.cardBack1}>
+                  <div className={styles.cardBack12}>
                     <Image
                       src={frame3}
                       alt="Image 1"
