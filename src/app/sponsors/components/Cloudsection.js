@@ -6,7 +6,7 @@ const CloudSection = () => {
   return (
     <section className={styles.bgset}>
       <div className="marquee">
-        <div className="marquee1">
+        <div className="marquee1 opacity-40">
           <Marquee direction="right" speed={30}>
             <Image
               src="./cloudRight.svg"
@@ -28,7 +28,7 @@ const CloudSection = () => {
             />
           </Marquee>
         </div>
-        <div className="marquee2">
+        <div className="marquee2 opacity-40">
           <Marquee speed={10}>
             <Image
               src="./cloudLeft.svg"
