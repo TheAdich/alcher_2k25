@@ -111,7 +111,9 @@ const SearchBar = () => {
                 </div>
               </div>
               <div className="registerBtnComp">
-                <p>Google Maps</p>
+                <Link href={item.loc}>
+                  <p>Google Maps</p>
+                </Link>
                 <div className="mapCompIcon">
                   <img src="./Maps.png" alt="" />
                 </div>

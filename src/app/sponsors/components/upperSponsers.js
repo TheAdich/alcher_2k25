@@ -3,27 +3,33 @@ import styles from "./upperSponsers.module.css";
 const upperSponsers = () => {
   const mainSponsers = [
     {
-      headline: "Connected By",
-      url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
+      headline: "Title Sponsor",
+      url: "https://www.coca-cola.com/content/dam/onexp/us/en/homepage/CocaColalogor.png",
     },
     {
-      headline: "Powered By",
-      url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
+      headline: "Co-Title Sponsor",
+      url: "./sponsors_img/techno.png",
     },
-    {
-      headline: "In Associate With",
-      url: "./connectedby.png",
-      oneline: "shakalaka boom boom",
-    },
+    // {
+    //   headline: "In Associate With",
+    //   url: "./connectedby.png",
+    // },
     {
       headline: "Trusted By",
       url: "./sponsors_img/MCJ LOGO complete-white.png",
     },
     {
       headline: "Educated By",
-      url: "./sponsors_img/Combine Logo NERIM.png",
+      url: "./sponsors_img/nerim.png",
+    },
+    {
+      headline: "Connected By",
+      url: "./sponsors_img/gplus.png",
+    },
+
+    {
+      headline: "Powered By",
+      url: "./sponsors_img/sbi.png",
     },
   ];
 
@@ -54,10 +60,131 @@ const upperSponsers = () => {
     //   partnership: "Official Hygiene and CSR Partner",
     // },
     {
-      url: "./sponsor/scholarbyte.png",
+      url: "./sponsor/scholarbyte.jpg",
       desc: "Scholar byte",
       partnership: "Career Development Partner",
     },
+
+    {
+      url: "./sponsors_img/pureOdisha.png",
+      desc: "Pure Odisha",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/justAssThings.png",
+      desc: "Just Assamese Things",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/mirchi.png",
+      desc: "Radio Mirchi",
+      partnership: "Official Radio Partner",
+    },
+
+    {
+      url: "./sponsors_img/globalHues.png",
+      desc: "Global Hues",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/GT.png",
+      desc: "Guwahati Times",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/siliconIndia.png",
+      desc: "Silicon India",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/assam.png",
+      desc: "Assam Unofficial",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/physioTimes.png",
+      desc: "Physio Times",
+      partnership: "Magazine Partner",
+    },
+
+    {
+      url: "./sponsors_img/blogadda.png",
+      desc: "Blog Adda",
+      partnership: "Blog Partner",
+    },
+
+    {
+      url: "./sponsors_img/poo.jpeg",
+      desc: "ED Times",
+      partnership: "Blog Partner",
+    },
+
+    {
+      url: "./sponsors_img/knowFest.jpeg",
+      desc: "Know Fest",
+      partnership: "Digital Magazine Partner",
+    },
+
+    {
+      url: "./sponsors_img/dib_uoff.png",
+      desc: "Dibrugarh Unofficial",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/times.png",
+      desc: "Campus Times",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/youthIncorpo.png",
+      desc: "Youth Incorporated",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/womanEra.jpeg",
+      desc: "Woman's Era",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/sacchiShiksha.png",
+      desc: "Sacchi Shiksha",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/du.jpeg",
+      desc: "DU India",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/blaze.png",
+      desc: "Blaze Music",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/ghyTimes.png",
+      desc: "Guwahati Times",
+      partnership: "Digital Media Partner",
+    },
+
+    {
+      url: "./sponsors_img/assam1.png",
+      desc: "Assam Beatbox",
+      partnership: "Community Partner",
+    },
+
     // {
     //   url: "./sponsor/remarkskill.png",
     //   desc: "Remarkskill",
@@ -74,7 +201,7 @@ const upperSponsers = () => {
       partnership: "Workshop Partner",
     },
     {
-      url: "./sponsor/fixderma.png",
+      url: "./sponsor/fixderma.jpg",
       desc: "Fix Derma",
       partnership: "Skin Care Partner",
     },
@@ -84,12 +211,7 @@ const upperSponsers = () => {
       partnership: "Oral Care Partner",
     },
     {
-      url: "./sponsor/cocacola.png",
-      desc: "Coca Cola",
-      partnership: "Title Sponsor",
-    },
-    {
-      url: "./sponsor/gmda.png",
+      url: "./sponsor/gmda.jpg",
       desc: "Gmda",
       partnership: "Kartavya In Association With",
     },
@@ -99,19 +221,9 @@ const upperSponsers = () => {
       partnership: "Golden Sponsor",
     },
     {
-      url: "./sponsor/sbi.png",
-      desc: "SBI",
-      partnership: "Powered By Partner",
-    },
-    {
       url: "./sponsor/canara.png",
       desc: "CANARA",
       partnership: "Banking Partner",
-    },
-    {
-      url: "./sponsor/mcj.png",
-      desc: "MCJ",
-      partnership: "Trusted By Partner",
     },
     {
       url: "./sponsor/gail.png",
@@ -119,12 +231,12 @@ const upperSponsers = () => {
       partnership: "Gold Sponsor",
     },
     {
-      url: "./sponsor/mastersunion.png",
+      url: "./sponsor/mastersunion.jpg",
       desc: "Masters union",
       partnership: "Case Study Partner",
     },
     {
-      url: "./sponsor/spm.png",
+      url: "./sponsor/spm.jpg",
       desc: "SPM",
       partnership: "IAS Academy Partner",
     },
@@ -134,12 +246,7 @@ const upperSponsers = () => {
       partnership: "Platinum Sponsor",
     },
     {
-      url: "./sponsor/technoelectric.png",
-      desc: "Techno Electric",
-      partnership: "Co-Title Sponsor",
-    },
-    {
-      url: "./sponsor/ucobank.png",
+      url: "./sponsor/ucobank.jpg",
       desc: "UCO Bank",
       partnership: "Banking Partner",
     },
@@ -149,14 +256,9 @@ const upperSponsers = () => {
       partnership: "Chocolate Partner",
     },
     {
-      url: "./sponsor/reignoftitans.png",
+      url: "./sponsor/reignoftitans.jpeg",
       desc: "Reign of Titans",
       partnership: "Gaming Partner",
-    },
-    {
-      url: "./sponsor/nerim.png",
-      desc: "NERIM",
-      partnership: "Educated By Partner",
     },
     {
       url: "./sponsor/jiosaavn.png",
@@ -164,7 +266,7 @@ const upperSponsers = () => {
       partnership: "Official Music Streaming Partner",
     },
     {
-      url: "./sponsor/foreschool.png",
+      url: "./sponsor/foreschool.jpeg",
       desc: "FORE School of Business",
       partnership: "Knowledge Partner",
     },

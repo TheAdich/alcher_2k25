@@ -23,13 +23,11 @@
   /* Adjust if needed */
 }
 
-
-
 .galleryclouds {
+  background-color: #00001f;
   margin: 0;
   z-index: -10;
   position: relative;
-  
 }
 
 .galleryclouds1 {
@@ -41,7 +39,7 @@
   height: 10rem;
   opacity: 0.4;
 }
-.galleryHeader{
+.galleryHeader {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +58,7 @@
   font-size: calc(5vw + 2rem);
   color: rgba(254, 57, 137, 1);
   z-index: 100;
-  line-height: calc(5vw + 2rem);;
+  line-height: calc(5vw + 2rem);
   /* margin-bottom: 5vw; */
 }
 
@@ -68,7 +66,7 @@
   font-family: "stoneslab";
   text-align: center;
   width: 500px;
-  font-size: calc(1.6vw);;
+  font-size: calc(1.6vw);
   /* position: absolute; */
   /* top: 40%; */
   /* left: 50%; */
@@ -82,13 +80,12 @@
   /* padding-top: 4vw; */
 }
 
-
 .contents {
   color: #ffebd3;
   opacity: 54%;
-  font-family: stoneSlab;
-  font-size: calc(0.5vw + 0.4rem);;
-/*  
+  font-family: gameTape;
+  font-size: calc(0.5vw + 0.6rem);
+  /*  
   padding-top: 50%; */
   text-align: center;
   padding-top: 10vw;
@@ -107,38 +104,36 @@
   color: #ffebd3;
 }
 @media (max-width: 768px) and (min-width: 500px) {
- .contents{
-  font-size:calc(0.75vw + 0.5rem);;
- }
- .topsubheading{
-  font-size: calc(1.5vw + 0.75rem);
- }
- .heading{
-  font-size: calc(8vw + 3rem);
+  .contents {
+    font-size: calc(0.75vw + 0.5rem);
+  }
+  .topsubheading {
+    font-size: calc(1.5vw + 0.75rem);
+  }
+  .heading {
+    font-size: calc(8vw + 3rem);
     line-height: calc(8vw + 3rem);
- }
-
+  }
 }
 
-@media (max-width: 500px) and (min-width:30px) {
-  .contents{
-    font-size:calc(1vw + 0.5rem);
+@media (max-width: 500px) and (min-width: 30px) {
+  .contents {
+    font-size: calc(1vw + 0.5rem);
     /* padding-top: 100px; */
-   }
-   .topsubheading{
+  }
+  .topsubheading {
     font-size: calc(1.5vw + 0.75rem);
-    width:90%;
-   }
-   .heading{
-    font-size: clamp(10vw, calc(10vw + 2rem), calc(11vw+3rem));;
+    width: 90%;
+  }
+  .heading {
+    font-size: clamp(10vw, calc(10vw + 2rem), calc(11vw+3rem));
     line-height: calc(10vw + 2rem);
     max-width: 90vw;
     /* height: auto; */
     /* white-space: nowrap; */
     /* overflow: hidden; */
     text-overflow: ellipsis;
-   }
-  
+  }
 }
 /* @media (max-width: 370px) {
   .contents{

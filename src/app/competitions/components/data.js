@@ -6,8 +6,16 @@ const info = [
     comp_name: "Electric Heels",
     type: "Group ·",
     one_liner: "Freestyle Dance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/218b06a4-c9c5-464e-981d-70b0f5720c55/",
+    url: "https://registration.alcheringa.in/competitions/register/218b06a4-c9c5-464e-981d-70b0f5720c55/",
     tags: "group, group dance, dance, western style group, freestyle group dance, offline",
+    loc: "https://maps.app.goo.gl/CC8Bos8NowuaDvgh6",
+    //audi
+
+    // pronites stage
+    // https://maps.app.goo.gl/HKDMZdgESRGMxtA19
+
+    // new sac
+    // https://maps.app.goo.gl/x9NdtoMy3rzE53Bq8
   },
   {
     id: 2,
@@ -16,8 +24,9 @@ const info = [
     comp_name: "Step Up",
     type: "Group ·",
     one_liner: "Streetdance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/50a8524b-686f-415c-a7a7-5ac0ba7c60e1/",
+    url: "https://registration.alcheringa.in/competitions/register/50a8524b-686f-415c-a7a7-5ac0ba7c60e1/",
     tags: "group, group dance, dance, street battle, street style, street dance,  offline",
+    loc: "https://maps.app.goo.gl/1AeuBSNhsnjZjGko7",
   },
   {
     id: 3,
@@ -26,8 +35,10 @@ const info = [
     comp_name: "Navras",
     type: "Solo ·",
     one_liner: "Classical Dance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/6f6385b5-5338-4174-8d75-dc53d2f08341/",
+    url: "https://registration.alcheringa.in/competitions/register/6f6385b5-5338-4174-8d75-dc53d2f08341/",
     tags: "classical dance, solo classical, offline",
+    loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
+    // mini audi
   },
   {
     id: 4,
@@ -36,8 +47,10 @@ const info = [
     comp_name: "So You Think You Can Dance",
     type: "Solo ·",
     one_liner: "Non Classical Dance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/ff6e0c95-0b7e-4820-aa56-7ef3ec450c08/",
+    url: "https://registration.alcheringa.in/competitions/register/ff6e0c95-0b7e-4820-aa56-7ef3ec450c08/",
     tags: "solo dance, western dance, western solo dance, offline",
+    loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
+    // mini audi
   },
   {
     id: 5,
@@ -46,8 +59,9 @@ const info = [
     comp_name: "Dancing Duo",
     type: "Duet ·",
     one_liner: "Duet Dance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/35655f3b-4c93-44b3-9bb3-013b976e5b1b/",
+    url: "https://registration.alcheringa.in/competitions/register/35655f3b-4c93-44b3-9bb3-013b976e5b1b/",
     tags: "duet dance, duo, offline",
+    loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
   },
   {
     id: 7,
@@ -58,6 +72,7 @@ const info = [
     one_liner: "Fashion Designing Competition",
     url: "https://vogue.alcheringa.in/register/ecd570a5-a873-4139-9e3a-8e4b0821e1f1/",
     tags: "fashion designing, modeling, designing, ramp walk, Apparel Design     ",
+    loc: "https://maps.app.goo.gl/CC8Bos8NowuaDvgh6",
   },
   {
     id: 8,
@@ -68,6 +83,8 @@ const info = [
     one_liner: "Paper Dress Designing Competition",
     url: "https://vogue.alcheringa.in/register/32596fd6-02a9-46f9-a7d1-c30d2faf0c70/",
     tags: "Paper Dress Design, DIY, Origami Fashion, offline    ",
+    loc: "https://maps.app.goo.gl/ZZxfzFpNpeGaPSrC7",
+    // lib shed
   },
   {
     id: 9,
@@ -78,6 +95,7 @@ const info = [
     one_liner: "Online Fashion Design / Photoshoot Competition",
     url: "https://vogue.alcheringa.in/register/c702d699-f41c-4858-a586-02b0cfc30130/",
     tags: "fashion design, online, photoshoot, modeling, models, creative dressing, designer costume    ",
+    loc: "https://maps.app.goo.gl/CC8Bos8NowuaDvgh6",
   },
   {
     id: 10,
@@ -86,8 +104,9 @@ const info = [
     comp_name: "Rap Battle",
     type: "Solo ·",
     one_liner: "Rap Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/f51efeb4-71b4-49b1-8229-5da3cdcee3d8/",
+    url: "https://registration.alcheringa.in/competitions/register/f51efeb4-71b4-49b1-8229-5da3cdcee3d8/",
     tags: "rapping, rap, battle, offline, diss    ",
+    loc: "https://maps.app.goo.gl/1AeuBSNhsnjZjGko7",
   },
   {
     id: 11,
@@ -96,8 +115,9 @@ const info = [
     comp_name: "BeatBash",
     type: "Solo ·",
     one_liner: "Beat Boxing Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/e551731c-65d8-4c63-9110-e52f58a3861a/",
+    url: "https://registration.alcheringa.in/competitions/register/e551731c-65d8-4c63-9110-e52f58a3861a/",
     tags: "beatboxing, offline    ",
+    loc: "https://maps.app.goo.gl/1AeuBSNhsnjZjGko7",
   },
   {
     id: 12,
@@ -106,8 +126,10 @@ const info = [
     comp_name: "Rock-o-phonix",
     type: "Group ·",
     one_liner: "Rock Band Competition",
-    url: "https://rocko.alcheringa.in/register/3872ef38-fc8b-4bd7-b795-ce0caa4f7109/",
+    url: "https://rocko.alcheringa.in/registration/",
     tags: "rock band, band, group singing, metal, hard rock, offline    ",
+    loc: "https://maps.app.goo.gl/wQo1E91MZLo7THmB9",
+    // rocko stage
   },
   {
     id: 13,
@@ -116,8 +138,10 @@ const info = [
     comp_name: "Mr & Ms Alcheringa",
     type: "Solo ·",
     one_liner: "Personality Contest",
-    url: "https://registrations.alcheringa.in/competitions/register/5cabd7aa-40cb-49c9-8485-688793214f7f/",
+    url: "https://registration.alcheringa.in/competitions/register/5cabd7aa-40cb-49c9-8485-688793214f7f/",
     tags: "personality, beauty, talent showcase, modelling, ramp walk, cat walk, beauty contest,     ",
+    loc: "https://maps.app.goo.gl/W37u2ro3Xw5RfX9k7",
+    // L3
   },
   {
     id: 14,
@@ -126,8 +150,10 @@ const info = [
     comp_name: "Crossfade",
     type: "Solo ·",
     one_liner: "DJ Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/66f77a2e-ae62-4899-a979-27fff7286308/",
+    url: "https://registration.alcheringa.in/competitions/register/66f77a2e-ae62-4899-a979-27fff7286308/",
     tags: "DJ, mixing, DJ Showdown, EDM clash, Club DJ, Beat Drop    ",
+    loc: "https://maps.app.goo.gl/1AeuBSNhsnjZjGko7",
+    // old sac wall
   },
   {
     id: 15,
@@ -136,8 +162,9 @@ const info = [
     comp_name: "Alcher Con",
     type: "Solo ·",
     one_liner: "Cosplay Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/0c735189-367a-4fbb-b500-b363e6a7ef46/",
+    url: "https://registration.alcheringa.in/competitions/register/0c735189-367a-4fbb-b500-b363e6a7ef46/",
     tags: "Costume Play, Cosplay Showcase, Comic , Fantasy Costume ,     ",
+    loc: "https://maps.app.goo.gl/Su6uxUyTNGFPSL8Y6",
   },
   {
     id: 16,
@@ -146,8 +173,9 @@ const info = [
     comp_name: "Voice of Alcheringa",
     type: "Solo ·",
     one_liner: "Singing Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/d57dca42-44c9-413e-8460-3fa440118398/",
+    url: "https://registration.alcheringa.in/competitions/register/d57dca42-44c9-413e-8460-3fa440118398/",
     tags: "solo singing, singing, voice, offline    ",
+    loc: "https://maps.app.goo.gl/woU1p8sz6PjsA6fj9",
   },
   {
     id: 17,
@@ -156,8 +184,10 @@ const info = [
     comp_name: "Unplugged",
     type: "Group ·",
     one_liner: "Acoustic Band Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/2a5a4ebe-41fe-4c74-869a-616845d92039/",
+    url: "https://registration.alcheringa.in/competitions/register/2a5a4ebe-41fe-4c74-869a-616845d92039/",
     tags: "acoustic band, group singing, offline    ",
+    loc: "https://maps.app.goo.gl/Su6uxUyTNGFPSL8Y6",
+    // expo stage
   },
   {
     id: 18,
@@ -166,8 +196,15 @@ const info = [
     comp_name: "Parliamentary Debate",
     type: "Group ·",
     one_liner: "Parliamentary Debate Competition",
-    url: "https://pd.alcheringa.in/register/b20e8596-bd28-49a5-8b3a-cbbba54b336b/",
+    url: "https://pd.alcheringa.in/#",
     tags: "debate, parliamentary debate, literary, offline, asian style debate    ",
+    loc: "https://maps.app.goo.gl/LsPKy5rDb4rGLVAu9",
+    // core 1
+
+    // conference hall
+    // https://maps.app.goo.gl/p2cSaH1aCSr5ZizVA
+
+    //
   },
   {
     id: 19,
@@ -176,8 +213,9 @@ const info = [
     comp_name: "Poetry Slam-Hindi",
     type: "Solo ·",
     one_liner: "Hindi Poetry Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/efad606c-e8c5-4c8f-94a1-aeeedb139a10/",
+    url: "https://registration.alcheringa.in/competitions/register/efad606c-e8c5-4c8f-94a1-aeeedb139a10/",
     tags: "poetry, Hindi poetry, offline, literature, literary    ",
+    loc: "https://maps.app.goo.gl/wvQZmTypN7phusiQ7",
   },
   {
     id: 20,
@@ -186,8 +224,10 @@ const info = [
     comp_name: "Poetry Slam-English",
     type: "Solo ·",
     one_liner: "English Poetry Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/313dc0ba-65c5-43ef-8c0f-1767f35767fa/",
+    url: "https://registration.alcheringa.in/competitions/register/313dc0ba-65c5-43ef-8c0f-1767f35767fa/",
     tags: "poetry, english poetry, offline, literature, literary    ",
+    loc: "https://maps.app.goo.gl/wvQZmTypN7phusiQ7",
+    // L1
   },
   {
     id: 21,
@@ -196,8 +236,9 @@ const info = [
     comp_name: "Zephyr",
     type: "Solo ·",
     one_liner: "Online Creative Writing Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/5e746b75-4bb6-4f55-9318-4dd3d99ef2ab/",
+    url: "https://registration.alcheringa.in/competitions/register/5e746b75-4bb6-4f55-9318-4dd3d99ef2ab/",
     tags: "online, creative writing, story writing, Prose, literature, literary, writing, Storycraft , Fiction, Narrative    ",
+    loc: "",
   },
   {
     id: 22,
@@ -206,8 +247,9 @@ const info = [
     comp_name: "Mehfil-e-Alcheringa",
     type: "Solo ·",
     one_liner: "Shayari Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/d9966d69-19a1-4753-a058-af0cbf112c7a/",
+    url: "https://registration.alcheringa.in/competitions/register/d9966d69-19a1-4753-a058-af0cbf112c7a/",
     tags: "shayari, offline, literary, Urdu Poetry, offline    ",
+    loc: "https://maps.app.goo.gl/wvQZmTypN7phusiQ7",
   },
   {
     id: 24,
@@ -216,8 +258,10 @@ const info = [
     comp_name: "Live Sketching",
     type: "Solo ·",
     one_liner: "Live Sketching Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/9dfc66bb-0a7a-4700-9e66-6082f8d6586c/",
+    url: "https://registration.alcheringa.in/competitions/register/9dfc66bb-0a7a-4700-9e66-6082f8d6586c/",
     tags: "sketching, art, Live Drawing, live sketch, sketch, Impromptu Drawing,    ",
+    loc: "https://maps.app.goo.gl/XUFLPSsw9QTNYjoy8",
+    // iitg
   },
   {
     id: 25,
@@ -226,8 +270,9 @@ const info = [
     comp_name: "Clay Modelling",
     type: "Solo ·",
     one_liner: "Clay Modeling Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/5fa14dc0-1955-45dc-850e-b1feaed73b54/",
+    url: "https://registration.alcheringa.in/competitions/register/5fa14dc0-1955-45dc-850e-b1feaed73b54/",
     tags: "Clay Modeling, clay, art, designing, design    ",
+    loc: "https://maps.app.goo.gl/ZZxfzFpNpeGaPSrC7",
   },
   {
     id: 26,
@@ -236,8 +281,9 @@ const info = [
     comp_name: "Who is it?",
     type: "Solo ·",
     one_liner: "Portrait Designing Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/d78c7bb4-33b4-4f6e-a7e1-1f1a4796e311/",
+    url: "https://registration.alcheringa.in/competitions/register/d78c7bb4-33b4-4f6e-a7e1-1f1a4796e311/",
     tags: "portrait sketch, sketching, drawing, art, design, offline    ",
+    loc: "https://maps.app.goo.gl/ZZxfzFpNpeGaPSrC7",
   },
   {
     id: 27,
@@ -246,8 +292,9 @@ const info = [
     comp_name: "Ink the tee",
     type: "Solo/Group ·",
     one_liner: "T-shirt Painting Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/6f6385b5-5338-4174-8d75-dc53d2f08341/",
+    url: "https://registration.alcheringa.in/competitions/register/7c18c2dc-c371-4c85-bd88-468b7cc212c4/",
     tags: "Fabric Painting, canvas painting, tshirt, art, design, Textile Painting    ",
+    loc: "https://maps.app.goo.gl/ZZxfzFpNpeGaPSrC7",
   },
   {
     id: 28,
@@ -256,8 +303,9 @@ const info = [
     comp_name: "Face Art",
     type: "Duet ·",
     one_liner: "Face Painting Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/241b6f8f-7632-4c62-98b7-4c10dab87b56/",
+    url: "https://registration.alcheringa.in/competitions/register/241b6f8f-7632-4c62-98b7-4c10dab87b56/",
     tags: "face painting, art, design, face art, offline    ",
+    loc: "https://maps.app.goo.gl/ZZxfzFpNpeGaPSrC7",
   },
   {
     id: 29,
@@ -266,8 +314,10 @@ const info = [
     comp_name: "Rangoli",
     type: "Group ·",
     one_liner: "Rangoli Making Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/19caad9f-f837-4071-ab51-1d7a7fc81036/",
+    url: "https://registration.alcheringa.in/competitions/register/19caad9f-f837-4071-ab51-1d7a7fc81036/",
     tags: "rangoli, art, design, offline,Floor Art    ",
+    loc: "https://maps.app.goo.gl/ZZxfzFpNpeGaPSrC7",
+    // lib shed
   },
   {
     id: 30,
@@ -276,8 +326,9 @@ const info = [
     comp_name: "Graffiti",
     type: "Group ·",
     one_liner: "Graffiti Designing Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/b79fb50c-940b-4f6c-acfd-e0d1bdbf3855/",
+    url: "https://registration.alcheringa.in/competitions/register/b79fb50c-940b-4f6c-acfd-e0d1bdbf3855/",
     tags: "graffiti, wall painting, wall art, design, Street Art, art, design, offline    ",
+    loc: "https://maps.app.goo.gl/yRmortvxeJhNLzqc6",
   },
   {
     id: 31,
@@ -286,8 +337,9 @@ const info = [
     comp_name: "Alcher Diva/Hunk",
     type: "Solo ·",
     one_liner: "Online Photo Contest",
-    url: "https://registrations.alcheringa.in/competitions/register/1efcc3be-ce00-4b2e-a954-095f35ec0c1b/",
+    url: "https://registration.alcheringa.in/competitions/register/1efcc3be-ce00-4b2e-a954-095f35ec0c1b/",
     tags: "modeling, beauty pageant, online, photo contest, diva, hunk, diva hunk, personality      ",
+    loc: "",
   },
   {
     id: 32,
@@ -296,8 +348,9 @@ const info = [
     comp_name: "Doodle Pad",
     type: "Solo ·",
     one_liner: "Online Doodle Designing Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/fe139b41-84b6-48be-b4ad-111a6d3298b0/",
+    url: "https://registration.alcheringa.in/competitions/register/fe139b41-84b6-48be-b4ad-111a6d3298b0/",
     tags: "doodling, digital art, art, design, online, doodle    ",
+    loc: "",
   },
   {
     id: 33,
@@ -306,8 +359,9 @@ const info = [
     comp_name: "Custom Brush",
     type: "Solo ·",
     one_liner: "Online Digital Painting Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/7a9b671c-aa86-45e5-96bd-4fdee842c4c9/",
+    url: "https://registration.alcheringa.in/competitions/register/7a9b671c-aa86-45e5-96bd-4fdee842c4c9/",
     tags: "doodling, digital art, art, design, online, doodle    ",
+    loc: "",
   },
   {
     id: 34,
@@ -316,8 +370,9 @@ const info = [
     comp_name: "Just reel it",
     type: "Solo ·",
     one_liner: "Online Reel Making Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/3195e045-357b-4c06-89ca-9b752dd24967/",
+    url: "https://registration.alcheringa.in/competitions/register/3195e045-357b-4c06-89ca-9b752dd24967/",
     tags: "reel making, reels, online, creative, story, photography    ",
+    loc: "",
   },
   {
     id: 35,
@@ -326,8 +381,9 @@ const info = [
     comp_name: "Vlog Verse",
     type: "Solo ·",
     one_liner: "Vlogging Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/78a03f4e-cdd6-48d3-a3dc-134ad8b115fc/",
+    url: "https://registration.alcheringa.in/competitions/register/78a03f4e-cdd6-48d3-a3dc-134ad8b115fc/",
     tags: "vlogging, photography, story, short film, director, offline, documentary    ",
+    loc: "",
   },
   {
     id: 37,
@@ -336,8 +392,9 @@ const info = [
     comp_name: "Director's Cut",
     type: "Group ·",
     one_liner: "Online Short Movie Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/bf634672-fdeb-4252-b901-d70bea2efb17/",
+    url: "https://registration.alcheringa.in/competitions/register/bf634672-fdeb-4252-b901-d70bea2efb17/",
     tags: "short movie, filmmaking, online, story telling, cinema, advertisement, advertising, documentary, online    ",
+    loc: "",
   },
   {
     id: 38,
@@ -346,8 +403,9 @@ const info = [
     comp_name: "Snapthrillz",
     type: "Solo ·",
     one_liner: "Online Photography Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/8d0af98c-1a3d-4786-8b8f-06f60b69af58/",
+    url: "https://registration.alcheringa.in/competitions/register/8d0af98c-1a3d-4786-8b8f-06f60b69af58/",
     tags: "photography, online, creative, photoshoot, DSLR, picture, editing, photo editing    ",
+    loc: "",
   },
   {
     id: 39,
@@ -356,8 +414,10 @@ const info = [
     comp_name: "5 on 5 Football",
     type: "Group ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/dedb20b8-8380-4e13-9c58-acce67d665ee/",
+    url: "https://registration.alcheringa.in/competitions/register/dedb20b8-8380-4e13-9c58-acce67d665ee/",
     tags: "football, offline, sports    ",
+    loc: "https://maps.app.goo.gl/KCByr6LLnzxVwtHQ8",
+    // football ground
   },
   {
     id: 40,
@@ -366,8 +426,9 @@ const info = [
     comp_name: "Arm Wrestling",
     type: "Solo ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/3eabbc3a-ab0a-4d57-b001-674b3eac3ec0/",
+    url: "https://registration.alcheringa.in/competitions/register/3eabbc3a-ab0a-4d57-b001-674b3eac3ec0/",
     tags: "arm wrestling, panja, sports, offline    ",
+    loc: "https://maps.app.goo.gl/yRmortvxeJhNLzqc6",
   },
   {
     id: 41,
@@ -376,8 +437,10 @@ const info = [
     comp_name: "Gully Cricket",
     type: "Group ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/43dbe660-2beb-4efd-ba18-c8c6b2f10b26/",
+    url: "https://registration.alcheringa.in/competitions/register/43dbe660-2beb-4efd-ba18-c8c6b2f10b26/",
     tags: "cricket, gully cricket, sports, offline    ",
+    loc: "https://maps.app.goo.gl/yRmortvxeJhNLzqc6",
+    // behind graffiti wall
   },
   {
     id: 42,
@@ -386,8 +449,10 @@ const info = [
     comp_name: "3 vs 3 Basketball",
     type: "Group ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/effb5b57-e868-4469-9443-2d6f66b1a5e9/",
+    url: "https://registration.alcheringa.in/competitions/register/effb5b57-e868-4469-9443-2d6f66b1a5e9/",
     tags: "basketball, sports, offline    ",
+    loc: "https://maps.app.goo.gl/JXhf4q9zQRGwN7ru5",
+    // basketball court
   },
   {
     id: 43,
@@ -396,18 +461,21 @@ const info = [
     comp_name: "3 vs 3 Volleyball",
     type: "Group ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/60292d33-1066-43e4-bdbe-ff5872f9ad56/",
+    url: "https://registration.alcheringa.in/competitions/register/60292d33-1066-43e4-bdbe-ff5872f9ad56/",
     tags: "volleyball, sports, offline    ",
+    loc: "https://maps.app.goo.gl/BvxuPWFq5Pefp51j8",
+    // volleyball court
   },
   {
     id: 44,
     category: "Quiz",
     img: "/competition_img/GeneralQuiz-min.png",
-    comp_name: "Genral Quiz",
+    comp_name: "General Quiz",
     type: "Duet ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/12db9d7c-af24-413c-8871-a8180ebc9896/",
+    url: "https://registration.alcheringa.in/competitions/register/12db9d7c-af24-413c-8871-a8180ebc9896/",
     tags: "quiz, general quiz, offline    ",
+    loc: "https://maps.app.goo.gl/W37u2ro3Xw5RfX9k7",
   },
   {
     id: 45,
@@ -416,8 +484,9 @@ const info = [
     comp_name: "Business Quiz",
     type: "Duet ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/75744c3d-d380-43fe-bd7d-8914727bb31a/",
+    url: "https://registration.alcheringa.in/competitions/register/75744c3d-d380-43fe-bd7d-8914727bb31a/",
     tags: "offline, business quiz, strategy quiz, entrepreneurship    ",
+    loc: "https://maps.app.goo.gl/W37u2ro3Xw5RfX9k7",
   },
   {
     id: 46,
@@ -426,8 +495,9 @@ const info = [
     comp_name: "Comic Quiz",
     type: "Duet ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/802f757d-5f14-4739-9927-4588964f15f6/",
+    url: "https://registration.alcheringa.in/competitions/register/802f757d-5f14-4739-9927-4588964f15f6/",
     tags: "sports quiz, quiz, offline    ",
+    loc: "https://maps.app.goo.gl/woU1p8sz6PjsA6fj9",
   },
   {
     id: 47,
@@ -436,8 +506,9 @@ const info = [
     comp_name: "Sports Quiz",
     type: "Duet ",
     one_liner: "",
-    url: "https://registrations.alcheringa.in/competitions/register/1990abcb-69f1-4d53-8bdf-7d64fd5d364e/",
+    url: "https://registration.alcheringa.in/competitions/register/1990abcb-69f1-4d53-8bdf-7d64fd5d364e/",
     tags: "comic quiz, offline, quiz    ",
+    loc: "https://maps.app.goo.gl/woU1p8sz6PjsA6fj9",
   },
   {
     id: 48,
@@ -446,8 +517,9 @@ const info = [
     comp_name: "Theatrix",
     type: "Group ·",
     one_liner: "Stage Play Competition ",
-    url: "https://registrations.alcheringa.in/competitions/register/f2c0bb68-c719-48fa-979d-aa44ee5ed597/",
+    url: "https://registration.alcheringa.in/competitions/register/f2c0bb68-c719-48fa-979d-aa44ee5ed597/",
     tags: "theatre, stageplay, drama, stage drama, offline, acting, act    ",
+    loc: "https://maps.app.goo.gl/CC8Bos8NowuaDvgh6",
   },
   {
     id: 49,
@@ -456,8 +528,10 @@ const info = [
     comp_name: "Halla Bol",
     type: "Group ·",
     one_liner: "Street Play Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/5ec45f59-9364-446c-a83d-19dbee45ebd1/",
+    url: "https://registration.alcheringa.in/competitions/register/5ec45f59-9364-446c-a83d-19dbee45ebd1/",
     tags: "nukkad, street play, drama, natak, offline, streets, acting, act    ",
+    loc: "https://maps.app.goo.gl/cMzponDyTYHgbZtY6",
+    // audi park
   },
   {
     id: 50,
@@ -466,8 +540,9 @@ const info = [
     comp_name: "Monodrama",
     type: "Solo ·",
     one_liner: "Solo Play Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/5e314929-c9d0-4b40-a626-2c0eceeaccb1/",
+    url: "https://registration.alcheringa.in/competitions/register/5e314929-c9d0-4b40-a626-2c0eceeaccb1/",
     tags: "drama, monoact, mono, acting, act, natak, offline    ",
+    loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
   },
   {
     id: 51,
@@ -478,6 +553,11 @@ const info = [
     one_liner: "Stand Up Comedy Competition",
     url: "https://registration.alcheringa.in/competitions/register/349a553d-3d10-46a4-bcd5-1a6ed11592c4/",
     tags: "literay, stand up comedy, solo, offline    ",
+    loc: "https://maps.app.goo.gl/woU1p8sz6PjsA6fj9",
+    // L2
+
+    //L3
+    // https://maps.app.goo.gl/W37u2ro3Xw5RfX9k7
   },
 ];
 
