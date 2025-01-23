@@ -167,35 +167,38 @@ export default function Page() {
             </div>
 
             {current == 0 &&  <div className={`${styles.arrowLeft} ${isVisible ? styles.visibleleft : styles.done}`}>
-                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 0'</h3>
-                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
-                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>LEVEL AHEAD</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>Hoodie</p>
+                <p style={{ fontFamily: 'GameTape',width: '3rem' }}>"The Alcher Lady's mind exploded into<br /> the arcade world, her thoughts  <br />scattered across levels and blocks.<br /> Wear the chaos, embrace the<br />  challenge. Game on with our exclusive<br /> mind-bending collection."</p>
             </div>}
             {current == 1 &&  <div className={`${styles.arrowLeft} ${isVisible ? styles.visibleleft : styles.done}`}>
-                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 1'</h3>
-                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
-                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>RESPAWN</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>T-Shirt</p>
+                <p style={{ fontFamily: 'GameTape',width:'3rem' }}>In the arcade of Alcheringa, you win, you lose, but you always respawn. Keep playing, keep fighting, and like the Alcher Kid, chase the highest score relentlessly!</p>
             </div>}
             {current == 2 &&  <div className={`${styles.arrowLeft} ${isVisible ? styles.visibleleft : styles.done}`}>
-                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 2'</h3>
-                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
-                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>ARCADE</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>Over Sized T-Shirt</p>
+                <p style={{ fontFamily: 'GameTape',width:'3rem' }}>Our
+                'Arcade' brings you the nostalgia of meeting friends after school, sharing laughs, and making memories. Meet me @ the arcade and relive those fun times together.
+                    {/* Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p> */}</p>
             </div>}
 
             {current == 0 &&  <div className={`${styles.mobileMerch} ${isVisible ? styles.visibleleft : styles.done}`}>
-                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 0'</h3>
-                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
-                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>LEVEL AHEAD</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>Hoodie</p>
+                <p style={{ fontFamily: 'GameTape',width: '4rem' }}>Our
+                'Arcade' brings you the nostalgia of meeting friends after school, sharing laughs, and making memories. Meet me @ the arcade and relive those fun times together.</p>
             </div> }
             {current == 1 &&  <div className={`${styles.mobileMerch} ${isVisible ? styles.visibleleft : styles.done}`}>
-                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 1'</h3>
-                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
-                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>RESPAWN</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>T-Shirt</p>
+                <p style={{ fontFamily: 'GameTape',width: '4rem' }}>In the arcade of Alcheringa, you win, you lose, but you always respawn. Keep playing, keep fighting, and like the Alcher Kid, chase the highest score relentlessly!</p>
             </div> }
             {current == 2 &&  <div className={`${styles.mobileMerch} ${isVisible ? styles.visibleleft : styles.done}`}>
-                <h3 style={{ fontFamily: 'StoneSlab' }}>Drippin 2'</h3>
-                <p style={{ fontFamily: 'StoneSlab' }}>Lorem ipsum dolor</p>
-                <p style={{ fontFamily: 'GameTape' }}>Lorem ipsum, dolor sit amet consectetur<br /> adipisicing elit. Nesciunt aut, aperiam <br />unde sunt ullam ipsa doloribus incidunt!<br /> Magni veritatis cumque provident nam, <br />  voluptatibus minus quam, dolores repellendus<br /> expedita molestias at voluptas similique!</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>ARCADE</h3>
+                <p style={{ fontFamily: 'StoneSlab' }}>Over Sized T-Shirt</p>
+                <p style={{ fontFamily: 'GameTape',width: '4rem' }}>'Arcade' brings you the nostalgia of meeting friends after school, sharing laughs, and making memories. Meet me @ the arcade and relive those fun times together.</p>
             </div> }
 
             {current == 0 &&  <a href="">
@@ -210,20 +213,20 @@ export default function Page() {
 
             {current == 0 &&
             <div className={`${styles.arrowRight} ${isVisible ? styles.visibleright : ''}`}>
-                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
-                <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>₹ 900</h3>
+                {/* <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p> */}
                 <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
             {current === 1 &&
             <div className={`${styles.arrowRight} ${isVisible ? styles.visibleright : ''}`}>
-                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800 </h3>
-                <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>₹ 450 </h3>
+                {/* <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p> */}
                 <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
             {current == 2 &&
             <div className={`${styles.arrowRight} ${isVisible ? styles.visibleright : ''}`}>
-                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
-                <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>₹ 600</h3>
+                {/* <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p> */}
                 <Image src="/dash.svg" className={styles.dash} width="30" height="30" />
             </div>}
 
