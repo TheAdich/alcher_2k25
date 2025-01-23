@@ -39,7 +39,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/sudhanshu.png"
                                 width={100}
                                 height={100}
@@ -97,7 +97,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/sidharth.png"
                                 width={100}
                                 height={100}
@@ -154,7 +154,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/sulabh.png"
                                 width={100}
                                 height={100}
@@ -217,7 +217,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/prakrati.png"
                                 width={100}
                                 height={100}
@@ -276,7 +276,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/vivek.png"
                                 width={100}
                                 height={100}
@@ -335,7 +335,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/kishor.png"
                                 width={100}
                                 height={100}
@@ -393,7 +393,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/jayes.png"
                                 width={100}
                                 height={100}
@@ -458,8 +458,8 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
-                                src="/abhijeet.png"
+                            <img
+                                src="/abhijeeth.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -516,7 +516,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/krishna.png"
                                 width={100}
                                 height={100}
@@ -573,8 +573,8 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
-                                src="/pramith.png"
+                            <img
+                                src="/pramit.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -639,7 +639,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/Anmole.png"
                                 width={100}
                                 height={100}
@@ -698,7 +698,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/nikitha.png"
                                 width={100}
                                 height={100}
@@ -757,7 +757,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/sankeerth.png"
                                 width={100}
                                 height={100}
@@ -821,7 +821,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/yoshita.png"
                                 width={100}
                                 height={100}
@@ -880,7 +880,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/divya.png"
                                 width={100}
                                 height={100}
@@ -948,7 +948,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/himank.png"
                                 width={100}
                                 height={100}
@@ -1006,7 +1006,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/shivam.png"
                                 width={100}
                                 height={100}
@@ -1064,7 +1064,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/jivesh.png"
                                 width={100}
                                 height={100}
@@ -1119,7 +1119,7 @@ const page = () => {
                 </div>
             </section>
             <section className={styles.section}>
-                <h1 style={{ color: '#1F76FA' }}>Convenor and Finance HEAD </h1>
+                <h1 style={{ color: '#1F76FA' }}>CONVENOR AND FINANCE HEAD </h1>
                 <p className={styles.para}>The Finance Head and Convenor are essential to Alcheringa’s success. The Finance Head oversees budgeting, resource allocation, and transparency in financial transactions, ensuring a balance between income and expenses. The Convenor leads all teams, aligns efforts with the fest’s goals, and serves as the link between the organizing committee and the institute administration, ensuring smooth coordination and execution. Together, they ensure the festival runs seamlessly.</p>
                 <div className={styles.persons}>
                     <div className={styles.profilecard}>
@@ -1130,7 +1130,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/pradiptha.png"
                                 width={100}
                                 height={100}
@@ -1188,7 +1188,7 @@ const page = () => {
                                 height={100}
                                 className={styles.profileframe}
                             />
-                            <Image
+                            <img
                                 src="/astiva.png"
                                 width={100}
                                 height={100}
@@ -1198,7 +1198,7 @@ const page = () => {
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
                                 <h2>Astitva Jain</h2>
-                                <p style={{ color: '#1F76FA' }}>Finance&AccountsHead</p>
+                                <p style={{ color: '#1F76FA' }}>Finance & Accounts Head</p>
                             </button>
                             <button className={styles.button}>
                                 <Image

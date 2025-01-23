@@ -7,6 +7,7 @@ import { Color } from 'three';
 const CloudSection = ({event}) => {
   const { name, topsubheading, contents } = event[0];
   return (
+
     <div className={styles.galleryclouds}>
     <div className={styles.galleryclouds1}>
         <Marquee speed={10} >
@@ -30,6 +31,7 @@ const CloudSection = ({event}) => {
         <div className={styles.contents}>
         <p>
         {contents}
+
         </p>
       </div></div>
 </div>
