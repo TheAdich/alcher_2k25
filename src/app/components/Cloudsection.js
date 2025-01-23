@@ -112,14 +112,18 @@ const CloudSection = () => {
                         width={100}
                         height={100}
                         className="alcherlogo"
+                        style={"opacity=1"}
                     />
               
             </div>
 
             <div className="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor tellus. Nulla porttitor felis a scelerisque feugiat. Praesent faucibus libero ac velit interdum rutrum. Vestibulum viverra volutpat laoreet.</p>
+                <p>Alcheringa, the annual cultural festival of IIT Guwahati, is a celebration of art, culture, and creativity that transcends boundaries. Established in 1996, it has grown to become Northeast India’s largest college festival, drawing participants and audiences from across the nation.</p>
 
-                <p>Vivamus tempus dui ac consectetur eleifend. Sed mauris metus, porta finibus diam non, aliquet congue libero. Nullam sit amet ante quis magna varius maximus tincidunt eu tellus. Proin varius sem imperdiet tempor mattis. In facilisis felis a facilisis fringilla. Duis volutpat velit a nunc tincidunt sagittis. Fusce arcu nisl, tristique id posuere sit amet, semper sit amet urna. Etiam nec enim eu nulla placerat rutrum. Aliquam erat volutpat. Quisque aliquet placerat ligula, quis tempus magna maximus eget. Nulla egestas nisi vel nulla mattis, sed consectetur ante hendrerit. Pellentesque magna ex, volutpat sit amet placerat eget, iaculis sed dui. Donec fermentum quis mi eu malesuada. Fusce ultricies risus quis mi condimentum auctor. In at dui urna.</p>
+                <p>Named after the Aboriginal Australian term for the “Dreamtime,” Alcheringa represents a world of imagination, self-expression, and cultural unity. With a rich legacy of showcasing diverse traditions, innovative performances, and spirited competitions, the festival embodies the values of inclusivity, creativity, and collaboration.</p>
+
+                <p>Through its vibrant events and electrifying concerts, Alcheringa continues to inspire and connect individuals, fostering a sense of community and passion for the arts.</p>
+                
             </div>
             <div>
                 <div className="relative">
@@ -132,7 +136,7 @@ const CloudSection = () => {
                         <source src="/video.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
-
+                    <div class="overlay"></div>
 
                     <div className="stats-section">
                         <div className="stats-flex">
