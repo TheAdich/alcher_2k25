@@ -212,7 +212,8 @@
   align-items: center;
   position: absolute;
   left: 5%;
-  bottom: 5%;
+  height: 25%;
+  bottom: 0%;
   z-index: 99999999;
 }
 
@@ -225,7 +226,8 @@
   align-items: center;
   position: absolute;
   right: 5%;
-  bottom: 5%;
+  height: 25%;
+  bottom: 0%;
   z-index: 99999999;
 }
 
@@ -379,6 +381,9 @@
     opacity: 1;
     /* top: 20%; */
     /* transition: all 1s ease; */
+  }
+  .model2{
+    pointer-events: none;
   }
   .mobileMerch h3 {
     color: #ffebd3;

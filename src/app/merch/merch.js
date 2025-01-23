@@ -87,8 +87,16 @@ export default function Page() {
         // setRight((right + 2) % 3);
         // console.log("Current:", current, "Left:", left, "Right:", right);
     };
-
-
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+            window.addEventListener('resize', handleResize);
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
+    },[])
     const handleBtn1 = () => {
         setCurrentm(0);
         setLeft(2);
@@ -142,7 +150,7 @@ export default function Page() {
             </div>
             <h1 className={styles.logo} style={{ fontFamily: 'BrickPixel' }}>Alcher Merchandise</h1>
             <div className={styles.box}>
-                <Canvas key={currentm} className={`${styles.model2} custom-canvas-class`} style={{ touchAction: 'none' }}>
+                <Canvas key={currentm} className={`${styles.model2} custom-canvas-class`} style={{ touchAction: 'none',pointerEvents: isMobile?'none':'auto' }}>
                     <OrbitControls
                         enableZoom={false}
                         enablePan={false}
@@ -231,18 +239,18 @@ export default function Page() {
             </div>}
 
             {current == 0 &&     <div className={`${styles.mobileBottom} ${isVisible ? styles.visibleright : styles.done}`}>
-                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
-                <p style={{ fontFamily: 'GameTape' }}>+$80 for delivery</p>
+                <h3 style={{ fontFamily: 'BrickPixel' }}>₹ 900</h3>
+                {/* < style={{ fontFamily: 'GameTape' }}>+$80 for deliver */}
                 {/* <Image src="/dash.svg" className={styles.dash} width="30" height="30" /> */}
             </div>}
             {current == 1 &&<div className={`${styles.mobileBottom} ${isVisible ? styles.visibleright : styles.done}`}>
-                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
-                <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p>
+            <h3 style={{ fontFamily: 'BrickPixel' }}>₹ 450</h3>
+                {/* <p style={{ fontFamily: 'GameTape' }}>+$81 for delivery</p> */}
                 {/* <Image src="/dash.svg" className={styles.dash} width="30" height="30" /> */}
             </div>}
             {current == 2 &&     <div className={`${styles.mobileBottom} ${isVisible ? styles.visibleright : styles.done}`}>
-                <h3 style={{ fontFamily: 'BrickPixel' }}>$ 800</h3>
-                <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p>
+            <h3 style={{ fontFamily: 'BrickPixel' }}>₹ 600</h3>
+                {/* <p style={{ fontFamily: 'GameTape' }}>+$82 for delivery</p> */}
                 {/* <Image src="/dash.svg" className={styles.dash} width="30" height="30" /> */}
             </div>}
 
