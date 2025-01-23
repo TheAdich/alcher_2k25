@@ -134,6 +134,15 @@
   color: #FFEBD3B2;
   line-height: 2.63vw;
 }
+.nextImage {
+  /* existing styles */
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth transition for the glow effect */
+}
+
+.nextButton:hover .nextImage{
+  width: 5.5vw;
+  height: 4.5vw;
+}
 .nextImage{
   width: 5vw;
   height: 4vw;

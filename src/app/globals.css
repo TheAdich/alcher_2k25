@@ -136,12 +136,14 @@ body {
 
 }
 
-.homeclouds1 {
+.homecloud1 {
   height: 10rem;
+  opacity: 0.4;
 }
 
-.homeclouds2 {
+.homecloud2 {
   height: 10rem;
+  opacity: 0.4;
 }
 
 
