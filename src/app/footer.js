@@ -5,6 +5,7 @@ import styles from "./footer.module.css";
 import "./components/stone-slab.css";
 import "./components/game-tape.css";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 const footer = () => {
@@ -51,15 +52,18 @@ const footer = () => {
           className={styles.eventsSec}
           style={{ fontFamily: "stoneSlab", color: "rgba(255, 235, 211, 1)" }}
         >
-          {navOptions.map((option) => {
+          {navOptions.map((option , index) => {
             const isActive =
               option.path === "/"
                 ? pathh === option.path
                 : pathh.startsWith(option.path);
 
             return (
-              <ul className={isActive ? styles["navActive"] : styles["nav"]}>
-                <Link href={option.path}>{option.label}</Link>
+              <ul
+                key={index}
+                className={isActive ? styles["navActive"] : styles["nav"]}
+              >
+                <Link href={option?.path}>{option.label}</Link>
               </ul>
             );
           })}
@@ -97,36 +101,44 @@ const footer = () => {
             <img src="/name2.png" alt="" />
           </div>
         </div>
-
         <div className={styles.followUs}>
           <p className={styles.followtxt}>Follow Us</p>
           <div className={styles.followicons}>
             <ul>
-              <a href="https://www.instagram.com/alcheringaiitg/?hl=en">
-                <img src="/instaicon.png" alt="" />
-              </a>
+              <Link href="https://www.instagram.com/alcheringaiitg/?hl=en">
+                <Image
+                  src="/instaicon.png"
+                  alt="Instagram"
+                  width={24}
+                  height={24}
+                />
+              </Link>
             </ul>
             <ul>
-              <a href="https://www.facebook.com/alcheringaiitg/">
-                <img src="/fbicon.png" alt="" />
-              </a>
+              <Link href="https://www.facebook.com/alcheringaiitg/">
+                <Image
+                  src="/fbicon.png"
+                  alt="Facebook"
+                  width={24}
+                  height={24}
+                />
+              </Link>
             </ul>
             <ul>
-              <a href="https://x.com/alcheringaiitg">
-                <img src="/xicon.png" alt="" />
-              </a>
+              <Link href="https://x.com/alcheringaiitg">
+                <Image src="/xicon.png" alt="Twitter" width={24} height={24} />
+              </Link>
             </ul>
             <ul>
-              <a href="https://www.youtube.com/@alcheringaIITG">
-                <img src="/yticon.png" alt="" />
-              </a>
+              <Link href="https://www.youtube.com/@alcheringaIITG">
+                <Image src="/yticon.png" alt="YouTube" width={24} height={24} />
+              </Link>
             </ul>
           </div>
         </div>
         <div className={styles.footDownDes}>
           <img src="/footDownBG.png" alt="" />
         </div>
-
         <div className={styles.oneline}>
           <div className={styles.lftline}>
             Designed and Developed by

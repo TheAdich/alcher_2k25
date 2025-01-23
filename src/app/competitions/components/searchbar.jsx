@@ -25,7 +25,7 @@ const SearchBar = () => {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
     setInput("");
-    const filtered = info.filter((item) => item.category === category);
+    const filtered = category === 'all' ? info : info.filter((item) => item.category === category);
     setFilteredData(filtered);
   };
 
@@ -44,8 +44,8 @@ const SearchBar = () => {
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
           >
-            <option value="">
-              <p>All Modules</p>
+            <option value="all">
+              All Modules
             </option>
             {titledata.map((title) => (
               <option

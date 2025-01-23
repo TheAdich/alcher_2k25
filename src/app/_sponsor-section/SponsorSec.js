@@ -77,7 +77,7 @@ const SponsorSection = () => {
           </div>
         ))}
         <Image/>
-       <Image src={line2} className={styles.lines} alt=""/>
+       <Image src={line2} className={styles.lines} alt="ewdhskg"/>
       </div>
       <div className={styles.dashContainer1}>
       <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
