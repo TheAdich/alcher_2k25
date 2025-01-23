@@ -87,8 +87,16 @@ export default function Page() {
         // setRight((right + 2) % 3);
         // console.log("Current:", current, "Left:", left, "Right:", right);
     };
-
-
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768);
+            window.addEventListener('resize', handleResize);
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
+    },[])
     const handleBtn1 = () => {
         setCurrentm(0);
         setLeft(2);
@@ -142,7 +150,7 @@ export default function Page() {
             </div>
             <h1 className={styles.logo} style={{ fontFamily: 'BrickPixel' }}>Alcher Merchandise</h1>
             <div className={styles.box}>
-                <Canvas key={currentm} className={`${styles.model2} custom-canvas-class`} style={{ touchAction: 'none' }}>
+                <Canvas key={currentm} className={`${styles.model2} custom-canvas-class`} style={{ touchAction: 'none',pointerEvents: isMobile?'none':'auto' }}>
                     <OrbitControls
                         enableZoom={false}
                         enablePan={false}
