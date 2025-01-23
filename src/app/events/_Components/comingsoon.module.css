@@ -22,10 +22,12 @@
   font-family: "brickPixel";
   font-size: 5rem; /* Adjust the size as needed */
   font-weight: bold; /* Make the text thicker */
-  color: #fff;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
-               0 0 20px rgba(255, 255, 255, 0.5), 
-               0 0 30px rgba(255, 255, 255, 0.3),
-               0 0 40px rgba(255, 255, 255, 0.2),
-               0 0 50px rgba(255, 255, 255, 0.1);
+  color: #efb1d0; /* Pinkish color */
+  text-align: center;
+  text-shadow: 0 0 5px rgba(255, 105, 180, 0.5), 
+               0 0 10px rgba(255, 105, 180, 0.4), 
+               0 0 15px rgba(255, 105, 180, 0.3),
+               0 0 20px rgba(255, 105, 180, 0.2),
+               0 0 25px rgba(255, 105, 180, 0.1);
+  letter-spacing: 0.4vw;
 }
