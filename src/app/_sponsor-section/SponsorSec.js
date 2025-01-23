@@ -6,7 +6,7 @@ import img2 from "./_components/img2.png";
 import img3 from "./_components/img3.png";
 import img4 from "./_components/img4.png";
 import img5 from "./_components/img5.png";
-
+import img6 from "./_components/img6.jpg";
 import img7 from "./_components/img7.png";
 import img8 from "./_components/img8.png";
 import img9 from "./_components/img9.png";
@@ -15,6 +15,7 @@ import img11 from "./_components/img11.png";
 import img12 from "./_components/img12.png";
 import img13 from "./_components/logo.png";
 import img14 from "./_components/CocaColalogo.webp";
+import img15 from "./_components/MCJ.png";
 import line2 from "./_components/line2.png";
 import dash1 from "./_components/dash1.png";
 import dash2 from "./_components/dash2.png";
@@ -24,10 +25,12 @@ import image3 from "./_components/image3.svg";
 import Image from "next/image";
 import GridSketch from "../_trailinggrid/grid";
 const sponsors = [
-  { name: "Gplus", logo: img1, alt: "Gplus logo" },
-
   { name: "CocaCola", logo: img14, alt: "E-media logo" },
   { name: "Techno", logo: img13, alt: "E-media logo" },
+  { name: "Gplus", logo: img1, alt: "Gplus logo" },
+  { name: "MCJ", logo: img15, alt: "MCJ" },
+  { name: "Nerim", logo: img6, alt: "Nerim" },
+  
 ];
 
 const SponsorSection = () => {
@@ -66,19 +69,19 @@ const SponsorSection = () => {
         <Image src={dash1} alt="Top dash" className={styles.dash} />
       </div>
       <h2 className={styles.sponsortitle}>Sponsors</h2>
-      <div className={styles.sponsorlogos}>
       <Image src={line2} className={styles.lines} alt="line2"/>
+      <div className={styles.sponsorlogos}>
         {sponsors.map((sponsor, index) => (
           
-          <div className={`${styles.sponsorlogo} ${index === 2 ? styles.SSlogo : ""}`}
+          <div className={`${styles.sponsorlogo} ${index === 1 ? styles.SSlogo : ""}`}
           key={index} >
 
             <Image src={sponsor.logo} alt={sponsor.alt} className={styles.sponsorImg} />
           </div>
         ))}
         <Image/>
-       <Image src={line2} className={styles.lines} alt="ewdhskg"/>
       </div>
+       <Image src={line2} className={styles.lines} alt="ewdhskg"/>
       <div className={styles.dashContainer1}>
       <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
         <Image src={dash2} alt="Bottom dash" className={styles.dash} />
