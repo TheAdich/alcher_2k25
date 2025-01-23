@@ -1,130 +1,125 @@
 @font-face {
-    font-family: "gameTape";
-    src: url("/Game_Tape.ttf") format("truetype");
-    font-weight: normal; /* Adjust if needed */
-    font-style: normal; /* Adjust if needed */
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
 }
-  
+
 @font-face {
-    font-family: "stoneSlab";
-    src: url("/Stone_Slab.ttf") format("truetype");
-    font-weight: normal; /* Adjust if needed */
-    font-style: normal; /* Adjust if needed */
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal; /* Adjust if needed */
+  font-style: normal; /* Adjust if needed */
 }
 
-
-.compCard{
-    margin-left: 1vw;
-    margin-top: 1vw;
-    font-family: gameTape;
-    width: 28vw;
-    padding-bottom: 6vw;
-
+.compCard {
+  margin-left: 1vw;
+  margin-top: 1vw;
+  font-family: gameTape;
+  width: 28vw;
+  padding-bottom: 6vw;
 }
 
-.cardImg{
-    height: 20vw;
-    background-size: cover;
+.cardImg {
+  height: 20vw;
+  background-size: cover;
 }
 
-.compTitle{
-    font-size: 1.5vw;
-    margin-top: 1vw;
-    color: #FFEBD3;
+.compTitle {
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  color: #ffebd3;
 }
 
-.compDetails{
-    display: flex;
-    gap: 2vw;
-    font-size:1.2vw ;
-    color: #DE4784;
+.compDetails {
+  display: flex;
+  gap: 2vw;
+  font-size: 1.2vw;
+  color: #de4784;
 }
 
-.compVanueTime{
-    display: flex;
-    gap: 4vw;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: .4vw;
-    border-top: .001rem solid darkgray;
+.compVanueTime {
+  display: flex;
+  gap: 4vw;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0.4vw;
+  border-top: 0.001rem solid darkgray;
 }
 
+.compVanue {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
 
-.compVanue{
-   
-    display: flex;
-    align-items: center;
-    gap: .5vw;
-   
-    color: #FFEBD3;
-    font-size: 1.2vw;
+  color: #ffebd3;
+  font-size: 1.2vw;
 }
-.compVanue p{
-    opacity: .5;
+.compVanue p {
+  opacity: 0.5;
 }
-.locIconComp{
-    background-size: cover;
-    opacity: 1;
+.locIconComp {
+  background-size: cover;
+  opacity: 1;
 }
 
-.locIconComp img{
-    width: 1.2vw;
+.locIconComp img {
+  width: 1.2vw;
 }
 
-
-.timeIconComp img{
-    width: 2vw;
-    margin-top: .5vw;
+.timeIconComp img {
+  width: 2vw;
+  margin-top: 0.5vw;
 }
-.compTime{
-    display: flex;
-    align-items: center;
-    gap: .5vw;
-    color: #FFEBD3;
-    font-size: 1.2vw;
-}
-
-.compTime p{
-    opacity: .5;
+.compTime {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  color: #ffebd3;
+  font-size: 1.2vw;
 }
 
-.cardBtns{
-    color: #FFEBD3;
-    font-size: 1.3vw;
-    display: flex;
-    align-items: center;
-    gap: 2vw;
-    margin-top: 1vw;
-    font-family: 'Stone_Slab';
+.compTime p {
+  opacity: 0.5;
 }
 
-.registerBtnComp{
-    padding-bottom: .1vw;
-    display: flex;
-    align-items: center;
-    gap: 1vw;
-    width: fit-content;
-    border-bottom: .05rem solid white;;
-}
-.mapCompIcon img{
-    width: 1.7vw;
+.cardBtns {
+  color: #ffebd3;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin-top: 1vw;
+  font-family: "Stone_Slab";
 }
 
-.compet{
+.registerBtnComp {
+  padding-bottom: 0.1vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  width: fit-content;
+  border-bottom: 0.05rem solid white;
+}
+.mapCompIcon img {
+  width: 1.7vw;
+}
+
+.compet {
+  display: grid;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 480px) {
+  .compet {
     display: grid;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: repeat(3, 1fr);
-}
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-@media (max-width: 480px){
-    .compet{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-   
-.compCard{
+  .compCard {
     margin-left: 1vw;
     margin-top: 1vw;
     font-family: gameTape;
@@ -133,28 +128,27 @@
     padding-bottom: 10vh;
     margin-left: auto;
     margin-right: auto;
+  }
 
-}
-
-.cardImg{
+  .cardImg {
     height: 70%;
     background-size: cover;
-}
+  }
 
-.compTitle{
+  .compTitle {
     font-size: 7vw;
     margin-top: 3vw;
-    color: #FFEBD3;
-}
+    color: #ffebd3;
+  }
 
-.compDetails{
+  .compDetails {
     display: flex;
     gap: 2vw;
-    font-size:4.5vw ;
-    color: #DE4784;
-}
+    font-size: 4.5vw;
+    color: #de4784;
+  }
 
-.compVanueTime{
+  .compVanueTime {
     display: flex;
     gap: 4vw;
     width: 100%;
@@ -163,65 +157,63 @@
     padding-top: 2vw;
     margin-top: 2vw;
     padding-bottom: 5vw;
-    border-top: .01rem solid darkgray;
-}
+    border-top: 0.01rem solid darkgray;
+  }
 
-
-.compVanue{
+  .compVanue {
     display: flex;
     align-items: center;
     gap: 2vw;
-    color: #FFEBD3;
+    color: #ffebd3;
     font-size: 4vw;
-}
-.compVanue p{
-    opacity: .5;
-}
-.locIconComp{
+  }
+  .compVanue p {
+    opacity: 0.5;
+  }
+  .locIconComp {
     background-size: cover;
     opacity: 1;
-}
+  }
 
-.locIconComp img{
+  .locIconComp img {
     width: 4.5vw;
-}
+  }
 
-
-.timeIconComp img{
+  .timeIconComp img {
     width: 5.3vw;
     margin-top: 1vw;
-}
-.compTime{
+  }
+  .compTime {
     display: flex;
     align-items: center;
     gap: 2vw;
-    color: #FFEBD3;
+    color: #ffebd3;
     font-size: 4vw;
-}
+  }
 
-.compTime p{
-    opacity: .5;
-}
+  .compTime p {
+    opacity: 0.5;
+  }
 
-.cardBtns{
-    color: #FFEBD3;
+  .cardBtns {
+    color: #ffebd3;
     display: flex;
     align-items: center;
     gap: 2vw;
     font-size: 5.5vw;
     margin-top: 2vw;
-}
+  }
 
-.registerBtnComp{
-    padding-bottom: .1vw;
+  .registerBtnComp {
+    padding-bottom: 0.1vw;
     display: flex;
     align-items: center;
     gap: 1vw;
     width: fit-content;
-    border-bottom: .1rem solid white;;
-}
-.mapCompIcon img{
+    border-bottom: 0.1rem solid white;
+  }
+  .mapCompIcon img {
     width: 6vw;
     margin-top: 1vw;
-}
+  }
 }

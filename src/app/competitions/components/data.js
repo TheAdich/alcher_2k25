@@ -402,7 +402,7 @@ const info = [
   {
     id: 44,
     category: "Quiz",
-    img: "/competition_img/Quiz-min.png",
+    img: "/competition_img/GeneralQuiz-min.png",
     comp_name: "Genral Quiz",
     type: "Duet ",
     one_liner: "",
@@ -412,8 +412,8 @@ const info = [
   {
     id: 45,
     category: "Quiz",
-    img: "/competition_img/Quiz-min.png",
-    comp_name: "Buisness Quiz",
+    img: "/competition_img/BusinessQuiz-min.png",
+    comp_name: "Business Quiz",
     type: "Duet ",
     one_liner: "",
     url: "https://registrations.alcheringa.in/competitions/register/743b9524-d521-473a-b50b-47d3c764be0a/",
@@ -422,7 +422,7 @@ const info = [
   {
     id: 46,
     category: "Quiz",
-    img: "/competition_img/Quiz-min.png",
+    img: "/competition_img/ComicQuiz-min.png",
     comp_name: "Comic Quiz",
     type: "Duet ",
     one_liner: "",
@@ -432,7 +432,7 @@ const info = [
   {
     id: 47,
     category: "Quiz",
-    img: "/competition_img/Quiz-min.png",
+    img: "/competition_img/SportsQuiz-min.png",
     comp_name: "Sports Quiz",
     type: "Duet ",
     one_liner: "",
@@ -468,6 +468,16 @@ const info = [
     one_liner: "Solo Play Competition",
     url: "https://registrations.alcheringa.in/competitions/register/9376821b-7c51-40aa-881e-fc712a6e5a74/",
     tags: "drama, monoact, mono, acting, act, natak, offline    ",
+  },
+  {
+    id: 51,
+    category: "Literary",
+    img: "/competition_img/ComicClash-min.png",
+    comp_name: "Comic Clash",
+    type: "Solo ·",
+    one_liner: "Stand Up Comedy Competition",
+    url: "https://registration.alcheringa.in/competitions/register/349a553d-3d10-46a4-bcd5-1a6ed11592c4/",
+    tags: "literay, stand up comedy, solo, offline    ",
   },
 ];
 

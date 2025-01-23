@@ -6,6 +6,7 @@ import "./components/stone-slab.css";
 import "./components/game-tape.css";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 const footer = () => {
   const navOptions = [
     { label: "Events", path: "/events" },
@@ -40,6 +41,8 @@ const footer = () => {
     navigator.clipboard.writeText(text);
   };
 
+  const pathh = usePathname();
+
   return (
     <div>
       <img className="w-full h-20 bg-gray-900 " src="/footUpBG.png" alt="" />
@@ -48,11 +51,18 @@ const footer = () => {
           className={styles.eventsSec}
           style={{ fontFamily: "stoneSlab", color: "rgba(255, 235, 211, 1)" }}
         >
-          {navOptions.map((option) => (
-            <ul>
-              <Link href={option.path}>{option.label}</Link>
-            </ul>
-          ))}
+          {navOptions.map((option) => {
+            const isActive =
+              option.path === "/"
+                ? pathh === option.path
+                : pathh.startsWith(option.path);
+
+            return (
+              <ul className={isActive ? styles["navActive"] : styles["nav"]}>
+                <Link href={option.path}>{option.label}</Link>
+              </ul>
+            );
+          })}
         </div>
         <div className={styles.logoDiv}>
           <img className={styles.footerLogo} src="/footLogo.png" alt="" />
@@ -88,9 +98,38 @@ const footer = () => {
           </div>
         </div>
 
+        <div className={styles.followUs}>
+          <p className={styles.followtxt}>Follow Us</p>
+          <div className={styles.followicons}>
+            <ul>
+              <a href="https://www.instagram.com/alcheringaiitg/?hl=en">
+                <img src="/instaicon.png" alt="" />
+              </a>
+            </ul>
+            <ul>
+              <a href="https://www.facebook.com/alcheringaiitg/">
+                <img src="/fbicon.png" alt="" />
+              </a>
+            </ul>
+            <ul>
+              <a href="https://x.com/alcheringaiitg">
+                <img src="/xicon.png" alt="" />
+              </a>
+            </ul>
+            <ul>
+              <a href="https://www.youtube.com/@alcheringaIITG">
+                <img src="/yticon.png" alt="" />
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.footDownDes}>
+          <img src="/footDownBG.png" alt="" />
+        </div>
+
         <div className={styles.oneline}>
           <div className={styles.lftline}>
-            Designed and Developed by <br />
+            Designed and Developed by
             <div className={styles.alcherCreatives}>
               <p
                 onMouseEnter={() => setIsVisible(true)}
@@ -122,53 +161,53 @@ const footer = () => {
             </div>
           </div>
           <div className={styles.rgtline}>
-            For Business Enquiries{" "}
+            For Business Enquiries
             <a href="mailto:alcheringa@iitg.ac.in">alcheringa@iitg.ac.in</a>
           </div>
         </div>
-
-        <div className={styles.followUs}>
-          <p className={styles.followtxt}>Follow Us</p>
-          <div className={styles.followicons}>
-            <ul>
-              <a href="https://www.instagram.com/alcheringaiitg/?hl=en">
-                <img src="/instaicon.png" alt="" />
-              </a>
-            </ul>
-            <ul>
-              <a href="https://www.facebook.com/alcheringaiitg/">
-                <img src="/fbicon.png" alt="" />
-              </a>
-            </ul>
-            <ul>
-              <a href="https://x.com/alcheringaiitg">
-                <img src="/xicon.png" alt="" />
-              </a>
-            </ul>
-            <ul>
-              <a href="https://www.youtube.com/@alcheringaIITG">
-                <img src="/yticon.png" alt="" />
-              </a>
-            </ul>
-          </div>
-        </div>
-        <div className={styles.retroleft}>
-          <img src="/txtretroleft.png" alt="" />
-          <br />
-          <img src="/txtretroleft.png" alt="" />
-        </div>
-        <div className={styles.retroright}>
-          <img src="/txtretroright.png" alt="" />
-          <br />
-          <img src="/txtretroright.png" alt="" />
-        </div>
-
-        <div className={styles.globecir}>
-          <img src="/globe.png" alt="" />
-        </div>
-
-        <div className={styles.globecir2}>
-          <img src="/globe2.png" alt="" />
+        <div className={styles.wrapper}>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
+          <span>
+            <img src="./Vector.png" alt="" />
+          </span>
         </div>
       </div>
     </div>
