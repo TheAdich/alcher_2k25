@@ -6,7 +6,7 @@ const info = [
     comp_name: "Electric Heels",
     type: "Group ·",
     one_liner: "Freestyle Dance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/0e809108-c6ce-48d0-8a03-35d8af031035/",
+    url: "https://registration.alcheringa.in/competitions/register/218b06a4-c9c5-464e-981d-70b0f5720c55/",
     tags: "group, group dance, dance, western style group, freestyle group dance, offline",
   },
   {
@@ -16,7 +16,7 @@ const info = [
     comp_name: "Step Up",
     type: "Group ·",
     one_liner: "Streetdance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/1957b128-042b-495a-b405-54d7ea19373a/",
+    url: "https://registration.alcheringa.in/competitions/register/50a8524b-686f-415c-a7a7-5ac0ba7c60e1/",
     tags: "group, group dance, dance, street battle, street style, street dance,  offline",
   },
   {
@@ -26,7 +26,7 @@ const info = [
     comp_name: "Navras",
     type: "Solo ·",
     one_liner: "Classical Dance Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/7fe035f0-1db0-49da-bb86-9d629be8d0ab/",
+    url: "https://registration.alcheringa.in/competitions/register/6f6385b5-5338-4174-8d75-dc53d2f08341/",
     tags: "classical dance, solo classical, offline",
   },
   {
@@ -246,7 +246,7 @@ const info = [
     comp_name: "Ink the tee",
     type: "Solo/Group ·",
     one_liner: "T-shirt Painting Competition",
-    url: "https://registrations.alcheringa.in/competitions/register/febfa133-c4f9-482b-b3d4-45e5f65a1c71/",
+    url: "https://registration.alcheringa.in/competitions/register/7c18c2dc-c371-4c85-bd88-468b7cc212c4/",
     tags: "Fabric Painting, canvas painting, tshirt, art, design, Textile Painting    ",
   },
   {
