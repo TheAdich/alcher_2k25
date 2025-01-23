@@ -83,7 +83,7 @@
 }
 
 .sponsorlogo {
-  width: 10vw;
+  width: 20vw;
   height: auto;
   /* filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)); */
   transition: transform 0.1-s ease;
@@ -111,6 +111,6 @@
     align-items: center;
   }
   .sponsorlogo{
-    width:18vw;
+    width:20vw;
   }
 }
