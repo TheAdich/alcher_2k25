@@ -108,7 +108,7 @@ export default function Page() {
         <div className={`${styles.box1} ${isExpanded ? styles.box1Visible : ""}`}>
           <div className={styles.nextButton} onClick={handleNext}>
             <Image src={next} className={styles.nextImage} alt="next button" />
-            <p className={styles.eventName}>{images[currentIndex].name}</p>
+            <p className={styles.eventName}>{images[currentIndex+1].name}</p>
           </div>
           <div className={`${styles.right} ${isExpanded ? styles.up : ""}`}>
           {currentIndex === 0 && (
