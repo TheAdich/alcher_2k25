@@ -13,18 +13,21 @@ const CloudSection = () => {
               className="cloudRight cloud"
               width="1000"
               height="1000"
+              alt="cloud"
             />
             <Image
               src="./cloudRight.svg"
               className="cloudRight cloud"
               width="1000"
               height="1000"
+              alt="cloud"
             />
             <Image
               src="./cloudRight.svg"
               className="cloudRight cloud"
               width="1000"
               height="1000"
+              alt="cloud"
             />
           </Marquee>
         </div>
@@ -35,18 +38,21 @@ const CloudSection = () => {
               className="cloudLeft cloud"
               width="1000"
               height="1000"
+              alt="cloud"
             />
             <Image
               src="./cloudLeft.svg"
               className="cloudLeft cloud"
               width="1000"
               height="1000"
+              alt="cloud"
             />
             <Image
               src="./cloudLeft.svg"
               className="cloudLeft cloud"
               width="1000"
               height="1000"
+              alt="cloud"
             />
           </Marquee>
         </div>

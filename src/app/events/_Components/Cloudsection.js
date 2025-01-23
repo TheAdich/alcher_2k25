@@ -1,84 +1,66 @@
 import Image from "next/image";
 import SlotCounter from "react-slot-counter";
 import styles from "./components.module.css";
-const CloudSection = () => {
+import Marquee from "react-fast-marquee";
+import { Color } from 'three';
+
+const CloudSection = ({event}) => {
+  const { name, topsubheading, contents } = event[0];
   return (
-    <section className={styles.bgset}>
-      <section className="clouds">
-        <div>
+    <div className={styles.galleryclouds}>
+      <div className={styles.galleryclouds1}>
+        <Marquee speed={10}>
           <Image
-            src="/cloud1u.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="fu cloud "
+            src="/cloudLeft.svg"
+            width="1000"
+            height="1000"
+            alt="section"
           />
           <Image
-            src="/cloud1b.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="fb cloud "
-          />
-        </div>
-        <div>
-          <Image
-            src="/cloud2u.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="su cloud "
+            src="/cloudLeft.svg"
+            width="1000"
+            height="1000"
+            alt="section"
           />
           <Image
-            src="/cloud2d.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="sd cloud "
+            src="/cloudLeft.svg"
+            width="1000"
+            height="1000"
+            alt="section"
           />
-        </div>
-        <div>
-          <Image
-            src="/cloud3.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="tu  cloud "
-          />
-        </div>
-        <div>
-          <Image
-            src="/cloudlu.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="lu cloud "
-          />
-          <Image
-            src="/cloudlb.png"
-            alt="cloud"
-            width={100}
-            height={100}
-            className="lb cloud "
-          />
-        </div>
-      </section>
-      <div className={styles.header}>
-        <p className={styles.title}>Events</p>
-        <p className={styles.oneline}>
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ab?
-          Fuga, libero reprehenderit quidem nobis"
-        </p>
+        </Marquee>
       </div>
-      <div className={styles.content}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-          tristique purus eu libero egestas, sed bibendum felis tincidunt. Proin
-          ultricies viverra mollis. Nullam vel quam tortor. Duis egestas libero
-          velit, vel ullamcorper ipsum condimentum ac. Suspendisse ac porttitor
-        </p>
+      <div className={styles.galleryclouds2}>
+        <Marquee direction="right" speed={30}>
+          <Image
+            src="/cloudRight.svg"
+            width="1000"
+            height="1000"
+            alt="section"
+          />
+          <Image
+            src="/cloudRight.svg"
+            width="1000"
+            height="1000"
+            alt="section"
+          />
+          <Image
+            src="/cloudRight.svg"
+            width="1000"
+            height="1000"
+            alt="section"
+          />
+        </Marquee>
       </div>
-    </section>
+      <div className={styles.galleryHeader}>
+        <div className={styles.heading}>{name}</div>
+        <div className={styles.topsubheading}>{topsubheading}</div>
+
+        <div className={styles.contents}>
+          <p>{contents}</p>
+        </div>
+      </div>
+    </div>
   );
 };
 
