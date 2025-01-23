@@ -6,22 +6,23 @@ import Link from "next/link";
 
 // import Loading from "../loading";
 
-import image1 from "./Group38.png";
-import image2 from "./image2.png";
-import image3 from "./next.png";
-import image4 from "./Group38.png";
-import image5 from "./image2.png";
+import image1 from "./image1.png";
+import image2 from "./image2.svg";
+import image3 from "./coming.png";
+import image4 from "./coming.png";
+import image5 from "./coming.png";
 
 import enter from "./Group39.svg";
 import next from "./next.png";
 
 const images = [
-  { src: image1, name: "Pronites",link: "/events/pronites", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: image1, name: "Pronites",link: "/events/pronites", description: "Pronites are the ultimate music experience, featuring electrifying performances by top artists and bands. Get ready for four unforgettable nights of music, dance, and pure energy!" },
   { src: image2, name: "Proshows",link: "/events/proshows", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
   { src: image3, name: "Creator's Camp",link: "/events/creators_camp", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
   { src: image4, name: "Critical Damage",link: "/events/critical_damage", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
   { src: image5, name: "Flickeringa",link: "/events/flickeringa", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
 ];
+
 
 
 export default function Page() {
@@ -75,7 +76,8 @@ export default function Page() {
               {images[currentIndex].description}
             </p>
           </div>
-
+          <div>
+          {(currentIndex === 0||currentIndex === 1) && (
           <Link className={styles.enter} href={images[currentIndex].link}>
             <Image
               src={enter}
@@ -84,6 +86,8 @@ export default function Page() {
               alt="enter button"
             />
           </Link>
+          )}
+          </div>
         </div>
         <div className={styles.center}>
           <div
@@ -107,14 +111,11 @@ export default function Page() {
             <p className={styles.eventName}>{images[currentIndex].name}</p>
           </div>
           <div className={`${styles.right} ${isExpanded ? styles.up : ""}`}>
-            <p>Day 0 : Saaz</p>
-            <hr />
-            <p>Day 0 : Juggernaut</p>
-            <hr />
-            <p>Day 0 : Saaz</p>
-            <hr />
-            <p>Day 0 : Saaz</p>
-            <hr />
+          {currentIndex === 0 && (
+            
+              <><p>Day 0 : Saaz</p><hr /><p>Day 1 : Juggernaut</p><hr /><p>Day 2 : Crescendo</p><hr /><p>Day 3 : Blitz</p><hr /></>
+            
+          )}
           </div>
         </div>
       </div>

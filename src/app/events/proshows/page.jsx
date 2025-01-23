@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./component/style.module.css";
 import loc from "./component/Location.svg";
-import CloudSection from "./component/Cloudsection";
+import CloudSection from "../_Components/Cloudsection2";
 // import Loading from "../loading";
 
 // import image1 from "./component/image1.png";
@@ -11,16 +11,21 @@ import CloudSection from "./component/Cloudsection";
 import google from "./component/googlelink.svg";
 import frame from "./component/Frame51-o.svg";
 import clock from "./component/Time_light.svg"
+import ComingSoon from "../_Components/comingsoon";
 const images = [
   { src: "/image1.png", day:"Day 1 - Juggernaut", location: "Main Auditorium",loaclink:"https://www.google.com", name: "Arjit Singh",time: "31 Jan, 11:00 PM", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
   { src: "/image1.png", day:"Day 1 - Juggernaut", location: "Main Auditorium",loaclink:"https://www.google.com", name: "Arjit Singh",time: "31 Jan, 11:00 PM", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
 ];
-
+const event = [
+  { name: "Proshows", topsubheading: "Flickeringa", contents: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+];
 export default function Page() {
   return (
     <div className={styles.main}>
-      <CloudSection />
-        <div className={styles.container}>
+
+      <CloudSection event={event}/>
+      <ComingSoon></ComingSoon>
+        {/* <div className={styles.container}>
             {images.map((image, index) => (
               <div key={index} className={styles.event}>
                 <div className={styles.left}
@@ -86,7 +91,7 @@ export default function Page() {
                 </div>
               </div>
             ))} 
-        </div>
+        </div> */}
     </div>
   );
 }
