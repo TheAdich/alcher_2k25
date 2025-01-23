@@ -25,19 +25,18 @@
 
 
 
-.galleryclouds {
+.kartavyaclouds1 {
   margin: 0;
   z-index: -10;
   position: relative;
+  opacity: 0.4;
 }
 
-.galleryclouds1 {
+.kartavyaclouds2 {
   height: 10rem;
+  opacity: 0.4;
 }
 
-.galleryclouds2 {
-  height: 10rem;
-}
 
 .heading {
   z-index: 100;
