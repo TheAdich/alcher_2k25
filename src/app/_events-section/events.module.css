@@ -112,7 +112,7 @@
 }
 
 .eventcard img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -651,6 +651,7 @@
 
   .eventcontainer {
     margin-left: 50px;
+    height:auto;
   }
   .eventstext {
     position: relative;
@@ -667,6 +668,7 @@
   }
   .cardssection {
     column-gap: 40px;
+    height:auto;
   }
   .underline {
     width: 67%;

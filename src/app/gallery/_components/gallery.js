@@ -348,7 +348,7 @@ export default function Gallery() {
                   <div className={styles.cardFront12}>
                     <Image
                       src={gal8}
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal8)}
                       alt="Image 2"
                       layout="responsive"
                       className={`${styles.cardcss2} ${styles.cardImage}`}
@@ -359,7 +359,7 @@ export default function Gallery() {
                   <div className={styles.cardBack12}>
                     <Image
                       src={gal8}
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(gal8)}
                       alt="Image 2"
                       layout="responsive"
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
@@ -372,7 +372,7 @@ export default function Gallery() {
                   <div className={styles.cardFront}>
                     <Image
                       src={gal7}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal7)}
                       alt="Image 3"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage}`}
@@ -383,7 +383,7 @@ export default function Gallery() {
                   <div className={styles.cardBack}>
                     <Image
                       src={gal7}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal7)}
                       alt="Image 3"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
@@ -707,7 +707,7 @@ export default function Gallery() {
                   <div className={styles.cardFront12}>
                     <Image
                       src={frame5}
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame5)}
                       alt="Image 2"
                       layout="responsive"
                       className={`${styles.cardcss2} ${styles.cardImage}`}
@@ -718,7 +718,7 @@ export default function Gallery() {
                   <div className={styles.cardBack12}>
                     <Image
                       src={frame5}
-                      onClick={() => openPopup(card2)}
+                      onClick={() => openPopup(frame5)}
                       alt="Image 2"
                       layout="responsive"
                       className={`${styles.cardcss2} ${styles.cardImage} ${styles.cardBackImage}`}
@@ -731,7 +731,7 @@ export default function Gallery() {
                   <div className={styles.cardFront}>
                     <Image
                       src={gal16}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal16)}
                       alt="Image 3"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardcss3a}`}
@@ -742,7 +742,7 @@ export default function Gallery() {
                   <div className={styles.cardBack}>
                     <Image
                       src={gal16}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(gal16)}
                       alt="Image 3"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
@@ -758,7 +758,7 @@ export default function Gallery() {
                   <div className={styles.cardFront}>
                     <Image
                       src={frame4}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(frame4)}
                       alt="Image 1"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage}`}
@@ -769,7 +769,7 @@ export default function Gallery() {
                   <div className={styles.cardBack}>
                     <Image
                       src={frame4}
-                      onClick={() => openPopup(card3)}
+                      onClick={() => openPopup(frame4)}
                       alt="Image 1"
                       layout="responsive"
                       className={`${styles.cardcss3} ${styles.cardImage} ${styles.cardBackImage}`}
