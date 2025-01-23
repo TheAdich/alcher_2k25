@@ -36,8 +36,8 @@
 .cloudrgt {
   top: 500px;
   position: absolute;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: auto;
   right: 0px;
 }
 
@@ -59,7 +59,7 @@
 
 .upperSponsers {
   position: relative;
-  background-color: rgb(17, 24, 39);
+  background-color: #00001f;
   height: auto;
   display: flex;
   gap: 20px;
@@ -103,7 +103,7 @@
 }
 
 .lowerSponsers {
-  background-color: #000014;
+  background-color: #00001f;
   padding-top: 80px;
   padding-bottom: 80px;
   gap: 80px;
@@ -139,6 +139,9 @@
   justify-content: center;
   width: 180px;
   height: 180px;
+}
+
+.imggg {
   transition: all 0.3s ease-in-out;
 }
 

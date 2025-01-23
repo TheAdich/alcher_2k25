@@ -6,7 +6,7 @@
 
 .bgnav {
   position: absolute;
-  background-color: rgba(17, 24, 39, 1);
+  background-color: #00001f;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,7 +20,7 @@
   height: 100px;
   padding: 0px 8% 0px 8%;
   /* background-color: rgb(17, 24, 39, 0.7); */
-  background: linear-gradient(to bottom, rgb(17, 24, 39, 1) 50%, transparent);
+  background: linear-gradient(to bottom, #00001f, transparent);
   display: flex;
   z-index: 4000;
   justify-content: space-between;
