@@ -484,7 +484,7 @@ export default function Page() {
             }
             onClick={handleBtn1}
           >
-            <Image src="/button1.svg" width="150" height="150" />
+            <Image src="/button3.svg" width="150" height="150" />
           </div>
           <div
             className={
@@ -494,7 +494,7 @@ export default function Page() {
             }
             onClick={handleBtn2}
           >
-            <Image src="/button2.svg" width="150" height="150" />
+            <Image src="/button1.svg" width="150" height="150" />
           </div>
           <div
             className={
@@ -504,7 +504,7 @@ export default function Page() {
             }
             onClick={handleBtn3}
           >
-            <Image src="/button3.svg" width="150" height="150" />
+            <Image src="/button2.svg" width="150" height="150" />
           </div>
         </div>
         <div className={styles.rightBtns}>

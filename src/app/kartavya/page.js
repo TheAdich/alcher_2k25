@@ -1,14 +1,13 @@
-"use client";
-
-import Kartavya from "./_components/kartavya";
-import KartavyaCloud from "./_components/kartavyaCloud";
-const page = () => {
-  return (
-    <>
-      <KartavyaCloud />
-      <Kartavya />
-    </>
-  );
+import dynamic from "next/dynamic";
+import Loading from "../loader.jsx";
+export const metadata = {
+  title: "Kartavya | Alcheringa",
 };
 
-export default page;
+const Page = dynamic(() => import("./_components/kartavya"), {
+  loading: () => <Loading />,
+  ssr: true,
+});
+
+export default Page;
+

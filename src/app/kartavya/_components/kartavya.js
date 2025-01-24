@@ -1,9 +1,7 @@
-"use client";
-import { useState } from "react";
 import styles from "./kartavya.module.css";
 import Image from "next/image";
 import dashline from "./dashline.svg";
-
+import KartavyaCloud from "./kartavyaCloud";
 import preImage2 from "./preImage2.svg";
 
 import img2 from "./img2.svg";
@@ -58,11 +56,11 @@ const initiatives = [
 const headtitle =
   "Empowering Underprivileged Students to Dream Big and Soar High";
 const desc =
-  " Udaan, launched as ‘Bachpan’ in 2011, aimed at empowering underprivileged students through the joy of learning. With initiatives like career counseling, workshops, and creative activities, Udaan inspires young minds to dream big and achieve their true potential. Join us in spreading wings of hope and opportunity—because every child deserves to soar high with Udaan! ";
+  " Udaan, launched as 'Bachpan' in 2011, aimed at empowering underprivileged students through the joy of learning. With initiatives like career counseling, workshops, and creative activities, Udaan inspires young minds to dream big and achieve their true potential. Join us in spreading wings of hope and opportunity—because every child deserves to soar high with Udaan! ";
 const Kartavya = () => {
-  const [udaanImage, setUdaanImage] = useState(preImage2);
-  const [description, setDescription] = useState(desc);
-  const [subheading, setSubheading] = useState(headtitle);
+  const udaanImage = preImage2;
+  const description = desc;
+  const subheading = headtitle;
 
   // const handleCardClick = (image,head,des) => {
   //   setUdaanImage(image);
@@ -129,8 +127,7 @@ const Kartavya = () => {
               key={index}
               className={styles.card}
               // onClick={() => {handleCardClick(initiative.image,initiative.title,initiative.description);
-               
-                
+
               // }}
               // onChange={e=>e.target.value}
             >
@@ -168,4 +165,14 @@ const Kartavya = () => {
     </div>
   );
 };
-export default Kartavya;
+
+const page = () => {
+  return (
+    <>
+      <KartavyaCloud />
+      <Kartavya />
+    </>
+  );
+};
+
+export default page;

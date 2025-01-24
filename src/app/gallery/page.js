@@ -1,15 +1,12 @@
-import Gallery from "./_components/gallery"
-import GalleryCloud from "./_components/galleryCloud"
+import dynamic from "next/dynamic";
+import Loading from "../loader.jsx";
+export const metadata = {
+  title: "Gallery | Alcheringa",
+};
 
+const Page = dynamic(() => import("./_components/gallery.js"), {
+  loading: () => <Loading />,
+  ssr: false,
+});
 
-function page() {
-  return (
-    <>
-    <GalleryCloud/>
-    <Gallery/>
-      
-    </>
-  )
-}
-
-export default page
+export default Page;
