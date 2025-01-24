@@ -68,7 +68,11 @@ export default function Page() {
 
   return (
     <main>
+      <div className={styles.contents}>
+          <p>Step into the world of excitement and energy on the Events page of ALCHERINGA! This is where the magic happens—where vibrant music performances, electrifying EDM nights, and unforgettable moments come to life. ALCHERINGA is packed with high-energy events that will have you on your feet and dancing all night long. Join us for an epic celebration of music, dance, and pure joy. Let the fun begin!</p>
+        </div>
       <div className={styles.mainPage}>
+        
         <div className={`${styles.left} ${isExpanded ? styles.visible : ""}`}>
           <h1 className={styles.heading}>{images[currentIndex].name}</h1>
           <div className={styles.description}>

@@ -87,7 +87,7 @@ const SponsorSection = () => {
             />
           </div>
         ))}
-        <Image />
+        {/* <Image /> */}
       </div>
       <Image src={line2} className={styles.lines} alt="ewdhskg" />
       <div className={styles.dashContainer1}>

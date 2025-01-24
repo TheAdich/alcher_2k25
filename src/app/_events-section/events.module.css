@@ -122,7 +122,7 @@
   position: relative;
   width: 25%;
   height: 60%;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-left: 0px;
 }
 .evebtn {
@@ -143,6 +143,7 @@
   margin-left: 40px;
 }
 
+<<<<<<< Updated upstream
 .eventstext p {
   font-family: "Game_Type", sans-serif;
   font-size: 1rem;
@@ -190,6 +191,64 @@
   height: 30%;
   margin-bottom: 10px;
 }
+=======
+  .eventstext p {
+    font-family: 'Game_Type', sans-serif;
+    font-size: 1rem;
+    
+    color: rgba(255, 235, 211, 0.7);
+    margin: 20px 0;
+  }
+  
+  .eventsbutton {
+   
+    border: none;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    overflow: visible;
+  }
+  .evebtn {
+    /* filter: brightness(75%); */
+  
+  }
+  
+  .eventsbutton:hover  {
+    filter: drop-shadow(0 0px 35px #fe3988b4);
+    transition: filter 0.3s ease;
+    z-index: 1000;
+    overflow: visible;
+  }
+   .inst2 {
+    padding-left: 50%;
+  }
+  .high{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .inst3 {
+    padding-left: 25%;
+    
+  }
+  .inst1{
+    padding-left:20%;
+  }
+  .highlight{
+    color:rgb(254 57 137);
+    filter:drop-shadow(0 0 10px #FE3989);
+    padding-right: 2vw;
+  }
+  .underline{
+    width: 57%;
+    height:30%;
+    margin-bottom: 10px;
+    
+  }
+>>>>>>> Stashed changes
 
 .inst2 span {
   color: rgb(254 57 137);
@@ -256,6 +315,7 @@
     background-color: none;
     color: #f4f4f4;
     border: none;
+    /* padding-bottom: 50px; */
     padding: 0px 0px;
     margin-top: 1rem;
     font-size: 1rem;
