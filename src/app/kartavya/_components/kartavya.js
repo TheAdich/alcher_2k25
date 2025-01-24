@@ -15,24 +15,17 @@ import frame2 from "./frame2.svg";
 
 const initiatives = [
   {
-    title: "AIKYAM",
-    description:
-      "Aikyam's main aim is to sensitise people about how communal violence and hatred is still a burning issue in India and to promote the idea of 'unity in diversity' through performances, panel discussions and fundraisers",
-    image: img1,
-  },
-  {
-    title: "Manshakti",
-    description:
-      "Manshakti is Alcheringa's mental health awareness campaign where we strive to address the wide variety of mental health issues that people suffer from, while reducing stigma and promoting a culture of care and understanding.",
-    image: img2,
-  },
-  {
     title: "Safher",
     description:
       "Acknowledging the sad reality of violence against women and lack of women safety in India, SafHer, through a variety of workshops and other programmes highlights that women raise their voice against misconduct and get perpetrators to justice.",
     image: img3,
   },
-
+  {
+    title: "Sanrakshan",
+    description:
+      "Sanrakshan is a dual-purpose campaign tackling AIDS awareness and substance abuse, fostering a socially responsible community that is aware of safe practices and at the same time eliminating the stigma surrounding these issues.",
+    image: img6,
+  },
   {
     title: "Prithvi",
     description:
@@ -45,13 +38,20 @@ const initiatives = [
       "It is held annually to celebrate North East India’s cultural diversity through performances, regional art, and handicrafts, while addressing social issues and exploring solutions.",
     image: img5,
   },
-
   {
-    title: "Sanrakshan",
+    title: "Manshakti",
     description:
-      "Sanrakshan is a dual-purpose campaign tackling AIDS awareness and substance abuse, fostering a socially responsible community that is aware of safe practices and at the same time eliminating the stigma surrounding these issues.",
-    image: img6,
+      "Manshakti is Alcheringa's mental health awareness campaign where we strive to address the wide variety of mental health issues that people suffer from, while reducing stigma and promoting a culture of care and understanding.",
+    image: img2,
   },
+  {
+    title: "AIKYAM",
+    description:
+      "Aikyam's main aim is to sensitise people about how communal violence and hatred is still a burning issue in India and to promote the idea of 'unity in diversity' through performances, panel discussions and fundraisers",
+    image: img1,
+  },
+
+
 ];
 const headtitle =
   "Empowering Underprivileged Students to Dream Big and Soar High";

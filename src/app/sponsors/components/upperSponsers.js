@@ -15,16 +15,16 @@ const upperSponsers = () => {
     //   url: "./connectedby.png",
     // },
     {
+      headline: "Connected By",
+      url: "./sponsors_img/gplus.png",
+    },
+    {
       headline: "Trusted By",
       url: "./sponsors_img/MCJ LOGO complete-white.png",
     },
     {
       headline: "Educated By",
       url: "./sponsors_img/nerim.png",
-    },
-    {
-      headline: "Connected By",
-      url: "./sponsors_img/gplus.png",
     },
 
     {

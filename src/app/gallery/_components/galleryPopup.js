@@ -129,9 +129,6 @@
 // export default GalleryPopup;
 
 
-
-
-
 import React from "react";
 import styles from "./galleryPopup.module.css";
 import card1 from "./card1.png";
@@ -145,7 +142,7 @@ import Image from "next/image";
 const GalleryPopup = ({ imageSrc, closePopup }) => {
   return (
     <div className={styles.popupContainer} onClick={closePopup}>
-      <div className={styles.popupContent} onClick={(e) => e.stopPropagation()}>
+      <div className={styles.popupContent} onClick={(e) => e.stopPropagation()} style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}>
         <button className={styles.closeButton} onClick={closePopup}>
           &times;
         </button>
