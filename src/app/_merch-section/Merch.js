@@ -10,7 +10,9 @@ const Merch = () => {
   useEffect(() => {
     const updateDimensions = () => {
       if (typeof window !== "undefined") {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1440) {
+          setGridDimensions({ width: 3000, height: 690, gridsize: 16.5 }); // Very Large screens
+        }else if (window.innerWidth > 991) {
           setGridDimensions({ width: 3000, height: 530, gridsize: 15 }); // Large screens
         } else if (window.innerWidth > 991) {
           setGridDimensions({ width: 2000, height: 95, gridsize: 14 }); // Medium screens

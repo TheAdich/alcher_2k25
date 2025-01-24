@@ -78,7 +78,7 @@ const footer = () => {
               id={styles.phn}
               onClick={() => copyToClipboard("+91 7354647811")}
             >
-              +91 7354647811
+             +91 97070 49872
             </p>
             <a href="mailto:siddharth@alcheringa.in">siddharth@alcheringa.in</a>
           </div>
@@ -88,7 +88,7 @@ const footer = () => {
               id={styles.phn}
               onClick={() => copyToClipboard("+91 8292967325")}
             >
-              +91 8292967325
+              +91 88129 23115 
             </p>
             <a href="mailto:sudhanshu@alcheringa.in">sudhanshu@alcheringa.in</a>
           </div>
