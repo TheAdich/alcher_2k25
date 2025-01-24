@@ -7,24 +7,30 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
 @font-face {
   font-family: "brickPixel";
   src: url("/Brick_Pixel.ttf") format("truetype");
-  font-weight: normal; /* Adjust if needed */
-  font-style: normal; /* Adjust if needed */
+  font-weight: normal;
+  /* Adjust if needed */
+  font-style: normal;
+  /* Adjust if needed */
 }
+
 @font-face {
   font-family: 'Game_Type';
   src: url('/Game_Tape.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Stone_Slab';
   src: url('/Stone_Slab.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -35,47 +41,57 @@
 
 body {
   color: white;
-  background:#000014;
-  
+  background: #000014;
+
 
 }
 
-.redlines{
-  width:100%;
+.redlines {
+  width: 100%;
   /* display: none; */
   /* scale: 1.2; */
   /* overflow-x: hidden; */
   /* overflow: hidden; */
-  height:127px;
+  height: 127px;
 }
+
 .clouds {
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: -10;
-  overflow: hidden; 
+  overflow: hidden;
   /* height: 400px; */
   /* background-color: #FFEBD3; */
 }
 
-.logo_cloud{
+.logo_cloud {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @keyframes moveClouds {
   0% {
     transform: translateX(-100%);
   }
+
   50% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
-.fu, .fb, .su, .lu, .lb, .sd, .tu {
+.fu,
+.fb,
+.su,
+.lu,
+.lb,
+.sd,
+.tu {
   animation: moveClouds 40s linear infinite;
 }
 
@@ -176,30 +192,25 @@ body {
   }
 } */
 
-.alcherlogo{
+.alcherlogo {
+
   position: absolute;
-  /* height: 250px; */
-  /* width:700px; */
-  scale: 7;
-  /* transform: translateY(-70%); */
-  /* padding: 10px; */
-  /* top: 150px; */
-  left:45%;
+  width: 700px;
+  height: auto;
+  left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 999;
-  /* justify-self: center; */
-  transform: translateX(-50%);
-  /* display: flex; */
-  /* top:0px; */
-  transform: translateY(-10%);
   filter: drop-shadow(0 0 10px #F13683);
+  padding:0 8px;
+
 }
 
-.content{
+.content {
   text-align: center;
   padding: 10px 150px;
-  color: #FFEBD3;
-  
+  color: rgba(255, 235, 211, 0.70);
+  font-family: 'Game_Type';
 }
 
 
@@ -214,6 +225,7 @@ body {
   object-fit: cover;
   background: linear-gradient(180deg, #000014 0%, rgba(0, 0, 20, 0) 100%)
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -245,13 +257,13 @@ body {
 
 .stat-item {
   width: 100%;
-  
+
 }
 
 .stat-title {
   text-align: left;
   font-family: "brickpixel";
-  font-size: 4rem; 
+  font-size: 4rem;
   font-weight: bold;
   color: #FFEBD3;
 }
@@ -266,41 +278,45 @@ body {
 }
 
 .stat-description {
-  color: #9ca3af; 
+  color: #9ca3af;
   text-align: left;
-  font-size: 2rem; 
+  font-size: 2rem;
   font-family: "brickpixel";
   color: #FFEBD3;
 }
+
 @media screen and (max-width: 1408px) {
+
   /* .clouds{
     background-color: #9ca3af;
   } */
-  .redlines{
-    height:100px;
+  .redlines {
+    height: 100px;
   }
 }
 
 @media screen and (max-width: 1216px) {
-   /* .clouds{
+
+  /* .clouds{
     background-color: #FE3989;
    } */
-   .content{
+  .content {
     padding: 10px 100px;
   }
-  
+
 }
 
 @media(max-width:991px) {
   .stat-title {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
-  
-  
-  
+
+
+
   .stat-description {
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
   }
+
   .stats-flex {
     gap: 1rem;
   }
@@ -308,56 +324,63 @@ body {
 }
 
 @media(max-width:768px) {
-  .content{
+  .content {
     padding: 10px 50px;
   }
-  .alcherlogo{
-    scale: 4;
+
+  .alcherlogo {
+    width: 500px;
   }
+
   .homeclouds {
     margin: 0;
     z-index: -10;
     position: relative;
-  
+
   }
-  
+
   .homeclouds1 {
     height: 10rem;
   }
-  
+
   .homeclouds2 {
     height: 10rem;
   }
 }
 
 @media(max-width:450px) {
-  .content{
+  .content {
     padding: 10px 30px;
   }
-  .redlines{
-    height:80px;
+
+  .redlines {
+    height: 80px;
   }
+
   .stat-title {
-    font-size: 30px; 
+    font-size: 30px;
   }
+
   .stat-description {
-    font-size: 20px; 
+    font-size: 20px;
   }
+
   .stats-flex {
     gap: 10px;
     padding: 0 22px;
   }
-  .alcherlogo{
-    scale: 3;
-    left: 40%;
+
+  .alcherlogo {
+    width: 400px;
   }
 }
 
 @media(max-width:375px) {
-  .stat-description{
+  .stat-description {
     font-size: 15px;
   }
-  .stat-title{
+
+  .stat-title {
     font-size: 27px;
   }
 }
