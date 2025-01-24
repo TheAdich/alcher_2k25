@@ -3,7 +3,7 @@ import styles from './merch.module.css'
 import Image from 'next/image'
 import React, { useState, useEffect } from "react";
 import GridSketch from '../_trailinggrid/grid';
-
+import dash2 from "./_components/dash2.png";
 const Merch = () => {
   const [gridDimensions, setGridDimensions] = useState({ width: 300, height: 50, gridsize: 16.5 });
 
@@ -41,6 +41,10 @@ const Merch = () => {
       <a href="/merch">
         <Image src="./merch-btn.svg" alt="merch" width={500} height={500} className={styles.merchBtnHome} />
       </a>
+      <div className={styles.dashContainermerch}>
+      <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
+        <Image src={dash2} alt="Bottom dash" className={styles.dash} />
+      </div>
     </div>
   )
 }
