@@ -143,55 +143,6 @@
   margin-left: 40px;
 }
 
-<<<<<<< Updated upstream
-.eventstext p {
-  font-family: "Game_Type", sans-serif;
-  font-size: 1rem;
-
-  color: rgba(255, 235, 211, 0.7);
-  margin: 20px 0;
-}
-
-.eventsbutton {
-  border: none;
-  padding: 10px 20px;
-  margin-top: 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 5px;
-}
-.evebtn {
-  /* filter: brightness(75%); */
-}
-
-.eventsbutton:hover .evebtn {
-  filter: drop-shadow(0 0 35px #fe3989);
-  transition: filter 0.3s ease;
-}
-.inst2 {
-  padding-left: 50%;
-}
-.high {
-  display: flex;
-  flex-direction: row;
-}
-.inst3 {
-  padding-left: 30%;
-}
-.inst1 {
-  padding-left: 20%;
-}
-.highlight {
-  color: rgb(254 57 137);
-  filter: drop-shadow(0 0 10px #fe3989);
-}
-.underline {
-  width: 57%;
-  height: 30%;
-  margin-bottom: 10px;
-}
-=======
   .eventstext p {
     font-family: 'Game_Type', sans-serif;
     font-size: 1rem;
@@ -248,7 +199,6 @@
     margin-bottom: 10px;
     
   }
->>>>>>> Stashed changes
 
 .inst2 span {
   color: rgb(254 57 137);
