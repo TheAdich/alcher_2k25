@@ -34,7 +34,7 @@ const AlcherApp = () => {
         <div className={styles.flex}>
           <div className={`${styles.phone} ${styles.tiltcard}`} data-tilt>
             <Image
-              src="./device.svg"
+              src="/app.png"
               alt="Alcher App"
               width={300}
               height={600}
@@ -70,7 +70,7 @@ const AlcherApp = () => {
         />
         {/* <Text className={styles.text} /> */}
 
-        <a href="">
+        <a href="https://play.google.com/store/apps/details?id=com.alcheringa.alcheringa2022">
           <Image
             src="./app_btn.svg"
             alt="Alcher App"

@@ -7,7 +7,7 @@
   align-self: center;
   color: #ffebd3;
   margin-top: 7vh;
-  background-color: #00001f;
+  background-color: transparent;
 }
 .mobileview {
   display: none;
@@ -163,7 +163,7 @@
   margin-bottom: 0; /* Slide the content up */
 }
 .footer {
-  background-color: #00001f;
+  background-color: transparent;
   height: 100px;
   width: 80vw;
   margin-left: 10vw;
