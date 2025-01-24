@@ -54,6 +54,11 @@ const upperSponsers = () => {
       desc: "1Stop",
       partnership: "Live Project Partner",
     },
+    {
+      url: "./sponsor/aadya.jpg",
+      desc: "Aadya",
+      partnership: "Official Hygiene and CSR Partner",
+    },
     // {
     //   url: "./sponsor/aadya.png",
     //   desc: "Aadya",
@@ -261,14 +266,9 @@ const upperSponsers = () => {
       partnership: "Gaming Partner",
     },
     {
-      url: "./sponsor/jiosaavn.png",
+      url: "./sponsor/jiosaavn.jpg",
       desc: "Jio Saavn",
       partnership: "Official Music Streaming Partner",
-    },
-    {
-      url: "./sponsor/foreschool.jpeg",
-      desc: "FORE School of Business",
-      partnership: "Knowledge Partner",
     },
     {
       url: "./sponsor/ifmr.png",

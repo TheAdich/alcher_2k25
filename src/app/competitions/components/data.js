@@ -20,7 +20,7 @@ const info = [
   {
     id: 2,
     category: "Dance",
-    img: "/competition_img/StepUP-min.png",
+    img: "/competition_img/Stepupmin.png",
     comp_name: "Step Up",
     type: "Group ·",
     one_liner: "Streetdance Competition",
@@ -174,7 +174,7 @@ const info = [
     type: "Solo ·",
     one_liner: "Singing Competition",
     url: "https://registration.alcheringa.in/competitions/register/d57dca42-44c9-413e-8460-3fa440118398/",
-    tags: "solo singing, singing, voice, offline    ",
+    tags: "solo singing, singing, voice, offline ,music ",
     loc: "https://maps.app.goo.gl/woU1p8sz6PjsA6fj9",
   },
   {
@@ -185,7 +185,7 @@ const info = [
     type: "Group ·",
     one_liner: "Acoustic Band Competition",
     url: "https://registration.alcheringa.in/competitions/register/2a5a4ebe-41fe-4c74-869a-616845d92039/",
-    tags: "acoustic band, group singing, offline    ",
+    tags: "acoustic band, group singing, offline, music",
     loc: "https://maps.app.goo.gl/Su6uxUyTNGFPSL8Y6",
     // expo stage
   },
