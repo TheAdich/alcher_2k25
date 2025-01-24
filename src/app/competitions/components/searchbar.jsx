@@ -25,7 +25,10 @@ const SearchBar = () => {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
     setInput("");
-    const filtered = category === 'all' ? info : info.filter((item) => item.category === category);
+    const filtered =
+      category === "all"
+        ? info
+        : info.filter((item) => item.category === category);
     setFilteredData(filtered);
   };
 
@@ -44,9 +47,7 @@ const SearchBar = () => {
             value={selectedCategory}
             onChange={(e) => handleCategoryChange(e.target.value)}
           >
-            <option value="all">
-              All Modules
-            </option>
+            <option value="all">All Modules</option>
             {titledata.map((title) => (
               <option
                 key={title.id}
@@ -107,7 +108,9 @@ const SearchBar = () => {
                   <p>Register</p>
                 </Link>
                 <div className="mapCompIcon">
-                  <img src="./External.png" alt="" />
+                  <Link href={item.url}>
+                    <img src="./External.png" alt="" />
+                  </Link>
                 </div>
               </div>
               <div className="registerBtnComp">
@@ -115,7 +118,9 @@ const SearchBar = () => {
                   <p>Google Maps</p>
                 </Link>
                 <div className="mapCompIcon">
-                  <img src="./Maps.png" alt="" />
+                  <Link href={item.loc}>
+                    <img src="./Maps.png" alt="" />
+                  </Link>
                 </div>
               </div>
             </div>
