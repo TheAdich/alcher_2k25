@@ -108,12 +108,12 @@ export default function Page() {
         <div className={`${styles.box1} ${isExpanded ? styles.box1Visible : ""}`}>
           <div className={styles.nextButton} onClick={handleNext}>
             <Image src={next} className={styles.nextImage} alt="next button" />
-            <p className={styles.eventName}>{images[currentIndex+1].name}</p>
+            <p className={styles.eventName}>{images[(currentIndex + 1) % images.length].name}</p>
           </div>
           <div className={`${styles.right} ${isExpanded ? styles.up : ""}`}>
           {currentIndex === 0 && (
             
-              <><p>Day 0 : Saaz</p><hr /><p>Day 1 : Juggernaut</p><hr /><p>Day 2 : Crescendo</p><hr /><p>Day 3 : Blitz</p><hr /></>
+              <><p>Day 0 : Saaz</p><hr /><p>Day 1 : Juggernaut</p><hr /><p>Day 2 : Crescendo</p><hr /><p>Day 3 : Blitzkrieg</p><hr /></>
             
           )}
           </div>

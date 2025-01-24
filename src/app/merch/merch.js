@@ -61,71 +61,68 @@ export default function Page() {
         setRight((right + 1) % 3);
         console.log("Current:", current, "Left:", left, "Right:", right);
         setTimeout(() => {
-            setCurrentm((currentm + 1) % 3);
-            handleExpandis();
-          }, 0); 
-    };
-
-    const handleLeft = () => {
+          setCurrentm((currentm + 1) % 3);
+          handleExpandis();
+        }, 0);
+      };
+    
+      const handleLeft = () => {
         setIsVisible(false);
-        setCurrentm((currentm + 2) % 3);
+        setCurrent((current + 2) % 3);
         setLeft((left + 2) % 3);
         setRight((right + 2) % 3);
-        // setLeft((left + 1) % 3);
-        // setRight((right + 1) % 3);
-        // setIsVisible(!isVisible);
         console.log("Current:", current, "Left:", left, "Right:", right);
         setTimeout(() => {
-            setCurrent((current + 2) % 3);
-            handleExpandis();
-          }, 800); 
+          setCurrentm((currentm + 2) % 3);
+          handleExpandis();
+        }, 0);
         // setCurrent((current + 2) % 3);
         // setLeft((left + 2) % 3);
         // setRight((right + 2) % 3);
         // console.log("Current:", current, "Left:", left, "Right:", right);
-    };
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-    useEffect(() => {
+      };
+      const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+      useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-            window.addEventListener('resize', handleResize);
-            return () => {
-                window.removeEventListener('resize', handleResize);
-            };
-        }
-    },[])
-    const handleBtn1 = () => {
-        setCurrentm(0);
+          setIsMobile(window.innerWidth <= 768);
+          window.addEventListener("resize", handleResize);
+          return () => {
+            window.removeEventListener("resize", handleResize);
+          };
+        };
+      }, []);
+      const handleBtn1 = () => {
         setLeft(2);
         setRight(1);
+        setCurrent(0);
         setIsVisible(false);
         setTimeout(() => {
-            setCurrent(0);
-            handleExpandis();
-          }, 800); 
-    }
-
-    const handleBtn2 = () => {
-        setCurrentm(1);
+          setCurrentm(0);
+          handleExpandis();
+        }, 0);
+      };
+    
+      const handleBtn2 = () => {
+        setCurrent(1);
         setLeft(0);
         setRight(2);
         setIsVisible(false);
         setTimeout(() => {
-            setCurrent(1);
-            handleExpandis();
-          }, 800); 
-    }
-
-    const handleBtn3 = () => {
-        setCurrentm(2);
+          setCurrentm(1);
+          handleExpandis();
+        }, 0);
+      };
+    
+      const handleBtn3 = () => {
         setLeft(1);
         setRight(0);
+        setCurrent(2);
         setIsVisible(false);
         setTimeout(() => {
-            setCurrent(2);
-            handleExpandis();
-          }, 800); 
-    }
+          setCurrentm(2);
+          handleExpandis();
+        }, 0);
+      };
 
     return (
       <div

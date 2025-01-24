@@ -61,10 +61,10 @@ const EventSec = () => {
           </div>
           <div className={styles.randomtextcontainer}>
             <span className={`${styles.randomtext} ${styles.rndtext1}`} >
-              [a] This is Nice???
+              [a] What is this about?
             </span>
             <span className={`${styles.randomtext} ${styles.rndtext2}`} >
-              [a] Gotta grab that
+              (b-1) Intereting.... right?
             </span>
             <span className={`${styles.randomtext} ${styles.rndtext3}`}>
               [0] Game is on
