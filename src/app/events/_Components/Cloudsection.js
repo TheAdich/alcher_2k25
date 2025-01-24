@@ -56,9 +56,9 @@ const CloudSection = ({event}) => {
         <div className={styles.heading}>{name}</div>
         <div className={styles.topsubheading}>{topsubheading}</div>
 
-        <div className={styles.contents}>
+        {/* <div className={styles.contents}>
           <p>{contents}</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
