@@ -53,7 +53,7 @@ const EventSec = () => {
             <Image src={rect} alt="line" className={styles.underline2} />
             <div className={styles.high}>
               <h1 className={styles.inst3}>
-                at the <span className={styles.highlight}>Highlights</span>
+                at the <span className={styles.highlight}>Highlights  </span>
               </h1>
               <Image src={arrow} alt="arrow" className={styles.arrow}/>
             </div>

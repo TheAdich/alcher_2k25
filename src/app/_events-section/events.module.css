@@ -19,67 +19,56 @@
 .headersection {
   width: 60%;
 }
-  .headersection .intro h1{
-    font-size: 3rem;
-    margin:0;
-   font-weight:400;
-    font-family: 'Stone_Slab', sans-serif;
-    color:#FFEBD3;
-    text-align: left;
-  }
-  .resp{
-    display:none;
-  }
-  .headersection .intro h1 span {
-    
-  }
-  
-  .headersection .highlight {
-    
-  }
-  .evcard{
-    display:flex;
-    flex-direction: row;
-    width:55%;
-    column-gap: 30px;
-  }
-  
-  .randomtextcontainer {
-    position: relative;
-   width:30%;
-    
-   
-    
-  }
-  .intro{
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    row-gap:5px;
-  }
-  .randomtext {
-    position: absolute;
-   font-size: 0.8rem;
-   color:#FFEBD3;
-   width: max-content;
-  }
-  .lines{
-    min-width:100%;
-  }
-  
-  .rndtext1{
-    transform: translate(700px, -220px);
-  }
-  .rndtext2{
-    transform: translate(1000px, -150px);
-  }
-  .rndtext3{
-    transform: translate(900px, -60px);
-  }
-  .lines{
-    width:100%;
+.headersection .intro h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Stone_Slab", sans-serif;
+  color: #ffebd3;
+  text-align: left;
+}
+.resp {
+  display: none;
+}
+.evcard {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  column-gap: 30px;
+}
 
-  }
+.randomtextcontainer {
+  position: relative;
+  width: 30%;
+}
+.intro {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.randomtext {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #ffebd3;
+  width: max-content;
+}
+.lines {
+  min-width: 100%;
+}
+
+.rndtext1 {
+  transform: translate(700px, -220px);
+}
+.rndtext2 {
+  transform: translate(1000px, -150px);
+}
+.rndtext3 {
+  transform: translate(900px, -60px);
+}
+.lines {
+  width: 100%;
+}
 
 .cardssection {
   display: flex;
@@ -154,59 +143,53 @@
   margin-left: 40px;
 }
 
-  .eventstext p {
-    font-family: 'Game_Type', sans-serif;
-    font-size: 1rem;
-    
-    color: rgba(255, 235, 211, 0.7);
-    margin: 20px 0;
-  }
-  
-  .eventsbutton {
-   
-    border: none;
-    padding: 10px 20px;
-   margin-top: 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 5px;
+.eventstext p {
+  font-family: "Game_Type", sans-serif;
+  font-size: 1rem;
 
-  }
-  .evebtn {
-    /* filter: brightness(75%); */
+  color: rgba(255, 235, 211, 0.7);
+  margin: 20px 0;
+}
 
-  }
-  
-  .eventsbutton:hover .evebtn {
-    filter:drop-shadow(0 0 35px #FE3989);
-    transition: filter 0.3s ease;
-  }
-   .inst2 {
-    padding-left: 50%;
-  }
-  .high{
-    display: flex;
-    flex-direction: row;
+.eventsbutton {
+  border: none;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.evebtn {
+  /* filter: brightness(75%); */
+}
 
-  }
-  .inst3 {
-    padding-left: 30%;
-    
-  }
-  .inst1{
-    padding-left:20%;
-  }
-  .highlight{
-    color:rgb(254 57 137);
-    filter:drop-shadow(0 0 10px #FE3989);
-  }
-  .underline{
-    width: 57%;
-    height:30%;
-    margin-bottom: 10px;
-    
-  }
+.eventsbutton:hover .evebtn {
+  filter: drop-shadow(0 0 35px #fe3989);
+  transition: filter 0.3s ease;
+}
+.inst2 {
+  padding-left: 50%;
+}
+.high {
+  display: flex;
+  flex-direction: row;
+}
+.inst3 {
+  padding-left: 30%;
+}
+.inst1 {
+  padding-left: 20%;
+}
+.highlight {
+  color: rgb(254 57 137);
+  filter: drop-shadow(0 0 10px #fe3989);
+}
+.underline {
+  width: 57%;
+  height: 30%;
+  margin-bottom: 10px;
+}
 
 .inst2 span {
   color: rgb(254 57 137);
@@ -222,8 +205,11 @@
   height: 30%;
 }
 .arrow {
+  position: relative;
+  top: 10px;
+  margin-left: 15px;
   width: 50px;
-  height: 60px;
+  height: 50px;
 }
 
 .eventstext p {
@@ -650,7 +636,7 @@
 
   .eventcontainer {
     margin-left: 50px;
-    height:auto;
+    height: auto;
   }
   .eventstext {
     position: relative;
@@ -667,7 +653,7 @@
   }
   .cardssection {
     column-gap: 40px;
-    height:auto;
+    height: auto;
   }
   .underline {
     width: 67%;
@@ -1225,6 +1211,7 @@
   .arrow {
     width: 30px;
     height: 30px;
+    top: 5px;
   }
   .inst1 {
     padding-left: 15%;

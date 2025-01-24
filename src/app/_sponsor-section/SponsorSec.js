@@ -1,29 +1,17 @@
 "use client"
-import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./sponsor.module.css";
 import img1 from "./_components/img1.png";
-import img2 from "./_components/img2.png";
-import img3 from "./_components/img3.png";
-import img4 from "./_components/img4.png";
-import img5 from "./_components/img5.png";
-import img6 from "./_components/NERIM.jpg";
-import img7 from "./_components/img7.png";
-import img8 from "./_components/img8.png";
-import img9 from "./_components/img9.png";
-import img10 from "./_components/img10.png";
-import img11 from "./_components/img11.png";
-import img12 from "./_components/img12.png";
 import img13 from "./_components/logo.png";
 import img14 from "./_components/CocaColalogo.webp";
 import img15 from "./_components/MCJ.png";
+import img6 from "./_components/NERIM.jpg";
 import line2 from "./_components/line2.png";
 import dash1 from "./_components/dash1.png";
 import dash2 from "./_components/dash2.png";
-
-import image2 from "./_components/image3.svg";
-import image3 from "./_components/image3.svg";
 import Image from "next/image";
 import GridSketch from "../_trailinggrid/grid";
+
 const sponsors = [
   { name: "CocaCola", logo: img14, alt: "E-media logo" },
   { name: "Techno", logo: img13, alt: "E-media logo" },

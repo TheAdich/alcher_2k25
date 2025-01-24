@@ -225,12 +225,11 @@ export default function Page() {
             <h3 style={{ fontFamily: "BrickPixel" }}>LEVEL AHEAD</h3>
             <p style={{ fontFamily: "StoneSlab" }}>Hoodie</p>
             <p style={{ fontFamily: "GameTape", width: "3rem" }}>
-              "The Alcher Lady's mind exploded into
-              <br /> the arcade world, her thoughts <br />
-              scattered across levels and blocks.
+              "The Alcher Lady's mind exploded into the arcade world, her
+              thoughts scattered across levels and blocks.
               <br /> Wear the chaos, embrace the
-              <br /> challenge. Game on with our exclusive
-              <br /> mind-bending collection."
+              <br /> challenge. Game on with our exclusive mind-bending
+              collection."
             </p>
           </div>
         }
@@ -275,9 +274,11 @@ export default function Page() {
             <h3 style={{ fontFamily: "BrickPixel" }}>LEVEL AHEAD</h3>
             <p style={{ fontFamily: "StoneSlab" }}>Hoodie</p>
             <p style={{ fontFamily: "GameTape", width: "4rem" }}>
-              Our 'Arcade' brings you the nostalgia of meeting friends after
-              school, sharing laughs, and making memories. Meet me @ the arcade
-              and relive those fun times together.
+              "The Alcher Lady's mind exploded into the arcade world, her
+              thoughts scattered across levels and blocks.
+              Wear the chaos, embrace the
+              challenge. Game on with our exclusive mind-bending
+              collection."
             </p>
           </div>
         }
