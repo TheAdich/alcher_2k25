@@ -16,7 +16,6 @@ import img12 from "./_components/img12.png";
 import img13 from "./_components/logo.png";
 import img14 from "./_components/CocaColalogo.webp";
 import img15 from "./_components/MCJ.png";
-import img6 from "./_components/NERIM.jpg";
 import line2 from "./_components/line2.png";
 import dash1 from "./_components/dash1.png";
 import dash2 from "./_components/dash2.png";
