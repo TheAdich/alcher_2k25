@@ -17,7 +17,7 @@ const footer = () => {
     { label: "Team", path: "/teams" },
     { label: "Gallery", path: "/gallery" },
     { label: "Sponsors", path: "/sponsors" },
-    { label: "MUN", path: "/mun" },
+    { label: "MUN", path: "https://iitgmun.alcheringa.in/" },
   ];
 
   const [isVisible, setIsVisible] = useState(false);
