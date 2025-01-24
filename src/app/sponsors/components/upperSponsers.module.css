@@ -83,6 +83,7 @@
   color: #ffebd3;
 }
 .imgMainSponser {
+  cursor: pointer;
   z-index: 100;
   width: 20vw;
   height: 140px;
@@ -135,6 +136,7 @@
   gap: 10px;
 }
 .imgLowSpons {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
