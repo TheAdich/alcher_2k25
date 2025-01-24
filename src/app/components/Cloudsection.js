@@ -19,7 +19,7 @@ const CloudSection = () => {
     <section>
       <div>
         <img
-          src="/redlines.svg"
+          src="/redlines.png"
           alt="redlines"
           width={40}
           height={40}
@@ -114,26 +114,11 @@ const CloudSection = () => {
 
       <div className="content">
         <p>
-          Alcheringa, the annual cultural festival of IIT Guwahati, is a
-          celebration of art, culture, and creativity that transcends
-          boundaries. Established in 1996, it has grown to become Northeast
-          India’s largest college festival, drawing participants and audiences
-          from across the nation.
+        Alcheringa is the annual cultural extravaganza of IIT Guwahati, a vibrant celebration of youth, creativity, and diversity. As North East India's largest cultural festival, Alcheringa offers a unique platform for students to showcase their talents and explore a world of artistic expression.
+
+Experience three days and four nights of electrifying performances, thrilling competitions, and unforgettable moments. From January 30th to February 2nd, 2025, Alcheringa invites you to unlock a world of artistic expression and cultural exploration.
         </p>
 
-        <p>
-          Named after the Aboriginal Australian term for the “Dreamtime,”
-          Alcheringa represents a world of imagination, self-expression, and
-          cultural unity. With a rich legacy of showcasing diverse traditions,
-          innovative performances, and spirited competitions, the festival
-          embodies the values of inclusivity, creativity, and collaboration.
-        </p>
-
-        <p>
-          Through its vibrant events and electrifying concerts, Alcheringa
-          continues to inspire and connect individuals, fostering a sense of
-          community and passion for the arts.
-        </p>
       </div>
       <div>
         <div className="relative">

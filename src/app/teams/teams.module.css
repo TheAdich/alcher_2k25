@@ -29,7 +29,7 @@
 }
 
 .teamclouds {
-  background-color: #00001f;
+  background-color: transparent;
   margin: 0;
   z-index: -10;
   position: relative;
@@ -72,7 +72,7 @@
 }
 
 .section {
-  background-color: #00001f;
+  background-color: transparent;
   margin-top: 6rem;
   margin-bottom: 3rem;
 }

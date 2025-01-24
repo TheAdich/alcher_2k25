@@ -3,14 +3,16 @@ import styles from './merch.module.css'
 import Image from 'next/image'
 import React, { useState, useEffect } from "react";
 import GridSketch from '../_trailinggrid/grid';
-
+import dash2 from "./_components/dash2.png";
 const Merch = () => {
   const [gridDimensions, setGridDimensions] = useState({ width: 300, height: 50, gridsize: 16.5 });
 
   useEffect(() => {
     const updateDimensions = () => {
       if (typeof window !== "undefined") {
-        if (window.innerWidth > 1024) {
+        if (window.innerWidth > 1440) {
+          setGridDimensions({ width: 3000, height: 690, gridsize: 16.5 }); // Very Large screens
+        }else if (window.innerWidth > 991) {
           setGridDimensions({ width: 3000, height: 530, gridsize: 15 }); // Large screens
         } else if (window.innerWidth > 991) {
           setGridDimensions({ width: 2000, height: 95, gridsize: 14 }); // Medium screens
@@ -41,6 +43,10 @@ const Merch = () => {
       <a href="/merch">
         <Image src="./merch-btn.svg" alt="merch" width={500} height={500} className={styles.merchBtnHome} />
       </a>
+      <div className={styles.dashContainermerch}>
+      <GridSketch width={gridDimensions.width} height={gridDimensions.height} gridsize={gridDimensions.gridsize} />
+        <Image src={dash2} alt="Bottom dash" className={styles.dash} />
+      </div>
     </div>
   )
 }
