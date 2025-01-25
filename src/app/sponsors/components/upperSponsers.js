@@ -210,7 +210,7 @@ const upperSponsers = () => {
     },
     {
       url: "./sponsor/oil.png",
-      desc: "OIL",
+      desc: "OIL India",
       partnership: "Golden Sponsor",
     },
     {

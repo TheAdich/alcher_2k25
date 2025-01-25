@@ -1190,7 +1190,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <img
-                                src="/astiva.png"
+                                src="/astitva.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
