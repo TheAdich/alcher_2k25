@@ -9,7 +9,8 @@ import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
 export function Oversized(props) {
-  const { nodes, materials } = useGLTF('./Oversized.glb')
+  const { nodes, materials } = useGLTF('/oversizedf.glb')
+
   const groupRef = useRef()
 
   useEffect(() => {
@@ -28,9 +29,25 @@ export function Oversized(props) {
 
   return (
     <group {...props} dispose={null} ref={groupRef}>
-      <mesh geometry={nodes.Object_0004.geometry} material={materials.WOI} position={[0, 0, 0]} rotation={[Math.PI / 2, 0, 0]} scale={0.066} />
-    </group>
+    <mesh geometry={nodes.Object_0004.geometry} material={materials.WOI} position={[0, 4.899, 0]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.064} />
+  </group>
   )
 }
 
-useGLTF.preload('./Oversized.glb')
+useGLTF.preload('/oversizedf.glb')
+
+
+
+// import React from 'react'
+// import { useGLTF } from '@react-three/drei'
+
+// export function Model(props) {
+//   const { nodes, materials } = useGLTF('/oversizedf.glb')
+//   return (
+//     <group {...props} dispose={null}>
+//       <mesh geometry={nodes.Object_0004.geometry} material={materials.WOI} position={[0, 4.899, 0]} rotation={[Math.PI / 2, 0, Math.PI]} scale={0.062} />
+//     </group>
+//   )
+// }
+
+// useGLTF.preload('/oversizedf.glb')
