@@ -157,6 +157,34 @@
   background: white;
   padding: 6px;
 }
+.markysec {
+  background-color: #00001f;
+}
+.headmarky {
+  font-family: gameTape;
+  color: #ffebd3;
+  font-size: 3rem;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marky {
+  background-color: #00001f;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  gap: 80px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 @media (max-width: 1150px) {
   .cloudlft {
     width: 300px;
@@ -260,6 +288,9 @@
   }
   .eachSponser {
     gap: 5px;
+  }
+  .headmarky {
+    font-size: 2rem;
   }
 }
 

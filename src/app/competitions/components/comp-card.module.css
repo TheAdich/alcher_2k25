@@ -101,6 +101,10 @@
   width: fit-content;
   border-bottom: 0.05rem solid white;
 }
+.mapCompIcon {
+  display: flex;
+  justify-content: center;
+}
 .mapCompIcon img {
   width: 1.7vw;
 }
