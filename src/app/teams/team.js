@@ -630,8 +630,123 @@ const page = () => {
 
             <section className={styles.section}>
                 <h1 style={{ color: '#FE3989' }}>Creatives </h1>
-                <p className={styles.para}>The Creatives Team is in charge of designing all the visual elements of the fest, including posters, banners, stage backdrops, and merchandise. They work to create a cohesive and visually appealing theme for the festival, ensuring the branding stands out. Collaborating closely with other teams, they also create promotional materials to grab attention and reflect the identity of Alcheringa.</p>
+                <p className={styles.para}>Team Creatives is the visionary force behind Alcheringa, shaping the fest's identity through captivating visuals and designs. From conceptualizing the theme to crafting the website and executing the overall branding, this team ensures every element reflects the essence and grandeur of the fest.</p>
                 <div className={styles.persons}>
+                <div className={styles.profilecard}>
+                        <div className={styles.profilephoto}>
+                            <Image
+                                src="/creativesframe.png"
+                                width={100}
+                                height={100}
+                                className={styles.profileframe}
+                            />
+                            <img
+                                src="/sankeerth.png"
+                                width={100}
+                                height={100}
+                                className={styles.profileface}
+                            />
+                        </div>
+                        <div className={styles.buttons}>
+                            <button className={styles.bio}>
+                                <h2>Sai Sankeerth V</h2>
+                                <p style={{ color: '#FE3989' }}>Web-Design Head</p>
+
+                            </button>
+                            <button className={styles.button}>
+                                <Image
+                                    src="/email.svg"
+                                    width={100}
+                                    height={100}
+                                    className={styles.buttonimage}
+                                />
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
+                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
+                                </div>
+                            </button>
+                            <button className={styles.button}>
+                                <Image
+                                    src="/phonenumber.svg"
+                                    width={100}
+                                    height={100}
+                                    className={styles.buttonimage}
+                                />
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
+                                  <a href='tel:+91 70210 59025'>   <p>+91 70210 59025</p> </a>
+                                </div>
+                            </button >
+                            <button className={styles.button}>
+                                <Image
+                                    src="/linkdin.svg"
+                                    width={100}
+                                    height={100}
+                                    className={styles.buttonimage}
+                                />
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
+                                    <p><a href='https://www.linkedin.com/in/sai-sankeerth-veggalam/?trk=people_directory&originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div className={styles.profilecard}>
+                        <div className={styles.profilephoto}>
+                            <Image
+                                src="/creativesframe.png"
+                                width={100}
+                                height={100}
+                                className={styles.profileframe}
+                            />
+                            <img
+                                src="/nikitha.png"
+                                width={100}
+                                height={100}
+                                className={styles.profileface}
+                            />
+                        </div>
+                        <div className={styles.buttons}>
+                            <button className={styles.bio}>
+                                <h2>Nikita Sharma</h2>
+                                <p style={{ color: '#FE3989' }}>Digital Media Head</p>
+
+                            </button>
+                            <button className={styles.button}>
+                                <Image
+                                    src="/email.svg"
+                                    width={100}
+                                    height={100}
+                                    className={styles.buttonimage}
+                                />
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
+                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
+                                </div>
+                            </button>
+                            <button className={styles.button}>
+                                <Image
+                                    src="/phonenumber.svg"
+                                    width={100}
+                                    height={100}
+                                    className={styles.buttonimage}
+                                />
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
+                                     <a href='tel:+91 88850 59696'> <p>+91 88850 59696</p></a>
+                                </div>
+                            </button >
+                            <button className={styles.button}>
+                                <Image
+                                    src="/linkdin.svg"
+                                    width={100}
+                                    height={100}
+                                    className={styles.buttonimage}
+                                />
+                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
+                                    <p><a href='https://www.linkedin.com/in/nikitasharma710/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+
                     <div className={styles.profilecard}>
                         <div className={styles.profilephoto}>
                             <Image
@@ -691,122 +806,9 @@ const page = () => {
                     </div>
 
 
-                    <div className={styles.profilecard}>
-                        <div className={styles.profilephoto}>
-                            <Image
-                                src="/creativesframe.png"
-                                width={100}
-                                height={100}
-                                className={styles.profileframe}
-                            />
-                            <img
-                                src="/nikitha.png"
-                                width={100}
-                                height={100}
-                                className={styles.profileface}
-                            />
-                        </div>
-                        <div className={styles.buttons}>
-                            <button className={styles.bio}>
-                                <h2>Nikita Sharma</h2>
-                                <p style={{ color: '#FE3989' }}>Digital Media Head</p>
+                    
 
-                            </button>
-                            <button className={styles.button}>
-                                <Image
-                                    src="/email.svg"
-                                    width={100}
-                                    height={100}
-                                    className={styles.buttonimage}
-                                />
-                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
-                                </div>
-                            </button>
-                            <button className={styles.button}>
-                                <Image
-                                    src="/phonenumber.svg"
-                                    width={100}
-                                    height={100}
-                                    className={styles.buttonimage}
-                                />
-                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                     <a href='tel:+91 88850 59696'> <p>+91 88850 59696</p></a>
-                                </div>
-                            </button >
-                            <button className={styles.button}>
-                                <Image
-                                    src="/linkdin.svg"
-                                    width={100}
-                                    height={100}
-                                    className={styles.buttonimage}
-                                />
-                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p><a href='https://www.linkedin.com/in/nikitasharma710/?originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
-
-
-                    <div className={styles.profilecard}>
-                        <div className={styles.profilephoto}>
-                            <Image
-                                src="/creativesframe.png"
-                                width={100}
-                                height={100}
-                                className={styles.profileframe}
-                            />
-                            <img
-                                src="/sankeerth.png"
-                                width={100}
-                                height={100}
-                                className={styles.profileface}
-                            />
-                        </div>
-                        <div className={styles.buttons}>
-                            <button className={styles.bio}>
-                                <h2>Sai Sankeerth V</h2>
-                                <p style={{ color: '#FE3989' }}>Web-Design Head</p>
-
-                            </button>
-                            <button className={styles.button}>
-                                <Image
-                                    src="/email.svg"
-                                    width={100}
-                                    height={100}
-                                    className={styles.buttonimage}
-                                />
-                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                   <a href='mailto:creatives@alcheringa.in'><p>creatives@alcheringa.in</p></a>
-                                </div>
-                            </button>
-                            <button className={styles.button}>
-                                <Image
-                                    src="/phonenumber.svg"
-                                    width={100}
-                                    height={100}
-                                    className={styles.buttonimage}
-                                />
-                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                  <a href='tel:+91 70210 59025'>   <p>+91 70210 59025</p> </a>
-                                </div>
-                            </button >
-                            <button className={styles.button}>
-                                <Image
-                                    src="/linkdin.svg"
-                                    width={100}
-                                    height={100}
-                                    className={styles.buttonimage}
-                                />
-                                <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                    <p><a href='https://www.linkedin.com/in/sai-sankeerth-veggalam/?trk=people_directory&originalSubdomain=in' target='_blank'>Visit LinkedIn</a></p>
-                                </div>
-                            </button>
-                        </div>
-
-                    </div>
+                   
                 </div>
             </section>
 
