@@ -672,7 +672,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                  <a href='tel:+91 70210 59025'>   <p>+91 70210 59025</p> </a>
+                                  <a href='tel:+91 88850 59696'>   <p>+91 88850 59696</p> </a>
                                 </div>
                             </button >
                             <button className={styles.button}>
@@ -729,7 +729,7 @@ const page = () => {
                                     className={styles.buttonimage}
                                 />
                                 <div className={styles.overlay} style={{ backgroundColor: '#FE3989' }}>
-                                     <a href='tel:+91 88850 59696'> <p>+91 88850 59696</p></a>
+                                     <a href='tel:+91 93053 82620'> <p>+91 93053 82620</p></a>
                                 </div>
                             </button >
                             <button className={styles.button}>
