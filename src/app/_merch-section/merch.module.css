@@ -73,12 +73,11 @@
   /* margin-bottom: 100px; */
 }
 .merchBtnHome {
- 
   transition: all 0.3s ease;
 }
 
 .merchBtnHome:hover {
-    filter: drop-shadow(0 1px 23px #FE3989);
+  filter: drop-shadow(0 1px 23px #fe3989);
 }
 
 .mobileTextHome {
@@ -119,10 +118,13 @@
   .merchTextHome {
     display: none;
   }
+  .merchBtnHome {
+    scale: 0.5;
+  }
 }
 
-@media screen and (max-width: 900px) {
-  /* .tshirts {
-    scale: 0.7;
-  } */
+@media screen and (max-width: 450px) {
+  .merchBtnHome {
+    scale: 0.3;
+  }
 }
