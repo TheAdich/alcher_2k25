@@ -4,7 +4,7 @@ export const metadata = {
   title: "Gallery | Alcheringa",
 };
 
-const Page = dynamic(() => import("./_components/gallery.js"), {
+const Page = dynamic(() => import("./_components/display.js"), {
   loading: () => <Loading />,
   ssr: false,
 });
