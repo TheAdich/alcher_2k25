@@ -72,10 +72,13 @@
 }
 
 .sponsorlogo {
-  width: 15vmax;
+  width: 10vw;
   height: auto;
   /* filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8)); */
-  transition: transform 0.1-s ease;
+  /* transition: transform 0.5s ease; */
+}
+.sponsorlogo img {
+  transition: transform 0.3s ease;
 }
 .SSlogo {
   background-color: #fff;
@@ -100,6 +103,6 @@
     align-items: center;
   }
   .sponsorlogo{
-    width:20vw;
+    width:18vw;
   }
 }
