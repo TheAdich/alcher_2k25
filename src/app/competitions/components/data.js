@@ -559,6 +559,41 @@ const info = [
     //L3
     // https://maps.app.goo.gl/W37u2ro3Xw5RfX9k7
   },
+  // {
+  //   id: 51,
+  //   category: "Critical Damage",
+  //   img: "/competition_img/BGMI-min.png",
+  //   comp_name: "BGMI",
+  //   type: "Solo ·",
+  //   one_liner: "Solo Gaming Competition",
+  //   url: "https://unstop.com/events/critical-damage-presents-bgmi-alcheringa-1368468",
+  //   // tags: "drama, monoact, mono, acting, act, natak, offline    ",
+  //   loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
+  // },
+
+  // {
+  //   id: 52,
+  //   category: "Critical Damage",
+  //   img: "/competition_img/CRI-min.png",
+  //   comp_name: "Cookie Run India",
+  //   type: "Solo ·",
+  //   one_liner: "Solo Gaming Competition",
+  //   url: "https://unstop.com/events/critical-damage-presents-bgmi-alcheringa-1368468",
+  //   // tags: "drama, monoact, mono, acting, act, natak, offline    ",
+  //   loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
+  // },
+
+  // {
+  //   id: 53,
+  //   category: "Critical Damage",
+  //   img: "/competition_img/-min.png",
+  //   comp_name: "BGMI",
+  //   type: "Solo ·",
+  //   one_liner: "Solo Gaming Competition",
+  //   url: "https://unstop.com/events/critical-damage-presents-bgmi-alcheringa-1368468",
+  //   // tags: "drama, monoact, mono, acting, act, natak, offline    ",
+  //   loc: "https://maps.app.goo.gl/TJSKgooxTUFz2JNF7",
+  // },
 ];
 
 export default info;
