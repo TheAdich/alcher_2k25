@@ -234,7 +234,7 @@ const upperSponsers = () => {
       partnership: "IAS Academy Partner",
     },
     {
-      url: "./sponsor/ntpc.png",
+      url: "./sponsor/ntpc.jpg",
       desc: "NTPC",
       partnership: "Platinum Sponsor",
     },
