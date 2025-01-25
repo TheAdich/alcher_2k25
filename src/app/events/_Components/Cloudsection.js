@@ -11,19 +11,19 @@ const CloudSection = ({event}) => {
       <div className={styles.galleryclouds1}>
         <Marquee speed={10}>
           <Image
-            src="/cloudLeft.svg"
+            src="/cloudLeft.png"
             width="1000"
             height="1000"
             alt="section"
           />
           <Image
-            src="/cloudLeft.svg"
+            src="/cloudLeft.png"
             width="1000"
             height="1000"
             alt="section"
           />
           <Image
-            src="/cloudLeft.svg"
+            src="/cloudLeft.png"
             width="1000"
             height="1000"
             alt="section"
@@ -33,19 +33,19 @@ const CloudSection = ({event}) => {
       <div className={styles.galleryclouds2}>
         <Marquee direction="right" speed={30}>
           <Image
-            src="/cloudRight.svg"
+            src="/cloudRight.png"
             width="1000"
             height="1000"
             alt="section"
           />
           <Image
-            src="/cloudRight.svg"
+            src="/cloudRight.png"
             width="1000"
             height="1000"
             alt="section"
           />
           <Image
-            src="/cloudRight.svg"
+            src="/cloudRight.png"
             width="1000"
             height="1000"
             alt="section"

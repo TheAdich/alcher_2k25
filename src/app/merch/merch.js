@@ -140,19 +140,19 @@ export default function Page() {
           <div className={styles.marquee1}>
             <Marquee direction="right" speed={30}>
               <Image
-                src="/cloudRight.svg"
+                src="/cloudRight.png"
                 className={`${styles.cloudRight} ${styles.cloud}`}
                 width="1000"
                 height="1000"
               />
               <Image
-                src="/cloudRight.svg"
+                src="/cloudRight.png"
                 className={`${styles.cloudRight} ${styles.cloud}`}
                 width="1000"
                 height="1000"
               />
               <Image
-                src="/cloudRight.svg"
+                src="/cloudRight.png"
                 className={`${styles.cloudRight} ${styles.cloud}`}
                 width="1000"
                 height="1000"
@@ -162,19 +162,19 @@ export default function Page() {
           <div className={styles.marquee2}>
             <Marquee speed={10}>
               <Image
-                src="/cloudLeft.svg"
+                src="/cloudLeft.png"
                 className={`${styles.cloudLeft} ${styles.cloud}`}
                 width="1000"
                 height="1000"
               />
               <Image
-                src="/cloudLeft.svg"
+                src="/cloudLeft.png"
                 className={`${styles.cloudLeft} ${styles.cloud}`}
                 width="1000"
                 height="1000"
               />
               <Image
-                src="/cloudLeft.svg"
+                src="/cloudLeft.png"
                 className={`${styles.cloudLeft} ${styles.cloud}`}
                 width="1000"
                 height="1000"

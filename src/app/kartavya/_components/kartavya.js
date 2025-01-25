@@ -2,14 +2,21 @@ import styles from "./kartavya.module.css";
 import Image from "next/image";
 import dashline from "./dashline.svg";
 import KartavyaCloud from "./kartavyaCloud";
-import preImage2 from "./preImage2.svg";
+import preImage2 from "./udaan.png";
 
-import img2 from "./img2.svg";
-import img3 from "./img3.svg";
-import img4 from "./img4.svg";
-import img5 from "./img5.svg";
-import img6 from "./img6.svg";
-import img1 from "./img1.svg";
+// import img2 from "./img2.svg";
+// import img3 from "./img3.svg";
+// import img4 from "./img4.svg";
+// import img5 from "./img5.svg";
+// import img6 from "./img6.svg";
+// import img1 from "./img1.svg";
+import safher from "./safher.png";
+import sanrakshan from "./sanrakshan.png";
+import prithvi from "./prithvi.png";
+import northeast from "./neu.png";
+import manshakti from "./manshakti.png";
+import aikyam from "./aikyam.png";
+
 import frame1 from "./frame1.svg";
 import frame2 from "./frame2.svg";
 
@@ -18,37 +25,37 @@ const initiatives = [
     title: "Safher",
     description:
       "Acknowledging the sad reality of violence against women and lack of women safety in India, SafHer, through a variety of workshops and other programmes highlights that women raise their voice against misconduct and get perpetrators to justice.",
-    image: img3,
+    image: safher,
   },
   {
     title: "Sanrakshan",
     description:
       "Sanrakshan is a dual-purpose campaign tackling AIDS awareness and substance abuse, fostering a socially responsible community that is aware of safe practices and at the same time eliminating the stigma surrounding these issues.",
-    image: img6,
+    image: sanrakshan,
   },
   {
     title: "Prithvi",
     description:
       "As the name suggests, Prithvi aims at taking active steps to save our planet from climate change and promotes environmental protectionism right from the grassroot level through a variety of programmes to involve the people around us.",
-    image: img4,
+    image: prithvi,
   },
   {
     title: "Northeast Unvield",
     description:
       "It is held annually to celebrate North East India’s cultural diversity through performances, regional art, and handicrafts, while addressing social issues and exploring solutions.",
-    image: img5,
+    image: northeast,
   },
   {
     title: "Manshakti",
     description:
       "Manshakti is Alcheringa's mental health awareness campaign where we strive to address the wide variety of mental health issues that people suffer from, while reducing stigma and promoting a culture of care and understanding.",
-    image: img2,
+    image: manshakti,
   },
   {
     title: "AIKYAM",
     description:
       "Aikyam's main aim is to sensitise people about how communal violence and hatred is still a burning issue in India and to promote the idea of 'unity in diversity' through performances, panel discussions and fundraisers",
-    image: img1,
+    image: aikyam,
   },
 
 
@@ -89,8 +96,7 @@ const Kartavya = () => {
           <div className={styles.mainImage}>
             <div
               className={`${styles.mainImage2} ${
-                udaanImage === preImage2 ? styles.specialMainImage2 : ""
-              }`}
+                udaanImage === preImage2 ? styles.specialMainImage2 : ""}`}
             >
               <Image
                 src={udaanImage}
@@ -98,7 +104,6 @@ const Kartavya = () => {
                 className={styles.udaanImage}
               />
             </div>
-            <Image src={frame1} className={styles.frame1} alt="frame1" />
           </div>
           {/* <div className={styles.mainImage}>
 

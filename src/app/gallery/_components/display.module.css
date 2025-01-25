@@ -91,7 +91,7 @@
 }
 
 .container {
-  height: 200vh;
+  /* height: 200vh; */
   margin: 0 auto;
   padding: 1rem;
   display: flex;
@@ -100,11 +100,9 @@
 }
 
 .grid_con {
-  width: 80%;
-  height: 75%;
   display: grid;
-  grid-template-columns: 1.8fr 1fr 1.8fr 1.8fr 1.8fr 1fr 1.8fr;
-  grid-template-rows: 1.8fr 1fr 1.8fr;
+  grid-template-columns: 13.475vw 7.491vw 13.475vw 13.475vw 13.475vw 7.491vw 13.475vw;
+  grid-template-rows: 13.475vw 7.491vw 13.475vw;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -275,7 +273,7 @@
 @media (max-width:1400px) and (min-width:1200px){
   .grid_con{
     /* width:98%; */
-    height:65%;
+    /* height:65%; */
     padding:10px;
     padding-bottom:0px ;
     padding-top: 0px;
@@ -285,14 +283,14 @@
 @media (max-width:1200px) and (min-width:800px){
   .grid_con{
  /* width:98%; */
- height:65%;
+ /* height:65%; */
  padding:10px;
  padding-bottom:0px ;
  padding-top: 0px;
   }
-  .container{
+  /* .container{
    height:100vh;
-  }
+  } */
  }
  
 
@@ -302,13 +300,13 @@
 @media (max-width:800px) and (min-width:700px){
  .grid_con{
 /* width:98%; */
-height:70%;
+/* height:70%; */
 padding:0px;
 padding-bottom:0px ;
 padding-top: 0px;
  }
  .container{
-  height:100vh;
+  /* height:100vh; */
   padding-top: 30px;
  }
 }
@@ -316,26 +314,26 @@ padding-top: 0px;
 @media (max-width:700px) and (min-width:600px){
   .grid_con{
  /* width:98%; */
- height:70%;
+ /* height:70%; */
  padding-bottom:0px ;
  padding-top: 0px;
   }
-  .container{
+  /* .container{
     height:100vh;
-   }
+   } */
  }
 
  @media (max-width:600px) and (min-width:500px){
   .grid_con{
  /* width:98%; */
- height:70%;
+ /* height:70%; */
  padding:10px;
  padding-bottom:0px ;
 padding-top: 0px;
   }
-  .container{
+  /* .container{
     height:90vh;
-  }
+  } */
  }
 
 @media (max-width:500px){
@@ -348,15 +346,17 @@ padding-top: 0px;
   /* width:60%; */
   height: 90%;
   display: grid;
-  grid-template-columns: 4.8fr 4.2fr 4.8fr;
-  grid-template-rows: 1.5fr 1.9fr 1.7fr 1.6fr 1.5fr 1.6fr;
+  /* grid-template-columns: 13.475vw 7.491vw 13.475vw 13.475vw 13.475vw 7.491vw 13.475vw;
+  grid-template-rows: 13.475vw 7.491vw 13.475vw; */
+  grid-template-columns: 25.92vw 14.4vw 25.92vw;
+  grid-template-rows: 25.92vw 14.4vw 25.92vw 25.92vw 14.4vw 25.92vw;
   /* gap: 1rem; */
   margin-bottom: 2rem;
 }
-.container{
+/* .container{
   padding-right:0px;
   height:240vh;
-}
+} */
 
 
 

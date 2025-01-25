@@ -149,6 +149,12 @@ const upperSponsers = () => {
       partnership: "Digital Media Partner",
       link: "https://www.instagram.com/guwahatitimes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
+    {
+      url: "./sponsors_img/assam1.png",
+      desc: "Assam Beatbox",
+      partnership: "Community Partner",
+      link: "https://www.instagram.com/assambeatbox?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
   ];
   const lowerSponsers = [
     {
@@ -177,12 +183,7 @@ const upperSponsers = () => {
       partnership: "Career Development Partner",
     },
 
-    {
-      url: "./sponsors_img/assam1.png",
-      desc: "Assam Beatbox",
-      partnership: "Community Partner",
-      link: "https://www.instagram.com/assambeatbox?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
-    },
+    
     {
       url: "./sponsor/skilligence.png",
       desc: "Skilligence",
@@ -196,7 +197,7 @@ const upperSponsers = () => {
     {
       url: "./sponsor/fixderma.jpg",
       desc: "Fix Derma",
-      partnership: "Skin Care Partner",
+      partnership: "Skincare Partner",
     },
     {
       url: "./sponsor/qelica.png",
@@ -204,14 +205,19 @@ const upperSponsers = () => {
       partnership: "Oral Care Partner",
     },
     {
+      url: "./sponsor/krafton.png",
+      desc: "Krafton",
+      partnership: "Mobile Gaming Partner",
+    },
+    {
       url: "./sponsor/gmda.jpg",
       desc: "Gmda",
-      partnership: "Kartavya In Association With",
+      partnership: "Kartavya In Association With Partner",
     },
     {
       url: "./sponsor/oil.png",
       desc: "OIL India",
-      partnership: "Golden Sponsor",
+      partnership: "Gold Sponsor",
     },
     {
       url: "./sponsor/canara.png",
@@ -220,17 +226,17 @@ const upperSponsers = () => {
     },
     {
       url: "./sponsor/gail.png",
-      desc: "GAIL",
+      desc: "GAIL ( India ) Ltd",
       partnership: "Gold Sponsor",
     },
     {
       url: "./sponsor/mastersunion.jpg",
-      desc: "Masters union",
+      desc: "Masters' Union",
       partnership: "Case Study Partner",
     },
     {
       url: "./sponsor/spm.jpg",
-      desc: "SPM",
+      desc: "SPM IAS Academy",
       partnership: "IAS Academy Partner",
     },
     {
@@ -249,7 +255,7 @@ const upperSponsers = () => {
       partnership: "Chocolate Partner",
     },
     {
-      url: "./sponsor/reignoftitans.jpeg",
+      url: "./sponsor/ROT.png",
       desc: "Reign of Titans",
       partnership: "Gaming Partner",
     },
@@ -257,6 +263,16 @@ const upperSponsers = () => {
       url: "./sponsor/jiosaavn.jpg",
       desc: "Jio Saavn",
       partnership: "Official Music Streaming Partner",
+    },
+    {
+      url: "./sponsor/Safexpress Logo.png",
+      desc: "Safexpress",
+      partnership: "Official Supply Chain Partner",
+    },
+    {
+      url: "./sponsor/sketcher.png",
+      desc: "Skechers",
+      partnership: "Athleisure Partner",
     },
     {
       url: "./sponsor/ifmr.png",

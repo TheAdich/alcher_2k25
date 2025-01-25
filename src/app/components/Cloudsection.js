@@ -89,16 +89,16 @@ const CloudSection = () => {
       <div className="homeclouds">
         <div className="homecloud1 opacity-40">
           <Marquee speed={10}>
-            <img src="./cloudLeft.svg" width="1000" height="1000" />
-            <img src="./cloudLeft.svg" width="1000" height="1000" />
-            <img src="./cloudLeft.svg" width="1000" height="1000" />
+            <img src="/cloudLeft.png" width="1000" height="1000" />
+            <img src="/cloudLeft.png" width="1000" height="1000" />
+            <img src="/cloudLeft.png" width="1000" height="1000" />
           </Marquee>
         </div>
         <div className="homecloud2 opacity-40" >
           <Marquee direction="right" speed={30}>
-            <img src="./cloudRight.svg" width="1000" height="1000" />
-            <img src="./cloudRight.svg" width="1000" height="1000" />
-            <img src="./cloudRight.svg" width="1000" height="1000" />
+            <img src="/cloudRight.png" width="1000" height="1000" />
+            <img src="/cloudRight.png" width="1000" height="1000" />
+            <img src="/cloudRight.png" width="1000" height="1000" />
           </Marquee>
         </div>
 

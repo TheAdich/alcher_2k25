@@ -135,6 +135,9 @@
   flex-direction: column;
   gap: 10px;
 }
+.descc p{
+  text-align: center;
+}
 .imgLowSpons {
   cursor: pointer;
   display: flex;

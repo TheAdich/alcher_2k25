@@ -6,19 +6,19 @@ import { Color } from 'three';
 
 const KartavyaCloud = () => {
   return (
-    <div className={styles.kartavyaclouds}>
+    <div className={styles.kartavyaclouds} style={{position: "relative"}}>
     <div className={styles.kartavyaclouds1}>
         <Marquee speed={10} >
-            <Image src="./cloudLeft.svg" width="1000" height="1000" />
-            <Image src="./cloudLeft.svg" width="1000" height="1000" />
-            <Image src="./cloudLeft.svg" width="1000" height="1000" />
+            <Image src="/cloudLeft.png" width="1000" height="1000" />
+            <Image src="/cloudLeft.png" width="1000" height="1000" />
+            <Image src="/cloudLeft.png" width="1000" height="1000" />
         </Marquee>
     </div>
     <div className={styles.kartavyaclouds2}>
         <Marquee direction="right" speed={30} >
-            <Image src="./cloudRight.svg" width="1000" height="1000" />
-            <Image src="./cloudRight.svg" width="1000" height="1000" />
-            <Image src="./cloudRight.svg" width="1000" height="1000" />
+            <Image src="/cloudRight.png" width="1000" height="1000" />
+            <Image src="/cloudRight.png" width="1000" height="1000" />
+            <Image src="/cloudRight.png" width="1000" height="1000" />
         </Marquee>
     </div>
    

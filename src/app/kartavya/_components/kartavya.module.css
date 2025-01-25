@@ -60,7 +60,10 @@
   font-family: "Game_Tape", sans-serif;
   color: #ffebd3;
 }
-
+.mainImage2{
+  transform: translateY(-50%);
+  top: 53%;
+}
 .description {
   margin-top: 20px;
   color: #ffebd3b2;
@@ -310,9 +313,6 @@
     font-size: 0.7rem;
     margin-top: 10px;
   }
-
-  .frame1 {
-  }
   .contents p {
     padding-top: 10px;
   }
@@ -335,9 +335,6 @@
   .udaanSection {
     padding-bottom: 40px;
   }
-  .specialMainImage2 {
-    padding-top: 10px;
-  }
   .cardDescription {
     font-size: 0.8rem;
   }
@@ -359,9 +356,6 @@
     font-size: 0.7rem;
   }
 
-  .specialMainImage2 {
-    padding-top: 50px;
-  }
   .frame1 {
     width: 100%;
   }
@@ -386,9 +380,6 @@
   }
   .udaanSection {
     padding-bottom: 40px;
-  }
-  .specialMainImage2 {
-    padding-top: 20px;
   }
   .cardDescription {
     font-size: 0.8rem;
@@ -417,9 +408,7 @@
   .cardDescription {
     font-size: 0.8rem;
   }
-  .specialMainImage2 {
-    padding-top: 50px;
-  }
+
   .frame1 {
     width: 100%;
   }
@@ -500,9 +489,6 @@
   .subHeading {
     font-size: 1.2rem;
   }
-  .specialMainImage2 {
-    padding-top: 20px;
-  }
   .cardContainer{
     padding-left: 0px;
   }
@@ -555,9 +541,6 @@
   .subHeading {
     font-size: 1.2rem;
   }
-  .specialMainImage2 {
-    padding-top: 30px;
-  }
   .cardContainer{
     padding-left: 0px;
   }
@@ -606,9 +589,6 @@
   }
   .subHeading {
     font-size: 1.2rem;
-  }
-  .specialMainImage2 {
-    padding-top: 40px;
   }
   .frame1 {
     left: 12px;

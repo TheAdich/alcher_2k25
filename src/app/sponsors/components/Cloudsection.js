@@ -9,19 +9,19 @@ const CloudSection = () => {
         <div className="marquee1 opacity-40">
           <Marquee direction="right" speed={30}>
             <Image
-              src="./cloudRight.svg"
+              src="/cloudRight.png"
               className="cloudRight cloud"
               width="1000"
               height="1000"
             />
             <Image
-              src="./cloudRight.svg"
+              src="/cloudRight.png"
               className="cloudRight cloud"
               width="1000"
               height="1000"
             />
             <Image
-              src="./cloudRight.svg"
+              src="/cloudRight.png"
               className="cloudRight cloud"
               width="1000"
               height="1000"
@@ -31,19 +31,19 @@ const CloudSection = () => {
         <div className="marquee2 opacity-40">
           <Marquee speed={10}>
             <Image
-              src="./cloudLeft.svg"
+              src="/cloudLeft.png"
               className="cloudLeft cloud"
               width="1000"
               height="1000"
             />
             <Image
-              src="./cloudLeft.svg"
+              src="/cloudLeft.png"
               className="cloudLeft cloud"
               width="1000"
               height="1000"
             />
             <Image
-              src="./cloudLeft.svg"
+              src="/cloudLeft.png"
               className="cloudLeft cloud"
               width="1000"
               height="1000"
