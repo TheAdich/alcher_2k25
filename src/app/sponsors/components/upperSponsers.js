@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import styles from "./upperSponsers.module.css";
 const upperSponsers = () => {
@@ -29,62 +29,41 @@ const upperSponsers = () => {
       url: "./sponsors_img/sbi.png",
     },
   ];
-
-  const lowerSponsers = [
-    {
-      url: "./sponsor/unstop.jpg",
-      desc: "Unstop",
-      partnership: "Exclusive Registrations Partner",
-    },
-    {
-      url: "./sponsor/bigrock.png",
-      desc: "BigRock",
-      partnership: "Web Hosting Partner",
-    },
-    {
-      url: "./sponsor/1stop.png",
-      desc: "1Stop",
-      partnership: "Live Project Partner",
-    },
-    {
-      url: "./sponsor/aadya.jpg",
-      desc: "Aadya",
-      partnership: "Official Hygiene and CSR Partner",
-    },
-    {
-      url: "./sponsor/scholarbyte.jpg",
-      desc: "Scholar byte",
-      partnership: "Career Development Partner",
-    },
+  const mediaSponsors = [
     {
       url: "./sponsors_img/pureOdisha.png",
       desc: "Pure Odisha",
       partnership: "Digital Media Partner",
       link: "https://www.instagram.com/pure_odisha?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
+
     {
       url: "./sponsors_img/justAssThings.png",
       desc: "Just Assamese Things",
       partnership: "Digital Media Partner",
       link: "https://www.instagram.com/justassamthings.exe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
+
     {
       url: "./sponsors_img/mirchi.png",
       desc: "Radio Mirchi",
       partnership: "Official Radio Partner",
     },
+
     {
       url: "./sponsors_img/globalHues.png",
       desc: "Global Hues",
       partnership: "Digital Media Partner",
       link: "https://theglobalhues.com/",
     },
+
     {
       url: "./sponsors_img/GT.png",
       desc: "Guwahati Times",
       partnership: "Digital Media Partner",
       link: "https://www.instagram.com/guwahatitimes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
+
     {
       url: "./sponsors_img/siliconIndia.png",
       desc: "Silicon India",
@@ -97,6 +76,7 @@ const upperSponsers = () => {
       partnership: "Digital Media Partner",
       link: "https://www.instagram.com/assam.unofficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
+
     {
       url: "./sponsors_img/physioTimes.png",
       desc: "Physio Times",
@@ -133,6 +113,7 @@ const upperSponsers = () => {
       partnership: "Digital Media Partner",
       link: "https://www.campustimespune.com/",
     },
+
     {
       url: "./sponsors_img/youthIncorpo.png",
       desc: "Youth Incorporated",
@@ -168,6 +149,34 @@ const upperSponsers = () => {
       partnership: "Digital Media Partner",
       link: "https://www.instagram.com/guwahatitimes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
     },
+  ];
+  const lowerSponsers = [
+    {
+      url: "./sponsor/unstop.jpg",
+      desc: "Unstop",
+      partnership: "Exclusive Registrations Partner",
+    },
+    {
+      url: "./sponsor/bigrock.png",
+      desc: "BigRock",
+      partnership: "Web Hosting Partner",
+    },
+    {
+      url: "./sponsor/1stop.png",
+      desc: "1Stop",
+      partnership: "Live Project Partner",
+    },
+    {
+      url: "./sponsor/aadya.jpg",
+      desc: "Aadya",
+      partnership: "Official Hygiene and CSR Partner",
+    },
+    {
+      url: "./sponsor/scholarbyte.jpg",
+      desc: "Scholar byte",
+      partnership: "Career Development Partner",
+    },
+
     {
       url: "./sponsors_img/assam1.png",
       desc: "Assam Beatbox",
@@ -270,9 +279,12 @@ const upperSponsers = () => {
         <img className={styles.cloudlft2} src="./cloudl.png" alt="" />
         <img className={styles.cloudrgt2} src="./cloudrgt2.png" alt="" />
         {mainSponsers.map((option, idx) => (
-          <div className={styles.eachSponser} >
+          <div className={styles.eachSponser}>
             <h2 className={styles.headformain}>{option.headline}</h2>
-            <div className={styles.imgMainSponser} onClick={() => option.link && window.open(option.link)}>
+            <div
+              className={styles.imgMainSponser}
+              onClick={() => option.link && window.open(option.link)}
+            >
               <img className={styles.imggg} src={option.url} alt="" />
             </div>
           </div>
@@ -281,7 +293,10 @@ const upperSponsers = () => {
       <div className={styles.lowerSponsers}>
         {lowerSponsers.map((option, key) => (
           <div className={styles.lowEachSpons}>
-            <div className={styles.imgLowSpons} onClick={() => option.link && window.open(option.link)}>
+            <div
+              className={styles.imgLowSpons}
+              onClick={() => option.link && window.open(option.link)}
+            >
               <img className={styles.imggg} src={option.url} alt="" />
             </div>
             <div className={styles.descc}>
@@ -290,6 +305,25 @@ const upperSponsers = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className={styles.markysec}>
+        <p className={styles.headmarky}>Media Sponsors</p>
+        <div className={styles.marky}>
+          {mediaSponsors.map((option, key) => (
+            <div className={styles.lowEachSpons}>
+              <div
+                className={styles.imgLowSpons}
+                onClick={() => option.link && window.open(option.link)}
+              >
+                <img className={styles.imggg} src={option.url} alt="" />
+              </div>
+              <div className={styles.descc}>
+                <p>{option.desc}</p>
+                <p>{option.partnership}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </main>
   );
