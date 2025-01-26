@@ -118,6 +118,17 @@ const upperSponsers = () => {
       partnership: "Digital Media Partner",
       link: "https://www.campustimespune.com/",
     },
+    {
+      url: "./sponsor/assamese_memes.jpg",
+      desc: "The Assamese Memes",
+      partnership: "Digital Media Partner",
+      link: "https://www.instagram.com/the.assamese.memes?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    },
+    {
+      url: "./sponsor/djschool.png",
+      desc: "Rave DJ School",
+      partnership: "Digital Media Partner",
+    },
 
     {
       url: "./sponsors_img/youthIncorpo.png",
