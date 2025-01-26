@@ -48,6 +48,7 @@
 }
 .bgset {
   background-color: #00001f;
+  max-height: 100vh;
 }
 .header {
   z-index: 100;
