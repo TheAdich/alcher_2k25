@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import styles from "./sponsor.module.css";
 import img1 from "./_components/gplus.png";
 import img2 from "./_components/img2.png";
-import img3 from "./_components/img3.png";
+import img3 from "./_components/pragg.png";
 import img4 from "./_components/img4.png";
 import img5 from "./_components/img5.png";
 import img6 from "./_components/NERIM.jpg";
@@ -28,6 +28,7 @@ const sponsors = [
   { name: "Gplus", logo: img1, alt: "Gplus logo" },
   { name: "MCJ", logo: img15, alt: "MCJ" },
   { name: "Nerim", logo: img6, alt: "Nerim" },
+  { name: "Prag News", logo: img3, alt: "Prag News" },
 ];
 
 const SponsorSection = () => {

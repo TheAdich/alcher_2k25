@@ -17,6 +17,11 @@ const upperSponsers = () => {
       link: "https://www.guwahatiplus.com",
     },
     {
+      headline: "In Association With",
+      url: "./sponsors_img/pragg.png",
+      link: "https://pragnews.com/",
+    },
+    {
       headline: "Trusted By",
       url: "./sponsors_img/MCJ LOGO complete-white.png",
     },
