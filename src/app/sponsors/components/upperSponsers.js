@@ -29,10 +29,10 @@ const upperSponsers = () => {
       headline: "Educated By",
       url: "./sponsors_img/nerim.png",
     },
-    {
-      headline: "Powered By",
-      url: "./sponsors_img/sbi.png",
-    },
+    // {
+    //   headline: "Powered By",
+    //   url: "./sponsors_img/sbi.png",
+    // },
   ];
   const mediaSponsors = [
     {
