@@ -29,6 +29,10 @@ const upperSponsers = () => {
       headline: "Educated By",
       url: "./sponsors_img/nerim.png",
     },
+    {
+      headline: "Driven By",
+      url: "./sponsor/hero.png",
+    },
     // {
     //   headline: "Powered By",
     //   url: "./sponsors_img/sbi.png",
@@ -256,7 +260,7 @@ const upperSponsers = () => {
       partnership: "IAS Academy Partner",
     },
     {
-      url: "./sponsor/ntpc.jpg",
+      url: "./sponsor/ntpc.png",
       desc: "NTPC",
       partnership: "Platinum Sponsor",
     },
@@ -278,7 +282,13 @@ const upperSponsers = () => {
     {
       url: "./sponsor/jiosaavn.jpg",
       desc: "Jio Saavn",
+      link: "https://www.jiosaavn.com/",
       partnership: "Official Music Streaming Partner",
+    },
+    {
+      url: "./sponsor/fore.png",
+      desc: "FORE School of Business",
+      partnership: "Knowledge Partner",
     },
     {
       url: "./sponsor/Safexpress Logo.png",
