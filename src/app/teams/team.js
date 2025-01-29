@@ -219,7 +219,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <img
-                                src="/prakrati.png"
+                                src="/prakriti-crm.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
@@ -575,7 +575,7 @@ const page = () => {
                                 className={styles.profileframe}
                             />
                             <img
-                                src="/pramit.png"
+                                src="/pramit-events.png"
                                 width={100}
                                 height={100}
                                 className={styles.profileface}
