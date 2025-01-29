@@ -30,9 +30,13 @@ const upperSponsers = () => {
       url: "./sponsors_img/nerim.png",
     },
     {
-      headline: "Powered By",
-      url: "./sponsors_img/sbi.png",
+      headline: "Driven By",
+      url: "./sponsor/hero.png",
     },
+    // {
+    //   headline: "Powered By",
+    //   url: "./sponsors_img/sbi.png",
+    // },
   ];
   const mediaSponsors = [
     {
@@ -216,6 +220,11 @@ const upperSponsers = () => {
       partnership: "Skincare Partner",
     },
     {
+      url: "./sponsor/smartandhandsome.jpeg",
+      desc: "Smant And Handsome",
+      partnership: "Self-Care Partner",
+    },
+    {
       url: "./sponsor/qelica.png",
       desc: "Qelica",
       partnership: "Oral Care Partner",
@@ -261,6 +270,11 @@ const upperSponsers = () => {
       partnership: "Platinum Sponsor",
     },
     {
+      url: "./sponsor/ntpc.png",
+      desc: "NEEPCO",
+      partnership: "Electric Power Partner",
+    },
+    {
       url: "./sponsor/ucobank.jpg",
       desc: "UCO Bank",
       partnership: "Banking Partner",
@@ -278,7 +292,13 @@ const upperSponsers = () => {
     {
       url: "./sponsor/jiosaavn.jpg",
       desc: "Jio Saavn",
+      link: "https://www.jiosaavn.com/",
       partnership: "Official Music Streaming Partner",
+    },
+    {
+      url: "./sponsor/fore.png",
+      desc: "FORE School of Business",
+      partnership: "Knowledge Partner",
     },
     {
       url: "./sponsor/Safexpress Logo.png",

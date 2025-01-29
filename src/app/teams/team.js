@@ -286,7 +286,7 @@ const page = () => {
                         </div>
                         <div className={styles.buttons}>
                             <button className={styles.bio}>
-                                <h2>Prajapati VivekM</h2>
+                                <h2>Vivek Prajapati</h2>
                                 <p style={{ color: '#FB754C' }}>CRM Head</p>
 
                             </button>

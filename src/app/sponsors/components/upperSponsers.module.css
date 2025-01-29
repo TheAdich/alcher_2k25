@@ -68,11 +68,11 @@
 }
 
 .eachSponser {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 }
