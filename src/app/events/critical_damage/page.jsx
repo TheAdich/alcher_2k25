@@ -12,11 +12,13 @@ import google from "./component/googlelink.svg";
 import frame from "./component/Frame51-o.svg";
 import clock from "./component/Time_light.svg"
 const images = [
-  { src: "/image1.png", day:"Day 1 - Juggernaut", location: "Main Auditorium",loaclink:"https://www.google.com", name: "Arjit Singh",time: "31 Jan, 11:00 PM", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
-  { src: "/image1.png", day:"Day 1 - Juggernaut", location: "Main Auditorium",loaclink:"https://www.google.com", name: "Arjit Singh",time: "31 Jan, 11:00 PM", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { src: "/events low res/CD 1.png", day:"Day 2 - Crescendo", location: "Rocko Stage",loaclink:"", name: "Caracal",time: "1 Feb, 4:30 PM", description: "" },
+  { src: "/events low res/CD 2.png", day:"Day 3 - Blitzkrieg", location: "Rocko Stage",loaclink:"", name: "Black Rhythm",time: "2 Feb, 4:00 PM", description: "" },
+  { src: "/events low res/CD 3.png", day:"Day 2 - Crescendo", location: "Rocko Stage",loaclink:"", name: "Vardhaman Chhajed",time: "2 Feb, 4:00 PM", description: "" },
+  { src: "/events low res/CD 4.png", day:"Day 3 - Blitzkrieg", location: "Rocko Stage",loaclink:"", name: "Arjit Singh",time: "2 Feb, 4:00 PM", description: "" },
 ];
 const event = [
-  { name: "Cretical Damage", topsubheading: "Flickeringa", contents: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
+  { name: "Critical Damage", topsubheading: "Flickeringa", contents: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum praesentium, consectetur quaerat illum labore reiciendis odit pariatur eligendi fuga quis optio provident dolorum recusandae et sed autem in iusto sequi." },
 ];
 export default function Page() {
   return (
@@ -28,6 +30,7 @@ export default function Page() {
                 <div className={styles.left}
                     style={{
                         backgroundImage: `url("${image.src}")`,
+                        backgroundSize: "34.5vw 25.5vw",
                         // backgroundSize: "cover", 
                         
                       }}>
