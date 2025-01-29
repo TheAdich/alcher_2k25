@@ -220,6 +220,11 @@ const upperSponsers = () => {
       partnership: "Skincare Partner",
     },
     {
+      url: "./sponsor/smartandhandsome.jpeg",
+      desc: "Smant And Handsome",
+      partnership: "Self-Care Partner",
+    },
+    {
       url: "./sponsor/qelica.png",
       desc: "Qelica",
       partnership: "Oral Care Partner",
@@ -260,9 +265,14 @@ const upperSponsers = () => {
       partnership: "IAS Academy Partner",
     },
     {
-      url: "./sponsor/ntpc.png",
+      url: "./sponsor/ntpc.jpg",
       desc: "NTPC",
       partnership: "Platinum Sponsor",
+    },
+    {
+      url: "./sponsor/ntpc.png",
+      desc: "NEEPCO",
+      partnership: "Electric Power Partner",
     },
     {
       url: "./sponsor/ucobank.jpg",
