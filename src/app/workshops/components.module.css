@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "brickpixel";
+  src: url("/Brick_Pixel/.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "stoneSlab";
+  src: url("/Stone_Slab.ttf") format("truetype");
+  font-weight: normal;
+  /* Adjust if needed */
+  font-style: normal;
+  /* Adjust if needed */
+}
+
+@font-face {
+  font-family: "gameTape";
+  src: url("/Game_Tape.ttf") format("truetype");
+  font-weight: normal;
+  /* Adjust if needed */
+  font-style: normal;
+  /* Adjust if needed */
+}
+
+.mainPage {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 100%;
+  height: auto;
+  background-color: #00001f;
+}
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  font-family: brickpixel;
+  height: 150px;
+}
+.logo {
+  width: 200px;
+  height: 100px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  filter: drop-shadow(0 0px 35px #fe3988b4);
+  color: #fe3989;
+}
+.workshops {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  gap: 1.5vw;
+}
+.eachWorkshop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/border.svg");
+  background-repeat: no-repeat;
+  height: 180px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+.workshopName {
+  font-size: 20px;
+  color: black;
+  width: 100%;
+  font-family: brickpixel;
+}
+.workshopDate {
+  font-family: gameTape;
+  color: rgba(31, 118, 250, 1);
+}
