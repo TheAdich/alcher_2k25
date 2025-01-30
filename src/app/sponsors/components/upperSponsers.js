@@ -230,6 +230,16 @@ const upperSponsers = () => {
       partnership: "Oral Care Partner",
     },
     {
+      url: "./sponsor/charge.jpeg",
+      desc: "A Plus Charge",
+      partnership: "E Mobility Partner",
+    },
+    {
+      url: "./sponsor/asacs.jpeg",
+      desc: "ASACS",
+      partnership: "AIDS Awareness Partner",
+    },
+    {
       url: "./sponsor/krafton.png",
       desc: "Krafton",
       partnership: "Mobile Gaming Partner",
