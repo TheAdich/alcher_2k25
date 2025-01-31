@@ -1,7 +1,7 @@
 .main {
   width: 100vw;
   height: 100vh;
-  background-image: url('/bg.svg');
+  background-image: url('/bg.png');
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   display: flex;

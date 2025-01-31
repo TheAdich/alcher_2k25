@@ -9,6 +9,7 @@
     color: #FFEBD3;
     font-family: "gameTape";
     padding-bottom: 20px;
+    padding-top: 3vw;
 }
 .event{
     display: flex;
@@ -20,18 +21,19 @@
     padding-top: 2vw;
 }
 .left{
-    width: 34vw;
-    height: 27vw;
+    width: 35vw;
+    height: 28vw;
     /* background-image: url('./Frame51-o.svg'); */
-    background-size: 33vw 28vw;
+    /* background-size: 30vw 27vw; */
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .eventimage{
     width: 35vw;
     height: 28vw;
     /* z-index: -1; */
-    margin-top: -1.5vw;
+    margin-top: -1.1vw;
     margin-left: -0.25vw;
 }
 .right{
