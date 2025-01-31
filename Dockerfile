@@ -16,4 +16,5 @@ COPY --from=build /app/public ./public
 
 EXPOSE 80
 USER node
+RUN ["apk","update","&&","apk","add","bash"]
 CMD ["npm", "start"]
