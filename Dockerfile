@@ -8,7 +8,6 @@ RUN npm run build
 
 FROM node:18-alpine AS runtime
 
-
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production
