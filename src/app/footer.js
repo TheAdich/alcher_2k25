@@ -181,46 +181,46 @@ const footer = () => {
         </div>
         <div className={styles.wrapper}>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
           <span>
-            <img src="./Vector.png" alt="" />
+            <img src="/Vector.png" alt="" />
           </span>
         </div>
       </div>

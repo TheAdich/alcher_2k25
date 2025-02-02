@@ -6,9 +6,9 @@ import Link from "next/link";
 
 // import Loading from "../loading";
 
-import image1 from "./image1.png";
+import image1 from "./pronite.png";
 import image2 from "./image2.png";
-import image3 from "./coming.png";
+import image3 from "./cd.png";
 // import image4 from "/events low res/CD - Events.png";
 import image5 from "./coming.png";
 
@@ -20,7 +20,7 @@ const images = [
   { src: image2, name: "Proshows",link: "/events/proshows", description: "Proshows bring together breathtaking acts and spellbinding performances by world-class entertainers. From jaw-dropping stunts to mesmerizing displays, these shows are bound to leave you awestruck!" },
   { src: image3, name: "Creator's Camp",link: "/events/creators_camp", description: "Creator’s Camp is the hub for innovation and creativity, offering hands-on workshops and insightful sessions with industry experts. Unleash your imagination and learn from the best!" },
   { src: "/events low res/CD - Events.png", name: "Critical Damage",link: "/events/critical_damage", description: "Critical Damage is where the energy hits the roof with adrenaline-pumping gaming battles and esports tournaments. Challenge yourself and prove your dominance in this ultimate gaming arena!" },
-  { src: "/events low res/Flickeringa - Events.png", name: "Flickeringa",link: "/events/flickeringa", description: "Flickeringa is the vibrant heart of Alcheringa, brimming with fun, excitement, and unforgettable experiences. Immerse yourself in a world of joy and let your spirit soar!" },
+  { src: "/events low res/flick.png", name: "Flickeringa",link: "/events/flickeringa", description: "Flickeringa is the vibrant heart of Alcheringa, brimming with fun, excitement, and unforgettable experiences. Immerse yourself in a world of joy and let your spirit soar!" },
 ];
 
 
