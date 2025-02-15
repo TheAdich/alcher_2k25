@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./component/style.module.css";
 import loc from "./component/Location.svg";
+import ComingSoon from "../_Components/comingsoon";
 import CloudSection from "../_Components/Cloudsection2";
 // import Loading from "../loading";
 
@@ -24,72 +25,8 @@ export default function Page() {
     <div className={styles.main}>
       <CloudSection event={event} ></CloudSection>
         <div className={styles.container}>
-            {images.map((image, index) => (
-              <div key={index} className={styles.event}>
-                <div className={styles.left}
-                    style={{
-                        backgroundImage: `url("${image.src}")`,
-                        // backgroundSize: "cover", 
-                        
-                      }}>
-                    <Image
-                        src={frame}
-                        className={styles.eventimage}
-                        quality={100}
-                        width={400}
-                        height={300}
-                        alt="event image"
-                    />
-                </div>
-                <div className={styles.right}>
-                    <div className={styles.rightupper}>
-                        <h1 className={styles.name}>{image.name}</h1>
-                        <hr />
-                        <div className={styles.time}>
-                            <h2 className={styles.day}>{image.day}</h2>
-                            <div className="flex flex-row gap-2">
-                            <Image
-                                src={loc}
-                                className={styles.loc}
-                                quality={100}
-                                width={15}
-                                height={15}
-                                alt="event image"
-                              />
-                              <p>  {image.location}</p>
-                            </div>
-                            <div className="flex flex-row gap-2">
-                            <Image
-                                src={clock}
-                                className={styles.loc}
-                                quality={100}
-                                width={15}
-                                height={15}
-                                alt="event image"
-                              />
-                              <p>  {image.time}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.description}>
-                        <p>{image.description}</p>
-                    </div>
-                    <div className={styles.rightlower}>
-                      <a href={image.loaclink} target="_blank" rel="noopener noreferrer">
-                        <Image
-                          src={google}
-                          className={styles.google}
-                          quality={100}
-                          width={140}
-                          height={30}
-                          alt="Google link"
-                        />
-                      </a>
-                    </div>
-                </div>
-              </div>
-            ))} 
         </div>
+        <ComingSoon/>
     </div>
   );
 }
