@@ -313,7 +313,7 @@ const upperSponsers = () => {
     {
       url: "./sponsor/Safexpress Logo.png",
       desc: "Safexpress",
-      partnership: "Official Supply Chain Partner",
+      partnership: "Logistics Partner",
     },
     {
       url: "./sponsor/sketcher.png",
