@@ -177,10 +177,16 @@ const upperSponsers = () => {
     },
   ];
   const lowerSponsers = [
+    
     {
       url: "./sponsor/unstop.jpg",
       desc: "Unstop",
       partnership: "Exclusive Registrations Partner",
+    },
+    {
+      url: "./sponsor/sbi.jpeg",
+      desc: "State Bank of India",
+      partnership: "Banking Partner",
     },
     {
       url: "./sponsor/bigrock.png",
